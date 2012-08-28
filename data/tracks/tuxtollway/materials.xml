@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev 6563 -->
+<materials>
+  <material name="asphalt_3cross.png" anisotropic="Y">
+    <particles base="smoke.xml" condition="skid" />
+  </material>
+  
+  <material name="asphalt_plain.png" anisotropic="Y">
+    <particles base="smoke.xml" condition="skid" />
+  </material>
+  
+  <material name="asphalt_straight.png" anisotropic="Y">
+    <particles base="smoke.xml" condition="skid" />
+  </material>
+  
+  <material name="asphalt_straight_noline.png" anisotropic="Y">
+    <particles base="smoke.xml" condition="skid" />
+  </material>
+  
+  <material name="asphalt_straight_transition.png" anisotropic="Y">
+    <particles base="smoke.xml" condition="skid" />
+  </material>
+  
+  <material name="asphalt_straight_tunnel.png" anisotropic="Y">
+    <particles base="smoke.xml" condition="skid" />
+  </material>
+  
+  <material name="bush3.png" transparency="Y" light="N" ignore="Y"/>
+  <material name="bush4.png" transparency="Y" light="N" ignore="Y"/>
+  <material name="bush5.png" transparency="Y" light="N" ignore="Y"/>
+  <material name="grass4.png" slowdown-time="4.0" max-speed="0.5"/>
+  <material name="road_barrier.png" transparency="Y"/>
+  <material name="tiles.png" anisotropic="Y"/>
+  <material name="tree_leaves1.png" transparency="Y" light="N" ignore="Y"/>
+  <material name="tree_leaves2.png" transparency="Y" light="N" ignore="Y"/>
+  <material name="concrete_plain.png" anisotropic="Y"/>
+</materials>

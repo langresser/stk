@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev Unknown -->
+<scene>
+  <track model="scotland_track.b3d" x="0" y="0" z="0">
+    <static-object model="pinetree.b3d" xyz="37.89 -0.53 -156.87" hpr="0.0 -0.0 0.0" scale="1.39 1.39 1.39"/>
+    <static-object model="pinetree.b3d" xyz="22.79 -0.31 -157.19" hpr="0.0 -15.9 0.0" scale="1.23 1.23 1.23"/>
+    <static-object model="pinetree.b3d" xyz="4.70 -0.31 -157.19" hpr="0.0 39.4 0.0" scale="1.46 1.46 1.46"/>
+    <static-object model="pinetree.b3d" xyz="-8.72 -0.31 -169.29" hpr="0.0 -0.0 0.0" scale="1.57 1.57 1.57"/>
+    <static-object model="pinetree.b3d" xyz="-6.20 -0.31 -187.98" hpr="0.0 -64.7 0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="-36.26 -0.31 -174.29" hpr="-0.0 -92.0 -0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="-55.10 -0.31 -168.96" hpr="0.0 -0.0 0.0" scale="1.90 1.90 1.90"/>
+    <static-object model="pinetree.b3d" xyz="14.01 -0.31 -194.22" hpr="-0.0 -92.0 -0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="43.39 -0.31 -194.22" hpr="0.0 -64.7 0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="88.19 -0.31 -173.20" hpr="0.0 -58.9 0.0" scale="3.06 3.06 3.06"/>
+    <static-object model="pinetree.b3d" xyz="63.78 -0.31 -173.20" hpr="0.0 -50.9 0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="59.51 -0.31 -157.19" hpr="0.0 -15.9 0.0" scale="1.23 1.23 1.23"/>
+    <static-object model="pinetree.b3d" xyz="88.19 -0.31 -147.50" hpr="-0.0 -137.1 -0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="108.33 -0.31 -147.50" hpr="0.0 -64.7 0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="114.05 0.63 -92.36" hpr="0.0 -80.8 0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="107.86 -0.31 -121.00" hpr="-0.0 -125.8 -0.0" scale="2.01 2.01 2.01"/>
+    <static-object model="pinetree.b3d" xyz="134.78 0.73 -60.81" hpr="0.0 72.8 0.0" scale="2.01 2.01 2.01"/>
+    <static-object model="pinetree.b3d" xyz="125.36 1.54 -78.62" hpr="-0.0 53.1 -0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="106.02 -0.84 -28.23" hpr="0.0 -37.0 -0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="89.93 0.73 -40.35" hpr="-0.0 -82.1 0.0" scale="2.01 2.01 2.01"/>
+    <static-object model="pinetree.b3d" xyz="122.10 -0.06 -20.59" hpr="-0.0 124.4 -0.0" scale="2.45 2.45 2.45"/>
+    <static-object model="pinetree.b3d" xyz="22.21 -0.37 -40.35" hpr="-0.0 -82.1 0.0" scale="1.69 1.69 1.69"/>
+    <static-object model="pinetree.b3d" xyz="22.21 -0.37 -26.49" hpr="0.0 -179.5 -0.0" scale="2.35 2.35 2.35"/>
+    <static-object model="pinetree.b3d" xyz="22.21 0.20 -11.05" hpr="0.0 -179.5 -0.0" scale="1.68 1.68 1.68"/>
+    <static-object model="pinetree.b3d" xyz="-32.19 0.20 -26.24" hpr="0.0 9.4 0.0" scale="1.68 1.68 1.68"/>
+    <static-object model="pinetree.b3d" xyz="-29.82 -0.37 -10.99" hpr="0.0 -55.3 0.0" scale="2.35 2.35 2.35"/>
+    <static-object model="pinetree.b3d" xyz="-27.69 -0.37 2.70" hpr="-0.0 106.8 -0.0" scale="1.69 1.69 1.69"/>
+    <static-object model="pinetree.b3d" xyz="-43.48 -0.37 -78.31" hpr="-0.0 106.8 -0.0" scale="1.69 1.69 1.69"/>
+    <static-object model="pinetree.b3d" xyz="-45.61 -0.37 -92.00" hpr="0.0 9.4 0.0" scale="2.35 2.35 2.35"/>
+    <static-object model="pinetree.b3d" xyz="-47.98 0.20 -107.26" hpr="0.0 9.4 0.0" scale="1.68 1.68 1.68"/>
+    <static-object model="pinetree.b3d" xyz="-66.17 0.20 -107.26" hpr="0.0 9.4 0.0" scale="2.60 2.60 2.60"/>
+    <static-object model="pinetree.b3d" xyz="-63.80 -0.37 -92.00" hpr="0.0 -82.7 0.0" scale="3.65 3.65 3.65"/>
+    <static-object model="pinetree.b3d" xyz="-61.67 -0.37 -78.31" hpr="-0.0 57.7 -0.0" scale="2.63 2.63 2.63"/>
+    <static-object model="pinetree.b3d" xyz="-49.85 -0.37 -122.27" hpr="-0.0 -159.8 -0.0" scale="3.65 3.65 3.65"/>
+    <static-object model="pinetree.b3d" xyz="-34.48 0.20 -120.74" hpr="-0.0 -95.2 -0.0" scale="2.60 2.60 2.60"/>
+    <static-object model="pinetree.b3d" xyz="10.78 1.71 -100.72" hpr="-0.0 -150.1 -0.0" scale="2.38 2.38 2.38"/>
+    <static-object model="pinetree.b3d" xyz="5.67 1.71 -100.72" hpr="-0.0 175.7 -0.0" scale="1.77 1.77 1.77"/>
+    <static-object model="pinetree.b3d" xyz="58.79 1.71 -105.31" hpr="0.0 -32.1 0.0" scale="1.77 1.77 1.77"/>
+    <static-object model="pinetree.b3d" xyz="54.26 1.71 -107.69" hpr="0.0 57.1 0.0" scale="2.60 2.60 2.60"/>
+    <static-object model="pinetree.b3d" xyz="10.78 1.71 -95.09" hpr="-0.0 98.3 -0.0" scale="1.91 1.91 1.91"/>
+    <static-object model="pinetree.b3d" xyz="-45.61 -0.37 -60.79" hpr="0.0 9.4 0.0" scale="2.35 2.35 2.35"/>
+    <static-object model="pinetree.b3d" xyz="-43.48 -0.37 -47.10" hpr="-0.0 106.8 -0.0" scale="1.69 1.69 1.69"/>
+    <static-object model="pinetree.b3d" xyz="29.21 -3.12 187.62" hpr="0.0 -179.5 -0.1" scale="2.35 2.35 2.35"/>
+  </track>
+  <water model="water1.b3d" xyz="85.81 -7.30 35.09" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00" height="0.10"/>
+  <water model="water2.b3d" xyz="-37.46 -4.81 10.93" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00" height="0.05"/>
+  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.1" volume="1.0" xyz="-8.59 1.69 -41.91" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
+  <object type="animation" model="nessy.b3d" xyz="148.61 0.00 -181.44" hpr="0.0 -0.0 0.0" scale="0.13 0.13 0.13"  interaction="none">
+    <curve channel="LocY" interpolation="bezier" extend="const">
+      <p c="-0.014 0.002" h1="-23.979 0.002" h2="23.952 0.002"/>
+      <p c="61.504 4.044" h1="37.491 4.044" h2="114.816 4.044"/>
+      <p c="198.081 0.019" h1="144.783 0.019" h2="251.379 0.019"/>
+    </curve>
+  </object>
+  <sun  xyz="33.45 47.89 -49.45" sun-specular="255 255 255" sun-diffuse="255 255 255" ambient="120 120 120"/>
+  <banana x="-84.262421" y="41.486603" z="47.046745" />
+  <banana x="-7.090578" y="41.486595" z="116.020927" />
+  <banana  x="3.064586" y="21.662115" z="30.374775" />
+  <banana x="4.131854" y="41.486595" z="108.648033" />
+  <banana x="252.74794" y="41.48658" z="-39.5289" />
+  <item x="-31.437157" y="41.486603" z="51.479637" />
+  <item x="86.554924" y="41.486603" z="139.485107" />
+  <item x="-6.969641" y="41.48661" z="-127.9245" />
+  <item x="284.050537" y="41.486599" z="36.513504" />
+  <item x="55.76722" y="41.486603" z="137.44014" />
+  <item x="249.69545" y="41.486588" z="42.811153" />
+  <item x="242.740051" y="41.486599" z="64.465271" />
+  <item x="91.882904" y="41.486603" z="-100.586868" />
+  <item x="-24.164295" y="41.48661" z="-91.935638" />
+  <big-nitro x="149.953888" y="41.486618" z="-33.933029" />
+  <small-nitro x="61.119801" y="41.486546" z="-138.762573" />
+  <small-nitro x="82.149193" y="41.486542" z="-125.850136" />
+  <small-nitro x="37.931923" y="41.486557" z="-144.086304" />
+  <banana x="251.396179" y="41.48658" z="-26.345398" />
+  <item x="205.651443" y="41.486599" z="131.11644" />
+  <big-nitro x="109.750572" y="41.486603" z="158.540848" />
+  <item x="198.146927" y="41.486603" z="98.216888" />
+  <checks>
+    <check-lap kind="lap" same-group="0" other-ids="1" />
+    <check-line kind="activate" other-ids="0" p1="225.981140 -48.748295" p2="225.088272 -14.625541"
+                min-height="1.616020" same-group="1"/>
+  </checks>
+
+  <sky-dome texture="sky2.jpg"
+            horizontal="16" vertical="16" 
+            texture-percent="0.5" sphere-percent="1.1"
+            speed-x="0.005" speed-y="0.0" />
+  <camera far="1000.0"/>
+  <default-start karts-per-row     ="2"
+                 forwards-distance ="1.50"
+                 sidewards-distance="3.00"
+                 upwards-distance  ="0.10"/>
+</scene>

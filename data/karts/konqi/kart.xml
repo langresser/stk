@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev 9075 -->
+<kart name              = "Konqi"
+      version           = "2"
+      model-file        = "konqi.b3dz"
+      icon-file         = "konqi_icon.png"
+      minimap-icon-file = "konqi_icon.png"
+      shadow-file       = "konqi_shadow.png"
+      groups            = "standard"
+      rgb               = "0 150 0" >
+  <sounds engine = "large"/>
+  <animations left = "0"
+              straight = "9"
+              right = "19"
+              start-winning = "20"
+              start-winning-loop = "26"
+              end-winning = "56"
+              start-losing = "57"
+              start-losing-loop = "119"
+              end-losing = "169"/>
+  <wheels>
+    <front-left position = "-0.278353 0.118801 0.623354"
+                 model    = "wheel-front-left.b3d"       />
+    <front-right position = "0.290114 0.118801 0.623354"
+                 model    = "wheel-front-right.b3d"       />
+    <rear-left position = "-0.309717 0.141217 -0.321478"
+                 model    = "wheel-rear-left.b3d"       />
+    <rear-right position = "0.309717 0.141217 -0.309717"
+                 model    = "wheel-rear-right.b3d"       />
+  </wheels>
+</kart>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev Unknown -->
+<scene>
+  <track model="FortMagma_track.b3d" x="0" y="0" z="0">
+    <static-object model="Plane.011.b3d" xyz="-118.01 3.00 109.97" hpr="-0.0 -90.0 0.0" scale="1.00 1.00 1.00">
+    <animated-texture name="zipper.png" dy="1.500" />
+    </static-object>
+    <static-object model="Plane.012.b3d" xyz="-118.01 3.00 110.20" hpr="-0.0 -90.0 0.0" scale="1.00 1.00 1.00">
+    <animated-texture name="zipper_effect.png" dy="-0.100" />
+    </static-object>
+    <static-object model="Plane.034.b3d" xyz="-150.95 16.47 -29.25" hpr="-0.0 -180.0 -0.0" scale="1.00 1.00 1.00"/>
+    <static-object model="Plane.035.b3d" xyz="-115.85 25.22 -68.42" hpr="-0.0 -180.0 -0.0" scale="1.00 1.00 1.00"/>
+    <static-object model="Plane.036.b3d" xyz="-60.53 41.23 -105.14" hpr="-0.0 90.0 0.0" scale="1.00 1.00 1.00"/>
+    <static-object model="Plane.037.b3d" xyz="-92.12 33.44 -125.21" hpr="-0.0 90.0 0.0" scale="1.00 1.00 1.00"/>
+    <static-object model="Plane.038.b3d" xyz="-152.08 6.00 19.05" hpr="-0.0 -180.0 -0.0" scale="1.00 1.00 1.00"/>
+    <static-object model="Plane.039.b3d" xyz="-75.78 -21.83 226.36" hpr="-0.0 -101.7 -0.0" scale="1.00 1.00 1.00"/>
+    <static-object model="Plane.047.b3d" xyz="85.14 45.00 -72.95" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+    <animated-texture name="zipper_effect.png" dy="-0.100" />
+    </static-object>
+    <static-object model="Plane.048.b3d" xyz="84.91 45.00 -72.95" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+    <animated-texture name="zipper.png" dy="1.500" />
+    </static-object>
+    <static-object model="Plane.062.b3d" xyz="-115.85 37.53 -82.95" hpr="-0.0 -180.0 -0.0" scale="1.00 1.00 1.00"/>
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="0.100" />
+    <animated-texture name="lava_1.jpg" dy="-0.100" />
+  </track>
+  <particle-emitter kind="fire.xml" x="-90.92" y="36.77" z="-42.91" h="179.999991"/>
+  <particle-emitter kind="fire.xml" x="-73.59" y="39.80" z="-42.90" h="179.999991"/>
+  <particle-emitter kind="fire.xml" x="-84.03" y="36.77" z="-33.00" h="359.999983"/>
+  <particle-emitter kind="fire.xml" x="-104.02" y="34.68" z="-20.35" h="89.999996"/>
+  <particle-emitter kind="fire.xml" x="-104.02" y="31.01" z="-3.19" h="89.999996"/>
+  <particle-emitter kind="fire.xml" x="-95.18" y="33.37" z="-13.43" h="270.012568"/>
+  <particle-emitter kind="fire.xml" x="-38.04" y="14.06" z="2.24" h="89.999996"/>
+  <particle-emitter kind="fire.xml" x="-28.17" y="13.79" z="-6.07" h="269.999973"/>
+  <particle-emitter kind="fire.xml" x="-38.04" y="10.63" z="-17.54" h="89.999996"/>
+  <small-nitro x="-148.238953" y="1.299999" z="27.879166" h="179.999994" />
+  <small-nitro x="-156.238953" y="1.299999" z="11.879166" h="179.999994" />
+  <small-nitro x="-157.238953" y="3.076542" z="-34.120834" h="179.999994" />
+  <small-nitro x="-168.238953" y="3.076542" z="-34.120834" h="179.999994" />
+  <small-nitro x="-135.583527" y="25.868666" z="-116.042816" h="179.999994" />
+  <small-nitro x="-127.583527" y="26.868666" z="-112.042816" h="179.999994" />
+  <item x="-35.581841" y="42.246803" z="-36.145393" h="89.999997" />
+  <item x="-35.581841" y="42.246803" z="-41.145393" h="89.999997" />
+  <item x="14.418152" y="42.246803" z="-41.145401" h="89.999997" />
+  <item x="14.418152" y="42.246803" z="-36.145401" h="89.999997" />
+  <item x="14.418152" y="42.246803" z="-116.145386" h="89.999997" />
+  <item x="14.418152" y="42.246803" z="-121.145386" h="89.999997" />
+  <item x="67.846237" y="42.246803" z="-78.912544" />
+  <item x="74.862991" y="42.246803" z="-78.912544" />
+  <item x="70.844986" y="42.246803" z="-78.912544" />
+  <small-nitro x="-135.583527" y="25.868666" z="-107.042816" h="179.999994" />
+  <item x="-132.358063" y="1.299999" z="91.66243" h="179.999994" />
+  <big-nitro x="-185.589493" y="14.793189" z="-96.632828" h="179.999994" />
+  <small-nitro x="-188.122894" y="13.737944" z="-91.574036" h="179.999994" />
+  <item x="-100.252861" y="1.299999" z="96.482597" h="179.999994" />
+  <small-nitro x="-69.487511" y="33.560059" z="-112.042816" h="179.999994" />
+  <big-nitro x="-53.44479" y="1.299999" z="-8.863762" h="179.999994" />
+  <small-nitro x="-69.487511" y="33.560059" z="-118.329651" h="179.999994" />
+  <small-nitro x="-78.34288" y="1.299999" z="81.498901" h="179.999994" />
+  <small-nitro x="-62.964733" y="34.553207" z="-114.64817" h="179.999994" />
+  <checks>
+    <check-lap kind="lap" same-group="0" other-ids="1" />
+    <check-line kind="activate" other-ids="0" p1="60.909477 -78.948517" p2="85.857330 -79.090004"
+                min-height="42.121422" same-group="1"/>
+  </checks>
+
+  <sky-dome texture="lava_sky.png"
+            horizontal="16" vertical="16" 
+            texture-percent="1.0" sphere-percent="1.3"
+            speed-x="0.0" speed-y="0.0" />
+  <camera far="2000"/>
+  <default-start karts-per-row     ="3"
+                 forwards-distance ="1.10"
+                 sidewards-distance="2.00"
+                 upwards-distance  ="1.10"/>
+</scene>

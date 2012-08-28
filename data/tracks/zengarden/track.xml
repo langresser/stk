@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev Unknown -->
+<track  name        = "Zen Garden"
+        version     = "5"
+        groups      = "standard"
+        designer    = "jean-Manuel Clamencon"
+        music       = "garden.music"
+        screenshot  = "screenshot.jpg"
+>
+</track>

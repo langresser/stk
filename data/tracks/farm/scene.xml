@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev Unknown -->
+<scene>
+  <track model="farm_track.b3d" x="0" y="0" z="0">
+    <static-object lod_instance="true" lod_group="skull" xyz="0.86 9.55 -2.36" hpr="-52.6 -0.0 -0.0" scale="0.49 0.49 0.49"/>
+    <static-object lod_distance="120.0" lod_group="skull" model="skull.b3d" xyz="-109.41 9.55 -2.36" hpr="-52.6 -0.0 -0.0" scale="0.49 0.49 0.49"/>
+    <static-object lod_instance="true" lod_group="horse" xyz="68.93 4.59 85.82" hpr="0.1 -19.4 -0.6" scale="0.75 0.75 0.75"/>
+    <static-object lod_instance="true" lod_group="horse" xyz="73.80 4.43 85.90" hpr="0.1 5.8 -0.6" scale="0.75 0.75 0.75"/>
+    <static-object lod_instance="true" lod_group="horse" xyz="78.26 3.96 85.97" hpr="0.1 11.1 -0.6" scale="0.55 0.55 0.55"/>
+    <static-object lod_instance="true" lod_group="horse" xyz="83.34 4.29 84.75" hpr="0.1 30.9 -0.5" scale="0.75 0.75 0.75"/>
+    <static-object lod_distance="100.0" lod_group="horse" model="horse.b3d" xyz="72.30 6.51 155.27" hpr="0.1 -19.4 -0.6" scale="0.75 0.75 0.75"/>
+    <static-object lod_instance="true" lod_group="cow" xyz="-59.26 8.47 -125.68" hpr="-0.0 -90.0 0.0" scale="0.52 0.36 0.52"/>
+    <static-object lod_distance="130.0" lod_group="cow" model="cow.b3d" xyz="-145.89 13.10 -125.68" hpr="-0.0 -90.0 0.0" scale="0.52 0.36 0.52"/>
+    <static-object lod_instance="true" lod_group="well" xyz="-50.31 6.00 -89.63" hpr="0.0 64.7 0.0" scale="1.91 1.91 1.91"/>
+    <static-object lod_distance="60.0" lod_group="well" model="well60.b3d" xyz="-143.85 6.00 -89.63" hpr="0.0 64.7 0.0" scale="1.91 1.91 1.91"/>
+  </track>
+  <object type="sfx-emitter" sound="cow.ogg" rolloff="0.1" volume="1.0" xyz="-54.27 9.67 -126.15" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
+  <object type="animation" model="mill.001.b3d" xyz="-82.57 39.38 -132.05" hpr="-0.0 -113.9 -0.0" scale="1.00 1.00 1.00"  interaction="none">
+    <curve channel="RotZ" interpolation="linear" extend="cyclic">
+      <p c="1.000 -0.000"/>
+      <p c="100.000 -360.000"/>
+    </curve>
+  </object>
+  <banana x="55.80994" y="10.198599" z="-53.407703" />
+  <banana x="-60.65596" y="10.198599" z="-80.50531" />
+  <banana x="-55.320572" y="10.198599" z="-84.301643" />
+  <banana x="-1.20969" y="10.1986" z="-45.362804" />
+  <banana x="2.474755" y="10.1986" z="-45.362804" />
+  <banana x="40.138775" y="10.1986" z="54.013351" />
+  <banana x="139.864212" y="10.1986" z="80.944107" />
+  <banana x="138.790741" y="10.1986" z="75.92939" />
+  <banana x="100.36203" y="10.1986" z="-21.734674" />
+  <banana x="100.72094" y="10.1986" z="-26.221035" />
+  <big-nitro x="56.822254" y="10.198599" z="-51.144882" />
+  <big-nitro x="-1.361784" y="10.198599" z="-42.192459" />
+  <big-nitro x="2.418322" y="10.198599" z="-42.192459" />
+  <item x="70.348564" y="10.198595" z="-123.05497" />
+  <item x="73.610748" y="10.198595" z="-123.572777" />
+  <item x="76.562248" y="10.198595" z="-123.83168" />
+  <item x="-7.864044" y="10.198595" z="-118.802223" />
+  <item x="-7.274373" y="10.198595" z="-124.220772" />
+  <item x="-21.411123" y="10.198596" z="-69.156532" />
+  <item x="-2.5001" y="10.198598" z="30.095116" />
+  <item x="3.177184" y="10.198598" z="30.095116" />
+  <item x="149.465836" y="10.198598" z="32.849411" />
+  <item x="154.464539" y="10.198598" z="28.844704" />
+  <small-nitro x="53.308926" y="10.198599" z="-51.025787" />
+  <small-nitro x="59.085072" y="10.198599" z="-53.705441" />
+  <small-nitro x="-7.859505" y="10.198599" z="-121.896835" />
+  <small-nitro x="-59.755657" y="10.198599" z="-107.64962" />
+  <small-nitro x="-56.857582" y="10.198599" z="-106.381714" />
+  <small-nitro x="-54.412331" y="10.198599" z="-105.113808" />
+  <small-nitro x="-22.070684" y="10.198598" z="-66.40596" />
+  <small-nitro x="-21.123299" y="10.198598" z="-72.652786" />
+  <small-nitro x="0.208377" y="10.198598" z="29.587049" />
+  <small-nitro x="73.96431" y="10.198597" z="75.459076" />
+  <small-nitro x="74.922249" y="10.198597" z="73.248039" />
+  <small-nitro x="76.364342" y="10.198597" z="70.933441" />
+  <small-nitro x="153.650787" y="10.198598" z="32.202042" />
+  <small-nitro x="149.030655" y="10.198598" z="28.482445" />
+  <checks>
+    <check-lap kind="lap" same-group="0" other-ids="1" />
+    <check-line kind="activate" other-ids="2" p1="123.170860 48.423237" p2="167.902145 93.771233"
+                min-height="1.519206" same-group="1"/>
+    <check-line kind="activate" other-ids="0" p1="65.868614 -162.537109" p2="49.311569 -122.742737"
+                min-height="6.842358" same-group="2"/>
+  </checks>
+  <sky-box texture="farm_cube5.png farm_cube5.png farm_cube3.png farm_cube1.png farm_cube2.png farm_cube4.png"/>
+  <camera far="1000.0"/>
+  <default-start karts-per-row     ="2"
+                 forwards-distance ="1.50"
+                 sidewards-distance="3.00"
+                 upwards-distance  ="0.10"/>
+</scene>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev Unknown -->
+<materials>
+  <material name="blackrock_lava.jpg" light="N"/>
+  <material name="castelwall.jpg" backface-culling="N"/>
+  <material name="chain.png" compositing="test" backface-culling="N"/>
+  <material name="dynamiclight.png" compositing="blend" light="N" ignore="Y" backface-culling="N" disable-z-write="Y"/>
+  <material name="lava_1.jpg" light="N"/>
+  <material name="lightHaloY.png" compositing="blend" light="N" ignore="Y" disable-z-write="Y"/>
+  <material name="pix.png" compositing="test" reset="Y"/>
+  <material name="torch.png" compositing="test" disable-z-write="Y"/>
+  <material name="track_01.jpg" backface-culling="N"/>
+  <material name="zipper.png" compositing="blend" light="N"/>
+  <material name="zipper_effect.png" compositing="blend" light="N"/>
+</materials>

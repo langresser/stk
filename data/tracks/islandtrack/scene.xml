@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev 11144 -->
+<scene>
+  <track model="islandtrack_track.b3d" x="0" y="0" z="0"/>
+  <water model="Water.b3d" xyz="10.00 0.00 0.00" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00" height="0.60" speed="300.00" length="10.00"/>
+  <banana x="-69.491959" y="25" z="-87.157188" />
+  <item x="-17.470287" y="25" z="-54.1586" />
+  <item x="-44.838158" y="25" z="26.494734" />
+  <item x="-46.42366" y="25" z="24.561684" />
+  <item x="-127.673401" y="25" z="-26.828316" />
+  <item x="-126.088364" y="25" z="-24.896618" />
+  <item x="-158.671204" y="25" z="70.083199" />
+  <item x="-160.255661" y="25" z="68.151512" />
+  <item x="-207.746155" y="25" z="31.735432" />
+  <item x="-206.161179" y="25" z="33.667156" />
+  <item x="-10.867316" y="25" z="59.180183" />
+  <item x="-12.452286" y="25" z="57.248482" />
+  <item x="-89.965866" y="25" z="-25.542019" />
+  <item x="-69.451797" y="25" z="-83.501801" />
+  <small-nitro x="-34.968124" y="25" z="38.67844" />
+  <small-nitro x="40.720764" y="25" z="-60.822945" />
+  <small-nitro x="43.081902" y="25" z="-60.720284" />
+  <small-nitro x="-86.697647" y="25" z="-77.670815" />
+  <small-nitro x="-33.726303" y="25" z="40.984432" />
+  <small-nitro x="-53.855408" y="25" z="-40.061317" />
+  <small-nitro x="-157.149399" y="25" z="-5.630189" />
+  <small-nitro x="-218.136276" y="25" z="84.933975" />
+  <small-nitro x="-51.205658" y="25" z="65.351189" />
+  <small-nitro x="8.650642" y="25" z="35.687183" />
+  <small-nitro x="-92.881653" y="25" z="-24.684984" />
+  <small-nitro x="-87.138245" y="25" z="-26.173218" />
+  <checks>
+    <check-lap kind="lap" same-group="0" other-ids="1" />
+    <check-line kind="activate" other-ids="2" p1="-172.283371 81.223946" p2="-173.595901 68.843826"
+                min-height="3.668817" same-group="1"/>
+    <check-line kind="activate" other-ids="3" p1="-83.115562 -42.986687" p2="-80.033173 -31.790466"
+                min-height="-1.345938" same-group="2"/>
+    <check-line kind="activate" other-ids="0" p1="-98.938194 -38.126976" p2="-89.462860 -41.281956"
+                min-height="7.531566" same-group="3"/>
+  </checks>
+
+  <sky-dome texture="sky2.jpg"
+            horizontal="16" vertical="16" 
+            texture-percent="1.0" sphere-percent="2.0"
+            speed-x="0.0" speed-y="0.0" />
+  <camera far="1000.0"/>
+  <default-start karts-per-row     ="2"
+                 forwards-distance ="1.50"
+                 sidewards-distance="3.00"
+                 upwards-distance  ="0.10"/>
+</scene>

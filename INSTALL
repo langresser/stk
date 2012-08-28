@@ -1,0 +1,50 @@
+SUPERTUXKART INSTALLATION INSTRUCTIONS
+======================================
+
+General
+-------
+
+First, make sure that you have the following packages installed:
+
+  * OpenGL (or Mesa 3.0 or later)
+  * Irrlicht 1.8 or later
+  * OpenAL
+
+Unpack the files from the tarball like this:
+
+  tar xzf supertuxkart-*.tar.gz
+  cd supertuxkart-*
+
+
+where '*' is the version of SuperTuxkart you downloaded - eg 0.2.0. Then:
+
+  ./configure
+  make
+
+To test the compilation, supertuxkart can be run from the build
+directory by ./src/supertuxkart  (./src/supertuxkart.exe on windows).
+
+To install the file, as root execute:
+
+  make install
+
+The default install location is /usr/local, i.e. the data files will
+be written to /usr/local/share/games/supertuxkart, the executable
+will be copied to /usr/local/bin. To change the default installation
+location, use the "--prefix" option of configure, e.g. --prefix=/usr
+See the --help output of configure for further options.
+
+
+Building STK on Linux
+---------------------
+See http://supertuxkart.sourceforge.net/Build_STK_on_Linux
+
+
+Building STK on OS X
+--------------------
+See http://supertuxkart.sourceforge.net/Building_and_packaging_on_OSX
+
+
+Building STK on Windows
+-----------------------
+See http://supertuxkart.sourceforge.net/How_to_build_the_Windows_version

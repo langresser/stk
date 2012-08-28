@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev 6563 -->
+<graph>
+  <!-- First define all nodes of the graph, and what quads they represent -->
+  <node-list from-quad="0" to-quad="232"/>  <!-- map each quad to a node  -->
+  <!-- Define the main loop -->
+  <edge-loop from="0" to="201"/>
+  <!-- Shortcut DRV_LEFT.002 -->
+  <edge from="89" to="202"/>
+  <edge-line from="202" to="219"/>
+  <edge from="219" to="98"/>
+  <!-- Shortcut DRV_LEFT.001 -->
+  <edge from="203" to="220"/>
+  <edge-line from="220" to="232"/>
+  <edge from="232" to="216"/>
+</graph>
