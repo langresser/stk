@@ -42,6 +42,7 @@
 #include "utils/string_utils.hpp"
 #include "utils/time.hpp"
 #include "utils/translation.hpp"
+#include "platform_util.h"
 
 #if defined(WIN32) && !defined(__CYGWIN__)
 // Use Sleep, which takes time in msecs. It must be defined after the
@@ -517,7 +518,7 @@ CURLcode NetworkHttp::downloadFileInternal(Request *request)
     curl_easy_setopt(m_curl_session, CURLOPT_USERAGENT, uagent.c_str());
     curl_easy_setopt(m_curl_session, CURLOPT_FOLLOWLOCATION, 1);
     curl_easy_setopt(m_curl_session, CURLOPT_PROGRESSDATA, request);
-    FILE * fout = fopen((full_save+".part").c_str(), "wb");
+    FILE * fout = open_file((full_save+".part").c_str(), "wb");
         
     if(!fout)
     {

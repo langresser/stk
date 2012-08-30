@@ -222,7 +222,7 @@ void IrrDriver::createListOfVideoModes()
 // ----------------------------------------------------------------------------
 /** This creates the actualy OpenGL device. This is called 
  */
-void IrrDriver::initDevice()
+void IrrDriver::initDevice(int w, int h, void* winId)
 {
     // If --no-graphics option was used, the null device can still be used.
     if (!ProfileWorld::isNoGraphics())
@@ -242,6 +242,7 @@ void IrrDriver::initDevice()
 
         } // end if firstTime
         
+#ifndef TARGET_OS_IPHONE
         const core::dimension2d<u32> ssize = m_device->getVideoModeList()->getDesktopResolution();
         if (UserConfigParams::m_width > (int)ssize.Width ||
             UserConfigParams::m_height > (int)ssize.Height)
@@ -251,7 +252,7 @@ void IrrDriver::initDevice()
             UserConfigParams::m_width = 800;
             UserConfigParams::m_height = 600;
         }
-
+#endif
         m_device->closeDevice();
         m_video_driver  = NULL;
         m_gui_env       = NULL;
@@ -301,9 +302,14 @@ void IrrDriver::initDevice()
                 params.EventReceiver = this;
                 params.Fullscreen    = UserConfigParams::m_fullscreen;
                 params.Vsync         = UserConfigParams::m_vsync;
+#ifdef TARGET_OS_IPHONE
+                params.WindowSize = core::dimension2du(w, h);
+                params.WindowId = winId;
+#else
                 params.WindowSize    = 
                     core::dimension2du(UserConfigParams::m_width,
                                        UserConfigParams::m_height);
+#endif
                 switch ((int)UserConfigParams::m_antialiasing)
                 {
                 case 0:
@@ -428,10 +434,12 @@ void IrrDriver::initDevice()
     // Initialize post-processing if supported
     m_post_processing.init(m_video_driver);
     
+#ifndef TARGET_OS_IPHONE
     // set cursor visible by default (what's the default is not too clearly documented,
     // so let's decide ourselves...)
     m_device->getCursorControl()->setVisible(true);
     m_pointer_shown = true;
+#endif
     
 }   // initDevice
 
@@ -447,8 +455,8 @@ video::E_DRIVER_TYPE IrrDriver::getEngineDriverType( int index )
         // TODO Change default renderer dependen on operating system?
         // Direct3D9 for Windows and OpenGL for Unix like systems?
         case 0:
-            type = video::EDT_OPENGL;
-            rendererName = "OpenGL";
+            type = video::EDT_OGLES1;
+            rendererName = "OpenGLES";
             break;
         case 1:
             type = video::EDT_OPENGL;
@@ -485,28 +493,36 @@ video::E_DRIVER_TYPE IrrDriver::getEngineDriverType( int index )
 //-----------------------------------------------------------------------------
 void IrrDriver::showPointer()
 {
+#ifndef TARGET_OS_IPHONE
     if (!m_pointer_shown)
     {
         m_pointer_shown = true;
         this->getDevice()->getCursorControl()->setVisible(true);
     }
+#endif
 }   // showPointer
 
 //-----------------------------------------------------------------------------
 void IrrDriver::hidePointer()
 {
+#ifndef TARGET_OS_IPHONE
     if (m_pointer_shown)
     {
         m_pointer_shown = false;
         this->getDevice()->getCursorControl()->setVisible(false);
     }
+#endif
 }   // hidePointer
 
 //-----------------------------------------------------------------------------
 
 core::position2di IrrDriver::getMouseLocation()
 {
+#ifndef TARGET_OS_IPHONE
     return this->getDevice()->getCursorControl()->getPosition();
+#else
+    return core::position2di(0, 0);
+#endif
 }
 
 //-----------------------------------------------------------------------------
@@ -602,7 +618,7 @@ void IrrDriver::applyResolutionSettings()
     // (we're sure to update main.cpp at some point and forget this one...)
     
     // initDevice will drop the current device.
-    initDevice();
+    initDevice(0, 0, NULL);
     
     // Re-init GUI engine
     GUIEngine::init(m_device, m_video_driver, StateManager::get());

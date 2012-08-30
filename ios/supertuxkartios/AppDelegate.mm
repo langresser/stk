@@ -28,16 +28,18 @@ video::ITexture* images;
 gui::IGUIFont* font;
 gui::IGUIFont* font2;
 
+void onGameLoop();
 void irrGameLoop()
 {
-    if (!device->isWindowActive()) {
-        return;
-    }
-    driver->beginScene(true, true, SColor(255,100,101,140));
-    
-    smgr->drawAll();
-    guienv->drawAll();
-    driver->endScene();
+    onGameLoop();
+//    if (!device->isWindowActive()) {
+//        return;
+//    }
+//    driver->beginScene(true, true, SColor(255,100,101,140));
+//    
+//    smgr->drawAll();
+//    guienv->drawAll();
+//    driver->endScene();
     
 //    if (device->isWindowActive())
 //    {
@@ -119,80 +121,90 @@ void irrGameLoop()
 
 - (void)dealloc
 {
-    if (device) {
-        device->drop();
-        device = NULL;
-    }
+//    if (device) {
+//        device->drop();
+//        device = NULL;
+//    }
+    extern void onGameExit();
+    onGameExit();
 
     [_window release];
     [_viewController release];
     [super dealloc];
 }
 
+-(void)initGame
+{
+    extern void initGame(int w, int h, void* winid);
+    initGame(1024, 768, _window);
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     CGRect rect = [[UIScreen mainScreen] bounds];
     _window = [[UIWindow alloc] initWithFrame:rect];
+    
+    [self performSelector:@selector(initGame)];
 
-    SIrrlichtCreationParameters p;
-    p.DriverType = video::EDT_OGLES1;
-    p.WindowSize = dimension2d<u32>(rect.size.width, rect.size.height);
-    p.Bits = 16;
-    p.Fullscreen = true;
-    p.Stencilbuffer = true;
-    p.Vsync = true;
-    p.EventReceiver = 0;
-    p.WindowId = _window;
-
-    device = createDeviceEx(p);
-    
-	if (!device)
-		return 1;
-    
-	device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
-    driver = device->getVideoDriver();
-    smgr = device->getSceneManager();
-    guienv = device->getGUIEnvironment();
-    
-	guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
-                            core::rect<s32>(10,10,260,22), true);
-	IAnimatedMesh* mesh = smgr->getMesh("media/sydney.md2");
-	if (!mesh)
-	{
-		device->drop();
-		return 1;
-	}
-	IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode( mesh );
-	if (node)
-	{
-		node->setMaterialFlag(EMF_LIGHTING, false);
-		node->setMD2Animation(scene::EMAT_STAND);
-		node->setMaterialTexture( 0, driver->getTexture("media/sydney.bmp") );
-	}
-	smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
-
-    
-    
-    
-//    images = driver->getTexture("media/2ddemo.png");
-//	driver->makeColorKeyTexture(images, core::position2d<s32>(0,0));
+//    SIrrlichtCreationParameters p;
+//    p.DriverType = video::EDT_OGLES1;
+//    p.WindowSize = dimension2d<u32>(rect.size.width, rect.size.height);
+//    p.Bits = 16;
+//    p.Fullscreen = true;
+//    p.Stencilbuffer = true;
+//    p.Vsync = true;
+//    p.EventReceiver = 0;
+//    p.WindowId = _window;
+//
+//    device = createDeviceEx(p);
 //    
-//	/*
-//     To be able to draw some text with two different fonts, we first load
-//     them. Ok, we load just one. As the first font we just use the default
-//     font which is built into the engine. Also, we define two rectangles
-//     which specify the position of the images of the red imps (little flying
-//     creatures) in the texture.
-//     */
-//	font = device->getGUIEnvironment()->getBuiltInFont();
-//	font2 =
-//    device->getGUIEnvironment()->getFont("media/fonthaettenschweiler.bmp");
+//	if (!device)
+//		return 1;
 //    
-//	/*
-//     Prepare a nicely filtering 2d render mode for special cases.
-//     */
-//	driver->getMaterial2D().TextureLayer[0].BilinearFilter=true;
-//	driver->getMaterial2D().AntiAliasing=video::EAAM_FULL_BASIC;
+//	device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
+//    driver = device->getVideoDriver();
+//    smgr = device->getSceneManager();
+//    guienv = device->getGUIEnvironment();
+//    
+//	guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
+//                            core::rect<s32>(10,10,260,22), true);
+//	IAnimatedMesh* mesh = smgr->getMesh("media/sydney.md2");
+//	if (!mesh)
+//	{
+//		device->drop();
+//		return 1;
+//	}
+//	IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode( mesh );
+//	if (node)
+//	{
+//		node->setMaterialFlag(EMF_LIGHTING, false);
+//		node->setMD2Animation(scene::EMAT_STAND);
+//		node->setMaterialTexture( 0, driver->getTexture("media/sydney.bmp") );
+//	}
+//	smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
+//
+//    
+//    
+//    
+////    images = driver->getTexture("media/2ddemo.png");
+////	driver->makeColorKeyTexture(images, core::position2d<s32>(0,0));
+////    
+////	/*
+////     To be able to draw some text with two different fonts, we first load
+////     them. Ok, we load just one. As the first font we just use the default
+////     font which is built into the engine. Also, we define two rectangles
+////     which specify the position of the images of the red imps (little flying
+////     creatures) in the texture.
+////     */
+////	font = device->getGUIEnvironment()->getBuiltInFont();
+////	font2 =
+////    device->getGUIEnvironment()->getFont("media/fonthaettenschweiler.bmp");
+////    
+////	/*
+////     Prepare a nicely filtering 2d render mode for special cases.
+////     */
+////	driver->getMaterial2D().TextureLayer[0].BilinearFilter=true;
+////	driver->getMaterial2D().AntiAliasing=video::EAAM_FULL_BASIC;
 
     [_window makeKeyAndVisible];
     return YES;

@@ -23,6 +23,7 @@
 
 #include <vorbis/codec.h>
 #include <vorbis/vorbisfile.h>
+#include "platform_util.h"
 
 #if HAVE_OGGVORBIS
 #  ifdef __APPLE__
@@ -138,7 +139,7 @@ bool SFXBuffer::loadVorbisBuffer(const std::string &name, ALuint buffer)
         return false;
     }
     
-    file = fopen(name.c_str(), "rb");
+    file = open_file(name.c_str(), "rb");
     
     if(!file)
     {

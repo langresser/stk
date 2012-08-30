@@ -28,6 +28,7 @@
 #include "config/stk_config.hpp"
 #include "io/file_manager.hpp"
 #include "tracks/track.hpp"
+#include "platform_util.h"
 
 TrackManager* track_manager = 0;
 std::vector<std::string>  TrackManager::m_track_search_path;
@@ -152,7 +153,7 @@ void TrackManager::loadTrackList()
 bool TrackManager::loadTrack(const std::string& dirname)
 {
     std::string config_file = dirname+"/track.xml";
-    FILE *f=fopen(config_file.c_str(),"r");
+    FILE *f=open_file(config_file.c_str(),"r");
     if(!f) return false;
     fclose(f);
 

@@ -382,6 +382,7 @@
 		3B41046A15EA0CD200EA98FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B41046915EA0CD200EA98FA /* ViewController.m */; };
 		3B44F8E515ED339F003E18FA /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B44F8E215ED3350003E18FA /* libcurl.a */; };
 		3B44F9B915ED38C3003E18FA /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B44F9B615ED3890003E18FA /* libvorbis.a */; };
+		3BCD9EDF15EFD5C4004CE377 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD9EDE15EFD5C4004CE377 /* data */; };
 		3BEAD51515EA975D009A6B0C /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEAD51215EA974A009A6B0C /* libIrrlicht.a */; };
 		3BEAD51715EA9764009A6B0C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEAD51615EA9764009A6B0C /* OpenGLES.framework */; };
 		3BEAD51915EA9769009A6B0C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEAD51815EA9769009A6B0C /* QuartzCore.framework */; };
@@ -767,7 +768,6 @@
 		3B2A6EC015EC00C900E5698C /* btTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btTransform.h; sourceTree = "<group>"; };
 		3B2A6EC115EC00C900E5698C /* btTransformUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btTransformUtil.h; sourceTree = "<group>"; };
 		3B2A6EC215EC00C900E5698C /* btVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btVector3.h; sourceTree = "<group>"; };
-		3B2A6EC315EC00C900E5698C /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
 		3B2A704615EC00CC00E5698C /* challenge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = challenge.cpp; sourceTree = "<group>"; };
 		3B2A704715EC00CC00E5698C /* challenge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = challenge.hpp; sourceTree = "<group>"; };
 		3B2A704815EC00CC00E5698C /* challenge_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = challenge_data.cpp; sourceTree = "<group>"; };
@@ -1274,6 +1274,7 @@
 		3B41046915EA0CD200EA98FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3B44F8DA15ED3350003E18FA /* curl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = curl.xcodeproj; path = "../../3rdframework/curl-7.26.0/curl/curl.xcodeproj"; sourceTree = "<group>"; };
 		3B44F9AE15ED3890003E18FA /* vorbis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vorbis.xcodeproj; path = ../../3rdframework/libvorbis/vorbis/vorbis.xcodeproj; sourceTree = "<group>"; };
+		3BCD9EDE15EFD5C4004CE377 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../data; sourceTree = "<group>"; };
 		3BEAD50A15EA974A009A6B0C /* iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOS.xcodeproj; path = "../../irrlicht-gles/source/Irrlicht/iOS/iOS.xcodeproj"; sourceTree = "<group>"; };
 		3BEAD51615EA9764009A6B0C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		3BEAD51815EA9769009A6B0C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -1409,7 +1410,6 @@
 				3B2A6D9315EC00C900E5698C /* BulletCollision */,
 				3B2A6E6E15EC00C900E5698C /* BulletDynamics */,
 				3B2A6EA315EC00C900E5698C /* LinearMath */,
-				3B2A6EC315EC00C900E5698C /* Makefile.am */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -2553,6 +2553,7 @@
 		3BEAD51A15EA9775009A6B0C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3BCD9EDE15EFD5C4004CE377 /* data */,
 				3BEAD51B15EA9795009A6B0C /* media */,
 			);
 			name = Resources;
@@ -2651,6 +2652,7 @@
 			files = (
 				3B41046115EA0CD200EA98FA /* InfoPlist.strings in Resources */,
 				3BEAD51C15EA9795009A6B0C /* media in Resources */,
+				3BCD9EDF15EFD5C4004CE377 /* data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,6 +29,7 @@
 #include "states_screens/state_manager.hpp"
 #include "utils/translation.hpp"
 #include "input/wiimote_manager.hpp"
+#include "platform_util.h"
 
 #define INPUT_MODE_DEBUG 0
 
@@ -414,7 +415,7 @@ void DeviceManager::clearLatestUsedDevice()
 // -----------------------------------------------------------------------------
 bool DeviceManager::deserialize()
 {
-    static std::string filepath = file_manager->getConfigDir() + "/" + INPUT_FILE_NAME;
+    static std::string filepath = INPUT_FILE_NAME;
     
     if(UserConfigParams::logMisc())
         printf("Deserializing input.xml...\n");
@@ -533,8 +534,8 @@ bool DeviceManager::deserialize()
 // -----------------------------------------------------------------------------
 void DeviceManager::serialize()
 {
-    static std::string filepath = file_manager->getConfigDir() + "/" 
-                                + INPUT_FILE_NAME;
+    static std::string filepath = g_resource_dir;
+    filepath += INPUT_FILE_NAME;
     if(UserConfigParams::logMisc()) printf("Serializing input.xml...\n");
 
     

@@ -24,6 +24,7 @@
 #include "physics/physics.hpp"
 #include "utils/constants.hpp"
 #include "utils/time.hpp"
+#include "platform_util.h"
 
 #include <fstream>
 
@@ -93,7 +94,7 @@ void TriangleMesh::createCollisionShape(bool create_collision_object, const char
 
     if (serialized_bhv != NULL)
     {
-        FILE *f = fopen(serialized_bhv, "rb");
+        FILE *f = open_file(serialized_bhv, "rb");
         fseek(f, 0, SEEK_END);
         long pos = ftell(f);
         fseek(f, 0, SEEK_SET);

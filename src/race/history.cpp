@@ -27,6 +27,7 @@
 #include "race/race_manager.hpp"
 #include "tracks/track.hpp"
 #include "utils/constants.hpp"
+#include "platform_util.h"
 
 History* history = 0;
 
@@ -156,7 +157,7 @@ void History::updateReplay(float dt)
  */
 void History::Save()
 {
-    FILE *fd = fopen("history.dat","w");
+    FILE *fd = open_file("history.dat","w");
     if(fd)
         printf("History saved in ./history.dat.\n");
     else
@@ -227,7 +228,7 @@ void History::Load()
     char s[1024], s1[1024];
     int  n;
 
-    FILE *fd = fopen("history.dat","r");
+    FILE *fd = open_file("history.dat","r");
     if(fd)
         printf("Reading ./history.dat\n");
     else
