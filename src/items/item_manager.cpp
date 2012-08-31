@@ -89,7 +89,7 @@ void ItemManager::loadDefaultItemMeshes()
         std::string model_filename;
         node->get("model", &model_filename);
     
-        scene::IMesh *mesh = irr_driver->getAnimatedMesh(model_filename);        
+        scene::IMesh *mesh = irr_driver->getAnimatedMesh("data/models/" + model_filename);        
         if(!node || model_filename.size()==0 || !mesh)
         {
             fprintf(stderr, "Item model '%s' in items.xml could not be loaded "
@@ -103,7 +103,7 @@ void ItemManager::loadDefaultItemMeshes()
         node->get("lowmodel", &lowres_model_filename);
         m_item_lowres_mesh[i] = lowres_model_filename.size() == 0
                               ? NULL
-                              : irr_driver->getMesh(lowres_model_filename);
+                              : irr_driver->getMesh("data/models/" + lowres_model_filename);
 
         if (m_item_lowres_mesh[i]) m_item_lowres_mesh[i]->grab();
     }   // for i

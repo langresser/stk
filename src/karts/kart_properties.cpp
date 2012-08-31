@@ -258,7 +258,8 @@ void KartProperties::load(const std::string &filename, const std::string &node)
                 (m_turn_speed[i+1]-m_turn_speed[i]) );
     }
 
-    m_shadow_texture = irr_driver->getTexture(m_shadow_file);
+    
+    m_shadow_texture = irr_driver->getTexture(m_root + "/" + m_shadow_file);
     file_manager->popTextureSearchPath();
     file_manager->popModelSearchPath();
 
