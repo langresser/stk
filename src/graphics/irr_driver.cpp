@@ -434,12 +434,10 @@ void IrrDriver::initDevice(int w, int h, void* winId)
     // Initialize post-processing if supported
     m_post_processing.init(m_video_driver);
     
-#ifndef TARGET_OS_IPHONE
     // set cursor visible by default (what's the default is not too clearly documented,
     // so let's decide ourselves...)
     m_device->getCursorControl()->setVisible(true);
     m_pointer_shown = true;
-#endif
     
 }   // initDevice
 
@@ -493,36 +491,28 @@ video::E_DRIVER_TYPE IrrDriver::getEngineDriverType( int index )
 //-----------------------------------------------------------------------------
 void IrrDriver::showPointer()
 {
-#ifndef TARGET_OS_IPHONE
     if (!m_pointer_shown)
     {
         m_pointer_shown = true;
         this->getDevice()->getCursorControl()->setVisible(true);
     }
-#endif
 }   // showPointer
 
 //-----------------------------------------------------------------------------
 void IrrDriver::hidePointer()
 {
-#ifndef TARGET_OS_IPHONE
     if (m_pointer_shown)
     {
         m_pointer_shown = false;
         this->getDevice()->getCursorControl()->setVisible(false);
     }
-#endif
 }   // hidePointer
 
 //-----------------------------------------------------------------------------
 
 core::position2di IrrDriver::getMouseLocation()
 {
-#ifndef TARGET_OS_IPHONE
     return this->getDevice()->getCursorControl()->getPosition();
-#else
-    return core::position2di(0, 0);
-#endif
 }
 
 //-----------------------------------------------------------------------------

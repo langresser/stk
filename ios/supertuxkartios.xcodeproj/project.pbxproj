@@ -3115,6 +3115,8 @@
 		3B41047415EA0CD200EA98FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Jia (DURHCMMSUL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wang Jia (DURHCMMSUL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "supertuxkartios/supertuxkartios-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3132,6 +3134,8 @@
 					"\"$(SRCROOT)/../src/enet/Debug\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A187660D-3577-4A7C-9151-6BE4F2F0D5E3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A187660D-3577-4A7C-9151-6BE4F2F0D5E3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3139,6 +3143,8 @@
 		3B41047515EA0CD200EA98FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Jia (DURHCMMSUL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wang Jia (DURHCMMSUL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "supertuxkartios/supertuxkartios-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3156,6 +3162,8 @@
 					"\"$(SRCROOT)/../src/enet/Debug\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A187660D-3577-4A7C-9151-6BE4F2F0D5E3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A187660D-3577-4A7C-9151-6BE4F2F0D5E3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

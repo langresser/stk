@@ -391,7 +391,12 @@ bool FileManager::findFile(std::string& full_path,
         i = search_path.rbegin();
         i != search_path.rend(); ++i)
     {
-        full_path = *i + "/" + file_name;
+        if ((*i).at((*i).size() - 1) == '/') {
+            full_path = *i + file_name;
+        } else {
+            full_path = *i + "/" + file_name;
+        }
+        
         if(m_file_system->existFile(full_path.c_str())) return true;
     }
     full_path="";

@@ -28,10 +28,11 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
+    if (interfaceOrientation == UIDeviceOrientationLandscapeRight
+        || interfaceOrientation == UIDeviceOrientationLandscapeLeft) {
         return YES;
+    } else {
+        return NO;
     }
 }
 
