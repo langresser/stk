@@ -1,8 +1,0 @@
-/Users/wangjiatc/Documents/MyProj/supertuxkart/CMakeFiles/ALL_BUILD.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/CMakeFiles/ZERO_CHECK.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/src/bullet/CMakeFiles/bulletcollision.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/src/bullet/CMakeFiles/bulletdynamics.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/src/bullet/CMakeFiles/bulletmath.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/CMakeFiles/dist.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/src/enet/CMakeFiles/enet.dir
-/Users/wangjiatc/Documents/MyProj/supertuxkart/CMakeFiles/supertuxkart.dir

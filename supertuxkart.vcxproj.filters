@@ -1,0 +1,2620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\llvm\supertuxkart\src\addons\addon.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\addons\addons_manager.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\addons\network_http.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\addons\news_manager.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\addons\request.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\addons\zip.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\animations\animation_base.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\animations\billboard_animation.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\animations\ipo.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\animations\three_d_animation.cpp">
+      <Filter>Source Files\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_information.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_manager.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_ogg.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_buffer.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_manager.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_openal.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\challenge.cpp">
+      <Filter>Source Files\challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\challenge_data.cpp">
+      <Filter>Source Files\challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\game_slot.cpp">
+      <Filter>Source Files\challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\unlock_manager.cpp">
+      <Filter>Source Files\challenges</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\config\device_config.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\config\player.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\config\stk_config.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\config\user_config.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\camera.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\CBatchingMesh.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\explosion.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\hardware_skinning.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\hit_sfx.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\irr_driver.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\lod_node.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\material.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\material_manager.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\mesh_tools.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\moving_texture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_emitter.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_kind.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_kind_manager.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\per_camera_node.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\post_processing.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\rain.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\referee.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\shadow.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\show_curve.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\skid_marks.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\slip_stream.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\stars.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\abstract_state_manager.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\abstract_top_level_container.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\CGUISpriteBank.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\engine.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\event_handler.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\layout_manager.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\modaldialog.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\scalable_font.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\screen.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\screen_loader.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\skin.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widget.cpp">
+      <Filter>Source Files\guiengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\bubble_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\button_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\CGUIEditBox.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\check_box_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\dynamic_ribbon_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\icon_button_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\label_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\list_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\model_view_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\progress_bar_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\ribbon_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\spinner_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\text_box_widget.cpp">
+      <Filter>Source Files\guiengine\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\input\binding.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\input\device_manager.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\input\input_device.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\input\input_manager.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\input\wiimote_manager.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\io\file_manager.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\io\xml_node.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\io\xml_writer.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\attachment.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\attachment_manager.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\bowling.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\cake.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\flyable.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\item.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\item_manager.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\plunger.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\powerup.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\powerup_manager.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\projectile_manager.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\rubber_ball.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\rubber_band.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\items\swatter.cpp">
+      <Filter>Source Files\items</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\abstract_kart_animation.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\abstract_kart.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\cannon_animation.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\ai_base_controller.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\controller.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\default_ai_controller.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\end_controller.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\player_controller.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\present_ai.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\skidding_ai.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\explosion_animation.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\ghost_kart.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_gfx.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_model.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_properties.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_properties_manager.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_with_stats.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\max_speed.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\moveable.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\rescue_animation.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\skidding.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\karts\skidding_properties.cpp">
+      <Filter>Source Files\karts</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\main_loop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\cutscene_world.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\demo_world.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\follow_the_leader.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\game_tutorial.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\linear_world.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\overworld.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\profile_world.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\standard_race.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\three_strikes_battle.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\tutorial_race.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world_status.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world_with_rank.cpp">
+      <Filter>Source Files\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\connect_message.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\kart_control_message.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\kart_update_message.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\message.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\network_kart.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\network_manager.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_info_message.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_result_message.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_state.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btKart.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btKartRaycast.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btUprightConstraint.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\irr_debug_drawer.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\physical_object.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\physics.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\physics\triangle_mesh.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\race\grand_prix_data.cpp">
+      <Filter>Source Files\race</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\race\grand_prix_manager.cpp">
+      <Filter>Source Files\race</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\race\highscore_manager.cpp">
+      <Filter>Source Files\race</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\race\highscores.cpp">
+      <Filter>Source Files\race</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\race\history.cpp">
+      <Filter>Source Files\race</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\race\race_manager.cpp">
+      <Filter>Source Files\race</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_base.cpp">
+      <Filter>Source Files\replay</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_play.cpp">
+      <Filter>Source Files\replay</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_recorder.cpp">
+      <Filter>Source Files\replay</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\addons_screen.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\arenas_screen.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\credits.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\cutscene_gui.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\add_device_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\addons_loading.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\confirm_resolution_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\custom_video_settings.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\enter_player_name_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\gp_info_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\message_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\player_info_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\press_a_key_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_over_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_paused_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\select_challenge.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\story_mode_new.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\track_info_dialog.cpp">
+      <Filter>Source Files\states_screens\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\feature_unlocked.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_lose.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_win.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_1.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_2.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_3.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_4.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\kart_selection.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\main_menu_screen.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\minimal_race_gui.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_audio.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input2.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_players.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_ui.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_video.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui_base.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui_overworld.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_result_gui.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_setup_screen.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\state_manager.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\story_mode_lobby.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\tracks_screen.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\tutorial_screen.cpp">
+      <Filter>Source Files\states_screens</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\dictionary.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\dictionary_manager.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\iconv.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\language.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\log.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\plural_forms.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\po_parser.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\stk_file_system.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\tinygettext.cpp">
+      <Filter>Source Files\tinygettext</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\ambient_light_sphere.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\bezier_curve.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_cannon.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_lap.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_line.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_manager.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_sphere.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_structure.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\graph_node.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\lod_node_loader.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad_graph.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad_set.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\terrain_info.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_manager.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_object.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_object_manager.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_sector.cpp">
+      <Filter>Source Files\tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial.cpp">
+      <Filter>Source Files\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial_data.cpp">
+      <Filter>Source Files\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial_manager.cpp">
+      <Filter>Source Files\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\constants.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\leak_check.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\profiler.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\random_generator.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\string_utils.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\translation.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\llvm\supertuxkart\src\utils\vec3.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\callbacks.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\compress.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\host.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\list.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\packet.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\peer.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\protocol.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\unix.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enet\win32.c">
+      <Filter>Source Files\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\LinearMath\btAlignedAllocator.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btBox2dShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxDetector.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btBoxShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btCapsuleShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionDispatcher.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionObject.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btCollisionShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionWorld.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btCompoundShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConcaveShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConeShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btContactConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btContactProcessing.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Dynamics\btContinuousDynamicsWorld.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvex2dShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btConvexCast.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\LinearMath\btConvexHull.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\LinearMath\btConvexHullComputer.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexHullShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexInternalShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexPointCloudShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexPolyhedron.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btCylinderShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btDbvt.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btDbvtBroadphase.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btDispatcher.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btEmptyShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btGenericPoolAllocator.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\LinearMath\btGeometryUtil.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btGhostObject.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btGImpactBvh.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btGImpactQuantizedBvh.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btGImpactShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpa2.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btInternalEdgeUtility.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Character\btKinematicCharacterController.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btManifoldResult.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btOptimizedBvh.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btOverlappingPairCache.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btQuantizedBvh.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\LinearMath\btQuickprof.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btRaycastCallback.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Vehicle\btRaycastVehicle.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Dynamics\btRigidBody.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\LinearMath\btSerializer.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btShapeHull.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\BroadphaseCollision\btSimpleBroadphase.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btSimulationIslandManager.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btSphereShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btStridingMeshInterface.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTetrahedronShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleBuffer.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleCallback.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleMesh.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleMeshShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\btTriangleShapeEx.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionShapes\btUniformScalingShape.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\btUnionFind.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Vehicle\btWheelInfo.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletDynamics\Dynamics\Bullet-C-API.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\gim_box_set.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\gim_contact.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\gim_memory.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\Gimpact\gim_tri_collision.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\src\BulletCollision\CollisionDispatch\SphereTriangleDetector.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\karts\controller\ai_properties.cpp">
+      <Filter>Source Files\karts\controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\addon.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\addons_manager.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\dummy_network_http.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\inetwork_http.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\network_http.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\news_manager.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\request.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\addons\zip.hpp">
+      <Filter>Header Files\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\animations\animation_base.hpp">
+      <Filter>Header Files\animations</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\animations\billboard_animation.hpp">
+      <Filter>Header Files\animations</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\animations\ipo.hpp">
+      <Filter>Header Files\animations</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\animations\three_d_animation.hpp">
+      <Filter>Header Files\animations</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\dummy_sfx.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_dummy.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_information.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_manager.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_ogg.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_base.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_buffer.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_manager.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_openal.hpp">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\challenge_data.hpp">
+      <Filter>Header Files\challenges</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\challenge.hpp">
+      <Filter>Header Files\challenges</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\game_slot.hpp">
+      <Filter>Header Files\challenges</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\unlock_manager.hpp">
+      <Filter>Header Files\challenges</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\config\device_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\config\player.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\config\stk_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\config\user_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\camera.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\CBatchingMesh.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\explosion.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hardware_skinning.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hit_effect.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hit_sfx.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\irr_driver.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\lod_node.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\material.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\material_manager.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\mesh_tools.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\moving_texture.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_emitter.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_kind.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_kind_manager.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\per_camera_node.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\post_processing.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\rain.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\referee.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\shadow.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\show_curve.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\skid_marks.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\slip_stream.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\stars.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\abstract_state_manager.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\abstract_top_level_container.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\engine.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\event_handler.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\layout_manager.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\modaldialog.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\scalable_font.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\screen.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\skin.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widget.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\bubble_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\button_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\check_box_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\dynamic_ribbon_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets.hpp">
+      <Filter>Header Files\guiengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\icon_button_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\label_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\list_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\model_view_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\progress_bar_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\ribbon_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\spinner_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\text_box_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\input\binding.hpp">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\input\device_manager.hpp">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\input\input_device.hpp">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\input\input.hpp">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\input\input_manager.hpp">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\input\wiimote_manager.hpp">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\io\file_manager.hpp">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\io\xml_node.hpp">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\io\xml_writer.hpp">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment_manager.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment_plugin.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\bowling.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\cake.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\flyable.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\item.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\item_manager.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\plunger.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\powerup.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\powerup_manager.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\projectile_manager.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\rubber_ball.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\rubber_band.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\items\swatter.hpp">
+      <Filter>Header Files\items</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\abstract_kart_animation.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\abstract_kart.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\cannon_animation.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\ai_base_controller.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\controller.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\default_ai_controller.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\end_controller.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\kart_control.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\player_controller.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\present_ai.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\skidding_ai.hpp">
+      <Filter>Header Files\karts\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\explosion_animation.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\ghost_kart.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_gfx.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_model.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_properties.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_properties_manager.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_with_stats.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\max_speed.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\moveable.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\rescue_animation.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\skidding.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\karts\skidding_properties.hpp">
+      <Filter>Header Files\karts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\main_loop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\cutscene_world.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\demo_world.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\follow_the_leader.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\game_tutorial.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\linear_world.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\overworld.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\profile_world.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\standard_race.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\three_strikes_battle.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\tutorial_race.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world_status.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world_with_rank.hpp">
+      <Filter>Header Files\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_confirm_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_info_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_selected_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\connect_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\flyable_info.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\item_info.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\kart_control_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\kart_update_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\network_kart.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\network_manager.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\num_players_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_info_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_result_ack_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_result_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_start_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_state.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\remote_kart_info.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\network\world_loaded_message.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btKart.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btKartRaycast.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btUprightConstraint.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\irr_debug_drawer.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\kart_motion_state.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\physical_object.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\physics.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\stk_dynamics_world.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\triangle_mesh.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\physics\user_pointer.hpp">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\race\grand_prix_data.hpp">
+      <Filter>Header Files\race</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\race\grand_prix_manager.hpp">
+      <Filter>Header Files\race</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\race\highscore_manager.hpp">
+      <Filter>Header Files\race</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\race\highscores.hpp">
+      <Filter>Header Files\race</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\race\history.hpp">
+      <Filter>Header Files\race</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\race\race_manager.hpp">
+      <Filter>Header Files\race</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_base.hpp">
+      <Filter>Header Files\replay</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_play.hpp">
+      <Filter>Header Files\replay</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_recorder.hpp">
+      <Filter>Header Files\replay</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\addons_screen.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\arenas_screen.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\credits.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\cutscene_gui.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\add_device_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\addons_loading.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\confirm_resolution_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\custom_video_settings.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\enter_player_name_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\gp_info_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\message_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\player_info_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\press_a_key_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_over_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_paused_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\select_challenge.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\story_mode_new.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\track_info_dialog.hpp">
+      <Filter>Header Files\states_screens\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\feature_unlocked.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_lose.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_win.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_1.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_2.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_3.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_4.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\kart_selection.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\main_menu_screen.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\minimal_race_gui.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_audio.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input2.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_players.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_ui.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_video.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui_base.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui_overworld.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_result_gui.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_setup_screen.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\state_manager.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\story_mode_lobby.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\tracks_screen.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\tutorial_screen.hpp">
+      <Filter>Header Files\states_screens</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\dictionary.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\dictionary_manager.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\file_system.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\iconv.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\language.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\log.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\log_stream.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\plural_forms.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\po_parser.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\stk_file_system.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\tinygettext.hpp">
+      <Filter>Header Files\tinygettext</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\ambient_light_sphere.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\bezier_curve.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_cannon.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_lap.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_line.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_manager.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_sphere.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_structure.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\graph_node.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\lod_node_loader.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad_graph.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad_set.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\terrain_info.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_manager.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_object.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_object_manager.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_sector.hpp">
+      <Filter>Header Files\tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial_data.hpp">
+      <Filter>Header Files\tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial.hpp">
+      <Filter>Header Files\tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial_manager.hpp">
+      <Filter>Header Files\tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\aligned_array.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\constants.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\leak_check.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\no_copy.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\profiler.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\ptr_vector.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\random_generator.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\string_utils.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\synchronised.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\time.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\translation.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\llvm\supertuxkart\src\utils\vec3.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\win32.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\callbacks.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\enet.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\list.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\protocol.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\time.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\types.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\unix.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enet\include\enet\utility.h">
+      <Filter>Source Files\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btAabbUtil2.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\SphereTriangleDetector.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Dynamics\btActionInterface.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btAlignedAllocator.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btAlignedObjectArray.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btAxisSweep3.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btBox2dShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxDetector.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btBoxCollision.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btBoxShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btBroadphaseInterface.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btBroadphaseProxy.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\btBulletCollisionCommon.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\btBulletDynamicsCommon.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btCapsuleShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Character\btCharacterControllerInterface.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btClipPolygon.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionConfiguration.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionCreateFunc.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionDispatcher.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btCollisionMargin.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionObject.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btCollisionShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btCollisionWorld.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btCompoundShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConcaveShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConeShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btConstraintSolver.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btContactConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btContactProcessing.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btContactSolverInfo.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Dynamics\btContinuousDynamicsWorld.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvex2dShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btConvexCast.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btConvexHull.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btConvexHullComputer.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexHullShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexInternalShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btConvexPenetrationDepthSolver.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexPointCloudShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexPolyhedron.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btCylinderShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btDbvt.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btDbvtBroadphase.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btDefaultMotionState.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btDiscreteCollisionDetectorInterface.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btDispatcher.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Dynamics\btDynamicsWorld.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btEmptyShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGenericPoolAllocator.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGeometryOperations.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btGeometryUtil.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btGhostObject.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGImpactBvh.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGImpactMassUtil.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGImpactQuantizedBvh.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btGImpactShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpa2.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btGrahamScan2dConvexHull.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btHashMap.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btHingeConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btIDebugDraw.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btInternalEdgeUtility.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btJacobianEntry.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Character\btKinematicCharacterController.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btList.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btManifoldPoint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btManifoldResult.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btMaterial.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btMatrix3x3.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btMinkowskiSumShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btMinMax.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btMotionState.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btMultiSphereShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btOptimizedBvh.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btOverlappingPairCache.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btOverlappingPairCallback.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btPointCollector.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btPolyhedralConvexShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btPoolAllocator.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btQuadWord.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btQuantization.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btQuantizedBvh.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btQuaternion.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btQuickprof.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btRandom.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btRaycastCallback.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Vehicle\btRaycastVehicle.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Dynamics\btRigidBody.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btScalar.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btSerializer.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btShapeHull.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\BroadphaseCollision\btSimpleBroadphase.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btSimplexSolverInterface.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btSimulationIslandManager.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSliderConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSolverBody.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btSolverConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btSphereShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btStackAlloc.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btStaticPlaneShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btStridingMeshInterface.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTetrahedronShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btTransform.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btTransformUtil.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleBuffer.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleCallback.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleInfoMap.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleMesh.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleMeshShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btTriangleShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\btTriangleShapeEx.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btTypedConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionShapes\btUniformScalingShape.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\CollisionDispatch\btUnionFind.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\LinearMath\btVector3.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Vehicle\btVehicleRaycaster.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletDynamics\Vehicle\btWheelInfo.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\Bullet-C-Api.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_array.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_basic_geometry_operations.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_bitset.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_box_collision.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_box_set.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_clip_polygon.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_contact.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_geom_types.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_geometry.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_hash_table.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_linear_math.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_math.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_memory.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_radixsort.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\src\BulletCollision\Gimpact\gim_tri_collision.h">
+      <Filter>Source Files\bullet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\enet">
+      <UniqueIdentifier>{982ca80c-c613-4403-9cf8-df224820d8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bullet">
+      <UniqueIdentifier>{c2d48be9-4711-47bd-93cf-e59726d55577}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\karts\controller">
+      <UniqueIdentifier>{A4756EC6-B4A1-4B52-AD92-0ACD9949D51C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\states_screens\dialogs">
+      <UniqueIdentifier>{972E0EB2-0619-4A53-8BEC-8FB309552341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\karts\controller">
+      <UniqueIdentifier>{E3C12F03-8333-4A87-85DC-78A6E1F8FFB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\states_screens\dialogs">
+      <UniqueIdentifier>{78750BFC-D50E-4FA4-B5C2-A630DEE8E2B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\guiengine\widgets">
+      <UniqueIdentifier>{EF6983EE-8C28-49F4-BEFF-F9095A43A9D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\guiengine\widgets">
+      <UniqueIdentifier>{8A9E48AA-5BB1-4C42-B493-BA871A7BEFA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7994363D-132C-45BC-A2B3-FB93271EB5BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D4BD16BA-2A40-4C29-8426-EB202FE15D6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\addons">
+      <UniqueIdentifier>{BAA19D0C-DDFC-421E-AA75-1CAFC1E5C25B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\animations">
+      <UniqueIdentifier>{4676D6AB-CDBA-4E64-BB1F-E2964728FAB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{EF80BCE4-C5B9-4542-A42B-5153FADD2C86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\challenges">
+      <UniqueIdentifier>{5F0C68A0-F5D1-49C0-A6C0-0F2C9B57D432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{04536455-3EE1-46BC-9768-2C82A5ADA011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{391E7967-D1A8-4FCA-BC10-00406E6BCFFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\guiengine">
+      <UniqueIdentifier>{331E9EC7-6503-4315-A154-419E8C252F37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\input">
+      <UniqueIdentifier>{B4A5DDCD-F647-4D36-A58E-42A4072F9233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{44E3E91C-0EB6-48F8-8048-D0DBE4921797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\items">
+      <UniqueIdentifier>{BA5D5FF2-7AE3-46D8-828E-F6B01EDEEB88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\karts">
+      <UniqueIdentifier>{0AAC70F4-AA1F-492F-86B1-6118F33DE56E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modes">
+      <UniqueIdentifier>{D9BB39C1-3150-49FD-AF65-10A100F2856C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network">
+      <UniqueIdentifier>{401BCA69-DB1E-4E4D-A8CF-BA34EB5794E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\physics">
+      <UniqueIdentifier>{A38CAC10-B517-4D71-8EB9-2F31E33EB0F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\race">
+      <UniqueIdentifier>{B74B6604-7875-4919-BA37-35B5386B7204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\replay">
+      <UniqueIdentifier>{F7EA1EB2-439D-44CA-AF77-CD02824075F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\states_screens">
+      <UniqueIdentifier>{84C29FA8-944F-4FB3-A86D-402A2D200F0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tinygettext">
+      <UniqueIdentifier>{D61AFD11-9267-43ED-9DDE-847CC1811AB1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tracks">
+      <UniqueIdentifier>{60965DD6-DB12-42AF-8E40-AAD088BCB9B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tutorial">
+      <UniqueIdentifier>{9586A834-1257-4A68-ABF0-CBC4F4E4CE60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{08CA158A-2BD2-41D2-ACD9-DFC7FEE817C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\addons">
+      <UniqueIdentifier>{BF9C8A5B-8344-48C5-9494-667510A30624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\animations">
+      <UniqueIdentifier>{BA60F923-A4F5-4403-B76B-899A7F01E260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{CCDA25F0-BE77-4977-84B6-A14307C86A9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\challenges">
+      <UniqueIdentifier>{93381F22-D587-4D8F-8495-E82908719F25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{C1EF4855-A6AB-440C-9397-782E3CF38730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{7127C930-F020-47BC-B688-D2B0A79844AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\guiengine">
+      <UniqueIdentifier>{EAFA608D-4736-4B5E-865D-216107F2AD83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\input">
+      <UniqueIdentifier>{2DBBF82D-CCCB-433F-B23E-7175BA8C56BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{C5F04D97-F07C-4E8D-922B-F8BA3E8C863E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\items">
+      <UniqueIdentifier>{0112D0BF-AD9E-4613-ABCF-21EF678688A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\karts">
+      <UniqueIdentifier>{9D030155-C719-400E-9310-7FF6260CDA15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modes">
+      <UniqueIdentifier>{3104B05C-A224-4248-B45D-ECB03E1E4A79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\network">
+      <UniqueIdentifier>{13545289-E6C9-4F24-ADE5-5446DDD1314F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\physics">
+      <UniqueIdentifier>{37C5995D-86D5-4DCA-99C4-CFE982A0436D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\race">
+      <UniqueIdentifier>{FAA9B2E6-0AA7-4AD1-8216-C1089657A581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\replay">
+      <UniqueIdentifier>{B2A48E34-894C-44E2-BF60-70996CB7AB63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\states_screens">
+      <UniqueIdentifier>{49298BC9-103B-4B58-8BBD-9B89C4F8ACF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tinygettext">
+      <UniqueIdentifier>{C1DB52F8-3DD0-49C3-BD08-06B0893B1257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tracks">
+      <UniqueIdentifier>{6490909E-8128-4D23-8AB5-E4055D77D718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tutorial">
+      <UniqueIdentifier>{7C776D6B-7DD1-4F9E-8188-4BFA3B20E5F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{850290B4-8CD4-4086-B0CE-1D759DD0C821}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
