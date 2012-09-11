@@ -17,8 +17,18 @@
     By Marianne Gagnon (Auria), based on "PaintCan", "StoneSpinLong" and
     "PaintCanDropHardAndRoll" by daveincamas, released under the same license
 
+* break
+    released under CC-BY 3.0
+    Based on work by Daniel Simion and BlastwaveFx
+    
 * bzzt
     Released under the GNU GPL, coming from original (Super)TuxKart
+
+* car_accel
+    By SpeedJunkie, released under CC-BY 3.0
+
+* car_revup
+    By Mike Koenig, reeased under CC-BY 3.0
 
 * clock
     based on sound by Natalie from pdsounds.org
@@ -29,7 +39,10 @@
     released under CC-BY-SA 3.0
     layered and mixed by qubodup <qubodup.net>
     recorded by Halleck <http://www.freesound.org/people/Halleck/>
-    
+
+* dark
+    By 7by7, released under CC0 (public domain)
+
 * energy_bar_full
     By legoluft (http://www.legoluft.de), from the Krank sound pack
     http://opengameart.org/content/atmospheric-interaction
@@ -70,6 +83,17 @@
 * grab_collectable
     obtained from : http://www.freesoundfiles.tintagel.net/Audio/
     (see license text below)
+
+* hammer
+    Mix by Marianne Gagnon, released under CC-BY 3.0
+    Including samples by snottyboi, released under Creative Commons Attribution 3.0
+                         from SoundBible ("Whip Crack Sound")
+                      by Tomlija, released under CC-BY 3.0
+                         from http://www.freesound.org/people/Tomlija/sounds/98946/
+                      by Mike Koenig, released under CC-BY 3.0
+                         from http://soundbible.com/1217-Metal-Clang.html
+                      by Stickinthemud, released under CC-BY 3.0
+                         from http://www.freesound.org/people/Stickinthemud/sounds/27528/
     
 * horn
     Released under the Creative Commons BY (Attribution) 3.0
@@ -82,6 +106,10 @@
 * locked
     By "Stephan" from pdsounds.org (license is public domain)
     
+* metal_clang
+    based on public domain sound by dADDoiT and CC-BY 3.0 sounds by Mike Koenig
+    released under CC-BY 3.0
+
 * parachute
     based on Public Domain Sounds from either pdsounds or ghb_pd
     Modifications (c) 2009 Christoph Egger <debian@christoph-egger.org>.

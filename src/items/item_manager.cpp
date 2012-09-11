@@ -78,6 +78,8 @@ void ItemManager::loadDefaultItemMeshes()
     item_names[Item::ITEM_NITRO_SMALL] = "nitro-small";
     item_names[Item::ITEM_TRIGGER    ] = "trigger";
 
+    item_names[Item::ITEM_BUBBLEGUM_NOLOK] = "bubblegum-nolok";
+    
     const std::string file_name = file_manager->getDataFile("items.xml");
     const XMLNode *root         = file_manager->createXMLTree(file_name);
     for(unsigned int i=Item::ITEM_FIRST; i<=Item::ITEM_LAST; i++)
@@ -215,13 +217,15 @@ void ItemManager::insertItem(Item *item)
     // (i.e. race mode has a quad graph).
     if(m_items_in_quads)
     {
-        const Vec3 &xyz = item->getXYZ();
-        int sector = QuadGraph::UNKNOWN_SECTOR;
-        QuadGraph::get()->findRoadSector(xyz, &sector);
-        if(sector==QuadGraph::UNKNOWN_SECTOR)
-            (*m_items_in_quads)[m_items_in_quads->size()-1].push_back(item);
-        else
+        int graph_node = item->getGraphNode();
+        // If the item is on the driveline, store it at the appropriate index
+        if(graph_node > -1)
+        {
+            int sector = QuadGraph::get()->getNode(graph_node).getQuadIndex();
             (*m_items_in_quads)[sector].push_back(item);
+        }
+        else  // otherwise store it in the 'outside' index
+            (*m_items_in_quads)[m_items_in_quads->size()-1].push_back(item);
     }   // if m_items_in_quads
 }   // insertItem
 
@@ -236,8 +240,14 @@ void ItemManager::insertItem(Item *item)
 Item* ItemManager::newItem(Item::ItemType type, const Vec3& xyz, 
                            const Vec3 &normal, AbstractKart *parent)
 {
-    Item* item = new Item(type, xyz, normal, m_item_mesh[type], 
-                          m_item_lowres_mesh[type]);
+    Item::ItemType mesh_type = type;
+    if (type == Item::ITEM_BUBBLEGUM && parent->getIdent() == "nolok")
+    {
+        mesh_type = Item::ITEM_BUBBLEGUM_NOLOK;
+    }
+    
+    Item* item = new Item(type, xyz, normal, m_item_mesh[mesh_type], 
+                          m_item_lowres_mesh[mesh_type]);
 
     insertItem(item);
     if(parent != NULL) item->setParent(parent);
@@ -300,7 +310,7 @@ void  ItemManager::checkItemHit(AbstractKart* kart)
         if((!*i) || (*i)->wasCollected()) continue;
         // To allow inlining and avoid including kart.hpp in item.hpp,
         // we pass the kart and the position separately.
-        if((*i)->hitKart(kart, kart->getXYZ()))
+        if((*i)->hitKart(kart->getXYZ(), kart))
         {
             collectedItem(*i, kart);
         }   // if hit

@@ -57,6 +57,7 @@ RaceManager::RaceManager()
     m_difficulty         = RD_HARD;
     m_major_mode         = MAJOR_MODE_SINGLE;
     m_minor_mode         = MINOR_MODE_NORMAL_RACE;
+    m_ai_superpower      = SUPERPOWER_NONE;
     m_track_number       = 0;
     m_coin_target        = 0;
     m_started_from_overworld = false;
@@ -242,6 +243,14 @@ void RaceManager::computeRandomKartList()
     if(n>0)
         kart_properties_manager->getRandomKartList(n, m_player_karts, 
                                                    &m_ai_kart_list   );
+
+    if (m_ai_kart_override != "")
+    {
+        for (unsigned int n = 0; n < m_ai_kart_list.size(); n++)
+        {
+            m_ai_kart_list[n] = m_ai_kart_override;
+        }
+    }
 
 }   // computeRandomKartList
 

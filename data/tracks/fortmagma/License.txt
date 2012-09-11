@@ -12,11 +12,14 @@ Textures based on pictures from burningwell
 zipper.png by Dakal
     by Dakal, released under CC-BY-SA 3.0
 
-roof, castelwall.jpg
+roof
     by Jean-Manuel Clemençon (Samuncle; http://samuncle.toile-libre.org/)
     based on work by Marianne Gagnon (Auria), based on public domain photos from BurningWell
 
-torch.png, lava_sky
+torch.png
+    by Marianne Gagnon, released in the public domain
+
+lava_sky
     by Marianne Gagnon, released under CC-BY-SA 3
 
 painting1.jpg, painting2.jpg

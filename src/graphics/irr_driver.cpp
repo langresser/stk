@@ -454,7 +454,7 @@ video::E_DRIVER_TYPE IrrDriver::getEngineDriverType( int index )
         // Direct3D9 for Windows and OpenGL for Unix like systems?
         case 0:
             type = video::EDT_OGLES1;
-            rendererName = "OpenGLES";
+            rendererName = "OpenGLES1";
             break;
         case 1:
             type = video::EDT_OPENGL;
@@ -608,7 +608,7 @@ void IrrDriver::applyResolutionSettings()
     // (we're sure to update main.cpp at some point and forget this one...)
     
     // initDevice will drop the current device.
-    initDevice(0, 0, NULL);
+    initDevice(0, 0, 0);
     
     // Re-init GUI engine
     GUIEngine::init(m_device, m_video_driver, StateManager::get());

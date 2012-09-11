@@ -43,7 +43,7 @@ XMLNode::XMLNode(const std::string &filename)
     
     if (xml == NULL)
     {
-        throw std::runtime_error("Cannot find file "+filename);
+        return;
     }
     
     bool is_first_element = true;

@@ -11,6 +11,10 @@ Under Creative Commons Attribution Share-Alike (CC-BY-SA) - http://creativecommo
     by Dakal (http://dakal-fr.deviantart.com/, http://opengameart.org/user/300)
     licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License
 
+* castelwall.jpg
+    by Jean-Manuel Clemençon (Samuncle; http://samuncle.toile-libre.org/)
+    based on work by Marianne Gagnon (Auria), based on public domain photos from BurningWell
+    
 * Crate*
     by Luke.RUSTLTD
     released under public domain
