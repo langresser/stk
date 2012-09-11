@@ -115,7 +115,10 @@ void Attachment::set(AttachmentType type, float time,
     switch(type)
     {
     case ATTACH_SWATTER :
-        m_node->setMesh(attachment_manager->getMesh(type));
+        if (m_kart->getIdent() == "nolok")
+            m_node->setMesh(attachment_manager->getMesh(ATTACH_NOLOKS_SWATTER));
+        else
+            m_node->setMesh(attachment_manager->getMesh(type));
         m_plugin = new Swatter(m_kart, was_bomb, bomb_scene_node);
         break;
     case ATTACH_BOMB:
@@ -375,6 +378,7 @@ void Attachment::update(float dt)
     case ATTACH_MAX:
         break;
     case ATTACH_SWATTER:
+    case ATTACH_NOLOKS_SWATTER:
         // Everything is done in the plugin.
         break;
     case ATTACH_BOMB:

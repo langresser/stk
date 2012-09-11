@@ -1,1 +1,10 @@
 .svn/
+supertuxkart.dir/
+Debug/
+dependencies/
+CMakeFiles/
+*.dll
+*.suo
+*.user
+*.pdb
+*.ilk

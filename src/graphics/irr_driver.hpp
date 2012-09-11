@@ -112,7 +112,7 @@ private:
 public:
                           IrrDriver();
                          ~IrrDriver();
-    void                  initDevice();
+    void                  initDevice(int w, int h, void* winId);
     
     void                  updateConfigIfRelevant();
     

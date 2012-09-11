@@ -95,8 +95,8 @@
   <powerup collect-mode="new"/>
   <!-- time: How long a switch is being effective.
        items for each item list the index of the item it is switched with.
-             Order: giftbox, banana, big-nitro, small-nitro, bubble-bum, trigger -->
-  <switch time="5"  items="1 0 4 4 2 5"/>
+             Order: giftbox, banana, big-nitro, small-nitro, bubble-gum, trigger, nolok-bubble-gum -->
+  <switch time="5"  items="1 0 4 4 2 5 2"/>
 
   <!-- How often bubble gum get driven over before it disappears. --> 
   <bubble-gum disappear-counter="1"/>
@@ -193,7 +193,7 @@
            but you will always keep on doing a left turn, just more or less. -->
 
     <skid increase="1.05" decrease="0.95" max="2.5" time-till-max="0.5"
-          visual="1.0" visual-time="0"
+          visual="1.0" visual-time="0.5"
           time-till-bonus="1.0 3.0" 
           bonus-speed="4.5 6.5" bonus-time="3.0 4.0" 
           bonus-force="250 350"
@@ -211,9 +211,18 @@
            impossible). A value of 1/maxFPS / 2 will guarantee that
            the wheel can go from -1 to +1 steering in one frame, 
            basically  disabling this mechanism.
+         bad-item-closeness is the maximum distance between a good and a
+           bad item which can force the AI to abandon a good item in order
+           to avoid hitting a bad item. If the distance is larger, it is
+           assumed that there will be enough time to change steering
+           direction.
+         straight-length-for-zipper is the minimum length a straight
+           section of the track should have in order to activate a zipper.
     -->
     <ai max-item-angle="0.7" max-item-angle-high-speed="0.3"
         time-full-steer="0.1"
+        bad-item-closeness="6"
+        straight-length-for-zipper="35"
     />
 
     <!-- Slipstream: length: How far behind a kart slipstream works

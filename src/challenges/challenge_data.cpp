@@ -51,6 +51,7 @@ ChallengeData::ChallengeData(const std::string& filename)
         m_position[d]  = -1;
         m_time[d]      = -1.0f;
         m_energy[d]    = -1;
+        m_ai_superpower[d] = RaceManager::SUPERPOWER_NONE;
     }
     
     // we are using auto_ptr to make sure the XML node is released when leaving
@@ -76,36 +77,6 @@ ChallengeData::ChallengeData(const std::string& filename)
         return;
     }
     
-    const XMLNode* track_node = root->getNode("track");
-    
-    // TODO: add GP support
-    if (track_node == NULL)
-    {
-        throw std::runtime_error("Challenge file " + filename + " has no <track> node!");
-    }
-    
-    
-    if (!track_node->get("id",  &m_track_id ))
-    {
-        error("track");
-    }
-    if (track_manager->getTrack(m_track_id) == NULL)
-    {
-        error("track");
-    }
-    
-    if (!track_node->get("laps", &m_num_laps) && m_minor != RaceManager::MINOR_MODE_FOLLOW_LEADER)
-    {
-        error("laps");
-    }
-    
-    
-    const XMLNode* requirements_node = root->getNode("requirements");
-    if (requirements_node == NULL)
-    {
-        throw std::runtime_error("Challenge file " + filename + " has no <requirements> node!");
-    }
-    requirements_node->get("trophies", &m_num_trophies);
     
     
     const XMLNode* mode_node = root->getNode("mode");
@@ -133,6 +104,49 @@ ChallengeData::ChallengeData(const std::string& filename)
         m_minor = RaceManager::MINOR_MODE_FOLLOW_LEADER;
     else
         error("minor");
+        
+    const XMLNode* track_node = root->getNode("track");
+    const XMLNode* gp_node = root->getNode("grandprix");
+    
+    if (m_major == RaceManager::MAJOR_MODE_SINGLE && track_node == NULL)
+    {
+        throw std::runtime_error("Challenge file " + filename + " has no <track> node!");
+    }
+    if (m_major == RaceManager::MAJOR_MODE_GRAND_PRIX && gp_node == NULL)
+    {
+        throw std::runtime_error("Challenge file " + filename + " has no <grandprix> node!");
+    }
+    
+    if (track_node != NULL)
+    {
+        if (!track_node->get("id",  &m_track_id ))
+        {
+            error("track");
+        }
+        if (track_manager->getTrack(m_track_id) == NULL)
+        {
+            error("track");
+        }
+        
+        if (!track_node->get("laps", &m_num_laps) && m_minor != RaceManager::MINOR_MODE_FOLLOW_LEADER)
+        {
+            error("laps");
+        }
+    }
+    else if (gp_node != NULL)
+    {
+        if (!gp_node->get("id",  &m_gp_id ))
+        {
+            error("grandprix");
+        }
+    }
+    
+    const XMLNode* requirements_node = root->getNode("requirements");
+    if (requirements_node == NULL)
+    {
+        throw std::runtime_error("Challenge file " + filename + " has no <requirements> node!");
+    }
+    requirements_node->get("trophies", &m_num_trophies);
 
     const XMLNode* difficulties[RaceManager::DIFFICULTY_COUNT];
     difficulties[0] = root->getNode("easy");
@@ -153,6 +167,23 @@ ChallengeData::ChallengeData(const std::string& filename)
         int num_karts = -1;
         if (!karts_node->get("number", &num_karts)) error("karts");
         m_num_karts[d] = num_karts;
+        
+        std::string ai_kart_ident;
+        if (karts_node->get("aiIdent", &ai_kart_ident))
+            m_ai_kart_ident[d] = ai_kart_ident;
+        
+        std::string superPower;
+        if (karts_node->get("superPower", &superPower))
+        {
+            if (superPower == "nolokBoss")
+            {
+                m_ai_superpower[d] = RaceManager::SUPERPOWER_NOLOK_BOSS;
+            }
+            else
+            {
+                fprintf(stderr, "[ChallengeData] WARNING: Unknown AI superpower '%s'\n", superPower.c_str());
+            }
+        }
         
         const XMLNode* requirements_node = difficulties[d]->getNode("requirements");
         if (requirements_node == NULL) error("<requirements .../>");
@@ -188,23 +219,36 @@ ChallengeData::ChallengeData(const std::string& filename)
         if (grand_prix_manager->getGrandPrix(m_gp_id) == NULL) error("gp");
     }
 */
-        
+
+    std::vector<XMLNode*> unlocks;
+    root->getNodes("unlock-kart", unlocks);
+    for (unsigned int n = 0; n < unlocks.size(); n++)
+    {
+        getUnlocks(unlocks[n], "unlock-kart",  ChallengeData::UNLOCK_KART);
+    }
+
+    
+    /*
     const XMLNode* unlock_node = root->getNode("unlock");
+    
     if (unlock_node != NULL)
     {
-        getUnlocks(root.get(), "unlock-track",      ChallengeData::UNLOCK_TRACK);
-        getUnlocks(root.get(), "unlock-gp",         ChallengeData::UNLOCK_GP   );
-        getUnlocks(root.get(), "unlock-mode",       ChallengeData::UNLOCK_MODE );
-        getUnlocks(root.get(), "unlock-difficulty", ChallengeData::UNLOCK_DIFFICULTY);
-        getUnlocks(root.get(), "unlock-kart",       ChallengeData::UNLOCK_KART);
+        getUnlocks(unlock_node, "unlock-track",      ChallengeData::UNLOCK_TRACK);
+        getUnlocks(unlock_node, "unlock-gp",         ChallengeData::UNLOCK_GP   );
+        getUnlocks(unlock_node, "unlock-mode",       ChallengeData::UNLOCK_MODE );
+        getUnlocks(unlock_node, "unlock-difficulty", ChallengeData::UNLOCK_DIFFICULTY);
+        getUnlocks(unlock_node, "unlock-kart",       ChallengeData::UNLOCK_KART);
     }
+    */
     
     core::stringw description;
-    //I18N: number of laps to race in a challenge
-    description += _("Laps : %i", m_num_laps);
-    description += core::stringw(L"\n");
+    if (track_node != NULL)
+    {
+        //I18N: number of laps to race in a challenge
+        description += _("Laps : %i", m_num_laps);
+        description += core::stringw(L"\n");
+    }
     
-    // TODO: add this info in the difficulties dialog perhaps?
     /*
     //I18N: number of AI karts in a challenge
     description += _("AI Karts : %i", m_num_karts - 1);
@@ -283,7 +327,7 @@ void ChallengeData::getUnlocks(const XMLNode *root, const std:: string &type,
                                REWARD_TYPE reward)
 {
     std:: string attrib;
-    root->get(type, &attrib);
+    root->get("value", &attrib);
     
     if (attrib . empty()) return;
 
@@ -351,6 +395,15 @@ void ChallengeData::setRace(RaceManager::Difficulty d) const
         race_manager->setDifficulty(d);
         race_manager->setNumKarts(m_num_karts[d]);
         race_manager->setNumLocalPlayers(1);
+    }
+    
+    if (m_ai_kart_ident[d] != "")
+    {
+        race_manager->setAIKartOverride(m_ai_kart_ident[d]);
+    }
+    if (m_ai_superpower[d] != RaceManager::SUPERPOWER_NONE)
+    {
+        race_manager->setAISuperPower(m_ai_superpower[d]);
     }
 }   // setRace
 

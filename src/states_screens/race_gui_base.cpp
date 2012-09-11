@@ -21,12 +21,7 @@
 #include "states_screens/race_gui_base.hpp"
 
 #ifdef __APPLE__
-//#include "TargetConditionals.h"
-#ifdef TARGET_OS_IPHONE
-#include <OpenGLES/ES1/gl.h>
-#else
 #  include <OpenGL/gl.h>
-#endif
 #else
 #  define _WINSOCKAPI_
 #  ifdef WIN32
@@ -502,8 +497,6 @@ void RaceGUIBase::renderPlayerView(const AbstractKart *kart)
         glColor4f(0.7f*m_lightning, 0.7f*m_lightning, 0.7f*std::min(1.0f, m_lightning*1.5f), 1.0f);
         glEnable(GL_COLOR_MATERIAL);
         glDisable(GL_CULL_FACE);
-#if 0
-#warning TODO gles
         glBegin(GL_QUADS);
         
         glVertex3d(glviewport[0],glviewport[1],0);
@@ -511,7 +504,6 @@ void RaceGUIBase::renderPlayerView(const AbstractKart *kart)
         glVertex3d(glviewport[2],glviewport[3],0);
         glVertex3d(glviewport[2],glviewport[1],0);
         glEnd();
-#endif
         glEnable(GL_TEXTURE_2D);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     }

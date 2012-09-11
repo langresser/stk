@@ -58,8 +58,10 @@ private:
     int                            m_num_laps;
     int                            m_position[RaceManager::DIFFICULTY_COUNT];
     int                            m_num_karts[RaceManager::DIFFICULTY_COUNT];
+    std::string                    m_ai_kart_ident[RaceManager::DIFFICULTY_COUNT];
     float                          m_time[RaceManager::DIFFICULTY_COUNT];
     int                            m_energy[RaceManager::DIFFICULTY_COUNT];
+    RaceManager::AISuperPower      m_ai_superpower[RaceManager::DIFFICULTY_COUNT];
     std::string                    m_gp_id;
     std::string                    m_track_id;
     std::string                    m_filename;
@@ -110,6 +112,7 @@ public:
     void  setId(const std::string& s)          { m_id = s;                 }
     
     const std::string& getTrackId() const      { return m_track_id;        }
+    const std::string& getGPId() const         { return m_gp_id;           }
 
     int   getNumLaps() const                   { return m_num_laps;        }
 
@@ -135,6 +138,8 @@ public:
     int   getNumKarts(RaceManager::Difficulty difficulty) const { return m_num_karts[difficulty];  }
     float getTime    (RaceManager::Difficulty difficulty) const { return m_time[difficulty];       }
     int   getEnergy  (RaceManager::Difficulty difficulty) const { return m_energy[difficulty];     }
+    
+    std::string getAIKartIdent(RaceManager::Difficulty difficulty) const { return m_ai_kart_ident[difficulty]; }
     
 };   // Ch
 

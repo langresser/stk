@@ -22,6 +22,7 @@
 #define HEADER_SKIDDING_AI__HPP
 
 #include "karts/controller/ai_base_controller.hpp"
+#include "race/race_manager.hpp"
 #include "tracks/graph_node.hpp"
 
 class LinearWorld;
@@ -68,6 +69,8 @@ private:
         CrashTypes() : m_road(false), m_kart(-1) {};
         void clear() {m_road = false; m_kart = -1;}
     } m_crashes;
+
+    RaceManager::AISuperPower m_superpower;
 
     /*Difficulty handling variables*/
     /** Chance of a false start. */
@@ -121,7 +124,8 @@ private:
   
     float m_time_since_stuck;
 
-    int m_start_kart_crash_direction; //-1 = left, 1 = right, 0 = no crash.
+    /** Direction of crash: -1 = left, 1 = right, 0 = no crash. */
+    int m_start_kart_crash_direction; 
 
     /** The direction of the track where the kart is on atm. */
     GraphNode::DirectionType m_current_track_direction;
@@ -138,12 +142,20 @@ private:
      *  node the kart is on (i.e. if kart is in a left turn, this will be
      *  the last node that is still turning left). */
     unsigned int m_last_direction_node;
-//#ifdef DEBUG
-    /** For skidding debugging: shows the estimated turn shape. */
-    ShowCurve **m_curve;
 
     /** If set an item that the AI should aim for. */
     const Item *m_item_to_collect;
+
+    /** True if items to avoid are close by. Used to avoid using zippers
+     *  (which would make it more difficult to avoid items). */
+    bool m_avoid_item_close;
+
+    /** True if the new findNonCrashingPoint2 function should be used. */
+    bool m_use_new_aim_point_selection;
+
+#ifdef DEBUG
+    /** For skidding debugging: shows the estimated turn shape. */
+    ShowCurve **m_curve;
 
     /** For debugging purpose: a sphere indicating where the AI 
      *  is targeting at. */
@@ -152,7 +164,7 @@ private:
     /** For item debugging: set to the item that is selected to 
      *  be collected. */
     irr::scene::ISceneNode *m_item_sphere;
-//#endif
+#endif
 
 
     /*Functions called directly from update(). They all represent an action
@@ -170,11 +182,15 @@ private:
     void  computeNearestKarts();
     void  handleItemCollectionAndAvoidance(Vec3 *aim_point, 
                                            int last_node);
-    bool  handleSelectedItem(float kart_aim_angle, Vec3 *aim_point, 
-                             int last_node);
+    bool  handleSelectedItem(float kart_aim_angle, Vec3 *aim_point);
+    bool  steerToAvoid(const std::vector<const Item *> &items_to_avoid,
+                       const core::line2df &line_to_target,
+                       Vec3 *aim_point);
+    bool  hitBadItemWhenAimAt(const Item *item, 
+                              const std::vector<const Item *> &items_to_avoid);
     void  evaluateItems(const Item *item, float kart_aim_angle, 
-                        const Item **item_to_avoid, 
-                        const Item **item_to_collect);
+                        std::vector<const Item *> *items_to_avoid,
+                        std::vector<const Item *> *items_to_collect);
 
     void  checkCrashes(const Vec3& pos);
     void  findNonCrashingPoint(Vec3 *result, int *last_node);

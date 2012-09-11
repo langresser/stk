@@ -1,8 +1,8 @@
-# Install script for directory: /Users/wangjiatc/Documents/MyProj/supertuxkart/tools/font_tool
+# Install script for directory: E:/llvm/supertuxkart/tools/font_tool
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "C:/Program Files/SuperTuxKart")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -222,7 +222,7 @@ void IrrDriver::createListOfVideoModes()
 // ----------------------------------------------------------------------------
 /** This creates the actualy OpenGL device. This is called 
  */
-void IrrDriver::initDevice()
+void IrrDriver::initDevice(int w, int h, void* winId)
 {
     // If --no-graphics option was used, the null device can still be used.
     if (!ProfileWorld::isNoGraphics())
@@ -447,8 +447,8 @@ video::E_DRIVER_TYPE IrrDriver::getEngineDriverType( int index )
         // TODO Change default renderer dependen on operating system?
         // Direct3D9 for Windows and OpenGL for Unix like systems?
         case 0:
-            type = video::EDT_OPENGL;
-            rendererName = "OpenGL";
+            type = video::EDT_OGLES1;
+            rendererName = "OpenGLES1";
             break;
         case 1:
             type = video::EDT_OPENGL;
@@ -602,7 +602,7 @@ void IrrDriver::applyResolutionSettings()
     // (we're sure to update main.cpp at some point and forget this one...)
     
     // initDevice will drop the current device.
-    initDevice();
+    initDevice(0, 0, 0);
     
     // Re-init GUI engine
     GUIEngine::init(m_device, m_video_driver, StateManager::get());

@@ -1081,7 +1081,7 @@ void initRest()
     stk_config->load(file_manager->getDataFile("stk_config.xml"));
 
     // Now create the actual non-null device in the irrlicht driver
-    irr_driver->initDevice();
+    irr_driver->initDevice(0, 0, 0);
     
     // Init GUI
     IrrlichtDevice* device = irr_driver->getDevice();
