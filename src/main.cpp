@@ -1466,7 +1466,7 @@ void onGameExit()
 }
 
 #ifdef WIN32
-int mainstk(int argc, char *argv[], void* winid )
+int main(int argc, char *argv[], void* winid )
 {
 #ifdef BREAKPAD
     google_breakpad::ExceptionHandler eh(L"C:\\Temp", NULL, ShowDumpResults, 
