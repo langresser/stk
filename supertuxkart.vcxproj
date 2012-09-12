@@ -82,7 +82,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:/llvm/stk/src/bullet/src;E:/llvm/stk/src/enet/include;E:/llvm/stk/src;E:/llvm/stk/dependencies/include/irrlicht;E:/llvm/stk/dependencies/include/AL;E:/llvm/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:/llvm/stk/src/bullet/src;E:/llvm/stk/src/enet/include;E:/llvm/stk/src;E:/llvm/stk/dependencies/include/irrlicht;E:/llvm/stk/dependencies/include/AL;E:/llvm/stk/dependencies/include;E:\llvm\irr-gles\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -111,7 +111,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib;libEGL.lib;libGLESv1_CM.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>E:\llvm\3rdframework\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>E:/llvm/stk/Debug/supertuxkart.lib</ImportLibrary>

@@ -7,3 +7,4 @@
 *.ilk
 dependencies/
 supertuxkart.dir/
+*.tlog
