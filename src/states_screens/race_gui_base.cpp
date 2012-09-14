@@ -23,12 +23,20 @@
 #ifdef __APPLE__
 #  include <OpenGL/gl.h>
 #else
-#  define _WINSOCKAPI_
-#  ifdef WIN32
-#    include <windows.h>
-#  endif
-#  include <GL/gl.h>
-#pragma comment(lib, "libGLESv1_CM.lib")
+	#  define _WINSOCKAPI_
+	#  ifdef WIN32
+	#    include <windows.h>
+	#  endif
+
+	#ifdef _IRR_COMPILE_WITH_OGLES1_
+		#include <GLES/gl.h>
+		//#pragma comment(lib, "libGLESv1_CM.lib")
+	#elif defined(_IRR_COMPILE_WITH_OGLES2_)
+#error fuck
+	#else
+		#  include <GL/gl.h>
+		#pragma comment(lib, "OpenGL32.lib")
+	#endif
 #endif
 
 #include "audio/music_manager.hpp"
