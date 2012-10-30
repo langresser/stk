@@ -69,6 +69,7 @@
 #include "items/item_manager.hpp"
 #include "items/powerup.hpp"
 #include "modes/linear_world.hpp"
+#include "modes/profile_world.hpp"
 #include "network/network_manager.hpp"
 #include "race/race_manager.hpp"
 #include "tracks/quad_graph.hpp"
@@ -80,90 +81,38 @@ SkiddingAI::SkiddingAI(AbstractKart *kart)
 {
     reset();
 
-    switch( race_manager->getDifficulty())
-    {
-    case RaceManager::RD_EASY:
-        m_wait_for_players        = true;
-        m_make_use_of_slipstream  = false;
-        m_max_handicap_speed      = 0.9f;
-        m_false_start_probability = 0.08f;
-        m_min_start_delay         = 0.3f;
-        m_max_start_delay         = 0.5f;
-        m_min_steps               = 1;
-        m_item_tactic             = IT_TEN_SECONDS;
-        m_nitro_level             = NITRO_NONE;
-        m_item_behaviour          = ITEM_COLLECT_NONE;
-        m_handle_bomb             = false;
-        setSkiddingFraction(4.0f);
-        break;
-    case RaceManager::RD_MEDIUM:
-        m_wait_for_players        = true;
-        m_make_use_of_slipstream  = false;
-        m_max_handicap_speed      = 0.95f;
-        m_false_start_probability = 0.04f;
-        m_min_start_delay         = 0.25f;
-        m_max_start_delay         = 0.4f;
-        m_min_steps               = 1;
-        m_item_tactic             = IT_CALCULATE;
-        m_nitro_level             = NITRO_SOME;
-        m_item_behaviour          = ITEM_COLLECT_NONE;
-        m_handle_bomb             = true;
-        setSkiddingFraction(3.0f);
-        break;
-    case RaceManager::RD_HARD:
-        m_wait_for_players        = false;
-        m_make_use_of_slipstream  = true;
-        m_max_handicap_speed      = 1.0f;
-        m_item_tactic             = IT_CALCULATE;
-        m_false_start_probability = 0.01f;
-        // See http://www.humanbenchmark.com/tests/reactiontime/stats.php
-        // Average reaction time is around 0.215 s, so using .15 as minimum
-        // gives an AI average slightly above the human average
-        m_min_start_delay         = 0.15f;
-        m_max_start_delay         = 0.28f;
-        m_min_steps               = 2;
-        m_nitro_level             = NITRO_ALL;
-        m_item_behaviour          = ITEM_COLLECT_PRIORITY;
-        m_handle_bomb             = true;
-        setSkiddingFraction(2.0f);
-        break;
-    }
+    m_superpower = race_manager->getAISuperPower();
 
-    m_use_new_aim_point_selection = false;
+    m_point_selection_algorithm = PSA_DEFAULT;
     setControllerName("Skidding");
 
     // Use this define in order to compare the impact of collecting items
 #undef COMPARE_AIS
 #ifdef COMPARE_AIS
     std::string name("");
-    if(m_kart->getWorldKartId() % 2 ==0)
+    m_point_selection_algorithm = m_kart->getWorldKartId() % 2
+                                ? PSA_DEFAULT : PSA_FIXED;
+    switch(m_point_selection_algorithm)
     {
-        m_item_behaviour = ITEM_COLLECT_NONE;
-        name += "Skidding";
-    }
-    else
-    {
-        m_item_behaviour = ITEM_COLLECT_PRIORITY;
-        name += "Collect";
-    }
-
-    if(m_kart->getWorldKartId() % 1 ==1)
-    {
-        m_use_new_aim_point_selection = true;
-        name += " new";
-    }
-    else
-    {
-        m_use_new_aim_point_selection = false;
+    case PSA_FIXED   : name = "Fixed";   break;
+    case PSA_NEW     : name = "New";     break;
+    case PSA_DEFAULT : name = "Default"; break;
     }
     setControllerName(name);
 #endif
 
-    m_superpower = race_manager->getAISuperPower();
-
 #ifdef AI_DEBUG
-    m_debug_sphere = irr_driver->getSceneManager()->addSphereSceneNode(1.0f);
-    m_item_sphere  = irr_driver->getSceneManager()->addSphereSceneNode(1.0f);
+    for(unsigned int i=0; i<4; i++)
+    {
+        video::SColor col_debug(128, i==0 ? 128 : 0, 
+                                     i==1 ? 128 : 0,
+                                     i==2 ? 128 : 0);
+        m_debug_sphere[i] = irr_driver->addSphere(1.0f, col_debug);
+        m_debug_sphere[i]->setVisible(false);
+    }
+    m_debug_sphere[m_point_selection_algorithm]->setVisible(true);
+    m_item_sphere  = irr_driver->addSphere(1.0f);
+
 #define CURVE_PREDICT1   0
 #define CURVE_KART       1
 #define CURVE_LEFT       2
@@ -181,31 +130,24 @@ SkiddingAI::SkiddingAI(AbstractKart *kart)
 #endif
 #ifdef AI_DEBUG_KART_HEADING
     irr::video::SColor c;
-    if(m_item_behaviour == ITEM_COLLECT_PRIORITY)
-        c = irr::video::SColor(128,   0,   0, 128);
-    else
-        c = irr::video::SColor(128,   0, 128,   0);
+    c = irr::video::SColor(128,   0,   0, 128);
     m_curve[CURVE_KART]      = new ShowCurve(0.5f, 0.5f, c);
 #endif
 #ifdef AI_DEBUG_NEW_FIND_NON_CRASHING
     m_curve[CURVE_LEFT]      = new ShowCurve(0.5f, 0.5f, 
-                                   irr::video::SColor(128, 128,   0,   0));
+                                            video::SColor(128, 128,   0,   0));
     m_curve[CURVE_RIGHT]     = new ShowCurve(0.5f, 0.5f, 
-                                   irr::video::SColor(128,   0, 128,   0));
+                                            video::SColor(128,   0, 128,   0));
 #endif
     m_curve[CURVE_QG]        = new ShowCurve(0.5f, 0.5f, 
-                                   irr::video::SColor(128,   0, 128,   0));
+                                            video::SColor(128,   0, 128,   0));
 #ifdef AI_DEBUG_KART_AIM
     irr::video::SColor c1;
-    if(m_item_behaviour == ITEM_COLLECT_PRIORITY)
-        c1 = irr::video::SColor(128,   0,   0, 128);
-    else
-        c1 = irr::video::SColor(128,   0, 128,   0);
+    c1 = irr::video::SColor(128,   0,   0, 128);
 
     m_curve[CURVE_AIM]       = new ShowCurve(0.5f, 0.5f, c1);
 #endif
 #endif
-
 
 }   // SkiddingAI
 
@@ -216,7 +158,8 @@ SkiddingAI::SkiddingAI(AbstractKart *kart)
 SkiddingAI::~SkiddingAI()
 {
 #ifdef AI_DEBUG
-    irr_driver->removeNode(m_debug_sphere);
+    for(unsigned int i=0; i<3; i++)
+        irr_driver->removeNode(m_debug_sphere[i]);
     irr_driver->removeNode(m_item_sphere);
     for(unsigned int i=0; i<NUM_CURVES; i++)
     {
@@ -242,6 +185,7 @@ void SkiddingAI::reset()
     m_current_track_direction    = GraphNode::DIR_STRAIGHT;
     m_item_to_collect            = NULL;
     m_avoid_item_close           = false;
+    m_skid_probability_state     = SKID_PROBAB_NOT_YET;
 
     AIBaseController::reset();
     m_track_node               = QuadGraph::UNKNOWN_SECTOR;
@@ -293,7 +237,17 @@ void SkiddingAI::update(float dt)
     {
         if (m_kart->getPowerup()->getType()==PowerupManager::POWERUP_NOTHING)
         {
-            if (m_kart->getAttachment()->getType() == Attachment::ATTACH_SWATTER)
+            if (m_kart->getPosition() > 1)
+            {
+                int r = rand() % 5;
+                if (r == 0 || r == 1)
+                    m_kart->setPowerup(PowerupManager::POWERUP_ZIPPER, 1);
+                else if (r == 2 || r == 3)
+                    m_kart->setPowerup(PowerupManager::POWERUP_BUBBLEGUM, 1);
+                else
+                    m_kart->setPowerup(PowerupManager::POWERUP_SWATTER, 1);
+            }
+            else if (m_kart->getAttachment()->getType() == Attachment::ATTACH_SWATTER)
             {
                 int r = rand() % 4;
                 if (r < 3)
@@ -348,6 +302,9 @@ void SkiddingAI::update(float dt)
     // Get information that is needed by more than 1 of the handling funcs
     computeNearestKarts();
 
+    m_kart->setSlowdown(MaxSpeed::MS_DECREASE_AI, 
+                        m_ai_properties->getSpeedCap(m_distance_to_player),
+                        /*fade_in_time*/0.0f);
     //Detect if we are going to crash with the track and/or kart
     checkCrashes(m_kart->getXYZ());
     determineTrackDirection();
@@ -355,7 +312,7 @@ void SkiddingAI::update(float dt)
     // Special behaviour if we have a bomb attach: try to hit the kart ahead 
     // of us.
     bool commands_set = false;
-    if(m_handle_bomb && 
+    if(m_ai_properties->m_handle_bomb && 
         m_kart->getAttachment()->getType()==Attachment::ATTACH_BOMB && 
         m_kart_ahead )
     {
@@ -502,6 +459,7 @@ void SkiddingAI::handleSteering(float dt)
     //Reaction to being outside of the road
 	float side_dist = 
 		m_world->getDistanceToCenterForKart( m_kart->getWorldKartId() );
+
     if( fabsf(side_dist)  >
        0.5f* QuadGraph::get()->getNode(m_track_node).getPathWidth()+0.5f )
     {
@@ -509,7 +467,7 @@ void SkiddingAI::handleSteering(float dt)
                                                     .getCenter());
 
 #ifdef AI_DEBUG
-        m_debug_sphere->setPosition(QuadGraph::get()->getQuadOfNode(next)
+        m_debug_sphere[0]->setPosition(QuadGraph::get()->getQuadOfNode(next)
                        .getCenter().toIrrVector());
         std::cout << "- Outside of road: steer to center point." <<
             std::endl;
@@ -558,13 +516,17 @@ void SkiddingAI::handleSteering(float dt)
         Vec3 aim_point;
         int last_node = QuadGraph::UNKNOWN_SECTOR;
 
-        if(m_use_new_aim_point_selection)
-            findNonCrashingPoint2(&aim_point, &last_node);
-        else
-            findNonCrashingPoint(&aim_point, &last_node);
-
+        switch(m_point_selection_algorithm)
+        {
+        case PSA_FIXED : findNonCrashingPointFixed(&aim_point, &last_node);
+                         break;
+        case PSA_NEW:    findNonCrashingPointNew(&aim_point, &last_node);
+                         break;
+        case PSA_DEFAULT:findNonCrashingPointDefault(&aim_point, &last_node);
+                         break;
+        }
 #ifdef AI_DEBUG
-        m_debug_sphere->setPosition(aim_point.toIrrVector());
+        m_debug_sphere[m_point_selection_algorithm]->setPosition(aim_point.toIrrVector());
 #endif
 #ifdef AI_DEBUG_KART_AIM
         const Vec3 eps(0,0.5f,0);
@@ -575,7 +537,7 @@ void SkiddingAI::handleSteering(float dt)
 
         // Potentially adjust the point to aim for in order to either
         // aim to collect item, or steer to avoid a bad item.
-        if(m_item_behaviour!=ITEM_COLLECT_NONE)
+        if(m_ai_properties->m_collect_avoid_items)
             handleItemCollectionAndAvoidance(&aim_point, last_node);
 
         steer_angle = steerToPoint(aim_point);
@@ -745,17 +707,45 @@ void SkiddingAI::handleItemCollectionAndAvoidance(Vec3 *aim_point,
         }
     }
 
-    // 5) Try to aim for items-to-collect
+    // 5) We are aiming for a new item. If necessary, determine
+    // randomly if this item sshould actually be collected.
+    // --------------------------------------------------------
+    if(items_to_collect.size()>0)
+    {
+        if(items_to_collect[0] != m_last_item_random)
+        {
+            int p = (int)(100.0f*m_ai_properties->
+                          getItemCollectProbability(m_distance_to_player));
+            m_really_collect_item = m_random_collect_item.get(100)<p;
+            m_last_item_random = items_to_collect[0];
+        }
+        if(!m_really_collect_item)
+        {
+            // The same item was selected previously, but it was randomly
+            // decided not to collect it - so keep on ignoring this item.
+            return;
+        }
+    }
+
+    // Reset the probability if a different (or no) item is selected.
+    if(items_to_collect.size()==0 || items_to_collect[0]!=m_last_item_random)
+        m_last_item_random = NULL;
+
+    // 6) Try to aim for items-to-collect
     // ----------------------------------
     if(items_to_collect.size()>0)
     {
         const Item *item_to_collect = items_to_collect[0];
         // Test if we would hit a bad item when aiming at this good item.
         // If so, don't change the aim. In this case it has already been
-        // ensured that we won't hit the bad item (otherwise steerToAVoid
+        // ensured that we won't hit the bad item (otherwise steerToAvoid
         // would have detected this earlier).
         if(!hitBadItemWhenAimAt(item_to_collect, items_to_avoid))
         {
+            // If the item is hit (with the current steering), it means
+            // it's on a good enough driveline, so make this item a permanent
+            // target. Otherwise only try to get closer (till hopefully this
+            // item s on our driveline)
             if(item_to_collect->hitLine(line_to_target, m_kart))
             {
 #ifdef AI_DEBUG
@@ -769,8 +759,10 @@ void SkiddingAI::handleItemCollectionAndAvoidance(Vec3 *aim_point,
                            item_to_collect->getType());
                 m_item_to_collect = item_to_collect;
             }
-            else   // kart will not hit item
+            else
             {
+                // Kart will not hit item, try to get closer to this item
+                // so that it can potentially become a permanent target.
                 Vec3 xyz = item_to_collect->getXYZ();
                 float item_angle = atan2(xyz.getX() - m_kart->getXYZ().getX(),
                                          xyz.getZ() - m_kart->getXYZ().getZ());
@@ -1156,7 +1148,7 @@ void SkiddingAI::handleItems(const float dt)
 
     // Tactic 1: wait ten seconds, then use item
     // -----------------------------------------
-    if(m_item_tactic==IT_TEN_SECONDS)
+    if(!m_ai_properties->m_item_usage_non_random)
     {
         if( m_time_since_last_shot > 10.0f )
         {
@@ -1344,22 +1336,37 @@ void SkiddingAI::computeNearestKarts()
     }
 
     m_distance_ahead = m_distance_behind = 9999999.9f;
-    float my_dist = m_world->getDistanceDownTrackForKart(m_kart->getWorldKartId());
+    float my_dist = m_world->getOverallDistance(m_kart->getWorldKartId());
     if(m_kart_ahead)
     {
         m_distance_ahead = 
-            m_world->getDistanceDownTrackForKart(m_kart_ahead->getWorldKartId())
-          - my_dist;
-        if(m_distance_ahead<0.0f)
-            m_distance_ahead += m_track->getTrackLength();
+            m_world->getOverallDistance(m_kart_ahead->getWorldKartId())
+            -my_dist;
     }
     if(m_kart_behind)
     {
         m_distance_behind = my_dist
-            -m_world->getDistanceDownTrackForKart(m_kart_behind->getWorldKartId());
-        if(m_distance_behind<0.0f)
-            m_distance_behind += m_track->getTrackLength();
+            -m_world->getOverallDistance(m_kart_behind->getWorldKartId());
     }
+
+    // Compute distance to nearest player kart
+    m_distance_to_player = 0.0f;
+    unsigned int n = ProfileWorld::isProfileMode() 
+                   ? 0 : race_manager->getNumPlayers();
+    // Initially use m_distance_to_player as 'maximum overall distance'
+    for(unsigned int i=0; i<n; i++)
+    {
+        unsigned int kart_id = 
+            m_world->getPlayerKart(i)->getWorldKartId();
+        if(m_world->getOverallDistance(kart_id)>m_distance_to_player)
+            m_distance_to_player = m_world->getOverallDistance(kart_id);
+    }
+    if(m_distance_to_player==0.0f)
+        m_distance_to_player = 999999.9f;   // force best driving 
+    // Now convert 'maximum overall distance' to distance to player.
+    m_distance_to_player = 
+                m_world->getOverallDistance(m_kart->getWorldKartId())
+                - m_distance_to_player;
 }   // computeNearestKarts
 
 //-----------------------------------------------------------------------------
@@ -1379,7 +1386,7 @@ void SkiddingAI::handleAcceleration( const float dt)
         return;
     }
 
-    if(m_kart->hasViewBlockedByPlunger())
+    if(m_kart->getBlockedByPlungerTime()>0)
     {
         if(m_kart->getSpeed() < m_kart->getCurrentMaxSpeed() / 2)
             m_controls->m_accel = 0.05f;
@@ -1389,18 +1396,6 @@ void SkiddingAI::handleAcceleration( const float dt)
     }
     
     m_controls->m_accel = stk_config->m_ai_acceleration;
-    if(!m_wait_for_players)
-        return;
-
-    //Find if any player is ahead of this kart
-    for(unsigned int i = 0; i < race_manager->getNumPlayers(); ++i )
-    {
-        if( m_kart->getPosition() > m_world->getPlayerKart(i)->getPosition() )
-        {
-            m_controls->m_accel = m_max_handicap_speed;
-            return;
-        }
-    }
 
 }   // handleAcceleration
 
@@ -1411,11 +1406,17 @@ void SkiddingAI::handleRaceStart()
     {
         // Each kart starts at a different, random time, and the time is
         // smaller depending on the difficulty.
-        m_start_delay = m_min_start_delay 
-                      + (float) rand() / RAND_MAX * (m_max_start_delay-m_min_start_delay);
+        m_start_delay = m_ai_properties->m_min_start_delay 
+                      + (float) rand() / RAND_MAX 
+                      * (m_ai_properties->m_max_start_delay -
+                         m_ai_properties->m_min_start_delay);
+
+        float false_start_probability = 
+               m_superpower == RaceManager::SUPERPOWER_NOLOK_BOSS
+               ? 0.0f  : m_ai_properties->m_false_start_probability;
 
         // Now check for a false start. If so, add 1 second penalty time.
-        if(rand() < RAND_MAX * m_false_start_probability)
+        if(rand() < RAND_MAX * false_start_probability)
         {
             m_start_delay+=stk_config->m_penalty_time;
             return;
@@ -1453,7 +1454,7 @@ void SkiddingAI::handleNitroAndZipper()
     if(m_kart->getSpeed() > 0.95f*m_kart->getCurrentMaxSpeed())
         return;
     // Don't use nitro when the AI has a plunger in the face!
-    if(m_kart->hasViewBlockedByPlunger()) return;
+    if(m_kart->getBlockedByPlungerTime()>0) return;
     
     // Don't use nitro if we are braking
     if(m_controls->m_brake) return;
@@ -1464,15 +1465,17 @@ void SkiddingAI::handleNitroAndZipper()
     // Don't compute nitro usage if we don't have nitro or are not supposed
     // to use it, and we don't have a zipper or are not supposed to use
     // it (calculated).
-    if( (m_kart->getEnergy()==0 || m_nitro_level==NITRO_NONE)  &&
+    if( (m_kart->getEnergy()==0 || 
+        m_ai_properties->m_nitro_usage==AIProperties::NITRO_NONE)  &&
         (m_kart->getPowerup()->getType()!=PowerupManager::POWERUP_ZIPPER ||
-          m_item_tactic==IT_TEN_SECONDS                                    ) )
+         !m_ai_properties->m_item_usage_non_random )                         )
         return;
 
     // If there are items to avoid close, and we only have zippers, don't
     // use them (since this make it harder to avoid items).
     if(m_avoid_item_close &&
-        (m_kart->getEnergy()==0|| m_nitro_level==NITRO_NONE) )
+        (m_kart->getEnergy()==0 ||
+         m_ai_properties->m_nitro_usage==AIProperties::NITRO_NONE) )
         return;
     // If a parachute or anvil is attached, the nitro doesn't give much
     // benefit. Better wait till later.
@@ -1492,7 +1495,8 @@ void SkiddingAI::handleNitroAndZipper()
     // (i.e. more than 2) nitro, use it.
     // -------------------------------------------------
     const unsigned int num_karts = m_world->getCurrentNumKarts();
-    if(m_kart->getPosition()== (int)num_karts && m_kart->getEnergy()>2.0f)
+    if(m_kart->getPosition()== (int)num_karts && 
+        num_karts>1 && m_kart->getEnergy()>2.0f)
     {
         m_controls->m_nitro = true;
         return;
@@ -1502,10 +1506,12 @@ void SkiddingAI::handleNitroAndZipper()
     // anyway. Since the kart is faster with nitro, estimate a 50% time
     // decrease (additionally some nitro will be saved when top speed
     // is reached).
-    if(m_world->getLapForKart(m_kart->getWorldKartId())==race_manager->getNumLaps()-1 &&
-        m_nitro_level == NITRO_ALL)
+    if(m_world->getLapForKart(m_kart->getWorldKartId())
+                        ==race_manager->getNumLaps()-1 &&
+       m_ai_properties->m_nitro_usage == AIProperties::NITRO_ALL)
     {
-        float finish = m_world->getEstimatedFinishTime(m_kart->getWorldKartId());
+        float finish = 
+            m_world->getEstimatedFinishTime(m_kart->getWorldKartId());
         if( 1.5f*m_kart->getEnergy() >= finish - m_world->getTime() )
         {
             m_controls->m_nitro = true;
@@ -1533,7 +1539,8 @@ void SkiddingAI::handleNitroAndZipper()
         m_kart_behind->getSpeed() > m_kart->getSpeed()    )
     {
         // Only prevent overtaking on highest level
-        m_controls->m_nitro = m_nitro_level==NITRO_ALL;
+        m_controls->m_nitro = m_ai_properties->m_nitro_usage
+                              == AIProperties::NITRO_ALL;
         return;
     }
     
@@ -1561,7 +1568,7 @@ void SkiddingAI::handleNitroAndZipper()
 void SkiddingAI::checkCrashes(const Vec3& pos )
 {
     int steps = int( m_kart->getVelocityLC().getZ() / m_kart_length );
-    if( steps < m_min_steps ) steps = m_min_steps;
+    if( steps < 2 ) steps = 2;
 
     // The AI drives significantly better with more steps, so for now
     // add 5 additional steps.
@@ -1577,7 +1584,8 @@ void SkiddingAI::checkCrashes(const Vec3& pos )
     // If slipstream should be handled actively, trigger overtaking the
     // kart which gives us slipstream if slipstream is ready
     const SlipStream *slip=m_kart->getSlipstream();
-    if(m_make_use_of_slipstream && slip->isSlipstreamReady() &&
+    if(m_ai_properties->m_make_use_of_slipstream && 
+        slip->isSlipstreamReady() &&
         slip->getSlipstreamTarget())
     {
         //printf("%s overtaking %s\n", m_kart->getIdent().c_str(),
@@ -1666,8 +1674,8 @@ void SkiddingAI::checkCrashes(const Vec3& pos )
  *  left line:
  *
  *      X       The new left line connecting kart to X will be to the right
- *              of the old left line, so the available space for the kart
- *    \      /  (
+ *              of the old left line, so the available area for the kart
+ *    \      /  will be dictated by the new left line.
  *     \    /
  *      kart
  *  Similarly for the right side. This will narrow down the available area
@@ -1682,7 +1690,7 @@ void SkiddingAI::checkCrashes(const Vec3& pos )
  *         driven to in a straight line.
  *  \param last_node The graph node index in which the aim_position is.
 */
-void SkiddingAI::findNonCrashingPoint2(Vec3 *result, int *last_node)
+void SkiddingAI::findNonCrashingPointNew(Vec3 *result, int *last_node)
 {    
     *last_node = m_next_node_index[m_track_node];
     const core::vector2df xz = m_kart->getXYZ().toIrrVector2d();
@@ -1733,6 +1741,8 @@ void SkiddingAI::findNonCrashingPoint2(Vec3 *result, int *last_node)
             m_curve[CURVE_LEFT]->addPoint(m_kart->getXYZ()+eps);
 #endif
         }
+        else
+            break;
 
         // Test if new right point is to the left of the right line. If
         // so, a new right line is defined.
@@ -1751,57 +1761,18 @@ void SkiddingAI::findNonCrashingPoint2(Vec3 *result, int *last_node)
 #endif
             right.end = p;
         }
+        else
+            break;
         *last_node = next_sector;
     }   // while
 
-    // Now look for the next curve to find out to which side of the
-    // track the AI should aim at
+    //Vec3 ppp(0.5f*(left.end.X+right.end.X),
+    //         m_kart->getXYZ().getY(),
+    //         0.5f*(left.end.Y+right.end.Y));
+    //*result = ppp;
 
-    *last_node = m_track_node;
-    int count = 0;
-    while(1)
-    {
-        GraphNode::DirectionType dir;
-        unsigned int last;
-        unsigned int succ = m_successor_index[*last_node];
-        const GraphNode &gn = QuadGraph::get()->getNode(*last_node);
-        gn.getDirectionData(succ, &dir, &last);
-        if(dir==GraphNode::DIR_LEFT)
-        {
-            core::vector2df diff = left.end - right.end;
-            diff.normalize();
-            diff *= m_kart->getKartWidth()*0.5f;
-            *result = Vec3(left.end.X - diff.X,
-                           m_kart->getXYZ().getY(), 
-                           left.end.Y - diff.Y);
-            return;
-        }
-        else if(dir==GraphNode::DIR_RIGHT)
-        {
-            core::vector2df diff = right.end - left.end;
-            diff.normalize();
-            diff *= m_kart->getKartWidth()*0.5f;
-            *result = Vec3(right.end.X-diff.X, 
-                           m_kart->getXYZ().getY(),
-                           right.end.Y-diff.Y);
-            return;
-        }
-
-        // We are going straight. Determine point to aim for based on the 
-        // direction of the track after the straight section
-
-        *last_node = m_next_node_index[last];
-        count++;
-        if(count>1)
-            printf("That shouldn't happen %d!!!\n", count);
-    }
-    
-    Vec3 ppp(0.5f*(left.end.X+right.end.X),
-             m_kart->getXYZ().getY(),
-             0.5f*(left.end.Y+right.end.Y));
     *result = QuadGraph::get()->getQuadOfNode(*last_node).getCenter();
-    *result = ppp;
-}   // findNonCrashingPoint2
+}   // findNonCrashingPointNew
 
 //-----------------------------------------------------------------------------
 /** Find the sector that at the longest distance from the kart, that can be
@@ -1812,7 +1783,7 @@ void SkiddingAI::findNonCrashingPoint2(Vec3 *result, int *last_node)
  *         driven to in a straight line.
  *  \param last_node The graph node index in which the aim_position is.
  */
-void SkiddingAI::findNonCrashingPoint(Vec3 *aim_position, int *last_node)
+void SkiddingAI::findNonCrashingPointFixed(Vec3 *aim_position, int *last_node)
 {    
 #ifdef AI_DEBUG_KART_HEADING
     const Vec3 eps(0,0.5f,0);
@@ -1830,7 +1801,7 @@ void SkiddingAI::findNonCrashingPoint(Vec3 *aim_position, int *last_node)
     // The original while(1) loop is replaced with a for loop to avoid
     // infinite loops (which we had once or twice). Usually the number
     // of iterations in the while loop is less than 7.
-    for(unsigned int i=0; i<100; i++)
+    for(unsigned int j=0; j<100; j++)
     {
         // target_sector is the sector at the longest distance that we can 
         // drive to without crashing with the track.
@@ -1849,7 +1820,112 @@ void SkiddingAI::findNonCrashingPoint(Vec3 *aim_position, int *last_node)
         // 20 steps)
         if( steps>1000) steps = 1000;
 
-        //Protection against having vel_normal with nan values
+        // Protection against having vel_normal with nan values
+        if(len>0.0f) {
+            direction*= 1.0f/len;
+        }
+
+        Vec3 step_coord;
+        //Test if we crash if we drive towards the target sector
+        for(unsigned int i = 2; i < steps; ++i )
+        {
+            step_coord = m_kart->getXYZ()+direction*m_kart_length * float(i);
+
+            QuadGraph::get()->spatialToTrack(&step_track_coord, step_coord,
+                                             *last_node );
+ 
+            float distance = fabsf(step_track_coord[0]);
+
+            //If we are outside, the previous node is what we are looking for
+            if ( distance + m_kart_width * 0.5f 
+                 > QuadGraph::get()->getNode(*last_node).getPathWidth()*0.5f )
+            {
+                *aim_position = QuadGraph::get()->getQuadOfNode(*last_node)
+                                                 .getCenter();
+                return;
+            }
+        }
+        *last_node = target_sector;
+    }   // for i<100
+    *aim_position = QuadGraph::get()->getQuadOfNode(*last_node).getCenter();
+}   // findNonCrashingPointFixed
+
+//-----------------------------------------------------------------------------
+/** This is basically the original AI algorithm. It is clearly buggy:
+ *  1) the test:
+ *     distance + m_kart_width * 0.5f 
+ *              > QuadGraph::get()->getNode(*last_node).getPathWidth() )\
+ *     is incorrect, it should compare with getPathWith*0.5f (since distance
+ *     is the distance from the center, i.e. it is half the path width if
+ *     the point is at the edge).
+ *  2) the test:
+ *     QuadGraph::get()->spatialToTrack(&step_track_coord, step_coord,
+ *                                            *last_node );
+ *     in the for loop tests always against distance from the same 
+ *     graph node (*last_node), while de-fact the loop will test points
+ *     on various graph nodes.
+ *  This results in this algorithm often picking points to aim at that
+ *  would actually force the kart off track. But in reality the kart has
+ *  to turn (and does not immediate in one frame change its direction)
+ *  which takes some time - so it is actually mostly on track.
+ *  Since this algoritm (so far) ends up with by far the best AI behaviour,
+ *  it is for now the default).
+ *  \param aim_position On exit contains the point the AI should aim at.
+ *  \param last_node On exit contais the graph node the AI is aiming at.
+*/ 
+ void SkiddingAI::findNonCrashingPointDefault(Vec3 *aim_position, int *last_node)
+{    
+#ifdef AI_DEBUG_KART_HEADING
+    const Vec3 eps(0,0.5f,0);
+    m_curve[CURVE_KART]->clear();
+    m_curve[CURVE_KART]->addPoint(m_kart->getXYZ()+eps);
+    Vec3 forw(0, 0, 50);
+    m_curve[CURVE_KART]->addPoint(m_kart->getTrans()(forw)+eps);
+#endif
+    *last_node = m_next_node_index[m_track_node];
+    float angle = QuadGraph::get()->getAngleToNext(m_track_node, 
+                                              m_successor_index[m_track_node]);
+    int target_sector;
+
+    Vec3 direction;
+    Vec3 step_track_coord;
+
+    float angle1;
+    // The original while(1) loop is replaced with a for loop to avoid
+    // infinite loops (which we had once or twice). Usually the number
+    // of iterations in the while loop is less than 7.
+    for(unsigned int j=0; j<100; j++)
+    {
+        // target_sector is the sector at the longest distance that we can 
+        // drive to without crashing with the track.
+        target_sector = m_next_node_index[*last_node];
+        angle1 = QuadGraph::get()->getAngleToNext(target_sector, 
+                                                m_successor_index[target_sector]);
+        // In very sharp turns this algorithm tends to aim at off track points,
+        // resulting in hitting a corner. So test for this special case and 
+        // prevent a too-far look-ahead in this case
+        float diff = normalizeAngle(angle1-angle);
+        if(fabsf(diff)>1.5f)
+        {
+            *aim_position = QuadGraph::get()->getQuadOfNode(target_sector)
+                                                 .getCenter();
+            return;
+        }
+
+        //direction is a vector from our kart to the sectors we are testing
+        direction = QuadGraph::get()->getQuadOfNode(target_sector).getCenter()
+                  - m_kart->getXYZ();
+
+        float len=direction.length_2d();
+        unsigned int steps = (unsigned int)( len / m_kart_length );
+        if( steps < 3 ) steps = 3;
+
+        // That shouldn't happen, but since we had one instance of
+        // STK hanging, add an upper limit here (usually it's at most
+        // 20 steps)
+        if( steps>1000) steps = 1000;
+
+        // Protection against having vel_normal with nan values
         if(len>0.0f) {
             direction*= 1.0f/len;
         }
@@ -1874,10 +1950,11 @@ void SkiddingAI::findNonCrashingPoint(Vec3 *aim_position, int *last_node)
                 return;
             }
         }
+        angle = angle1;
         *last_node = target_sector;
     }   // for i<100
     *aim_position = QuadGraph::get()->getQuadOfNode(*last_node).getCenter();
-}   // findNonCrashingPoint
+}   // findNonCrashingPointDefault
 
 //-----------------------------------------------------------------------------
 /** Determines the direction of the track ahead of the kart: 0 indicates 
@@ -2126,14 +2203,45 @@ bool SkiddingAI::doSkid(float steer_fraction)
 void SkiddingAI::setSteering(float angle, float dt)
 {
     float steer_fraction = angle / m_kart->getMaxSteerAngle();
-    m_controls->m_skid   = doSkid(steer_fraction);
+
+    // Use a simple finite state machine to make sure to randomly decide
+    // whether to skid or not only once per skid section. See docs for
+    // m_skid_probability_state for more details.
+    if(!doSkid(steer_fraction))
+    {
+        m_skid_probability_state = SKID_PROBAB_NOT_YET;
+        m_controls->m_skid       = KartControl::SC_NONE;
+    }
+    else
+    {
+        KartControl::SkidControl sc = steer_fraction > 0 
+                                    ? KartControl::SC_RIGHT 
+                                    : KartControl::SC_LEFT; 
+        if(m_skid_probability_state==SKID_PROBAB_NOT_YET)
+        {
+            int prob = (int)(100.0f*m_ai_properties
+                               ->getSkiddingProbability(m_distance_to_player));
+            int r = m_random_skid.get(100);
+            m_skid_probability_state = (r<prob)
+                                     ? SKID_PROBAB_SKID 
+                                     : SKID_PROBAB_NO_SKID;
+#undef PRINT_SKID_STATS
+#ifdef PRINT_SKID_STATS
+            printf("%s distance %f prob %d skidding %s\n", 
+                   m_kart->getIdent().c_str(), distance, prob, 
+                   sc= ? "no" : sc==KartControl::SC_LEFT ? "left" : "right");
+#endif
+        }
+        m_controls->m_skid = m_skid_probability_state == SKID_PROBAB_SKID 
+                           ? sc : KartControl::SC_NONE;
+    }
 
     // Adjust steer fraction in case to be in [-1,1]
     if     (steer_fraction >  1.0f) steer_fraction =  1.0f;
     else if(steer_fraction < -1.0f) steer_fraction = -1.0f;
 
     // Restrict steering when a plunger is in the face
-    if(m_kart->hasViewBlockedByPlunger())
+    if(m_kart->getBlockedByPlungerTime()>0)
     {
         if     (steer_fraction >  0.5f) steer_fraction =  0.5f;
         else if(steer_fraction < -0.5f) steer_fraction = -0.5f;
@@ -2149,7 +2257,7 @@ void SkiddingAI::setSteering(float angle, float dt)
     if((ss==Skidding::SKID_ACCUMULATE_LEFT  && steer_fraction>0.2f ) ||
        (ss==Skidding::SKID_ACCUMULATE_RIGHT && steer_fraction<-0.2f)    )
     {
-        m_controls->m_skid = false;
+        m_controls->m_skid = KartControl::SC_NONE;
 #ifdef DEBUG
         if(m_ai_debug)
             printf("[AI] skid : '%s' wrong steering, stop skid.\n",
@@ -2157,19 +2265,20 @@ void SkiddingAI::setSteering(float angle, float dt)
 #endif
     }
 
-    if(m_controls->m_skid && ( ss==Skidding::SKID_ACCUMULATE_LEFT ||
-                               ss==Skidding::SKID_ACCUMULATE_RIGHT  ) )
+    if(m_controls->m_skid!=KartControl::SC_NONE && 
+            ( ss==Skidding::SKID_ACCUMULATE_LEFT ||
+              ss==Skidding::SKID_ACCUMULATE_RIGHT  )  )
     {
         steer_fraction = 
             skidding->getSteeringWhenSkidding(steer_fraction);
         if(fabsf(steer_fraction)>1.8)
         {
 #ifdef DEBUG
-        if(m_ai_debug)
-            printf("[AI] skid: %s steering too much (%f).\n",
-                    m_kart->getIdent().c_str(), steer_fraction);
+            if(m_ai_debug)
+                printf("[AI] skid: %s steering too much (%f).\n",
+                       m_kart->getIdent().c_str(), steer_fraction);
 #endif
-            m_controls->m_skid = false;
+            m_controls->m_skid = KartControl::SC_NONE;
         }
         if(steer_fraction<-1.0f)
             steer_fraction = -1.0f;

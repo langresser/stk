@@ -42,7 +42,6 @@
 #include "utils/string_utils.hpp"
 #include "utils/time.hpp"
 #include "utils/translation.hpp"
-#include "platform_util.h"
 
 #if defined(WIN32) && !defined(__CYGWIN__)
 // Use Sleep, which takes time in msecs. It must be defined after the
@@ -51,8 +50,6 @@
 #else
 #  include <unistd.h>
 #endif
-
-INetworkHttp *network_http = NULL;
 
 // ----------------------------------------------------------------------------
 /** Create a thread that handles all network functions independent of the 
@@ -406,8 +403,6 @@ CURLcode NetworkHttp::reInit()
 
     std::string news_file = file_manager->getAddonsFile("news.xml");
     file_manager->removeFile(news_file);
-    std::string addons_file = file_manager->getAddonsFile("addons.xml");
-    file_manager->removeFile(addons_file);
     if(UserConfigParams::logAddons())
         printf("[addons] Xml files deleted, re-initialising addon manager.\n");
 
@@ -518,7 +513,7 @@ CURLcode NetworkHttp::downloadFileInternal(Request *request)
     curl_easy_setopt(m_curl_session, CURLOPT_USERAGENT, uagent.c_str());
     curl_easy_setopt(m_curl_session, CURLOPT_FOLLOWLOCATION, 1);
     curl_easy_setopt(m_curl_session, CURLOPT_PROGRESSDATA, request);
-    FILE * fout = open_file((full_save+".part").c_str(), "wb");
+    FILE * fout = fopen((full_save+".part").c_str(), "wb");
         
     if(!fout)
     {
@@ -533,6 +528,9 @@ CURLcode NetworkHttp::downloadFileInternal(Request *request)
     curl_easy_setopt(m_curl_session,  CURLOPT_PROGRESSFUNCTION, 
                      &NetworkHttp::progressDownload);
     curl_easy_setopt(m_curl_session,  CURLOPT_NOPROGRESS, 0);
+
+    // 30 sec to timeout, maybe change the value
+    curl_easy_setopt(m_curl_session, CURLOPT_TIMEOUT, 30);
                 
     CURLcode status = curl_easy_perform(m_curl_session);
     fclose(fout);
@@ -634,7 +632,7 @@ int NetworkHttp::progressDownload(void *clientp,
 {
     Request *request = (Request *)clientp;
     
-    NetworkHttp* self = (NetworkHttp*)network_http;
+    NetworkHttp* self = (NetworkHttp*)INetworkHttp::get();
     
     // Check if we are asked to abort the download. If so, signal this
     // back to libcurl by returning a non-zero status.

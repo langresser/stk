@@ -27,7 +27,7 @@
 #include <string.h>
 #include <vector>
 
-#include "addons/network_http.hpp"
+#include "addons/inetwork_http.hpp"
 #include "addons/request.hpp"
 #include "addons/zip.hpp"
 #include "graphics/irr_driver.hpp"
@@ -203,7 +203,8 @@ void AddonsManager::initOnline(const XMLNode *xml)
 
     m_state.setAtomic(STATE_READY);
 
-    downloadIcons();
+    if (UserConfigParams::m_internet_status == INetworkHttp::IPERM_ALLOWED)
+        downloadIcons();
 }   // initOnline
 
 // ----------------------------------------------------------------------------
@@ -212,9 +213,6 @@ void AddonsManager::initOnline(const XMLNode *xml)
  */
 void AddonsManager::reInit()
 {
-    m_addons_list.lock();
-    m_addons_list.getData().clear();
-    m_addons_list.unlock();
     m_state.setAtomic(STATE_INIT);
 }   // reInit
 
@@ -301,9 +299,9 @@ void AddonsManager::downloadIcons()
                 continue;
             }
             std::string save        = "icons/"+icon;
-            Request *r = network_http->downloadFileAsynchron(url, save, 
-                                                 /*priority*/1,
-                                               /*manage_mem*/true);
+            Request *r = INetworkHttp::get()->downloadFileAsynchron(url, save, 
+                                                            /*priority*/1,
+                                                           /*manage_mem*/true);
             if (r != NULL)
                 r->setAddonIconNotification(&addon);            
         }

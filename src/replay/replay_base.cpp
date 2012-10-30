@@ -19,7 +19,6 @@
 
 #include "io/file_manager.hpp"
 #include "race/race_manager.hpp"
-#include "platform_util.h"
 
 // -----------------------------------------------------------------------------
 ReplayBase::ReplayBase()
@@ -36,11 +35,11 @@ FILE* ReplayBase::openReplayFile(bool writeable)
 {
     m_filename = file_manager->getConfigDir()+"/"
                + race_manager->getTrackName()+".replay";
-    FILE *fd = open_file(m_filename.c_str(), writeable ? "w" : "r");
+    FILE *fd = fopen(m_filename.c_str(), writeable ? "w" : "r");
     if(!fd)
     {
         m_filename = race_manager->getTrackName()+".replay";
-        fd = open_file(m_filename.c_str(), writeable ? "w" : "r");
+        fd = fopen(m_filename.c_str(), writeable ? "w" : "r");
     }
     return fd;
 

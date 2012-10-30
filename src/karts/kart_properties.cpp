@@ -56,10 +56,6 @@ KartProperties::KartProperties(const std::string &filename)
     m_shadow_y_offset = 0.0f;
 
     m_groups.clear();
-    m_turn_angle_at_speed.clear();
-    m_turn_radius_at_speed.clear();
-    m_turn_speed.clear();
-    m_speed_angle_increase.clear();
     m_custom_sfx_id.resize(SFXManager::NUM_CUSTOMS);
 
     // Set all other values to undefined, so that it can later be tested
@@ -85,7 +81,7 @@ KartProperties::KartProperties(const std::string &filename)
         m_plunger_in_face_duration[1] = m_plunger_in_face_duration[2] =
         m_zipper_time = m_zipper_force = m_zipper_speed_gain =
         m_zipper_max_speed_increase = m_zipper_fade_out_time =       
-        m_slipstream_length = m_slipstream_collect_time = 
+        m_slipstream_length = m_slipstream_width = m_slipstream_collect_time =
         m_slipstream_use_time = m_slipstream_add_power =
         m_slipstream_min_speed = m_slipstream_max_speed_increase =
         m_slipstream_duration = m_slipstream_fade_out_time =
@@ -109,13 +105,15 @@ KartProperties::KartProperties(const std::string &filename)
     if (filename != "") 
     {
         m_skidding_properties = NULL;
-        m_ai_properties       = NULL;
+        for(unsigned int i=0; i<RaceManager::DIFFICULTY_COUNT; i++)
+            m_ai_properties[i]= NULL;
         load(filename, "kart");
     }
     else
     {
         m_skidding_properties = new SkiddingProperties();
-        m_ai_properties       = new AIProperties();
+        for(unsigned int i=0; i<RaceManager::DIFFICULTY_COUNT; i++)
+            m_ai_properties[i]= new AIProperties((RaceManager::Difficulty)i);
     }
 }   // KartProperties
 
@@ -126,8 +124,9 @@ KartProperties::~KartProperties()
     delete m_kart_model;
     if(m_skidding_properties)
         delete m_skidding_properties;
-    if(m_ai_properties)
-        delete m_ai_properties;
+    for(unsigned int i=0; i<RaceManager::DIFFICULTY_COUNT; i++)
+        if(m_ai_properties[i])
+            delete m_ai_properties[i];
 }   // ~KartProperties
 
 //-----------------------------------------------------------------------------
@@ -141,14 +140,18 @@ void KartProperties::copyFrom(const KartProperties *source)
 {
     *this = *source;
 
-    // After the memcpy the two skidding properties will share pointers.
+    // After the memcpy any pointers will be shared.
     // So all pointer variables need to be separately allocated and assigned.
     m_skidding_properties = new SkiddingProperties();
     assert(m_skidding_properties);
-    m_ai_properties       = new AIProperties();
-    assert(m_ai_properties);
     *m_skidding_properties = *source->m_skidding_properties;
-    *m_ai_properties       = *source->m_ai_properties;
+
+    for(unsigned int i=0; i<RaceManager::DIFFICULTY_COUNT; i++)
+    {
+        m_ai_properties[i] = new AIProperties((RaceManager::Difficulty)i);
+        assert(m_ai_properties);
+        *m_ai_properties[i] = *source->m_ai_properties[i];
+    }
 }   // copyFrom
 
 //-----------------------------------------------------------------------------
@@ -242,24 +245,15 @@ void KartProperties::load(const std::string &filename, const std::string &node)
                                            m_wheel_radius           );
     m_wheel_base = fabsf( m_kart_model->getWheelPhysicsPosition(0).getZ()
                          -m_kart_model->getWheelPhysicsPosition(2).getZ());
-    for(unsigned int i=0; i<m_turn_radius_at_speed.size(); i++)
+
+    // Now convert the turn radius into turn angle:
+    for(unsigned int i=0; i<m_turn_angle_at_speed.size(); i++)
     {
-        m_turn_angle_at_speed.push_back(
-                     sin(m_wheel_base/m_turn_radius_at_speed[i])
-                     );
-    }
-    for(unsigned int i=0; i<m_turn_speed.size()-1; i++)
-    {
-        if(m_turn_speed[i]==m_turn_speed[i+1])
-            m_speed_angle_increase.push_back(0);
-        else
-            m_speed_angle_increase.push_back(
-                (m_turn_angle_at_speed[i]-m_turn_angle_at_speed[i+1])/
-                (m_turn_speed[i+1]-m_turn_speed[i]) );
+        m_turn_angle_at_speed.setY( i, 
+                            sin(m_wheel_base/m_turn_angle_at_speed.getY(i)) );
     }
 
-    
-    m_shadow_texture = irr_driver->getTexture(m_root + "/" + m_shadow_file);
+    m_shadow_texture = irr_driver->getTexture(m_shadow_file);
     file_manager->popTextureSearchPath();
     file_manager->popModelSearchPath();
 
@@ -329,12 +323,18 @@ void KartProperties::getAllData(const XMLNode * root)
 
     if(const XMLNode *ai_node = root->getNode("ai"))
     {
-        m_ai_properties->load(ai_node);
+        const XMLNode *easy = ai_node->getNode("easy");
+        m_ai_properties[RaceManager::DIFFICULTY_EASY]->load(easy);
+        const XMLNode *medium = ai_node->getNode("medium");
+        m_ai_properties[RaceManager::DIFFICULTY_MEDIUM]->load(medium);
+        const XMLNode *hard = ai_node->getNode("hard");
+        m_ai_properties[RaceManager::DIFFICULTY_HARD]->load(hard);
     }
 
     if(const XMLNode *slipstream_node = root->getNode("slipstream"))
     {
         slipstream_node->get("length",       &m_slipstream_length            );
+        slipstream_node->get("width",        &m_slipstream_width             );
         slipstream_node->get("collect-time", &m_slipstream_collect_time      );
         slipstream_node->get("use-time",     &m_slipstream_use_time          );
         slipstream_node->get("add-power",    &m_slipstream_add_power         );
@@ -348,33 +348,10 @@ void KartProperties::getAllData(const XMLNode * root)
     if(const XMLNode *turn_node = root->getNode("turn"))
     {
         turn_node->get("time-full-steer",      &m_time_full_steer     );
-        turn_node->get("turn-speed",           &m_turn_speed          );
-        turn_node->get("turn-radius",          &m_turn_radius_at_speed);
+        turn_node->get("turn-radius",          &m_turn_angle_at_speed );
         // For now store the turn radius in turn angle, the correct
         // value can only be determined later in ::load
-        if(m_turn_speed.size()==0 || 
-            m_turn_radius_at_speed.size() != m_turn_speed.size())
-        {
-            printf("Inconsistent turn-speed and turn-radius "
-                   "settings for kart %s\n", getIdent().c_str());
-            exit(-1);
-        }
-        for(unsigned int i=0; i<m_turn_speed.size()-1; i++)
-        {
-            if(m_turn_speed[i]>m_turn_speed[i+1])
-            {
-                printf("The turn-speed must be specified with increasing "
-                       "values for kart %s.\n", getIdent().c_str());
-                exit(-1);
-            }
-            if(m_turn_radius_at_speed[i]>m_turn_radius_at_speed[i+1])
-            {
-                printf("The turn-radius must be increasing for kart %s.\n",
-                       getIdent().c_str());
-                exit(-1);
-            }
-        }
-    }   // if turn_node
+    }
 
     if(const XMLNode *engine_node = root->getNode("engine"))
     {
@@ -466,7 +443,8 @@ void KartProperties::getAllData(const XMLNode * root)
         collision_node->get("bevel-factor",    &m_bevel_factor             );
     }
 
-    //TODO: wheel front right and wheel front left is not loaded, yet is listed as an attribute in the xml file after wheel-radius
+    //TODO: wheel front right and wheel front left is not loaded, yet is 
+    //TODO: listed as an attribute in the xml file after wheel-radius
     //TODO: same goes for their rear equivalents
 
     if(const XMLNode *plunger_node= root->getNode("plunger"))
@@ -650,6 +628,7 @@ void KartProperties::checkAllSet(const std::string &filename)
     CHECK_NEG(m_zipper_speed_gain,          "zipper-speed-gain"             );
     CHECK_NEG(m_zipper_max_speed_increase,  "zipper-max-speed-increase"     );
     CHECK_NEG(m_slipstream_length,          "slipstream length"             );
+    CHECK_NEG(m_slipstream_width,           "slipstream width"              );
     CHECK_NEG(m_slipstream_collect_time,    "slipstream collect-time"       );
     CHECK_NEG(m_slipstream_use_time,        "slipstream use-time"           );
     CHECK_NEG(m_slipstream_add_power,       "slipstream add-power"          );
@@ -683,52 +662,9 @@ void KartProperties::checkAllSet(const std::string &filename)
     CHECK_NEG(m_explosion_radius,           "explosion radius"              );
 
     m_skidding_properties->checkAllSet(filename);
-    m_ai_properties->checkAllSet(filename);
+    for(unsigned int i=0; i<RaceManager::DIFFICULTY_COUNT; i++)
+        m_ai_properties[i]->checkAllSet(filename);
 }   // checkAllSet
-
-// ----------------------------------------------------------------------------
-float KartProperties::getMaxSteerAngle(float speed) const
-{
-    if(speed<=m_turn_speed[0])  return m_turn_angle_at_speed[0];
-    unsigned int last = m_turn_speed.size()-1;
-    if(speed>=m_turn_speed[last]) return m_turn_angle_at_speed[last];
-
-    for(unsigned int i=1; i<=last; i++)
-    {
-        if(speed <= m_turn_speed[i])
-        {
-            // Interpolate between i and i+1
-            return m_turn_angle_at_speed[i] -
-                (speed-m_turn_speed[i])*m_speed_angle_increase[i-1];
-        }
-    }
-    // This should never be reached
-    assert (0);
-    return 0;  // avoid compiler warning
-}   // getMaxSteerAngle
-
-// ----------------------------------------------------------------------------
-/** Returns the (maximum) speed for a given turn radius. 
- *  \param radius The radius for which the speed needs to be computed.
- */
-float KartProperties::getSpeedForTurnRadius(float radius) const
-{
-    if(radius < m_turn_radius_at_speed[0] )
-        return m_turn_speed[0];
-
-    const unsigned int last = m_turn_speed.size();
-
-    for(unsigned int i=1; i<last; i++)
-    {
-        if(radius < m_turn_radius_at_speed[i])
-        {
-            return m_turn_speed[i-1] 
-            + (m_turn_speed[i]-m_turn_speed[i-1]) * (radius-m_turn_radius_at_speed[i-1])
-                                                 / (m_turn_radius_at_speed[i]-m_turn_radius_at_speed[i-1]);
-        }
-    }   // for i < last
-    return m_turn_speed[last-1];
-}   // getSpeedForTurnRadius
 
 // ----------------------------------------------------------------------------
 /** Called the first time a kart accelerates after 'ready-set-go'. It searches

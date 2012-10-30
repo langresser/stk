@@ -533,7 +533,7 @@ void QuadGraph::createDebugMesh()
                /*enable_transparency*/true);
 
     // Now colour the quads red/blue/red ...
-    video::SColor     c( 32, 255, 0, 0);    
+    video::SColor     c( 128, 255, 0, 0);    
     video::S3DVertex *v = (video::S3DVertex*)m_mesh_buffer->getVertices();
     for(unsigned int i=0; i<m_mesh_buffer->getVertexCount(); i++)
     {
@@ -731,7 +731,11 @@ void QuadGraph::determineDirection(unsigned int current,
     int prev = next;                           // is now n+1
     next     = getNode(next).getSuccessor(0);  // next is now n+2
 
-    while(1)
+    // If the direction is still the same during a lap the last node
+    // in the same direction is the previous node;
+    int max_step = m_all_nodes.size()-1;
+
+    while(max_step-- != 0)
     {
         // Now compute the angle from n+1 (new current) to n+2 (new next)
         angle_current = angle_next;
@@ -900,25 +904,46 @@ int QuadGraph::findOutOfRoadSector(const Vec3& xyz,
 
     int   min_sector = UNKNOWN_SECTOR;
     float min_dist_2 = 999999.0f*999999.0f;
-    for(int j=0; j<count; j++)
-    {
-        int next_sector;
-        if(all_sectors) 
-            next_sector = (*all_sectors)[j];
-        else
-            next_sector  = current_sector+1 == (int)getNumNodes() 
-                         ? 0 
-                         : current_sector+1;
 
-        // A first simple test uses the 2d distance to the center of the quad.
-        float dist_2 = m_all_nodes[next_sector]->getDistance2FromPoint(xyz);
-        if(dist_2<min_dist_2)
+    // If a kart is falling and in between (or too far below) 
+    // a driveline point it might not fulfill
+    // the height condition. So we run the test twice: first with height
+    // condition, then again without the height condition - just to make sure
+    // it always comes back with some kind of quad.
+    for(int phase=0; phase<2; phase++)
+    {
+        for(int j=0; j<count; j++)
         {
-            min_dist_2 = dist_2;
-            min_sector = next_sector;
-        }
-        current_sector = next_sector;
-    }   // for j
+            int next_sector;
+            if(all_sectors) 
+                next_sector = (*all_sectors)[j];
+            else
+                next_sector  = current_sector+1 == (int)getNumNodes() 
+                ? 0 
+                : current_sector+1;
+
+            // A first simple test uses the 2d distance to the center of the quad.
+            float dist_2 = m_all_nodes[next_sector]->getDistance2FromPoint(xyz);
+            if(dist_2<min_dist_2)
+            {
+                const Quad &q = getQuadOfNode(next_sector);
+                float dist    = xyz.getY() - q.getMinHeight();
+                // While negative distances are unlikely, we allow some small
+                // negative numbers in case that the kart is partly in the 
+                // track. Only do the height test in phase==0, in phase==1
+                // accept any point, independent of height.
+                if(phase==1 || (dist < 5.0f && dist>-1.0f) )
+                {
+                    min_dist_2 = dist_2;
+                    min_sector = next_sector;
+                }
+            }
+            current_sector = next_sector;
+        }   // for j
+        // Leave in phase 0 if any sector was found.
+        if(min_sector!=UNKNOWN_SECTOR)
+            return min_sector;
+    }   // phase
 
     if(min_sector==UNKNOWN_SECTOR )
     {

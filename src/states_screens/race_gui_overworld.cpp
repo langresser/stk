@@ -175,7 +175,7 @@ void RaceGUIOverworld::renderGlobal(float dt)
  *  collectibles, ...
  *  \param kart Pointer to the kart for which to render the view.
  */
-void RaceGUIOverworld::renderPlayerView(const AbstractKart *kart)
+void RaceGUIOverworld::renderPlayerView(const AbstractKart *kart, float dt)
 {
     if (!m_enabled) return;
     
@@ -194,7 +194,7 @@ void RaceGUIOverworld::renderPlayerView(const AbstractKart *kart)
         
     drawPowerupIcons    (kart, viewport, scaling);
     
-    RaceGUIBase::renderPlayerView(kart);
+    RaceGUIBase::renderPlayerView(kart, dt);
 }   // renderPlayerView
 
 //-----------------------------------------------------------------------------
@@ -374,9 +374,9 @@ void RaceGUIOverworld::drawGlobalMiniMap()
         int state = (challenges[n].getForceField().m_is_locked ? LOCKED : OPEN);
         
         const Challenge* c = unlock_manager->getCurrentSlot()->getChallenge(challenges[n].m_challenge_id);
-        if (c->isSolved(RaceManager::RD_HARD))        state = COMPLETED_HARD;
-        else if (c->isSolved(RaceManager::RD_MEDIUM)) state = COMPLETED_MEDIUM;
-        else if (c->isSolved(RaceManager::RD_EASY))   state = COMPLETED_EASY;
+        if (c->isSolved(RaceManager::DIFFICULTY_HARD))        state = COMPLETED_HARD;
+        else if (c->isSolved(RaceManager::DIFFICULTY_MEDIUM)) state = COMPLETED_MEDIUM;
+        else if (c->isSolved(RaceManager::DIFFICULTY_EASY))   state = COMPLETED_EASY;
 
         const core::rect<s32> source(core::position2d<s32>(0,0),
                                      m_icons[state]->getOriginalSize());

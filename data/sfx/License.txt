@@ -105,6 +105,10 @@
 
 * locked
     By "Stephan" from pdsounds.org (license is public domain)
+
+* machine_sound
+    based on sound by Swelk, released under CC-BY 3.0, with modifications by Marianne Gagnon
+    http://www.freesound.org/people/swelk/sounds/12906/
     
 * metal_clang
     based on public domain sound by dADDoiT and CC-BY 3.0 sounds by Mike Koenig
@@ -118,6 +122,11 @@
      * GNU GPL Version 2 or Later
      * CreativeCommons BY 3.0
 
+* plunger
+    Based on work by Mike Koenig (http://soundbible.com/845-Suction.html)
+    With modifications by Marianne Gagnon
+    Released under CC-BY-SA 3.0
+     
 * portal
     by Arthur_D
     released under CC-BY-SA 3.0

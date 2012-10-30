@@ -30,6 +30,7 @@
 #include "items/item_manager.hpp"
 #include "modes/overworld.hpp"
 #include "modes/world.hpp"
+#include "states_screens/dialogs/race_paused_dialog.hpp"
 #include "tracks/track.hpp"
 
 #include <IMeshSceneNode.h>
@@ -242,6 +243,7 @@ TrackObject::TrackObject(const XMLNode &xml_node)
             scene::IAnimatedMeshSceneNode *node =
                 irr_driver->addAnimatedMesh((scene::IAnimatedMesh*)m_mesh);
             m_node = node;
+            node->setName(model_name.c_str());
             
             m_frame_start = node->getStartFrame();
             xml_node.get("frame-start", &m_frame_start);
@@ -403,7 +405,12 @@ void TrackObject::reset()
         a_node->setRotation(m_init_hpr);
         a_node->setScale(m_init_scale);
         a_node->setLoopMode(m_is_looped);
-
+        a_node->setCurrentFrame((float)(a_node->getStartFrame()));
+        
+        // trick to reset the animation AND also the timer inside it
+        a_node->OnAnimate(0);
+        a_node->OnAnimate(0);
+        
         if(m_is_looped)
         {
             a_node->setFrameLoop(m_frame_start, m_frame_end);
@@ -457,7 +464,8 @@ void TrackObject::onTriggerItemApproached(Item* who)
     {
         if (m_action == "garage")
         {
-            dynamic_cast<OverWorld*>(World::getWorld())->scheduleReturnToGarage();
+            new RacePausedDialog(0.8f, 0.6f);
+            //dynamic_cast<OverWorld*>(World::getWorld())->scheduleSelectKart();
         }
         else
         {

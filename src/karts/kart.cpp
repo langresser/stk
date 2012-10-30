@@ -305,6 +305,14 @@ void Kart::reset()
     // Reset animations and wheels
     m_kart_model->reset();
 
+    // undo bubblegum effect
+    if (m_bubblegum_time > 0.0f)
+    {
+        m_bubblegum_time = 0.0f;
+        m_body->setDamping(m_kart_properties->getChassisLinearDamping(),
+                           m_kart_properties->getChassisAngularDamping() );
+    }
+    
     // If the controller was replaced (e.g. replaced by end controller), 
     // restore the original controller. 
     if(m_saved_controller)
@@ -313,7 +321,6 @@ void Kart::reset()
         m_saved_controller = NULL;
     }
     m_kart_model->setAnimation(KartModel::AF_DEFAULT);
-    m_view_blocked_by_plunger = 0.0;
     m_attachment->clear();
     m_kart_gfx->reset();
     m_skidding->reset();
@@ -354,13 +361,7 @@ void Kart::reset()
     if(m_engine_sound)
         m_engine_sound->stop();
 
-    m_controls.m_steer     = 0.0f;
-    m_controls.m_accel     = 0.0f;
-    m_controls.m_brake     = false;
-    m_controls.m_nitro     = false;
-    m_controls.m_skid      = false;
-    m_controls.m_fire      = false;
-    m_controls.m_look_back = false;
+    m_controls.reset();
     m_slipstream->reset();
     if(m_vehicle)
     {
@@ -963,12 +964,6 @@ void Kart::update(float dt)
     {
         // update star effect (call will do nothing if stars are not activated)
         m_stars_effect->update(dt);
-    }
-
-    if (isEliminated())
-    {
-        m_kart_animation->update(dt);
-        return;
     }
 
     if(m_squash_time>0)
@@ -1781,6 +1776,18 @@ void Kart::updatePhysics(float dt)
     m_skidding->update(dt, isOnGround(), m_controls.m_steer, 
                        m_controls.m_skid);
 
+    if(( m_skidding->getSkidState() == Skidding::SKID_ACCUMULATE_LEFT ||
+         m_skidding->getSkidState() == Skidding::SKID_ACCUMULATE_RIGHT  ) && 
+        m_skidding->getGraphicalJumpOffset()==0)
+    {
+        if(m_skid_sound->getStatus() != SFXManager::SFX_PLAYING &&!isWheeless())
+            m_skid_sound->play();
+    }
+    else if(m_skid_sound->getStatus() == SFXManager::SFX_PLAYING)
+    {
+        m_skid_sound->stop();
+    }
+
     float steering = getMaxSteerAngle() * m_skidding->getSteeringFraction();
     m_vehicle->setSteeringValue(steering, 0);
     m_vehicle->setSteeringValue(steering, 1);
@@ -2208,6 +2215,7 @@ void Kart::updateGraphics(float dt, const Vec3& offset_xyz,
             - m_vehicle->getWheelInfo(0).m_wheelsRadius
             - (m_kart_model->getWheelGraphicsRadius(0)
                -m_kart_model->getWheelGraphicsPosition(0).getY() );
+    y += m_skidding->getGraphicalJumpOffset();
     center_shift.setY(y);
     
     if (m_controls.m_nitro && isOnGround() &&  m_collected_energy > 0)

@@ -214,6 +214,12 @@ MusicInformation* MusicManager::getMusicInformation(const std::string& filename)
     {
         return NULL;
     }
+
+	FILE* fp = fopen(filename.c_str(), "rb");
+	if (!fp) {
+		return NULL;
+	}
+	fclose(fp);
     const std::string basename = StringUtils::getBasename(filename);
     std::map<std::string, MusicInformation*>::iterator p;
     p = m_all_music.find(basename);

@@ -58,7 +58,7 @@ using namespace irr::video;
 #ifdef WIN32
 #include <Windows.h>
 #endif
-#if defined(__linux__)
+#if defined(__linux__) && !defined(ANDROID)
 namespace X11
 {
     #include <X11/Xlib.h>
@@ -102,7 +102,7 @@ IrrDriver::~IrrDriver()
 
 // ----------------------------------------------------------------------------
 
-#if defined(__linux__)
+#if defined(__linux__) && !defined(ANDROID)
 /*
 Returns the parent window of "window" (i.e. the ancestor of window
 that is a direct child of the root, or window itself if it is a direct child).
@@ -170,7 +170,7 @@ void IrrDriver::updateConfigIfRelevant()
         {
             printf("Could not retrieve window location\n");
         }
-#elif defined(__linux__)
+#elif defined(__linux__) && !defined(ANDROID)
         using namespace X11;
         const SExposedVideoData& videoData = m_device->getVideoDriver()->getExposedVideoData();
         Display* display = (Display*)videoData.OpenGLLinux.X11Display;
@@ -242,7 +242,6 @@ void IrrDriver::initDevice(int w, int h, void* winId)
 
         } // end if firstTime
         
-#ifndef TARGET_OS_IPHONE
         const core::dimension2d<u32> ssize = m_device->getVideoModeList()->getDesktopResolution();
         if (UserConfigParams::m_width > (int)ssize.Width ||
             UserConfigParams::m_height > (int)ssize.Height)
@@ -252,7 +251,7 @@ void IrrDriver::initDevice(int w, int h, void* winId)
             UserConfigParams::m_width = 800;
             UserConfigParams::m_height = 600;
         }
-#endif
+
         m_device->closeDevice();
         m_video_driver  = NULL;
         m_gui_env       = NULL;
@@ -302,14 +301,9 @@ void IrrDriver::initDevice(int w, int h, void* winId)
                 params.EventReceiver = this;
                 params.Fullscreen    = UserConfigParams::m_fullscreen;
                 params.Vsync         = UserConfigParams::m_vsync;
-#ifdef TARGET_OS_IPHONE
-                params.WindowSize = core::dimension2du(w, h);
-                params.WindowId = winId;
-#else
                 params.WindowSize    = 
                     core::dimension2du(UserConfigParams::m_width,
                                        UserConfigParams::m_height);
-#endif
                 switch ((int)UserConfigParams::m_antialiasing)
                 {
                 case 0:
@@ -371,7 +365,7 @@ void IrrDriver::initDevice(int w, int h, void* winId)
     // Only change video driver settings if we are showing graphics
     if (!ProfileWorld::isNoGraphics())
     {
-#if defined(__linux__)
+#if defined(__linux__) && !defined(ANDROID)
         // Set class hints on Linux, used by Window Managers.
         using namespace X11;
         const SExposedVideoData& videoData = m_video_driver
@@ -539,7 +533,7 @@ bool IrrDriver::moveWindow(const int x, const int y)
         printf("[IrrDriver] WARNING: Could not set window location\n");
         return false;
     }
-#elif defined(__linux__)
+#elif defined(__linux__) && !defined(ANDROID)
     using namespace X11;
 
     // TODO: Actually handle possible failure
@@ -800,6 +794,27 @@ scene::IMeshSceneNode *IrrDriver::addOctTree(scene::IMesh *mesh)
 {
     return m_scene_manager->addOctreeSceneNode(mesh);
 }   // addOctTree
+
+// ----------------------------------------------------------------------------
+/** Adds a sphere with a given radius and color.
+ *  \param radius The radius of the sphere.
+ *  \param color The color to use (default (0,0,0,0)
+ */
+scene::IMeshSceneNode *IrrDriver::addSphere(float radius,
+                                            const video::SColor &color)
+{
+    scene::IMeshSceneNode *node = m_scene_manager->addSphereSceneNode(radius);
+    node->setMaterialType(video::EMT_SOLID);
+    scene::IMesh *mesh = node->getMesh();
+    mesh->setMaterialFlag(video::EMF_COLOR_MATERIAL, true);
+    video::SMaterial m;
+    m.AmbientColor    = color;
+    m.DiffuseColor    = color;
+    m.EmissiveColor   = color;
+    m.BackfaceCulling = false;
+    mesh->getMeshBuffer(0)->getMaterial() = m;
+    return node;
+}   // addSphere
 
 // ----------------------------------------------------------------------------
 /** Adds a particle scene node.
@@ -1569,7 +1584,7 @@ void IrrDriver::update(float dt)
                         PROFILER_PUSH_CPU_MARKER(marker_name, 0x00, 0x00, (i+1)*60);
                     }
                     
-                    rg->renderPlayerView(kart);
+                    rg->renderPlayerView(kart, dt);
                     
                     PROFILER_POP_CPU_MARKER();
                 }

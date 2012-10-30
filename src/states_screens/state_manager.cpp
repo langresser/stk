@@ -190,7 +190,8 @@ void StateManager::onGameStateChange(GameState new_state)
 {
     if (new_state == GAME)
     {
-        irr_driver->hidePointer();
+        if (race_manager->getMinorMode() != RaceManager::MINOR_MODE_OVERWORLD) 
+            irr_driver->hidePointer();
         input_manager->setMode(InputManager::INGAME);
     }
     else  // menu (including in-game menu)
@@ -217,8 +218,19 @@ void StateManager::onTopMostScreenChanged()
 {
     if (m_game_mode == MENU && GUIEngine::getCurrentScreen() != NULL)
     {
-        music_manager->startMusic(GUIEngine::getCurrentScreen()->getMusic());
+        if (GUIEngine::getCurrentScreen()->getMusic() != NULL)
+        {
+            music_manager->startMusic(GUIEngine::getCurrentScreen()->getMusic());
+        }
     }
+    else if (m_game_mode == INGAME_MENU && GUIEngine::getCurrentScreen() != NULL)
+    {
+        if (GUIEngine::getCurrentScreen()->getInGameMenuMusic() != NULL)
+        {
+            music_manager->startMusic(GUIEngine::getCurrentScreen()->getInGameMenuMusic());
+        }
+    }
+    
 }   // onTopMostScreenChanged
 
 // ----------------------------------------------------------------------------

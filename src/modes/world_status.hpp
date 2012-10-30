@@ -91,7 +91,7 @@ protected:
     /**
       * Elasped/remaining time in seconds
       */
-    float           m_time;
+    double          m_time;
     ClockType       m_clock_mode;
 
     bool            m_play_racestart_sounds;
@@ -155,7 +155,7 @@ public:
 
     // ------------------------------------------------------------------------
     /** Returns the current race time. */
-    float   getTime() const      { return m_time; }
+    float   getTime() const      { return (float)m_time; }
     
     // ------------------------------------------------------------------------
     /** Will be called to notify your derived class that the clock,

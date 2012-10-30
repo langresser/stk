@@ -23,13 +23,21 @@ Under Creative Commons Attribution Share-Alike (CC-BY-SA) - http://creativecommo
 * cup_*, speedback, speedfore
     by yeKcim (Anthony Carré)
 
+* gnu, tapis
+    by Benjamin Arnaudet
+    released under GNU GPL license
+
+* nolok_character
+    by Cheleb
+    
 * purplenebula*, waternormals.jpg, waternormals2.jpg, sea2
     by Marianne Gagnon (Auria)
 
-* roof, concrete2, garagedoor, tree_cut
+* dirt.jpg, roof, concrete2, garagedoor, tree_cut
     by Marianne Gagnon (Auria), based on public domain photos from BurningWell
 
-* racetrack_tire, city_buildings_3, city_brick_1, canyon_boards
+* racetrack_tire, city_buildings_3, city_brick_1, canyo
+n_boards
 * banana, city_asphalt, city_concrete, city_checker, city_metal, city_sky*
 * track, track2, canyon_dirt_road, city_ground, city_rock, city_tree
 * racetrack_asphalt, racetrack_wall, racetrack_grass
@@ -67,7 +75,7 @@ Under Creative Commons Attribution Share-Alike (CC-BY-SA) - http://creativecommo
     by jmimu
     released under CC-BY-SA 3.0
 
-* starparticle.png, cracked-earth-texture, grass_dark
+* starparticle.png, cracked-earth-texture, canyon, grass_dark
     by Samuncle (Jean-Manuel Clémençon)
     based on public domain images from http://www.publicdomainpictures.net/ and burningwell
 
@@ -134,6 +142,17 @@ GPL
 ================
 Other licenses :
 ================
+
+Textures based on pictures from burningwell
+    blackRoad.png, japanRedWood.png, JapanwoodBridge.png, pagoda_wall.png, ToblackRoad.png
+    rockTograss.png, wooden2.png, wooden.png, blackrock.jpg, rockwaterfall.jpg
+    black_rockMountain.jpg, bridge_wood.jpg, rockMountain.jpg, to_black_rockMountain.jpg
+    rockMountainWater.jpg, tree_zenRed.jpg
+    released under public domain
+    
+* sakura_leaves
+    by the Yo Frankie team
+    released under CC-BY 3.0
 
 * skyscraper*
     Copyright Robert Howie 2008.

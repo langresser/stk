@@ -1,10 +1,5 @@
-.svn/
-.DS_Store
-*.dll
-*.user
 *.suo
-*.pdb
-*.ilk
-dependencies/
-supertuxkart.dir/
-*.tlog
+*.user
+.svn/
+*.obj
+Debug/

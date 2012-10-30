@@ -10,8 +10,9 @@
   <material name="japanRedWood.png" backface-culling="N"/>
   <material name="lanternDirection.png" backface-culling="N"/>
   <material name="lanternsupport.jpg" backface-culling="N"/>
-  <material name="light.png" compositing="additive"/>
+  <material name="light.png" compositing="blend"/>
   <material name="pagoda_wall.png" backface-culling="N" compositing="test"/>
+  <material name="round_shadow.png" compositing="blend" disable-z-write="Y"/>
   <material name="sakura_leaves.jpg" backface-culling="N" compositing="blend" disable-z-write="Y" mask="sakura_leaves_alpha.jpg"/>
   <material name="shintoB.jpg" backface-culling="N"/>
   <material name="shintoB.jpg" backface-culling="N"/>

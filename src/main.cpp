@@ -141,8 +141,7 @@
 
 #include "main_loop.hpp"
 #include "addons/addons_manager.hpp"
-#include "addons/dummy_network_http.hpp"
-#include "addons/network_http.hpp"
+#include "addons/inetwork_http.hpp"
 #include "addons/news_manager.hpp"
 #include "audio/music_manager.hpp"
 #include "audio/sfx_manager.hpp"
@@ -185,8 +184,6 @@
 #include "utils/constants.hpp"
 #include "utils/leak_check.hpp"
 #include "utils/translation.hpp"
-
-#include "platform_util.h"
 
 // ============================================================================
 //                        gamepad visualisation screen
@@ -773,13 +770,13 @@ int handleCmdLine(int argc, char **argv)
             switch (atoi(argv[i+1]))
             {
             case 1:
-                race_manager->setDifficulty(RaceManager::RD_EASY);
+                race_manager->setDifficulty(RaceManager::DIFFICULTY_EASY);
                 break;
             case 2:
-                race_manager->setDifficulty(RaceManager::RD_MEDIUM);
+                race_manager->setDifficulty(RaceManager::DIFFICULTY_MEDIUM);
                 break;
             case 3:
-                race_manager->setDifficulty(RaceManager::RD_HARD);
+                race_manager->setDifficulty(RaceManager::DIFFICULTY_HARD);
                 break;
             }
             i++;
@@ -1103,15 +1100,12 @@ void initRest()
     news_manager            = new NewsManager();
     addons_manager          = new AddonsManager();
     
-#ifdef NO_CURL
-    network_http            = new DummyNetworkHttp();
-#else
-    network_http            = new NetworkHttp();
-#endif
+    INetworkHttp::create();
+
     // Note that the network thread must be started after the assignment
     // to network_http (since the thread might use network_http, otherwise
     // a race condition can be introduced resulting in a crash).
-    network_http->startNetworkThread();
+    INetworkHttp::get()->startNetworkThread();
     music_manager           = new MusicManager();
     sfx_manager             = new SFXManager();
     // The order here can be important, e.g. KartPropertiesManager needs
@@ -1162,14 +1156,14 @@ void cleanSuperTuxKart()
 {
     irr_driver->updateConfigIfRelevant();
     
-    if(network_http)
-        network_http->stopNetworkThread();
+    if(INetworkHttp::get())
+        INetworkHttp::get()->stopNetworkThread();
     //delete in reverse order of what they were created in.
     //see InitTuxkart()
     Referee::cleanup();
     if(ReplayPlay::get())       ReplayPlay::destroy();
     if(race_manager)            delete race_manager;
-    if(network_http)            delete network_http;
+    INetworkHttp::destroy();
     if(news_manager)            delete news_manager;
     if(addons_manager)          delete addons_manager;
     if(network_manager)         delete network_manager;
@@ -1212,261 +1206,8 @@ bool ShowDumpResults(const wchar_t* dump_path,
 }
 #endif
 
-void initGame(int w, int h, void* winId)
-{
-    srand(( unsigned ) time( 0 ));
-    
-    // Init the minimum managers so that user config exists, then
-    // handle all command line options that do not need (or must
-    // not have) other managers initialised:
-    initUserConfig(0); // argv passed so config file can be
-    // found more reliably
-//    handleCmdLinePreliminary(argc, argv);
-    
-    stk_config->load(file_manager->getDataFile("stk_config.xml"));
-    
-    // Now create the actual non-null device in the irrlicht driver
-    irr_driver->initDevice(w, h, winId);
 
-    initRest();
-    
-    if (UserConfigParams::m_log_errors)
-    {
-        //Enable logging of stdout and stderr to logfile
-        std::string logoutfile = file_manager->getLogFile("stdout.log");
-        std::string logerrfile = file_manager->getLogFile("stderr.log");
-        printf("Error messages and other text output will be logged to %s "
-               "and %s\n", logoutfile.c_str(), logerrfile.c_str());
-        if(freopen (logoutfile.c_str(),"w",stdout)!=stdout)
-        {
-            fprintf(stderr, "Can not open log file '%s'. Writing to "
-                    "stdout instead.\n", logoutfile.c_str());
-        }
-        if(freopen (logerrfile.c_str(),"w",stderr)!=stderr)
-        {
-            fprintf(stderr, "Can not open log file '%s'. Writing to stderr"
-                    " instead.\n",
-                    logerrfile.c_str());
-        }
-    }
-    
-    input_manager = new InputManager ();
-    
-#ifdef ENABLE_WIIUSE
-    wiimote_manager = new WiimoteManager();
-#endif
-    
-    // Get into menu mode initially.
-    input_manager->setMode(InputManager::MENU);
-    main_loop = new MainLoop();
-    material_manager        -> loadMaterial    ();
-    GUIEngine::addLoadingIcon( irr_driver->getTexture(
-                                                      file_manager->getGUIDir() + "/options_video.png") );
-    kart_properties_manager -> loadAllKarts    ();
-    unlock_manager          = new UnlockManager();
-    //m_tutorial_manager      = new TutorialManager();
-    GUIEngine::addLoadingIcon( irr_driver->getTexture(
-                                                      file_manager->getTextureFile("gui_lock.png")) );
-    projectile_manager      -> loadData        ();
-    
-    // Both item_manager and powerup_manager load models and therefore
-    // textures from the model directory. To avoid reading the 
-    // materials.xml twice, we do this here once for both:
-    file_manager->pushTextureSearchPath(file_manager->getModelFile(""));
-    const std::string materials_file = 
-    file_manager->getModelFile("materials.xml");
-    if(materials_file!="")
-    {
-        // Some of the materials might be needed later, so just add
-        // them all permanently (i.e. as shared). Adding them temporary
-        // will actually not be possible: powerup_manager adds some
-        // permanent icon materials, which would (with the current
-        // implementation) make the temporary materials permanent anyway.
-        material_manager->addSharedMaterial(materials_file);
-    }
-    Referee::init();
-    powerup_manager         -> loadAllPowerups ();
-    ItemManager::loadDefaultItemMeshes();
-    
-    GUIEngine::addLoadingIcon( irr_driver->getTexture(
-                                                      file_manager->getGUIDir() + "/gift.png") );
-    
-    file_manager->popTextureSearchPath();
-    
-    attachment_manager      -> loadModels      ();
-    
-    GUIEngine::addLoadingIcon( irr_driver->getTexture(
-                                                      file_manager->getGUIDir() + "/banana.png") );
-    
-    //handleCmdLine() needs InitTuxkart() so it can't be called first
-//    if(!handleCmdLine(argc, argv)) exit(0);
-    
-    addons_manager->checkInstalledAddons();
-    if(!UserConfigParams::m_no_start_screen)
-    {
-        StateManager::get()->pushScreen(StoryModeLobbyScreen::getInstance());
-        if(UserConfigParams::m_internet_status ==
-           NetworkHttp::IPERM_NOT_ASKED)
-        {
-            class ConfirmServer : 
-            public MessageDialog::IConfirmDialogListener
-            {
-            public:
-                virtual void onConfirm()
-                {
-                    delete network_http;
-                    UserConfigParams::m_internet_status = 
-                    NetworkHttp::IPERM_ALLOWED;
-                    GUIEngine::ModalDialog::dismiss();
-                    network_http = new NetworkHttp();
-                    // Note that the network thread must be started after
-                    // the assignment to network_http (since the thread 
-                    // might use network_http, otherwise a race condition 
-                    // can be introduced resulting in a crash).
-                    network_http->startNetworkThread();
-                    
-                }   // onConfirm
-                // --------------------------------------------------------
-                virtual void onCancel()
-                {
-                    delete network_http;
-                    UserConfigParams::m_internet_status =
-                    NetworkHttp::IPERM_NOT_ALLOWED;
-                    GUIEngine::ModalDialog::dismiss();
-                    network_http = new NetworkHttp();
-                    network_http->startNetworkThread();
-                }   // onCancel
-            };   // ConfirmServer
-            
-            new MessageDialog(_("SuperTuxKart may connect to a server "
-                                "to download add-ons and notify you of updates. Would you "
-                                "like this feature to be enabled? (To change this setting "
-                                "at a later time, go to options, select tab "
-                                "'User Interface', and edit \"Allow STK to connect to the "
-                                "Internet\")."),
-                              MessageDialog::MESSAGE_DIALOG_CONFIRM,
-                              new ConfirmServer(), true);
-        }
-    }
-    else 
-    {
-        InputDevice *device;
-        
-        // Use keyboard 0 by default in --no-start-screen
-        device = input_manager->getDeviceList()->getKeyboard(0);
-        
-        // Create player and associate player with keyboard
-        StateManager::get()->createActivePlayer( 
-                                                UserConfigParams::m_all_players.get(0), device );
-        
-        if (kart_properties_manager->getKart(UserConfigParams::m_default_kart) == NULL)
-        {
-            printf("Kart '%s' is unknown so will use the default kart.\n", UserConfigParams::m_default_kart.c_str());
-            race_manager->setLocalKartInfo(0, UserConfigParams::m_default_kart.getDefaultValue());
-        }
-        else
-        {
-            // Set up race manager appropriately
-            race_manager->setLocalKartInfo(0, UserConfigParams::m_default_kart);
-        }
-        
-        // ASSIGN should make sure that only input from assigned devices
-        // is read.
-        input_manager->getDeviceList()->setAssignMode(ASSIGN);
-        
-        // Go straight to the race
-        StateManager::get()->enterGameState();
-    }
-    
-    // Replay a race
-    // =============
-    if(history->replayHistory())
-    {
-        // This will setup the race manager etc.
-        history->Load();
-        network_manager->setupPlayerKartInfo();
-        race_manager->startNew(false);
-        main_loop->run();
-        // well, actually run() will never return, since
-        // it exits after replaying history (see history::GetNextDT()).
-        // So the next line is just to make this obvious here!
-        exit(-3);
-    }
-    
-    // Initialise connection in case that a command line option was set
-    // configuring a client or server. Otherwise this function does nothing
-    // here (and will be called again from the network gui).
-    if(!network_manager->initialiseConnections())
-    {
-        fprintf(stderr, "Problems initialising network connections,\n"
-                "Running in non-network mode.\n");
-    }
-    // On the server start with the network information page for now
-    if(network_manager->getMode()==NetworkManager::NW_SERVER)
-    {
-        // TODO - network menu
-        //menu_manager->pushMenu(MENUID_NETWORK_GUI);
-    }
-    // Not replaying
-    // =============
-    if(!ProfileWorld::isProfileMode())
-    {
-        if(UserConfigParams::m_no_start_screen)
-        {
-            // Quickstart (-N)
-            // ===============
-            // all defaults are set in InitTuxkart()
-            network_manager->setupPlayerKartInfo();
-            race_manager->startNew(false);
-        }
-    }
-    else  // profile
-    {
-        // Profiling
-        // =========
-        race_manager->setMajorMode (RaceManager::MAJOR_MODE_SINGLE);
-        race_manager->setDifficulty(RaceManager::RD_HARD);
-        network_manager->setupPlayerKartInfo();
-        race_manager->startNew(false);
-    }
-}
-
-void onGameLoop()
-{
-    main_loop->run();
-}
-
-void onGameExit()
-{
-    if(user_config)
-    {
-        // In case that abort is triggered before user_config exists
-        if (UserConfigParams::m_crashed) UserConfigParams::m_crashed = false;
-        user_config->saveConfig();
-    }
-    
-#ifdef ENABLE_WIIUSE
-    if(wiimote_manager)
-        delete wiimote_manager;
-#endif
-    
-    if(input_manager) delete input_manager; // if early crash avoid delete NULL
-    
-    if (user_config && UserConfigParams::m_log_errors) //close logfiles
-    {
-        fclose(stderr);
-        fclose(stdout);
-    }
-    
-    cleanSuperTuxKart();
-    
-#ifdef DEBUG
-    MemoryLeaks::checkForLeaks();
-#endif
-}
-
-#ifdef WIN32
-int main(int argc, char *argv[], void* winid )
+int main(int argc, char *argv[] )
 {
 #ifdef BREAKPAD
     google_breakpad::ExceptionHandler eh(L"C:\\Temp", NULL, ShowDumpResults, 
@@ -1556,11 +1297,23 @@ int main(int argc, char *argv[], void* winid )
         if(!handleCmdLine(argc, argv)) exit(0);
 
         addons_manager->checkInstalledAddons();
+
+        // Load addons.xml to get info about addons even when not
+        // allowed to access the internet
+        if (UserConfigParams::m_internet_status != INetworkHttp::IPERM_ALLOWED) {
+            std::string xml_file = file_manager->getAddonsFile("addons.xml");
+            if (file_manager->fileExists(xml_file)) {
+                const XMLNode *xml = new XMLNode (xml_file);
+                addons_manager->initOnline(xml);
+            }
+        }
+        
+
         if(!UserConfigParams::m_no_start_screen)
         {
             StateManager::get()->pushScreen(StoryModeLobbyScreen::getInstance());
             if(UserConfigParams::m_internet_status ==
-                NetworkHttp::IPERM_NOT_ASKED)
+                INetworkHttp::IPERM_NOT_ASKED)
             {
                 class ConfirmServer : 
                       public MessageDialog::IConfirmDialogListener
@@ -1568,30 +1321,30 @@ int main(int argc, char *argv[], void* winid )
                 public:
                     virtual void onConfirm()
                     {
-                        delete network_http;
+                        INetworkHttp::destroy();
                         UserConfigParams::m_internet_status = 
-                            NetworkHttp::IPERM_ALLOWED;
+                            INetworkHttp::IPERM_ALLOWED;
                         GUIEngine::ModalDialog::dismiss();
-                        network_http = new NetworkHttp();
+                        INetworkHttp::create();
                         // Note that the network thread must be started after
                         // the assignment to network_http (since the thread 
                         // might use network_http, otherwise a race condition 
                         // can be introduced resulting in a crash).
-                        network_http->startNetworkThread();
+                        INetworkHttp::get()->startNetworkThread();
 
                     }   // onConfirm
                     // --------------------------------------------------------
                     virtual void onCancel()
                     {
-                        delete network_http;
+                        INetworkHttp::destroy();
                         UserConfigParams::m_internet_status =
-                            NetworkHttp::IPERM_NOT_ALLOWED;
+                            INetworkHttp::IPERM_NOT_ALLOWED;
                         GUIEngine::ModalDialog::dismiss();
-                        network_http = new NetworkHttp();
-                        network_http->startNetworkThread();
+                        INetworkHttp::create();
+                        INetworkHttp::get()->startNetworkThread();
                     }   // onCancel
                 };   // ConfirmServer
-                
+
                 new MessageDialog(_("SuperTuxKart may connect to a server "
                     "to download add-ons and notify you of updates. Would you "
                     "like this feature to be enabled? (To change this setting "
@@ -1679,7 +1432,7 @@ int main(int argc, char *argv[], void* winid )
             // Profiling
             // =========
             race_manager->setMajorMode (RaceManager::MAJOR_MODE_SINGLE);
-            race_manager->setDifficulty(RaceManager::RD_HARD);
+            race_manager->setDifficulty(RaceManager::DIFFICULTY_HARD);
             network_manager->setupPlayerKartInfo();
             race_manager->startNew(false);
         }
@@ -1722,4 +1475,4 @@ int main(int argc, char *argv[], void* winid )
     
     return 0 ;
 }
-#endif
+

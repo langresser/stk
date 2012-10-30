@@ -32,7 +32,6 @@
 #include "io/file_manager.hpp"
 #include "karts/kart_properties.hpp"
 #include "utils/string_utils.hpp"
-#include "platform_util.h"
 
 KartPropertiesManager *kart_properties_manager=0;
 
@@ -190,7 +189,7 @@ void KartPropertiesManager::loadAllKarts(bool loading_icon)
 bool KartPropertiesManager::loadKart(const std::string &dir)
 {
     std::string config_filename=dir+"/kart.xml";
-    FILE *f=open_file(config_filename.c_str(), "r");
+    FILE *f=fopen(config_filename.c_str(), "r");
     if(!f) return false;
     fclose(f);
 

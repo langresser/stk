@@ -7,7 +7,7 @@
   </material>
   <material name="horse.jpg" light="N"/>
   <material name="leaf.png" light="N"/>
-  <material name="leave3.png" light="N" ignore="Y" compositing="test"/>
+  <material name="leave3.png" light="N" ignore="Y" compositing="test" backface-culling="N"/>
   <material name="mill.png" compositing="test"/>
   <material name="millstructure.png" compositing="test" ignore="Y"/>
   <material name="trail.jpg">
@@ -21,7 +21,7 @@
   </material>
   <material name="trail2grass.jpg" clampu="Y"/>
   <material name="wheat.png" light="N" compositing="test"/>
-  <material name="yellow_dirt.jpg" max-speed="0.50">
+  <material name="yellow_dirt.jpg" max-speed="0.80">
     <particles base="smoke_yellow.xml" condition="skid drive"/>
   </material>
 </materials>

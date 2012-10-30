@@ -31,7 +31,6 @@
 #include "audio/sfx_manager.hpp"
 #include "config/user_config.hpp"
 #include "utils/constants.hpp"
-#include "platform_util.h"
 
 MusicOggStream::MusicOggStream()
 {
@@ -58,7 +57,7 @@ bool MusicOggStream::load(const std::string& filename)
     m_fileName = filename;
     if(m_fileName=="") return false;  
 
-    m_oggFile = open_file(m_fileName.c_str(), "rb");
+    m_oggFile = fopen(m_fileName.c_str(), "rb");
 
     if(!m_oggFile)
     {

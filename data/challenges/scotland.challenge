@@ -2,11 +2,11 @@
 <challenge version="2">
     <track id="scotland" laps="3"/>
     <mode major="single" minor="quickrace"/>
-    <requirements trophies="5"/>
+    <requirements trophies="35"/>
     
     <hard>
         <karts number="5"/>
-        <requirements position="1" time="160"/>
+        <requirements position="1" time="165"/>
     </hard>
     <medium>
         <karts number="4"/>
@@ -14,6 +14,6 @@
     </medium>
     <easy>
         <karts number="4"/>
-        <requirements time="190"/>
+        <requirements time="225"/>
     </easy>
 </challenge>

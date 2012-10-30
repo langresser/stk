@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev 7663 -->
+<!-- Generated with script from SVN rev 11470 -->
 <scene>
   <track model="lighthouse_track.b3d" x="0" y="0" z="0"/>
-  <object type="animation" model="Light.b3d" xyz="-48.248627 29.666990 -94.301178" hpr="-0.000000 -0.000000 -0.000000" scale="2.884974 2.884974 2.884974" >
-    <curve channel="RotX" interpolation="linear" extend="const">
-      <p c="1.288065 -0.000000"/>
-      <p c="90.639534 -0.000000"/>
-      <p c="184.693726 -0.000000"/>
+  <object type="animation" model="Light.b3d" xyz="-48.25 29.67 -94.30" hpr="0.0 -0.0 0.0" scale="2.88 2.88 2.88"  interaction="ghost">
+    <curve channel="RotX" interpolation="linear" extend="cyclic">
+      <p c="1.288 -0.000"/>
+      <p c="90.640 -0.000"/>
+      <p c="184.694 -0.000"/>
     </curve>
-    <curve channel="RotZ" interpolation="bezier" extend="const">
-      <p c="1.288065 -0.000000" h1="-33.595772 -0.000000" h2="36.171909 -0.000000"/>
-      <p c="90.639534 -0.000000" h1="55.755692 -0.000000" h2="127.359375 -0.000000"/>
-      <p c="184.693726 -0.000000" h1="147.973892 -0.000000" h2="221.413574 -0.000000"/>
+    <curve channel="RotZ" interpolation="bezier" extend="cyclic">
+      <p c="1.288 -0.000" h1="-33.596 -0.000" h2="36.172 -0.000"/>
+      <p c="90.640 -0.000" h1="55.756 -0.000" h2="127.359 -0.000"/>
+      <p c="184.694 -0.000" h1="147.974 -0.000" h2="221.414 -0.000"/>
     </curve>
-    <curve channel="RotY" interpolation="linear" extend="const">
-      <p c="1.288065 -0.000000"/>
-      <p c="90.639534 -180.000000"/>
-      <p c="184.693726 -360.000000"/>
+    <curve channel="RotY" interpolation="linear" extend="cyclic">
+      <p c="1.288 -0.000"/>
+      <p c="90.640 -180.000"/>
+      <p c="184.694 -360.000"/>
     </curve>
   </object>
-  <sun  fog="true" fog-color="110 125 139" fog-density="50" fog-start="50" fog-end="150" xyz="1.45523071289 88.6911010742 109.559005737"/>
+  <sun  fog="true" fog-color="110 125 139" fog-density="50" fog-start="50" fog-end="150"/>
   <sky-color rgb="110 125 141"/>
   <weather type="rain" />
   <item x="-27.765064" y="1.957284" z="49.391853" />
@@ -53,14 +53,12 @@
   <small-nitro x="26.239197" y="0.7631" z="-3.513813" />
   <checks>
     <check-lap kind="lap" same-group="0" other-ids="1" />
-    <check-line kind="activate" other-ids="0" p1="68.019447 -45.556225" p2="44.501854 -31.783911"
+    <check-line kind="activate" other-ids="0" p1="68.019455 -45.556225" p2="44.501854 -31.783911"
                 min-height="-9.717559" same-group="1"/>
   </checks>
+  <camera far="1000.0"/>
   <default-start karts-per-row     ="2"
-                 forwards-distance ="1.5"
-                 sidewards-distance="3"
-                 upwards-distance  ="0.1"/>
-  <end-cameras>
-    <camera type="ahead_of_kart" xyz="28.696526 17.515945 55.195633" distance="5"/>
-  </end-cameras>
+                 forwards-distance ="1.50"
+                 sidewards-distance="3.00"
+                 upwards-distance  ="0.10"/>
 </scene>

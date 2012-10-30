@@ -19,7 +19,7 @@ Trail texture based on work by Marianne Gagnon
     released under CC-BY-SA 3.0
 
 Textures based on pictures from burningwell
-    canyon.png, electroPost.png, mill.png, millstructure.png
+    electroPost.png, mill.png, millstructure.png
     wall.png, wind_mill.png, wood_i.png, wood_l.png, hacienda_roof.jpg
     released under public domain
 

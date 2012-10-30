@@ -23,20 +23,16 @@
 #ifdef __APPLE__
 #  include <OpenGL/gl.h>
 #else
-	#  define _WINSOCKAPI_
-	#  ifdef WIN32
-	#    include <windows.h>
-	#  endif
-
-	#ifdef _IRR_COMPILE_WITH_OGLES1_
-		#include <GLES/gl.h>
-		//#pragma comment(lib, "libGLESv1_CM.lib")
-	#elif defined(_IRR_COMPILE_WITH_OGLES2_)
-#error fuck
-	#else
-		#  include <GL/gl.h>
-		#pragma comment(lib, "OpenGL32.lib")
-	#endif
+#  define _WINSOCKAPI_
+#  ifdef WIN32
+#    include <windows.h>
+#pragma comment(lib, "OpenGL32.lib")
+#  endif
+#  ifdef ANDROID
+#    include <GLES/gl.h>
+#  else
+#    include <GL/gl.h>
+#  endif
 #endif
 
 #include "audio/music_manager.hpp"
@@ -138,6 +134,10 @@ void RaceGUIBase::restartRace()
 {
     m_referee_height = 10.0f;
     m_referee->attachToSceneNode();
+    m_plunger_move_time = 0;
+    m_plunger_offset    = core::vector2di(0,0);
+    m_plunger_speed     = core::vector2df(0,0);
+    m_plunger_state     = PLUNGER_STATE_INIT;
 }   // restartRace
 
 //-----------------------------------------------------------------------------
@@ -485,12 +485,13 @@ void RaceGUIBase::preRenderCallback(const AbstractKart &kart)
 }   // preRenderCallback
 
 // ----------------------------------------------------------------------------
-void RaceGUIBase::renderPlayerView(const AbstractKart *kart)
+void RaceGUIBase::renderPlayerView(const AbstractKart *kart, float dt)
 {
     const core::recti &viewport = kart->getCamera()->getViewport();
 
     if (m_lightning > 0.0f)
     {
+#ifndef ANDROID
         GLint glviewport[4];
         glviewport[0] = viewport.UpperLeftCorner.X;
         glviewport[1] = viewport.UpperLeftCorner.Y;
@@ -506,8 +507,6 @@ void RaceGUIBase::renderPlayerView(const AbstractKart *kart)
         glColor4f(0.7f*m_lightning, 0.7f*m_lightning, 0.7f*std::min(1.0f, m_lightning*1.5f), 1.0f);
         glEnable(GL_COLOR_MATERIAL);
         glDisable(GL_CULL_FACE);
-
-#if 0
         glBegin(GL_QUADS);
         
         glVertex3d(glviewport[0],glviewport[1],0);
@@ -515,9 +514,9 @@ void RaceGUIBase::renderPlayerView(const AbstractKart *kart)
         glVertex3d(glviewport[2],glviewport[3],0);
         glVertex3d(glviewport[2],glviewport[1],0);
         glEnd();
-#endif
         glEnable(GL_TEXTURE_2D);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+#endif
     }
 #if 0 // Rainy look, off, TODO: needs to be settable per track
     else
@@ -986,7 +985,7 @@ void RaceGUIBase::drawGlobalPlayerIcons(const KartIconDisplayInfo* info,
         }
         
         //Plunger
-        if (kart->hasViewBlockedByPlunger())
+        if (kart->getBlockedByPlungerTime()>0)
         {
             video::ITexture *icon_plunger = 
             powerup_manager->getIcon(PowerupManager::POWERUP_PLUNGER)->getTexture();
@@ -1019,3 +1018,94 @@ void RaceGUIBase::drawGlobalPlayerIcons(const KartIconDisplayInfo* info,
         
     } //next position
 }   // drawGlobalPlayerIcons
+
+// ----------------------------------------------------------------------------
+
+/** Draws the plunger-in-face if necessary. Does nothing if there is no 
+ *  plunger in face atm.
+ */
+void RaceGUIBase::drawPlungerInFace(const AbstractKart *kart, float dt)
+{
+    if (kart->getBlockedByPlungerTime()<=0)
+    {
+        m_plunger_state = PLUNGER_STATE_INIT;
+        return;
+    }
+
+    const core::recti &viewport = kart->getCamera()->getViewport();
+
+    const int screen_width = viewport.LowerRightCorner.X 
+                           - viewport.UpperLeftCorner.X;
+
+    if(m_plunger_state == PLUNGER_STATE_INIT)
+    {
+        m_plunger_move_time = 0.0f;
+        m_plunger_offset    = core::vector2di(0,0);
+        m_plunger_state     = PLUNGER_STATE_SLOW_2;
+        m_plunger_speed     = core::vector2df(0, 0);
+    }
+
+    m_plunger_move_time -= dt;
+    if(m_plunger_move_time < dt && m_plunger_state!=PLUNGER_STATE_FAST)
+    {
+        const float fast_time = 0.3f;
+        if(kart->getBlockedByPlungerTime()<fast_time)
+        {
+            // First time we reach faste state: select random target point
+            // at top of screen and set speed accordingly
+            RandomGenerator random;
+            float movement_fraction = 0.3f;
+            int plunger_x_target  = screen_width/2 
+                            + random.get((int)(screen_width*movement_fraction))
+                            - (int)(screen_width*movement_fraction*0.5f);
+            m_plunger_state = PLUNGER_STATE_FAST;
+            m_plunger_speed = 
+                core::vector2df((plunger_x_target-screen_width/2)/fast_time,
+                                viewport.getHeight()*0.5f/fast_time);
+            m_plunger_move_time = fast_time;
+        }
+        else
+        {
+            RandomGenerator random;
+            m_plunger_move_time = 0.1f+random.get(50)/200.0f;
+            // Plunger is either moving or not moving
+            if(m_plunger_state==PLUNGER_STATE_SLOW_1)
+            {
+                m_plunger_state = PLUNGER_STATE_SLOW_2;
+                m_plunger_speed = 
+                    core::vector2df(0, 0.05f*viewport.getHeight()
+                                       /m_plunger_move_time      );
+            }
+            else
+            {
+                m_plunger_state = PLUNGER_STATE_SLOW_1;
+                m_plunger_speed = 
+                    core::vector2df(0, 0.02f*viewport.getHeight()
+                                       /m_plunger_move_time      );
+            }
+        }   // has not reach fast moving state            
+    }
+
+    m_plunger_offset.X += (int)(m_plunger_speed.X * dt);
+    m_plunger_offset.Y += (int)(m_plunger_speed.Y * dt);
+
+    const int plunger_size = (int)(0.6f * screen_width);
+    int offset_y = viewport.UpperLeftCorner.Y + viewport.getHeight()/2 
+                 - plunger_size/2 - m_plunger_offset.Y;
+
+    int plunger_x = viewport.UpperLeftCorner.X + screen_width/2 
+                  - plunger_size/2;
+
+    video::ITexture *t=m_plunger_face->getTexture();
+    plunger_x += (int)m_plunger_offset.X;
+    core::rect<s32> dest(plunger_x,              offset_y, 
+                         plunger_x+plunger_size, offset_y+plunger_size);
+
+    const core::rect<s32> source(core::position2d<s32>(0,0), 
+                                 t->getOriginalSize());
+
+    irr_driver->getVideoDriver()->draw2DImage(t, dest, source, 
+                                              &viewport /* clip */, 
+                                              NULL /* color */, 
+                                              true /* alpha */     );
+}   // drawPlungerInFace

@@ -4,7 +4,7 @@
         version     = "5"
         groups      = "standard"
         designer    = "Thomas Oppl"
-        music       = "Penguin_Party.music"
+        music       = "kart_grand_prix.music"
         screenshot  = "city_screenshot.jpg"
 >
 </track>

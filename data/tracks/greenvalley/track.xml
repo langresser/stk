@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Generated with script from SVN rev 11523 -->
+<track  name           = "Green Valley"
+        version        = "5"
+        groups         = "standard"
+        designer       = "Wolfs"
+        music          = "valley.music"
+        screenshot     = "sshot.jpg"
+        smooth-normals = "false"
+>
+</track>

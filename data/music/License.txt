@@ -13,6 +13,10 @@ MayDayMayham.ogg
 ChillCarrier-Druckverlust.ogg
 --------------------
   Chill Carrier: CC-SA v3.0
+  
+Demonhill.ogg
+-------------
+    by 0zone0ne
 
 g4m-fan-track.ogg
 -----------------
@@ -53,6 +57,11 @@ OnTheRiver.ogg
     with modifications by Magne Djupvik
     license : CC-BY-SA 3.0
 
+overworld.ogg
+-------------
+    by 0zone0ne
+    released under CC-BY-SA 3.0
+    
 Snowy.ogg
 ---------
     Music made by Chris Leutwyler (Krobonil)
@@ -69,6 +78,11 @@ Lava
     Released under CC-BY-SA 3
     
 secretgarden.ogg
+----------------
+    by DJHelium
+    released under CC-BY-SA 3.0
+
+valley.ogg
 ----------------
     by DJHelium
     released under CC-BY-SA 3.0

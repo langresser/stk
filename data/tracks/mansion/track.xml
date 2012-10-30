@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev 11144 -->
-<track  name        = "Blackhill Mansion"
-        version     = "5"
-        groups      = "standard"
-        designer    = "Jean-Manuel Cl&#233;men&#231;on"
-        music       = "ChillCarrier-Druckverlust.music"
-        screenshot  = "screenshot.jpg"
+<!-- Generated with script from SVN rev 11688 -->
+<track  name           = "Blackhill Mansion"
+        version        = "5"
+        groups         = "standard"
+        designer       = "Jean-Manuel Cl&#233;men&#231;on"
+        music          = "demonhill.music"
+        screenshot     = "screenshot.jpg"
+        smooth-normals = "false"
 >
 </track>

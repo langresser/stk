@@ -30,6 +30,7 @@
 #endif
 
 #include <string>
+#include "graphics/irr_driver.hpp"
 
 class Time
 {
@@ -45,7 +46,9 @@ public:
         return s;
     }   // toString
     // ------------------------------------------------------------------------
-    /** In integer seconds  */
+    /** Returns the number of seconds since 1.1.1970. This function is used
+     *  to compare access times of files, e.g. news, addons data etc.
+     */
     static TimeType getTimeSinceEpoch()
     {
 #ifdef WIN32
@@ -54,7 +57,7 @@ public:
         __int64 t = ft.dwHighDateTime;
         t <<= 32;
         t /= 10;
-        // The Unix epoch starts on Jan 1 1970.  Need to subtract 
+        // The Unix epoch starts on Jan 1 1970.  Need to subtract
         // the difference in seconds from Jan 1 1601.
 #       if defined(_MSC_VER) || defined(_MSC_EXTENSIONS)
 #           define DELTA_EPOCH_IN_MICROSECS  11644473600000000Ui64
@@ -62,49 +65,26 @@ public:
 #           define DELTA_EPOCH_IN_MICROSECS  11644473600000000ULL
 #       endif
         t -= DELTA_EPOCH_IN_MICROSECS;
- 
+
         t |= ft.dwLowDateTime;
         // Convert to seconds since epoch
         t /= 1000000UL;
         return t;
 #else
         struct timeval tv;
-        if (gettimeofday(&tv, NULL) != 0)
-        {
-            throw std::runtime_error("gettimeofday failed");
-        }
+        gettimeofday(&tv, NULL);
         return tv.tv_sec;
 #endif
     };   // getTimeSinceEpoch
+
     // ------------------------------------------------------------------------
-    /** In floating point seconds  */
-    static float getFloatTimeSinceEpoch(long startAt=0)
+    /** Returns a time based on an arbitrary 'epoch' (e.g. could be start
+     *  time of the application, 1.1.1970, ...). 
+     *  The value is a double precision floating point value in seconds. 
+     */
+    static double getRealTime(long startAt=0)
     {
-#ifdef WIN32
-        FILETIME ft;
-        GetSystemTimeAsFileTime(&ft);
-        __int64 t = ft.dwHighDateTime;
-        t <<= 32;
-        t /= 10;
-        // The Unix epoch starts on Jan 1 1970.  Need to subtract 
-        // the difference in seconds from Jan 1 1601.
-#       if defined(_MSC_VER) || defined(_MSC_EXTENSIONS)
-#           define DELTA_EPOCH_IN_MICROSECS  11644473600000000Ui64
-#       else
-#           define DELTA_EPOCH_IN_MICROSECS  11644473600000000ULL
-#       endif
-        t -= DELTA_EPOCH_IN_MICROSECS;
-        
-        t |= ft.dwLowDateTime;
-        // Convert to seconds since epoch
-        float f = (float)(double(t) / 1000000.0);
-        return f;
-#else
-        struct timeval tv;
-        gettimeofday(&tv, NULL);
-        int millis = (tv.tv_sec - startAt)*1000 + tv.tv_usec/1000;
-        return (float)(millis/1000.0);
-#endif
+        return irr_driver->getDevice()->getTimer()->getRealTime()/1000.0;
     };   // getTimeSinceEpoch
     
     class ScopeProfiler
@@ -114,14 +94,12 @@ public:
         ScopeProfiler(const char* name)
         {
             printf("%s {\n", name);
-            // 1325966438 is an arbitrary time that is in the past but much after 1970
-            // to get smaller numbers in order to not lose the precision of float
-            m_time = getFloatTimeSinceEpoch(1325966438);
+            m_time = (float)getRealTime();
         }
         
         ~ScopeProfiler()
         {
-            float f2 = getFloatTimeSinceEpoch(1325966438);
+            float f2 = (float)getRealTime();
             printf("} // took %f s\n", (f2 - m_time));
         }
     };

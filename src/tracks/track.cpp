@@ -78,6 +78,7 @@ Track::Track(const std::string &filename)
     m_magic_number          = 0x17AC3802;
 #endif
     
+    m_materials_loaded      = false;
     m_filename              = filename;
     m_root                  = StringUtils::getPath(StringUtils::removeExtension(m_filename));
     m_ident                 = StringUtils::getBasename(m_root);
@@ -98,6 +99,8 @@ Track::Track(const std::string &filename)
     m_sky_dx                = 0.05f;
     m_sky_dy                = 0.0f;
     m_weather_type          = WEATHER_NONE;
+    m_cache_track           = UserConfigParams::m_cache_overworld &&
+                              m_ident=="overworld";
     loadTrackInfo();
 }   // Track
 
@@ -215,8 +218,13 @@ void Track::cleanup()
     }
     m_sky_textures.clear();
 
-    // remove temporary materials loaded by the material manager
-    material_manager->popTempMaterial();
+    if(m_cache_track)
+        material_manager->makeMaterialsPermanent();
+    else
+    {
+        // remove temporary materials loaded by the material manager
+        material_manager->popTempMaterial();
+    }
 
     if(UserConfigParams::logMemory())
     {
@@ -661,7 +669,6 @@ void Track::convertTrackToBullet(scene::ISceneNode *node)
 }   // convertTrackToBullet
 
 // ----------------------------------------------------------------------------
-
 /** Loads the main track model (i.e. all other objects contained in the
  *  scene might use raycast on this track model to determine the actual
  *  height of the terrain.
@@ -1221,7 +1228,14 @@ void Track::loadTrackModel(World* parent, bool reverse_track,
     try
     {
         std::string materials_file = m_root+"/materials.xml";
-        material_manager->pushTempMaterial(materials_file);
+        if(m_cache_track)
+        {
+            if(!m_materials_loaded)
+                material_manager->addSharedMaterial(materials_file);
+            m_materials_loaded = true;
+        }
+        else
+            material_manager->pushTempMaterial(materials_file);
     }
     catch (std::exception& e)
     {
@@ -1563,7 +1577,10 @@ void Track::loadTrackModel(World* parent, bool reverse_track,
 
     delete root;
 
-    if (UserConfigParams::m_track_debug) QuadGraph::get()->createDebugMesh();
+    if (UserConfigParams::m_track_debug &&
+        race_manager->getMinorMode()!=RaceManager::MINOR_MODE_3_STRIKES && 
+        !m_is_cutscene) 
+        QuadGraph::get()->createDebugMesh();
     
     // Only print warning if not in battle mode, since battle tracks don't have
     // any quads or check lines.

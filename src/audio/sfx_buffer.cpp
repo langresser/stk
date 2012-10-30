@@ -21,11 +21,9 @@
 #include "io/file_manager.hpp"
 #include "utils/constants.hpp"
 
-#include <vorbis/codec.h>
-#include <vorbis/vorbisfile.h>
-#include "platform_util.h"
-
 #if HAVE_OGGVORBIS
+#  include <vorbis/codec.h>
+#  include <vorbis/vorbisfile.h>
 #  ifdef __APPLE__
 #    include <OpenAL/al.h>
 #    include <OpenAL/alc.h>
@@ -139,7 +137,7 @@ bool SFXBuffer::loadVorbisBuffer(const std::string &name, ALuint buffer)
         return false;
     }
     
-    file = open_file(name.c_str(), "rb");
+    file = fopen(name.c_str(), "rb");
     
     if(!file)
     {

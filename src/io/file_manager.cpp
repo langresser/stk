@@ -133,9 +133,6 @@ FileManager::FileManager(char *argv[])
 
     irr::io::path exe_path;
 
-#ifdef TARGET_OS_IPHONE
-    m_root_dir = ".";
-#else
     // Also check for data dirs relative to the path of the executable.
     // This is esp. useful for Visual Studio, since it's not necessary
     // to define the working directory when debugging, it works automatically.
@@ -163,7 +160,6 @@ FileManager::FileManager(char *argv[])
         m_root_dir = SUPERTUXKART_DATADIR ;
 #else
         m_root_dir = "/usr/local/share/games/supertuxkart" ;
-#endif
 #endif
     // We can't use _() here, since translations will only be initalised
     // after the filemanager (to get the path to the tranlsations from it)
@@ -391,12 +387,7 @@ bool FileManager::findFile(std::string& full_path,
         i = search_path.rbegin();
         i != search_path.rend(); ++i)
     {
-        if ((*i).at((*i).size() - 1) == '/') {
-            full_path = *i + file_name;
-        } else {
-            full_path = *i + "/" + file_name;
-        }
-        
+        full_path = *i + "/" + file_name;
         if(m_file_system->existFile(full_path.c_str())) return true;
     }
     full_path="";
@@ -548,10 +539,6 @@ bool FileManager::checkAndCreateDirectoryP(const std::string &path)
  */
 void FileManager::checkAndCreateConfigDir()
 {
-#ifdef TARGET_OS_IPHONE
-    m_config_dir = ".";
-    return;
-#endif
     if(getenv("SUPERTUXKART_SAVEDIR") && 
         checkAndCreateDirectory(getenv("SUPERTUXKART_SAVEDIR")) )
     {
@@ -641,7 +628,7 @@ void FileManager::checkAndCreateConfigDir()
  */
 void FileManager::checkAndCreateAddonsDir()
 {
-#if defined(WIN32) || defined(__CYGWIN__) || defined (TARGET_OS_IPHONE)
+#if defined(WIN32) || defined(__CYGWIN__)
     m_addons_dir  = m_config_dir+"/addons";
 #elif defined(__APPLE__)
     m_addons_dir  = getenv("HOME");

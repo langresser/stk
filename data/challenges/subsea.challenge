@@ -2,18 +2,18 @@
 <challenge version="2">
     <track id="subsea" laps="2"/>
     <mode major="single" minor="quickrace"/>
-    <requirements trophies="2"/>
+    <requirements trophies="15"/>
     
     <hard>
         <karts number="5"/>
-        <requirements position="1" time="205"/>
+        <requirements position="1" time="215"/>
     </hard>
     <medium>
         <karts number="4"/>
-        <requirements time="215"/>
+        <requirements time="235"/>
     </medium>
     <easy>
         <karts number="4"/>
-        <requirements time="260"/>
+        <requirements time="275"/>
     </easy>
 </challenge>

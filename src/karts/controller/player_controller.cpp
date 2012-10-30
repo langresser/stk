@@ -22,6 +22,7 @@
 #include "audio/sfx_base.hpp"
 #include "audio/sfx_manager.hpp"
 #include "config/player.hpp"
+#include "config/stk_config.hpp"
 #include "graphics/camera.hpp"
 #include "graphics/irr_driver.hpp"
 #include "input/input_manager.hpp"
@@ -30,6 +31,7 @@
 #include "items/powerup.hpp"
 #include "karts/abstract_kart.hpp"
 #include "karts/kart_properties.hpp"
+#include "karts/skidding.hpp"
 #include "karts/rescue_animation.hpp"
 #include "modes/world.hpp"
 #include "race/history.hpp"
@@ -104,15 +106,7 @@ void PlayerController::resetInputState()
     m_prev_brake            = 0;
     m_prev_accel            = 0;
     m_prev_nitro            = false;
-    m_controls->m_accel     = 0.0f;
-    m_controls->m_brake     = false;
-    m_controls->m_skid      = false;
-    m_controls->m_fire      = false;
-    m_controls->m_look_back = false;
-    m_controls->m_nitro     = false;
-    m_controls->m_rescue    = false;
-    m_controls->m_steer     = 0.0f;
-
+    m_controls->reset();
 }   // resetInputState
 
 // ----------------------------------------------------------------------------
@@ -135,7 +129,11 @@ void PlayerController::action(PlayerAction action, int value)
     case PA_STEER_LEFT:
         m_steer_val_l = value;
         if (value)
+        {
           m_steer_val = value;
+          if(m_controls->m_skid==KartControl::SC_NO_DIRECTION)
+              m_controls->m_skid = KartControl::SC_LEFT;
+        }
         else
           m_steer_val = m_steer_val_r;
 
@@ -143,7 +141,11 @@ void PlayerController::action(PlayerAction action, int value)
     case PA_STEER_RIGHT:
         m_steer_val_r = -value;
         if (value)
-          m_steer_val = -value;
+        {
+            m_steer_val = -value;
+            if(m_controls->m_skid==KartControl::SC_NO_DIRECTION)
+                m_controls->m_skid = KartControl::SC_RIGHT;
+        }
         else
           m_steer_val = m_steer_val_l;
 
@@ -204,7 +206,15 @@ void PlayerController::action(PlayerAction action, int value)
         m_controls->m_look_back = (value!=0);
         break;
     case PA_DRIFT:
-        m_controls->m_skid = (value!=0);
+        if(value==0)
+            m_controls->m_skid = KartControl::SC_NONE;
+        else
+            if(m_steer_val==0)
+                m_controls->m_skid = KartControl::SC_NO_DIRECTION;
+            else
+                m_controls->m_skid = m_steer_val<0
+                                   ? KartControl::SC_RIGHT
+                                   : KartControl::SC_LEFT;
         break;
     case PA_PAUSE_RACE:
         if (value != 0) StateManager::get()->escapePressed();
@@ -228,6 +238,14 @@ void PlayerController::steer(float dt, int steer_val)
         gui_base->addMessage(StringUtils::insertValues(L"steer_val %i", steer_val), m_kart, 1.0f,
                              video::SColor(255, 255, 0, 255), false);
     }
+
+    if(stk_config->m_disable_steer_while_unskid &&
+        m_controls->m_skid==KartControl::SC_NONE &&
+       m_kart->getSkidding()->getVisualSkidRotation()!=0)
+    {
+        m_controls->m_steer = 0;
+    }
+
     const float STEER_CHANGE = dt/m_kart->getTimeFullSteer();  // amount the steering is changed
     if (steer_val < 0)
     {

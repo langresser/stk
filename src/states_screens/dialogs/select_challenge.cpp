@@ -87,21 +87,21 @@ SelectChallengeDialog::SelectChallengeDialog(const float percentWidth,
 
     const Challenge* c = unlock_manager->getCurrentSlot()->getChallenge(challenge_id);
 
-    if (c->isSolved(RaceManager::RD_EASY))
+    if (c->isSolved(RaceManager::DIFFICULTY_EASY))
     {
         IconButtonWidget* btn = getWidget<IconButtonWidget>("novice");
         btn->setImage(file_manager->getTextureFile("cup_bronze.png").c_str(),
                      IconButtonWidget::ICON_PATH_TYPE_ABSOLUTE);
     }
     
-    if (c->isSolved(RaceManager::RD_MEDIUM))
+    if (c->isSolved(RaceManager::DIFFICULTY_MEDIUM))
     {
         IconButtonWidget* btn = getWidget<IconButtonWidget>("intermediate");
         btn->setImage(file_manager->getTextureFile("cup_silver.png").c_str(),
                      IconButtonWidget::ICON_PATH_TYPE_ABSOLUTE);
     }
     
-    if (c->isSolved(RaceManager::RD_HARD))
+    if (c->isSolved(RaceManager::DIFFICULTY_HARD))
     {
         IconButtonWidget* btn = getWidget<IconButtonWidget>("expert");
         btn->setImage(file_manager->getTextureFile("cup_gold.png").c_str(),
@@ -113,9 +113,9 @@ SelectChallengeDialog::SelectChallengeDialog(const float percentWidth,
     LabelWidget* medium_label = getWidget<LabelWidget>("intermediate_label");
     LabelWidget* expert_label = getWidget<LabelWidget>("difficult_label");
     
-    novice_label->setText( getLabel(RaceManager::RD_EASY,   c->getData()), false );
-    medium_label->setText( getLabel(RaceManager::RD_MEDIUM, c->getData()), false );
-    expert_label->setText( getLabel(RaceManager::RD_HARD,   c->getData()), false );
+    novice_label->setText( getLabel(RaceManager::DIFFICULTY_EASY,   c->getData()), false );
+    medium_label->setText( getLabel(RaceManager::DIFFICULTY_MEDIUM, c->getData()), false );
+    expert_label->setText( getLabel(RaceManager::DIFFICULTY_HARD,   c->getData()), false );
     
     if (c->getData()->getMajorMode() == RaceManager::MAJOR_MODE_GRAND_PRIX)
     {
@@ -127,6 +127,13 @@ SelectChallengeDialog::SelectChallengeDialog(const float percentWidth,
         const wchar_t* track_name = track_manager->getTrack(c->getData()->getTrackId())->getName();
         getWidget<LabelWidget>("title")->setText( track_name, true );
     }
+    
+    LabelWidget* typeLbl = getWidget<LabelWidget>("race_type_val");
+    if (c->getData()->getGPId().size() > 0)
+        typeLbl->setText(_("Grand Prix"), false );
+    else
+        typeLbl->setText( RaceManager::getNameOf(c->getData()->getMinorMode()), false );
+    
 }
 
 // ----------------------------------------------------------------------------
@@ -189,17 +196,17 @@ GUIEngine::EventPropagation SelectChallengeDialog::processEvent(const std::strin
         // Launch challenge
         if (eventSource == "novice")
         {
-            challenge->setRace(RaceManager::RD_EASY);
+            challenge->setRace(RaceManager::DIFFICULTY_EASY);
             UserConfigParams::m_difficulty = 0;
         }
         else if (eventSource == "intermediate")
         {
-            challenge->setRace(RaceManager::RD_MEDIUM);
+            challenge->setRace(RaceManager::DIFFICULTY_MEDIUM);
             UserConfigParams::m_difficulty = 1;
         }
         else if (eventSource == "expert")
         {
-            challenge->setRace(RaceManager::RD_HARD);
+            challenge->setRace(RaceManager::DIFFICULTY_HARD);
             UserConfigParams::m_difficulty = 2;
         }
         else

@@ -35,7 +35,6 @@
 #include "race/race_manager.hpp"
 #include "tracks/track_manager.hpp"
 #include "utils/string_utils.hpp"
-#include "platform_util.h"
 
 UnlockManager* unlock_manager=0;
 //-----------------------------------------------------------------------------
@@ -120,7 +119,7 @@ void UnlockManager::readAllChallengesInDirs(const std::vector<std::string>* all_
             
             std::string filename = *dir + "/" + *file;
             
-            FILE* f = open_file(filename.c_str(), "r");
+            FILE* f = fopen(filename.c_str(), "r");
             if (f)
             {
                 fclose(f);

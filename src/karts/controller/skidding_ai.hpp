@@ -1,3 +1,4 @@
+
 //
 //  SuperTuxKart - a fun racing game with go-kart
 //  Copyright (C) 2004-2005 Steve Baker <sjbaker1@airmail.net>
@@ -24,6 +25,7 @@
 #include "karts/controller/ai_base_controller.hpp"
 #include "race/race_manager.hpp"
 #include "tracks/graph_node.hpp"
+#include "utils/random_generator.hpp"
 
 class LinearWorld;
 class QuadGraph;
@@ -44,21 +46,6 @@ namespace irr
 class SkiddingAI : public AIBaseController
 {
 private:
-    /** How the AI uses nitro. */
-    enum {NITRO_NONE, NITRO_SOME, NITRO_ALL} m_nitro_level;
-
-    /** Determines if the AI should prefer collecting items over avoiding
-     *  items, or avoiding over collecting. */
-    enum {ITEM_COLLECT_NONE, ITEM_COLLECT_PRIORITY, ITEM_AVOID_PRIORITY} 
-          m_item_behaviour;
-
-    enum ItemTactic
-    {
-        IT_TEN_SECONDS, //Fire after 10 seconds have passed, since the item
-                        //was grabbed.
-        IT_CALCULATE //Aim carefully, check for enough space for boosters,
-                     //and that other conditions are meet before firing.
-    };
 
     class CrashTypes
     {
@@ -70,38 +57,7 @@ private:
         void clear() {m_road = false; m_kart = -1;}
     } m_crashes;
 
-    RaceManager::AISuperPower m_superpower;
-
-    /*Difficulty handling variables*/
-    /** Chance of a false start. */
-    float m_false_start_probability;
-    /** The minimum delay time before a AI kart starts. */
-    float m_min_start_delay;
-    /** The maximum delay time before an AI kart starts. */
-    float m_max_start_delay;
-    /** The actual start delay used. */
-    float m_start_delay; 
-  
-    /** Minimum number of steps to check. If 0, the AI doesn't even has check
-     *  around the kart, if 1, it checks around the kart always, and more 
-     *  than that will check the remaining number of steps in front of the 
-     *  kart, always. */
-    int m_min_steps; 
-     /** If true, the acceleration is decreased when the AI is in a better 
-      *  position than all the human players. */
-    bool  m_wait_for_players;
-
-    /** The allowed maximum speed in percent of the kart's maximum speed. */
-    float m_max_handicap_speed; 
-    
-     /** How are items going to be used? */
-    ItemTactic m_item_tactic;
-
-    /** True if the kart should try to pass on a bomb to another kart. */
-    bool m_handle_bomb;
-
-    /** True if the AI should avtively try to make use of slipstream. */
-    bool m_make_use_of_slipstream;
+    RaceManager::AISuperPower m_superpower;    
 
     /*General purpose variables*/
 
@@ -119,6 +75,9 @@ private:
     /** Distance to the kard behind. */
     float m_distance_behind;
 
+    /** The actual start delay used. */
+    float m_start_delay; 
+  
     /** Time an item has been collected and not used. */
     float m_time_since_last_shot;
   
@@ -150,8 +109,42 @@ private:
      *  (which would make it more difficult to avoid items). */
     bool m_avoid_item_close;
 
-    /** True if the new findNonCrashingPoint2 function should be used. */
-    bool m_use_new_aim_point_selection;
+    /** Distance to the player, used for rubber-banding. */
+    float m_distance_to_player;
+
+    /** A random number generator to decide if the AI should skid or not. */
+    RandomGenerator m_random_skid;
+
+    /** This implements a simple finite state machine: it starts in
+     *  NOT_YET. The first time the AI decides to skid, the state is changed
+     *  randomly (dependeng on skid probability) to N_SKID or SKID.
+     *  As long as the AI keeps on deciding the skid, the state remains
+     *  unchanged (so no new random decision is made) till it decides
+     *  not to skid. In which case the state is set to NOT_YET again.
+     *  This guarantees that for each 'skidable' section of the track
+     *  the random decision is only done once. */
+    enum {SKID_PROBAB_NOT_YET, SKID_PROBAB_NO_SKID, SKID_PROBAB_SKID}
+          m_skid_probability_state;
+
+    /** The last item selected for collection, for which a probability
+     *  was determined. */
+    const Item *m_last_item_random;
+
+    /** True if m_last_item_random was randomly selected to be collected. */
+    bool m_really_collect_item;
+
+    /** A random number generator for collecting items. */
+    RandomGenerator m_random_collect_item;
+
+    /** Which of the three Point Selection Algorithms (i.e.
+     *  findNoNCrashingPoint* functions) to use:
+     *  the default (which is actually slightly buggy, but so far best one 
+     *              (after handling of 90 degree turns was added)
+     *  the fixed one (which fixes one problem of the buggy algorithm),
+     *  the new algorithm (see findNonCrashingPoint* for details).
+     *  So far the default one has by far the best performance. */
+    enum {PSA_DEFAULT, PSA_FIXED, PSA_NEW}
+          m_point_selection_algorithm;
 
 #ifdef DEBUG
     /** For skidding debugging: shows the estimated turn shape. */
@@ -159,7 +152,7 @@ private:
 
     /** For debugging purpose: a sphere indicating where the AI 
      *  is targeting at. */
-    irr::scene::ISceneNode *m_debug_sphere;
+    irr::scene::ISceneNode *m_debug_sphere[4];
 
     /** For item debugging: set to the item that is selected to 
      *  be collected. */
@@ -193,8 +186,9 @@ private:
                         std::vector<const Item *> *items_to_collect);
 
     void  checkCrashes(const Vec3& pos);
-    void  findNonCrashingPoint(Vec3 *result, int *last_node);
-    void  findNonCrashingPoint2(Vec3 *result, int *last_node);
+    void  findNonCrashingPointFixed(Vec3 *result, int *last_node);
+    void  findNonCrashingPointNew(Vec3 *result, int *last_node);
+    void  findNonCrashingPointDefault(Vec3 *result, int *last_node);
 
     void  determineTrackDirection();
     void  determineTurnRadius(const Vec3 &start,

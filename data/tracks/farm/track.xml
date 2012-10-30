@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev Unknown -->
-<track  name        = "Bovine Barnyard"
-        version     = "5"
-        groups      = "standard"
-        designer    = "Marianne Gagnon &amp; Ville Seppanen"
-        music       = "TheDeadRocks-EasyJob.music"
-        screenshot  = "farm.jpg"
+<!-- Generated with script from SVN rev 11785 -->
+<track  name           = "Bovine Barnyard"
+        version        = "5"
+        groups         = "standard"
+        designer       = "Marianne Gagnon &amp; Ville Seppanen"
+        music          = "TheDeadRocks-EasyJob.music"
+        screenshot     = "farm.jpg"
+        smooth-normals = "false"
 >
 </track>

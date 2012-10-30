@@ -6,7 +6,7 @@ bindir=$(prefix)/games
 bin_PROGRAMS = supertuxkart
 
 AM_CPPFLAGS = -DSUPERTUXKART_DATADIR="\"$(datadir)/games/$(PACKAGE)/\""  \
- -I$(srcdir)/bullet/src/ -I$(srcdir)/enet/include/
+ -I$(srcdir)/../lib/bullet/src/ -I$(srcdir)/../lib/enet/include/
 
 supertuxkart_SOURCES = \
  main.cpp \
@@ -17,6 +17,7 @@ supertuxkart_SOURCES = \
  addons/addons_manager.cpp \
  addons/addons_manager.hpp \
  addons/dummy_network_http.hpp \
+ addons/inetwork_http.cpp \
  addons/inetwork_http.hpp \
  addons/network_http.cpp \
  addons/network_http.hpp \
@@ -221,15 +222,11 @@ supertuxkart_SOURCES = \
  karts/controller/ai_properties.hpp \
  karts/controller/controller.cpp \
  karts/controller/controller.hpp \
- karts/controller/default_ai_controller.cpp \
- karts/controller/default_ai_controller.hpp \
  karts/controller/end_controller.cpp \
  karts/controller/end_controller.hpp \
  karts/controller/kart_control.hpp \
  karts/controller/player_controller.cpp \
  karts/controller/player_controller.hpp \
- karts/controller/present_ai.cpp \
- karts/controller/present_ai.hpp \
  karts/controller/skidding_ai.cpp \
  karts/controller/skidding_ai.hpp \
  karts/explosion_animation.cpp \

@@ -117,12 +117,11 @@ void MainLoop::updateRace(float dt)
  */
 void MainLoop::run()
 {
-#ifdef WIN32
     IrrlichtDevice* device = irr_driver->getDevice();
+
     m_curr_time = device->getTimer()->getRealTime();
     while(!m_abort)
     {
-#endif
         PROFILER_PUSH_CPU_MARKER("Main loop", 0xFF, 0x00, 0xF7);
         
         m_prev_time = m_curr_time;
@@ -134,13 +133,7 @@ void MainLoop::run()
         {
             // Busy wait if race_manager is active (i.e. creating of world is done)
             // till all clients have reached this state.
-            if (network_manager->getState()==NetworkManager::NS_READY_SET_GO_BARRIER) {
-#ifdef WIN32
-                continue;
-#else
-                return;
-#endif
-            }
+            if (network_manager->getState()==NetworkManager::NS_READY_SET_GO_BARRIER) continue;
             updateRace(dt);
         }   // if race is active
 
@@ -171,9 +164,8 @@ void MainLoop::run()
         }
         
         PROFILER_POP_CPU_MARKER();
-#ifdef WIN32
     }  // while !m_exit
-#endif
+
 }   // run
 
 //-----------------------------------------------------------------------------

@@ -38,7 +38,8 @@ AIBaseController::AIBaseController(AbstractKart *kart,
     m_kart          = kart;
     m_kart_length   = m_kart->getKartLength();
     m_kart_width    = m_kart->getKartWidth();
-    m_ai_properties = m_kart->getKartProperties()->getAIProperties();
+    m_ai_properties = 
+        m_kart->getKartProperties()->getAIPropertiesForDifficulty();
 
     if(race_manager->getMinorMode()!=RaceManager::MINOR_MODE_3_STRIKES)
     {
@@ -274,7 +275,7 @@ float AIBaseController::steerToAngle(const unsigned int sector,
     //Desired angle minus current angle equals how many angles to turn
     float steer_angle = angle - m_kart->getHeading();
 
-    if(m_kart->hasViewBlockedByPlunger())
+    if(m_kart->getBlockedByPlungerTime()>0)
         steer_angle += add_angle*0.2f;
     else
         steer_angle += add_angle;
@@ -282,19 +283,6 @@ float AIBaseController::steerToAngle(const unsigned int sector,
 
     return steer_angle;
 }   // steerToAngle
-
-//-----------------------------------------------------------------------------
-/** Sets when skidding will be used: when the ratio of steering angle to
- *  maximumn steering angle is larger than the fraction set here,
- *  skidding will be used. This is used to set more aggressive skidding
- *  for higher level AIs.
- *  \param f Fraction with which steering angle / max steering angle is
- *           compared to determine if skidding is used.
- */
-void AIBaseController::setSkiddingFraction(float f)
-{
-    m_skidding_threshold = f;
-}   // setSkiddingFactor
 
 //-----------------------------------------------------------------------------
 /** Computes the steering angle to reach a certain point. The function will
@@ -331,9 +319,11 @@ float AIBaseController::steerToPoint(const Vec3 &point)
         // steer function will request skidding. 0.1 is added in case
         // of floating point errors.
         if(lc.getX()>0)
-            return  m_kart->getMaxSteerAngle()*m_skidding_threshold+0.1f;
+            return  m_kart->getMaxSteerAngle()
+                   *m_ai_properties->m_skidding_threshold+0.1f;
         else
-            return -m_kart->getMaxSteerAngle()*m_skidding_threshold-0.1f;
+            return -m_kart->getMaxSteerAngle()
+                   *m_ai_properties->m_skidding_threshold-0.1f;
     }
 
     // Now compute the nexessary radius for the turn. After getting the
@@ -354,9 +344,11 @@ float AIBaseController::steerToPoint(const Vec3 &point)
     // If the wheel base is too long (i.e. the minimum radius is too large 
     // to actually reach the target), make sure that skidding is used
     if(sin_steer_angle <= -1.0f)
-        return -m_kart->getMaxSteerAngle()*m_skidding_threshold-0.1f;
+        return -m_kart->getMaxSteerAngle()
+               *m_ai_properties->m_skidding_threshold-0.1f;
     if(sin_steer_angle >=  1.0f) 
-        return  m_kart->getMaxSteerAngle()*m_skidding_threshold+0.1f;
+        return  m_kart->getMaxSteerAngle()
+               *m_ai_properties->m_skidding_threshold+0.1f;
     float steer_angle     = asin(sin_steer_angle);
 
     // After doing the exact computation, we now return an 'oversteered'
@@ -404,13 +396,17 @@ float AIBaseController::normalizeAngle(float angle)
 void AIBaseController::setSteering(float angle, float dt)
 {
     float steer_fraction = angle / m_kart->getMaxSteerAngle();
-    m_controls->m_skid   = doSkid(steer_fraction);
+    if(!doSkid(steer_fraction))
+        m_controls->m_skid = KartControl::SC_NONE;
+    else
+        m_controls->m_skid = steer_fraction > 0 ? KartControl::SC_RIGHT 
+                                                : KartControl::SC_LEFT; 
     float old_steer      = m_controls->m_steer;
 
     if     (steer_fraction >  1.0f) steer_fraction =  1.0f;
     else if(steer_fraction < -1.0f) steer_fraction = -1.0f;
 
-    if(m_kart->hasViewBlockedByPlunger())
+    if(m_kart->getBlockedByPlungerTime()>0)
     {
         if     (steer_fraction >  0.5f) steer_fraction =  0.5f;
         else if(steer_fraction < -0.5f) steer_fraction = -0.5f;
@@ -441,7 +437,7 @@ void AIBaseController::setSteering(float angle, float dt)
 bool AIBaseController::doSkid(float steer_fraction)
 {
     // Disable skidding when a plunger is in the face
-    if(m_kart->hasViewBlockedByPlunger()) return false;
+    if(m_kart->getBlockedByPlungerTime()>0) return false;
 
     // FIXME: Disable skidding for now if the new skidding
     // code is activated, since the AI can not handle this
@@ -452,5 +448,13 @@ bool AIBaseController::doSkid(float steer_fraction)
 
     // Otherwise return if we need a sharp turn (which is
     // for the old skidding implementation).
-    return fabsf(steer_fraction)>=m_skidding_threshold;
+    return fabsf(steer_fraction)>=m_ai_properties->m_skidding_threshold;
 }   // doSkid
+// ------------------------------------------------------------------------
+/** Certain AI levels will not receive a slipstream bonus in order to 
+ *  be not as hard.
+ */
+bool AIBaseController::disableSlipstreamBonus() const 
+{
+    return m_ai_properties->disableSlipstreamUsage();
+}   // disableSlipstreamBonus

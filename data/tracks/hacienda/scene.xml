@@ -1,51 +1,51 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev Unknown -->
+<!-- Generated with script from SVN rev 11737 -->
 <scene>
-  <track model="hacienda_track.b3d" x="0" y="0" z="0">
-    <static-object lod_distance="50.0" lod_group="lantern" model="Mesh.b3d" xyz="-14.00 3.85 0.00" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_distance="225.0" lod_group="lantern" model="Mesh.001.b3d" xyz="-14.00 3.85 -3.00" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="10.14 6.63 0.06" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="22.17 7.75 -34.18" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="11.09 7.33 39.96" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="13.06 7.33 77.28" hpr="-90.0 14.6 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="46.18 5.93 109.09" hpr="-90.0 -83.7 -0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="92.75 6.03 98.55" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="225.33 7.74 98.55" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="230.10 15.52 104.96" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/>
-    <static-object lod_instance="true" lod_group="lantern" xyz="142.94 -11.38 -81.16" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/>
-    <static-object model="Plane.002.b3d" xyz="309.95 6.82 191.00" hpr="-90.0 45.0 -0.0" scale="1.00 1.00 1.00"/>
-    <static-object model="Plane.009.b3d" xyz="-10.54 3.53 104.22" hpr="-90.0 114.4 0.0" scale="1.00 1.00 1.00"/>
-    <static-object model="Plane.010.b3d" xyz="-16.84 3.61 84.85" hpr="-90.0 90.0 0.0" scale="1.00 1.00 1.00"/>
-    <static-object model="arrow.b3d" xyz="305.46 5.51 116.76" hpr="-0.0 -157.4 0.0" scale="1.00 1.00 1.00">
+  <track model="grass.jpg_track.b3d" x="0" y="0" z="0">
+    <static-object lod_distance="50.0" lod_group="lantern" model="Mesh.b3d" xyz="-14.00 3.85 0.00" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_distance="225.0" lod_group="lantern" model="Mesh.001.b3d" xyz="-14.00 3.85 -3.00" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="10.14 6.63 0.06" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="22.17 7.75 -34.18" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="11.09 7.33 39.96" hpr="-90.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="13.06 7.33 77.28" hpr="-90.0 14.6 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="46.18 5.93 109.09" hpr="-90.0 -83.7 -0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="92.75 6.03 98.55" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="225.33 7.74 98.55" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="230.10 15.52 104.96" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="lantern" xyz="142.94 -11.38 -81.16" hpr="-90.0 -12.5 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.002.b3d" xyz="309.95 6.82 191.00" hpr="-90.0 45.0 -0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.009.b3d" xyz="-10.54 3.53 104.22" hpr="-90.0 114.4 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.010.b3d" xyz="-16.84 3.61 84.85" hpr="-90.0 90.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object model="arrow.b3d" xyz="305.46 5.51 116.76" hpr="-0.0 -157.4 0.0" scale="1.00 1.00 1.00"> <!-- writeStaticObjects 2 -->
     <animated-texture name="zipper.png" dy="1.500" />
     </static-object>
-    <static-object model="Plane.018.b3d" xyz="-9.29 1.06 124.16" hpr="90.0 124.0 -0.0" scale="1.55 1.55 1.55"/>
-    <static-object model="Plane.019.b3d" xyz="-36.55 1.06 94.62" hpr="90.0 124.0 -0.0" scale="2.07 2.07 2.07"/>
-    <static-object model="arrow2.b3d" xyz="305.57 5.51 116.71" hpr="-0.0 -157.4 0.0" scale="1.00 1.00 1.00">
+    <static-object model="Plane.018.b3d" xyz="-9.29 1.06 124.16" hpr="90.0 124.0 -0.0" scale="1.55 1.55 1.55"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.019.b3d" xyz="-36.55 1.06 94.62" hpr="90.0 124.0 -0.0" scale="2.07 2.07 2.07"/> <!-- writeStaticObjects 3 -->
+    <static-object model="arrow2.b3d" xyz="305.57 5.51 116.71" hpr="-0.0 -157.4 0.0" scale="1.00 1.00 1.00"> <!-- writeStaticObjects 2 -->
     <animated-texture name="zipper-effect.png" dy="0.100" />
     </static-object>
-    <static-object model="Plane.021.b3d" xyz="93.92 5.44 103.47" hpr="0.0 -0.0 -100.0" scale="1.40 1.40 1.40"/>
-    <static-object model="Plane.023.b3d" xyz="93.92 5.24 96.52" hpr="0.0 -0.0 -100.0" scale="1.98 1.98 1.98"/>
-    <static-object model="Plane.024.b3d" xyz="82.68 5.24 102.69" hpr="-2.4 -0.1 -91.5" scale="1.98 1.98 1.98"/>
-    <static-object model="Plane.025.b3d" xyz="73.05 5.24 95.99" hpr="-2.4 -0.1 -91.5" scale="2.35 2.35 2.35"/>
-    <static-object model="Plane.026.b3d" xyz="107.74 5.24 98.91" hpr="0.0 -0.0 -100.0" scale="1.98 1.98 1.98"/>
-    <static-object model="Plane.043.b3d" xyz="388.00 4.05 13.78" hpr="0.0 86.7 0.0" scale="2.51 2.51 2.51"/>
-    <static-object model="Plane.044.b3d" xyz="388.00 11.03 153.43" hpr="0.0 56.7 0.0" scale="2.88 2.88 2.88"/>
-    <static-object model="Plane.045.b3d" xyz="388.00 1.69 -116.02" hpr="0.0 32.7 0.0" scale="3.76 3.76 3.76"/>
-    <static-object model="Plane.046.b3d" xyz="311.03 4.97 68.85" hpr="0.0 56.7 0.0" scale="2.88 2.88 2.88"/>
-    <static-object model="Plane.047.b3d" xyz="309.84 -3.36 13.81" hpr="0.0 56.7 0.0" scale="2.88 2.88 2.88"/>
-    <static-object model="Plane.049.b3d" xyz="384.46 7.75 112.15" hpr="-90.0 45.0 -0.0" scale="1.00 1.00 1.00"/>
-    <static-object model="Plane.050.b3d" xyz="384.46 -7.07 -25.18" hpr="-90.0 45.0 -0.0" scale="1.00 1.00 1.00"/>
-    <static-object model="arrow2.b3d" xyz="150.00 -10.92 -5.08" hpr="-0.0 83.1 -0.0" scale="1.00 1.00 1.00">
+    <static-object model="Plane.021.b3d" xyz="93.92 5.44 103.47" hpr="0.0 -0.0 -100.0" scale="1.40 1.40 1.40"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.023.b3d" xyz="93.92 5.24 96.52" hpr="0.0 -0.0 -100.0" scale="1.98 1.98 1.98"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.024.b3d" xyz="82.68 5.24 102.69" hpr="-2.4 -0.1 -91.5" scale="1.98 1.98 1.98"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.025.b3d" xyz="73.05 5.24 95.99" hpr="-2.4 -0.1 -91.5" scale="2.35 2.35 2.35"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.026.b3d" xyz="107.74 5.24 98.91" hpr="0.0 -0.0 -100.0" scale="1.98 1.98 1.98"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.043.b3d" xyz="388.00 4.05 13.78" hpr="0.0 86.7 0.0" scale="2.51 2.51 2.51"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.044.b3d" xyz="388.00 11.03 153.43" hpr="0.0 56.7 0.0" scale="2.88 2.88 2.88"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.045.b3d" xyz="388.00 1.69 -116.02" hpr="0.0 32.7 0.0" scale="3.76 3.76 3.76"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.046.b3d" xyz="311.03 4.97 68.85" hpr="0.0 56.7 0.0" scale="2.88 2.88 2.88"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.047.b3d" xyz="309.84 -3.36 13.81" hpr="0.0 56.7 0.0" scale="2.88 2.88 2.88"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.049.b3d" xyz="384.46 7.75 112.15" hpr="-90.0 45.0 -0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object model="Plane.050.b3d" xyz="384.46 -7.07 -25.18" hpr="-90.0 45.0 -0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object model="arrow2.b3d" xyz="150.00 -10.92 -5.08" hpr="-0.0 83.1 -0.0" scale="1.00 1.00 1.00"> <!-- writeStaticObjects 2 -->
     <animated-texture name="zipper-effect.png" dy="0.100" />
     </static-object>
-    <static-object model="arrow.b3d" xyz="150.02 -10.92 -5.21" hpr="-0.0 83.1 -0.0" scale="1.00 1.00 1.00">
+    <static-object model="arrow.b3d" xyz="150.02 -10.92 -5.21" hpr="-0.0 83.1 -0.0" scale="1.00 1.00 1.00"> <!-- writeStaticObjects 2 -->
     <animated-texture name="zipper.png" dy="1.500" />
     </static-object>
-    <static-object model="arrow2.b3d" xyz="44.49 -3.15 -69.72" hpr="0.0 105.2 0.0" scale="1.00 1.00 1.00">
+    <static-object model="arrow2.b3d" xyz="44.49 -3.15 -69.72" hpr="0.0 105.2 0.0" scale="1.00 1.00 1.00"> <!-- writeStaticObjects 2 -->
     <animated-texture name="zipper-effect.png" dy="0.100" />
     </static-object>
-    <static-object model="arrow.b3d" xyz="44.46 -3.15 -69.84" hpr="0.0 105.2 0.0" scale="1.00 1.00 1.00">
+    <static-object model="arrow.b3d" xyz="44.46 -3.15 -69.84" hpr="0.0 105.2 0.0" scale="1.00 1.00 1.00"> <!-- writeStaticObjects 2 -->
     <animated-texture name="zipper.png" dy="1.500" />
     </static-object>
   </track>
@@ -72,21 +72,33 @@
   <item x="74" y="-0.131533" z="97" />
   <small-nitro x="91" y="1.3" z="105" />
   <big-nitro x="105" y="2.411794" z="105" />
-  <item x="228" y="-0.5" z="98" />
-  <item x="228" y="-0.5" z="102" />
-  <item x="227.5" y="9.644772" z="98" />
-  <item x="237.5" y="0.1" z="22" />
-  <small-nitro x="261.5" y="-1.9" z="-14" />
-  <small-nitro x="217.5" y="-10.9" z="-64" />
+  <item x="224.821701" y="9.644772" z="98" />
+  <item x="228" y="1.203282" z="98" />
+  <item x="228" y="1.145939" z="102" />
+  <item x="229.046951" y="9.644772" z="98" />
+  <item x="237.5" y="2.376517" z="22" />
+  <small-nitro x="239.577072" y="2.007432" z="23.365486" />
+  <small-nitro x="196.936447" y="2.007432" z="-49.282059" />
   <item x="135.5" y="-20.9" z="-80" />
   <item x="130.5" y="-20.9" z="-80" />
-  <big-nitro x="51.447353" y="-9.265882" z="-84.557457" />
+  <big-nitro x="52.691925" y="-9.265882" z="-82.307655" />
+  <item x="241.622574" y="2.376517" z="24.559982" />
+  <small-nitro x="239.363525" y="2.007432" z="-52.177444" />
+  <small-nitro x="243.982361" y="2.007432" z="-56.451588" />
+  <small-nitro x="241.707413" y="2.007432" z="-54.245579" />
+  <small-nitro x="193.202362" y="2.007432" z="-52.614014" />
+  <item x="195.155579" y="2.007432" z="-50.660801" />
+  <small-nitro x="51.351616" y="-9.265882" z="-85.179741" />
+  <small-nitro x="50.154911" y="-9.265882" z="-87.812485" />
+  <small-nitro x="288.082001" y="6.406003" z="167.58313" />
+  <small-nitro x="286.391113" y="6.406003" z="165.52832" />
+  <small-nitro x="284.435425" y="6.406003" z="163.374878" />
   <checks>
     <check-lap kind="lap" same-group="0" other-ids="1" />
-    <check-line kind="activate" other-ids="2" p1="227.982346 109.128746" p2="229.342407 90.069756"
-                min-height="-0.008819" same-group="1"/>
-    <check-line kind="activate" other-ids="0" p1="92.126266 -117.803696" p2="79.177559 -140.231522"
-                min-height="-13.228691" same-group="2"/>
+    <check-line kind="activate" other-ids="2" p1="227.98 109.13" p2="229.34 90.07"
+                min-height="-0.01" same-group="1"/>
+    <check-line kind="activate" other-ids="0" p1="92.13 -117.80" p2="79.18 -140.23"
+                min-height="-13.23" same-group="2"/>
   </checks>
   <camera far="1000.0"/>
   <default-start karts-per-row     ="2"

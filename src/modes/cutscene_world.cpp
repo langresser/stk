@@ -23,6 +23,8 @@
 
 #include "animations/animation_base.hpp"
 #include "audio/music_manager.hpp"
+#include "challenges/game_slot.hpp"
+#include "challenges/unlock_manager.hpp"
 #include "graphics/irr_driver.hpp"
 #include "io/file_manager.hpp"
 #include "karts/abstract_kart.hpp"
@@ -30,7 +32,9 @@
 #include "karts/kart_properties.hpp"
 #include "modes/overworld.hpp"
 #include "physics/physics.hpp"
+#include "states_screens/credits.hpp"
 #include "states_screens/cutscene_gui.hpp"
+#include "states_screens/kart_selection.hpp"
 #include "states_screens/main_menu_screen.hpp"
 #include "tracks/track.hpp"
 #include "tracks/track_object.hpp"
@@ -43,6 +47,7 @@
  */
 CutsceneWorld::CutsceneWorld() : World()
 {
+    m_time_at_second_reset = 0.0f;
     m_aborted = false;
     WorldStatus::setClockMode(CLOCK_NONE);
     m_use_highscores = false;
@@ -55,6 +60,7 @@ CutsceneWorld::CutsceneWorld() : World()
  */
 void CutsceneWorld::init()
 {
+    m_second_reset = false;
     World::init();
     
     dynamic_cast<CutsceneGUI*>(m_race_gui)->setFadeLevel(1.0f);
@@ -87,7 +93,8 @@ void CutsceneWorld::init()
                 
                 if (!StringUtils::fromString(frameStr, frame))
                 {
-                    fprintf(stderr, "[CutsceneWorld] Invalid condition '%s'\n", condition.c_str());
+                    fprintf(stderr, "[CutsceneWorld] Invalid condition '%s'\n",
+                                    condition.c_str());
                     continue;
                 }
                 
@@ -106,7 +113,8 @@ void CutsceneWorld::init()
                 
                 if (!StringUtils::fromString(frameStr, frame))
                 {
-                    fprintf(stderr, "[CutsceneWorld] Invalid condition '%s'\n", condition.c_str());
+                    fprintf(stderr, "[CutsceneWorld] Invalid condition '%s'\n",
+                                    condition.c_str());
                     continue;
                 }
                 
@@ -120,7 +128,8 @@ void CutsceneWorld::init()
                 
                 if (!StringUtils::fromString(frameStr, frame))
                 {
-                    fprintf(stderr, "[CutsceneWorld] Invalid condition '%s'\n", condition.c_str());
+                    fprintf(stderr, "[CutsceneWorld] Invalid condition '%s'\n",
+                                    condition.c_str());
                     continue;
                 }
                 
@@ -132,7 +141,9 @@ void CutsceneWorld::init()
         
         if (dynamic_cast<AnimationBase*>(curr) != NULL)
         {
-            m_duration = std::max(m_duration, dynamic_cast<AnimationBase*>(curr)->getAnimationDuration());
+            m_duration = std::max(m_duration, 
+                                  (double)dynamic_cast<AnimationBase*>(curr)
+                                                     ->getAnimationDuration());
         }
     }
     
@@ -183,28 +194,71 @@ void CutsceneWorld::update(float dt)
     }
     **/
     
-    m_time += dt;
-    
-    if (m_time < 2.0f)
+    if (m_time < 0.0001f)
     {
-        dynamic_cast<CutsceneGUI*>(m_race_gui)->setFadeLevel(1.0f - m_time / 2.0f);
+        //printf("INITIAL TIME for CutsceneWorld\n");
+        
+        PtrVector<TrackObject>& objects = m_track->getTrackObjectManager()->getObjects();
+        TrackObject* curr;
+        for_in(curr, objects)
+        {
+            curr->reset();
+        }
+        m_time = 0.01f;
+        m_time_at_second_reset = Time::getRealTime();
+        m_second_reset = true;
     }
-    else if (m_time > m_duration - 2.0f)
+    else if (m_second_reset)
     {
-        dynamic_cast<CutsceneGUI*>(m_race_gui)->setFadeLevel((m_time - (m_duration - 2.0f)) / 2.0f);
+        m_second_reset = false;
+        
+        PtrVector<TrackObject>& objects = m_track->getTrackObjectManager()->getObjects();
+        TrackObject* curr;
+        for_in(curr, objects)
+        {
+            curr->reset();
+        }
+        
+        //m_time_at_second_reset = m_time;
+        m_time_at_second_reset = Time::getRealTime();
+        m_time = 0.01f;
     }
     else
     {
-        dynamic_cast<CutsceneGUI*>(m_race_gui)->setFadeLevel(0.0f);
+        // this way of calculating time and  dt is more in line with what 
+        // irrlicht does andprovides better synchronisation
+        double prev_time = m_time;
+        double now = Time::getRealTime();
+        m_time = now - m_time_at_second_reset;
+        dt = (float)(m_time - prev_time);
     }
+
+    float fade;    
+    if (m_time < 2.0f)
+    {
+        fade = 1.0f - (float)m_time / 2.0f;
+    }
+    else if (m_time > m_duration - 2.0f)
+    {
+        fade = (float)(m_time - (m_duration - 2.0f)) / 2.0f;
+    }
+    else
+    {
+        fade = 0.0f;
+    }
+    dynamic_cast<CutsceneGUI*>(m_race_gui)->setFadeLevel(fade);
     
-    float currFrame = m_time * 25.0f; // We assume 25 FPS
+    // We assume 25 FPS. Irrlicht starts at frame 0.
+    float curr_frame = (float)(m_time*25.0f - 1.0f); 
+    
+    //printf("Estimated current frame : %f\n", curr_frame);
     
     const std::vector<Subtitle>& subtitles = m_track->getSubtitles();
     bool foundSubtitle = false;
     for (unsigned int n = 0; n < subtitles.size(); n++)
     {
-        if (currFrame >= subtitles[n].getFrom() && currFrame < subtitles[n].getTo())
+        if (curr_frame >= subtitles[n].getFrom() && 
+            curr_frame < subtitles[n].getTo())
         {
             dynamic_cast<CutsceneGUI*>(m_race_gui)->setSubtitle(subtitles[n].getText());
             foundSubtitle = true;
@@ -218,8 +272,8 @@ void CutsceneWorld::update(float dt)
     }
     
     
-    World::update(dt);
-    World::updateTrack(dt);
+    World::update((float)dt);
+    World::updateTrack((float)dt);
     
     PtrVector<TrackObject>& objects = m_track->getTrackObjectManager()->getObjects();
     TrackObject* curr;
@@ -236,15 +290,17 @@ void CutsceneWorld::update(float dt)
             m_camera->setRotation(rot2.toIrrVector());
             
             sfx_manager->positionListener(m_camera->getAbsolutePosition(),
-                                          m_camera->getTarget() - m_camera->getAbsolutePosition());
+                                          m_camera->getTarget() - 
+                                            m_camera->getAbsolutePosition());
             
             break;
-            //printf("Camera %f %f %f\n", curr->getNode()->getPosition().X, curr->getNode()->getPosition().Y, curr->getNode()->getPosition().Z);
+            //printf("Camera %f %f %f\n", curr->getNode()->getPosition().X, 
+            //                            curr->getNode()->getPosition().Y, 
+            //                             curr->getNode()->getPosition().Z);
         }
     }
-    
-    for (std::map<float, std::vector<TrackObject*> >::iterator it = m_sounds_to_trigger.begin();
-         it != m_sounds_to_trigger.end(); )
+    std::map<float, std::vector<TrackObject*> >::iterator it;
+    for (it = m_sounds_to_trigger.begin(); it != m_sounds_to_trigger.end(); )
     {
         if (m_time >= it->first)
         {
@@ -260,9 +316,9 @@ void CutsceneWorld::update(float dt)
             it++;
         }
      }
-     
-     for (std::map<float, std::vector<TrackObject*> >::iterator it = m_particles_to_trigger.begin();
-         it != m_particles_to_trigger.end(); )
+
+     for (it = m_particles_to_trigger.begin(); 
+          it != m_particles_to_trigger.end(); )
      {
         if (m_time >= it->first)
         {
@@ -279,8 +335,7 @@ void CutsceneWorld::update(float dt)
         }
      }
      
-     for (std::map<float, std::vector<TrackObject*> >::iterator it = m_sounds_to_stop.begin();
-         it != m_sounds_to_stop.end(); )
+     for (it = m_sounds_to_stop.begin(); it != m_sounds_to_stop.end(); )
      {
         if (m_time >= it->first)
         {
@@ -314,9 +369,39 @@ void CutsceneWorld::enterRaceOverState()
     
     if (m_aborted || partId == -1 || partId == (int)m_parts.size() - 1)
     {
-        race_manager->exitRace();
-        StateManager::get()->resetAndGoToScreen(MainMenuScreen::getInstance());
-        OverWorld::enterOverWorld();
+        if (m_parts.size() == 1 && m_parts[0] == "endcutscene")
+        {
+            CreditsScreen* credits = CreditsScreen::getInstance();
+            credits->setVictoryMusic(true);
+            MainMenuScreen* mainMenu = MainMenuScreen::getInstance();
+            GUIEngine::Screen* newStack[] = { mainMenu, credits, NULL };
+            race_manager->exitRace();
+            StateManager::get()->resetAndSetStack(newStack);
+            StateManager::get()->pushScreen(credits);
+        }
+        else if (race_manager->getTrackName() == "introcutscene" ||
+                 race_manager->getTrackName() == "introcutscene2")
+        {
+            GameSlot* slot = unlock_manager->getCurrentSlot();
+            if (slot->isFirstTime())
+            {
+                race_manager->exitRace();
+                StateManager::get()->resetAndGoToScreen(MainMenuScreen::getInstance());
+                
+                slot->setFirstTime(false);
+                unlock_manager->save();
+                KartSelectionScreen* s = KartSelectionScreen::getInstance();
+                s->setMultiplayer(false);
+                s->setFromOverworld(true);
+                StateManager::get()->pushScreen( s );
+            }
+        }
+        else
+        {
+            race_manager->exitRace();
+            StateManager::get()->resetAndGoToScreen(MainMenuScreen::getInstance());
+            OverWorld::enterOverWorld();
+        }
     }
     else
     {

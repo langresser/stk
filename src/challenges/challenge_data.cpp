@@ -386,6 +386,11 @@ void ChallengeData::setRace(RaceManager::Difficulty d) const
         race_manager->setNumLocalPlayers(1);
         race_manager->setCoinTarget(m_energy[d]);
         race_manager->setDifficulty(d);
+
+        if (m_time[d] >= 0.0f)
+        {
+          race_manager->setTimeTarget(m_time[d]);
+        }
     }
     else   // GP
     {
@@ -422,6 +427,7 @@ bool ChallengeData::raceFinished()
     
     AbstractKart* kart = world->getPlayerKart(0);
 
+    if (kart->isEliminated()                                    ) return false;
     if (track_name != m_track_id                                ) return false;
     if ((int)world->getNumKarts() < m_num_karts[d]              ) return false;
     if (m_energy[d] > 0   && kart->getEnergy() < m_energy[d]    ) return false;

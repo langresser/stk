@@ -87,9 +87,13 @@ ParticleKind* ParticleKindManager::getParticles(const std::string &name)
     {
         try
         {
-            ParticleKind* newkind = new ParticleKind(t->getTrackFile(name));
-            m_per_track_kinds[name] = newkind;
-            return newkind;
+			std::string effectPath = t->getTrackFile(name);
+
+			if (file_manager->fileExists(effectPath)) {
+				ParticleKind* newkind = new ParticleKind(effectPath);
+				m_per_track_kinds[name] = newkind;
+				return newkind;
+			}
         }
         catch (std::runtime_error& e)
         {

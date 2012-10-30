@@ -109,6 +109,14 @@
       work anymore - so for now don't enable this. -->
   <networking enable="false"/>
 
+  <!-- disable-while-unskid: Disable steering when stop skidding during 
+           the time it takes to adjust the physical body with the graphics.
+       camera-follow-skid: If true the camera will stay behind the kart,
+           potentially making it easier to see where the kart is going to 
+           after a skid. -->
+  <steer disable-while-unskid="false"
+         camera-follow-skid="true"     />
+
   <!-- Default values for all karts
        ============================ -->
   <general-kart-defaults>
@@ -174,7 +182,11 @@
            of the kart also determines the direction the kart is driving to
            when skidding is stopped.
          visual-time: How long it takes for the visual skid to reach maximum.
+         revert-visual-time: how long it takes when stopping a skid to revert
+           the visual skid and bring visuals and physics in sync again.
          angular-velocity: Angular velocity to be used for the kart when skidding.
+         min-speed: Minimum speed a kart must have before it can skid. Must be
+           >0, otherwise the kart can skid at the start of the race.
          time-till-bonus: How long a kart needs to skid in order to get a bonus.
          bonus-force: A speedup applied to the kart whick skidded for a while.
          bonus-time: How long the bonus-force is applied.
@@ -185,6 +197,9 @@
            the chassis of a kart should rotate to match the graphical view. 
            A factor of 1 is identical, a smaller factor will rotate the kart
            less (which might  feel better).   
+         physical-jump-time: Time for a physical jump at the beginning of a skid.
+         graphical-jump-time: Time for a graphics-only jump at the beginning
+           of a skid.
          reduce-turn-min/max: The steering done by the controller (which is in
            [-1,1]) is mapped to [reduce-turn-min, reduce-turn-max] when skidding
            is active (for left turn, right turn will use [-max, -min]). The 
@@ -193,14 +208,35 @@
            but you will always keep on doing a left turn, just more or less. -->
 
     <skid increase="1.05" decrease="0.95" max="2.5" time-till-max="0.5"
-          visual="1.0" visual-time="0.5"
-          time-till-bonus="1.0 3.0" 
+          visual="1.25" visual-time="0.7" revert-visual-time="0.7"
+          min-speed="10"  time-till-bonus="1.0 3.0" 
           bonus-speed="4.5 6.5" bonus-time="3.0 4.0" 
           bonus-force="250 350"
-          post-skid-rotate-factor="1" jump-time="0.4"
+          physical-jump-time="0" graphical-jump-time="0.4"
+          post-skid-rotate-factor="1"
           reduce-turn-min="0.2" reduce-turn-max="0.8"/>
 
     <!-- Kart-specific settings used by the AI.
+         use-slipstream: if the AI should try to overtake karts using slipstream.
+         disable-slipstream-usage: even if the AI is not trying to use slipstream,
+           it can get a lot of bonus, esp. on easy since the AI creates trains.
+           Set this to true to make sure AI does not get any slipstream bonus.
+         false-start-probability: Probability of a false start.
+         min/max-start-delay: Minimum and maximum start delay.
+           See http://www.humanbenchmark.com/tests/reactiontime/stats.php
+           Average reaction time is around 0.215 s.
+         nitro-usage: "none", "some", "all": if nitro should be used, and
+           how much the AI should try to use it good.
+         non-random-item-usage: If true, use items in a sophisticated way,
+           otherwise use items randomly.
+         collect-avoid-items: if the AI should collect and avoid items,
+           or just ignore them.
+         handle-bomb: If the AI should actively try to pass on a bomb.
+         skidding-threshold: only for old-style skidding: when sharp turn
+           should be triggered. Smaller values means it will sharp turn
+           earlier, resulting in better driving in thight curves.
+
+
          max-item-angle: Items that would need more than this change in
            direction are not considered for collection.
          time-full-steer is the time for the AI to go from neutral steering to
@@ -218,14 +254,86 @@
            direction.
          straight-length-for-zipper is the minimum length a straight
            section of the track should have in order to activate a zipper.
-    -->
-    <ai max-item-angle="0.7" max-item-angle-high-speed="0.3"
-        time-full-steer="0.1"
-        bad-item-closeness="6"
-        straight-length-for-zipper="35"
-    />
 
+           competitive when ahead of the player, or more competitive
+           when behind the player. 
+
+         skid-probability: Since the AI is usually very good at using
+           skidding, this is used to implement some rubber-banding for
+           the AI: depending on distance to the player, the AI will
+           change the probability of skidding. This attributes takes
+           a space-separated list of "distance:probability" pairs
+           (negative distances meaning the kart is behind the player,
+           a positive number that the AI is ahead of the player).
+           Then list should have at least 2 entries. Depending on
+           the actualy distance the kart has the probability is then
+           linearly interpolated (if the AI is more than the largest
+           distance ahead, the value for the largest distance is used,
+           and similarly if the kart is more than the minimum value
+           behind).
+         speed-cap: Fraction of maximum speed the kart should drive
+           at. Used to slow down karts that are ahead of the player.
+           Note that setting this to a value >1 does NOT increase
+           the speed the kart can drive at!
+         collect-item-probability: Probability of the AI actually
+           trying to collect an item (if an item is selected for
+           collection in the first place). 
+    -->
+    <ai>
+        <easy   time-full-steer="0.1"
+                straight-length-for-zipper="35"
+                use-slipstream="false"
+                disable-slipstream-usage="true"
+                false-start-probability="0.08"
+                min-start-delay="0.3" max-start-delay="0.5"
+                nitro-usage="none"
+                non-random-item-usage="false"
+                collect-avoid-items="false"
+                handle-bomb="false"
+                speed-cap="-10:1.0 -5:0.9 5:0.8 20:0.7 50:0.6"
+                max-item-angle="0.7" max-item-angle-high-speed="0.3"
+                bad-item-closeness="6"
+                collect-item-probability="0:0"
+                rb-skid-probability="0:0.0"
+                skidding-threshold="4.0"
+                />
+        <medium time-full-steer="0.1"
+                straight-length-for-zipper="35"
+                use-slipstream="false"
+                disable-slipstream-usage="false"
+                false-start-probability="0.04"
+                min-start-delay="0.25" max-start-delay="0.4"
+                nitro-usage="some"
+                non-random-item-usage="true"
+                collect-avoid-items="true"
+                handle-bomb="false"
+                speed-cap="10:1.0 50:0.8"
+                max-item-angle="0.7" max-item-angle-high-speed="0.3"
+                bad-item-closeness="6"
+                collect-item-probability="-10:1.0 0:0"
+                rb-skid-probability="0:0.0"
+                skidding-threshold="3.0"
+                />
+        <hard   time-full-steer="0.1"
+                straight-length-for-zipper="35"
+                use-slipstream="true"
+                disable-slipstream-usage="false"
+                false-start-probability="0.01"
+                min-start-delay="0.15" max-start-delay="0.28"
+                nitro-usage="all"
+                non-random-item-usage="true"
+                collect-avoid-items="true"
+                handle-bomb="true"
+                speed-cap="20:1.0 50:0.8"
+                max-item-angle="0.7" max-item-angle-high-speed="0.3"
+                bad-item-closeness="6"
+                collect-item-probability="10:1.0 20:0"
+                rb-skid-probability="-50:1.0 -20:0.7 20:0.2 50:0.0"
+                skidding-threshold="2.0"
+                />
+    </ai>
     <!-- Slipstream: length: How far behind a kart slipstream works
+         width: how wide slipstream works furthest away from the kart.
          collect-time: How many seconds of sstream give  maximum benefit
          use-time: How long the benefit will last.
          add-power: Additional power due to sstreaming. 1 = +100%
@@ -236,7 +344,7 @@
          working.
          fade-out-time: How long the slip stream speed increase will 
          gradually be reduced.  -->
-    <slipstream length="10" collect-time="2" use-time="5"
+    <slipstream length="10" width="5" collect-time="2" use-time="5"
                 add-power="3" min-speed="10"
                 max-speed-increase="5" duration="1" fade-out-time="2"/>
 
@@ -249,11 +357,11 @@
     <swatter duration="10" distance="3" squash-duration="5" 
              squash-slowdown="0.5"/>
 
-    <!-- turn-speed and turn-radius define the turn radius of the kart at
-         the given speed. The actual steering  angle is dependent on the
+    <!-- turn-radius defines the turn radius of the kart at
+         a given speed. The actual steering angle is dependent on the
          wheel base of the kart: radius = wheel_base/sin(steering_angle).
-         The values below define that at speed 0 the turn radius is 3, at
-         speed 10 (and up to 25 then) the radius is 15 etc.
+         The values below define that at speed 0 the turn radius is 2, at
+         speed 10 the radius is 7.5 etc.
          The actual turn radius is piece-wise linearly interpolated. This
          allows for tighter turning at lower speeds, and also avoids that
          the kart becomes too hard to control at high speed (speeds of higher
@@ -261,15 +369,14 @@
          time-full-steer is the time when a player's input goes from neutral
                          steering to extreme left or right.
     -->
-    <turn turn-speed= "0 10 25 45"
-          turn-radius="2.0 7.5 15 25"
+    <turn turn-radius="0:2.0 10:7.5 25:15 45:25"
           time-full-steer ="0.2"  />
 
     <!-- Speed and acceleration related values: power and max-speed (in m/s) 
          have 3 values, one for low, medium, and hard.
          brake-factor: Value used when braking. max-speed-reverse-ratio is
          the percentage of max speed for reverse gear. -->
-    <engine power="400 450 500"  max-speed="15 20 23" brake-factor="11.0"
+    <engine power="450 475 500"  max-speed="17 21 23" brake-factor="11.0"
             max-speed-reverse-ratio="0.3"/>
 
     <!-- Simulated gears: switch-ratio defines at what ratio of the maximum
@@ -344,16 +451,18 @@
            bevelling, and uses a simple box shape.
            As an example, a value of 1 for x and z will result in a 
            sharp 'arrow' like shape.  -->
-    <collision impulse="5000" impulse-time="0.1" terrain-impulse="8000"
+    <collision impulse="3000" impulse-time="0.1" terrain-impulse="8000"
                restitution="1.0" bevel-factor="0.5 0.0 0.5" />
 
     <!-- Kart-specific plunger and rubber band handling: max-length is
          the maximum length of rubber band before it snaps. force is
          the force a plunger/rubber band applies to the kart(s).
-         duration is the duration a rubber band acts. -->
+         duration is the duration a rubber band acts. 
+         in-face-time determines how long it takes before a plunger 
+           in your face is removed. -->
     <plunger band-max-length="50" band-force="1500" band-duration="1"
           band-speed-increase="7" band-fade-out-time="3"
-          in-face-time="4 6 7"/>
+          in-face-time="3 4 4.5"/>
 
     <!-- Kart-specific explosion parameters. 
          Time: how long it takes before the kart can drive again (this

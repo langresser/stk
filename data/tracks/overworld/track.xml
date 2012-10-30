@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev 11423 -->
-<track  name        = "Overworld"
-        version     = "5"
-        groups      = "standard"
-        internal    = "Y"
-        designer    = "mmg"
-        music       = "kart_grand_prix.music"
+<!-- Generated with script from SVN rev 11523 -->
+<track  name           = "Overworld"
+        version        = "5"
+        groups         = "standard"
+        designer       = "mmg"
+        music          = "overworld.music"
+        internal       = "Y"
+        screenshot     = "screenshot.jpg"
+        smooth-normals = "false"
 >
 </track>

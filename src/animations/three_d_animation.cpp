@@ -38,8 +38,10 @@
 ThreeDAnimation::ThreeDAnimation(const XMLNode &node)
                : AnimationBase(node)
 {
-    m_crash_reset   = false;
+    m_crash_reset  = false;
+    m_explode_kart = false;
     node.get("reset", &m_crash_reset);
+    node.get("explode", &m_explode_kart);
     
     m_important_animation = (World::getWorld()->getIdent() == IDENT_CUSTSCENE);
     node.get("important", &m_important_animation);
@@ -120,7 +122,12 @@ void ThreeDAnimation::createPhysicsBody(const std::string &shape)
     {
         m_collision_shape = new btCylinderShapeZ(0.5f*extend);
     }
-    
+    else if(shape=="sphere")
+    {
+        float radius = std::max(extend.getX(), extend.getY());
+        radius = 0.5f*std::max(radius,      extend.getZ());
+        m_collision_shape = new btSphereShape(radius);
+    }
     else if(shape=="exact")
     {
         TriangleMesh* triangle_mesh = new TriangleMesh();
@@ -297,7 +304,7 @@ ThreeDAnimation::~ThreeDAnimation()
  */
 void ThreeDAnimation::update(float dt)
 {
-    if ( UserConfigParams::m_graphical_effects || m_important_animation )
+    //if ( UserConfigParams::m_graphical_effects || m_important_animation )
     {
         Vec3 xyz   = m_node->getPosition();
         Vec3 scale = m_node->getScale();
@@ -324,8 +331,17 @@ void ThreeDAnimation::update(float dt)
         // Now update the position of the bullet body if there is one:
         if(m_body)
         {
-            hpr = DEGREE_TO_RAD*hpr;
-            btQuaternion q(hpr.X, hpr.Y, hpr.Z);
+            Vec3 hpr2(hpr);
+            hpr2.degreeToRad();
+            btQuaternion q;
+
+            core::matrix4 mat;
+            mat.setRotationDegrees(hpr);
+
+            irr::core::quaternion tempQuat(mat);
+            q = btQuaternion(-tempQuat.X, -tempQuat.Y, -tempQuat.Z, tempQuat.W);
+            
+            
             Vec3 p(xyz);
             btTransform trans(q,p);
             m_motion_state->setWorldTransform(trans);

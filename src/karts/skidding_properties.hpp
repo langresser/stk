@@ -50,6 +50,10 @@ protected:
     /** How long it takes for visual skid to reach maximum. */
     float m_skid_visual_time;
 
+    /** How long it takes for the physical and graphical bodies to be 
+     *  in sync again after a skid. */
+    float m_skid_revert_visual_time;
+
     /** Time till maximum skidding is reached. */
     float m_time_till_max_skid;
 
@@ -59,14 +63,20 @@ protected:
     /** Additional rotation of 3d model when skidding. */
     float m_skid_visual;
 
-    /** Time for a small jump when skidding starts. */
-    float m_jump_time;
+    /** Time for a small physical when skidding starts. */
+    float m_physical_jump_time;
+
+    /** Time for a small graphics-only jump when skidding starts. */
+    float m_graphical_jump_time;
 
     /** This factor is used to determine how much the chassis of a kart
     *  should rotate to match the graphical view. A factor of 1 is 
     *  identical, a smaller factor will rotate the kart less (which might
     *  feel better). */
     float m_post_skid_rotate_factor;
+
+    /*** Minimum speed a kart must have before it can skid. */
+    float m_min_skid_speed;
 
     /** Time of skidding before you get a bonus boost. It's possible to
     *  define more than one time, i.e. longer skidding gives more bonus. */

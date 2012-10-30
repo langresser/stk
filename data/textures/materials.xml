@@ -61,7 +61,7 @@
   <material name="grass.jpg"             anisotropic="Y" max-speed="0.6" slowdown-time="1.8"/>
   <material name="grass2.jpg"            max-speed="0.4" slowdown-time="2.0" anisotropic="Y"/>
   <material name="grass2dirt.png"        clampU="Y" clampV="N" anisotropic="Y" />
-  <material name="greenice.png"          reset="Y">
+  <material name="greenice.png"          >
     <particles base="smoke.xml"          condition="skid" />
   </material>
   

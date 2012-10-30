@@ -19,7 +19,11 @@
 #ifndef HEADER_AI_PROPERTIES_HPP
 #define HEADER_AI_PROPERTIES_HPP
 
+#include "race/race_manager.hpp"
+#include "utils/interpolation_array.hpp"
+
 #include <string>
+#include <vector>
 
 class XMLNode;
 
@@ -67,12 +71,85 @@ protected:
     /** Minimum length of a straight in order to activate a zipper. */
     float m_straight_length_for_zipper;
 
+    /** The array of (distance, skid_probability) points. */
+    InterpolationArray m_skid_probability;
+
+    /** To cap maximum speed if the kart is ahead of the player. */
+    InterpolationArray m_speed_cap;
+
+    /** To determine the probability of selecting an item. */
+    InterpolationArray m_collect_item_probability;
+    
+    /** Probability of a false start. Note that Nolok in boss battle will never
+     *  have a false start. */
+    float m_false_start_probability;
+
+    /** Minimum start delay. */
+    float m_min_start_delay;
+
+    /** Maximum start delay. */
+    float m_max_start_delay;
+
+    /** True if the AI should avtively try to make use of slipstream. */
+    bool m_make_use_of_slipstream;
+
+    /** Used for low level AI to not give them a slipstream bonus.
+     *  Otherwise they tend to build 'trains' (AIs driving close behing
+     *  each other and get slipstream bonus). Only for making the easy
+     *  AI really easy. */
+    bool m_disable_slipstream_usage;
+
+    /** Actively collect and avoid items. */
+    bool m_collect_avoid_items;
+
+    /** If the AI should actively try to pass on a bomb. */
+    bool m_handle_bomb;
+
+    /** True if items should be used better (i.e. non random). */
+    bool m_item_usage_non_random;
+
+    /** How the AI uses nitro. */
+    enum {NITRO_NONE, NITRO_SOME, NITRO_ALL} m_nitro_usage;
+
+    /** TODO: ONLY USE FOR OLD SKIDDING! CAN BE REMOVED once the new skidding
+     *  works as expected.
+     *  The minimum steering angle at which the AI adds skidding. Lower values
+     *  tend to improve the line the AI is driving. This is used to adjust for
+     *  different AI levels. */
+    float    m_skidding_threshold;
+
+    /** An identifier like 'easy', 'medium' or 'hard' for this data set. */
+    std::string m_ident;
+
 public:
 
-         AIProperties();
+         AIProperties(RaceManager::Difficulty difficulty);
     void load(const XMLNode *skid_node);
-    void copyFrom(const AIProperties *destination);
     void checkAllSet(const std::string &filename) const;
+    // ------------------------------------------------------------------------
+    /** Returns the skidding probability dependent on the specified distance
+     *  to the first player kart. */
+    float getSkiddingProbability(float distance) const
+    {
+        return m_skid_probability.get(distance);
+    }   // getSkiddingProbability
+    // ------------------------------------------------------------------------
+    /** Returns the fraction of maximum speed the AI should drive at, depending
+     *  on the distance from the player. */
+    float getSpeedCap(float distance) const
+    {
+        return m_speed_cap.get(distance);
+    }   // getSpeedCap
+    // ------------------------------------------------------------------------
+    /** Returns the probability to collect an item depending on the distance
+     *  to the first player kart. */
+    float getItemCollectProbability(float distance) const
+    {
+        return m_collect_item_probability.get(distance);
+    }   // getItemcollectProbability
+    // ------------------------------------------------------------------------
+    /** Returns true if this kart should not even get a slipstream bonus. */
+    bool disableSlipstreamUsage() const { return m_disable_slipstream_usage; }
 };   // AIProperties
 
 

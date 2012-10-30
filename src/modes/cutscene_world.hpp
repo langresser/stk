@@ -42,8 +42,14 @@ class CutsceneWorld : public World
     std::map<float, std::vector<TrackObject*> > m_sounds_to_stop;
     std::map<float, std::vector<TrackObject*> > m_particles_to_trigger;
     
-    float m_duration;
+    double m_duration;
     bool m_aborted;
+    
+    /** monkey tricks to get the animations in sync with irrlicht. we reset the time
+     *  after all is loaded and it's running withotu delays
+     */
+    bool m_second_reset;
+    double m_time_at_second_reset;
     
     void abortCutscene()
     {

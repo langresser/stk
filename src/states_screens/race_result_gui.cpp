@@ -30,9 +30,12 @@
 #include "karts/abstract_kart.hpp"
 #include "karts/controller/controller.hpp"
 #include "karts/kart_properties.hpp"
+#include "karts/kart_properties_manager.hpp"
+#include "modes/cutscene_world.hpp"
 #include "modes/demo_world.hpp"
 #include "modes/overworld.hpp"
 #include "modes/world_with_rank.hpp"
+#include "race/highscores.hpp"
 #include "states_screens/dialogs/race_over_dialog.hpp"
 #include "states_screens/feature_unlocked.hpp"
 #include "states_screens/main_menu_screen.hpp"
@@ -161,13 +164,44 @@ void RaceResultGUI::eventCallback(GUIEngine::Widget* widget,
             
             std::vector<const ChallengeData*> unlocked = 
                 unlock_manager->getCurrentSlot()->getRecentlyCompletedChallenges();
+            
+            bool gameCompleted = false;
+            for (unsigned int n = 0; n < unlocked.size(); n++)
+            {
+                if (unlocked[n]->getId() == "fortmagma")
+                {
+                    gameCompleted = true;
+                    break;
+                }
+            }
+        
             unlock_manager->getCurrentSlot()->clearUnlocked();
-            FeatureUnlockedCutScene* scene = 
-                FeatureUnlockedCutScene::getInstance();
-            scene->addTrophy(race_manager->getDifficulty());
-            StateManager::get()->popMenu();
-            StateManager::get()->pushScreen(scene);
-            World::deleteWorld();
+            
+            if (gameCompleted)
+            {
+                // clear the race
+                World::deleteWorld();
+                
+                StateManager::get()->enterGameState();
+                race_manager->setMinorMode(RaceManager::MINOR_MODE_CUTSCENE);
+                race_manager->setNumKarts( 0 );
+                race_manager->setNumPlayers(0);
+                race_manager->setNumLocalPlayers(0);
+                race_manager->startSingleRace("endcutscene", 999, false);
+                
+                std::vector<std::string> parts;
+                parts.push_back("endcutscene");
+                ((CutsceneWorld*)World::getWorld())->setParts(parts);
+            }
+            else
+            {
+                FeatureUnlockedCutScene* scene = 
+                    FeatureUnlockedCutScene::getInstance();
+                scene->addTrophy(race_manager->getDifficulty());
+                StateManager::get()->popMenu();
+                World::deleteWorld();
+                StateManager::get()->pushScreen(scene);
+            }
             return;
         }
         fprintf(stderr, "Incorrect event '%s' when things are unlocked.\n", 
@@ -283,10 +317,17 @@ void RaceResultGUI::determineTableLayout()
             kart->getKartProperties()->getIconMaterial()->getTexture();
         ri->m_kart_icon          = icon;
 
-        const float time         = kart->getFinishTime();
-        if(time > max_finish_time) max_finish_time = time;
-        std::string time_string  = StringUtils::timeToString(time);
-        ri->m_finish_time_string = time_string.c_str();
+        if (kart->isEliminated())
+        {
+            ri->m_finish_time_string = core::stringw(_("Eliminated"));
+        }
+        else
+        {
+            const float time         = kart->getFinishTime();
+            if(time > max_finish_time) max_finish_time = time;
+            std::string time_string  = StringUtils::timeToString(time);
+            ri->m_finish_time_string = time_string.c_str();
+        }
 
         core::dimension2du rect = 
             m_font->getDimension(ri->m_kart_name.c_str());
@@ -595,6 +636,13 @@ void RaceResultGUI::renderGlobal(float dt)
         }   // switch
         displayOneEntry((unsigned int)x, (unsigned int)y, i, true);
     }   // for i
+    
+    // Display highscores
+    if (race_manager->getMajorMode() != RaceManager::MAJOR_MODE_GRAND_PRIX ||
+        m_animation_state == RR_RACE_RESULT)
+    {
+        displayHighScores();
+    }
 }   // renderGlobal
 
 //-----------------------------------------------------------------------------
@@ -620,15 +668,22 @@ void RaceResultGUI::determineGPLayout()
         ri->m_player         = ri->m_is_player_kart 
                              ? kart->getController()->getPlayer() : NULL;
 
-        float time           = race_manager->getOverallTime(kart_id);
-        ri->m_finish_time_string
-                             = StringUtils::timeToString(time).c_str();
+        if (!kart->isEliminated())
+        {
+            float time           = race_manager->getOverallTime(kart_id);
+            ri->m_finish_time_string
+                                 = StringUtils::timeToString(time).c_str();
+        }
+        else
+        {
+            ri->m_finish_time_string = core::stringw(_("Eliminated"));
+        }
         ri->m_start_at       = m_time_between_rows * rank;
         ri->m_x_pos          = (float)UserConfigParams::m_width;
         ri->m_y_pos          = (float)(m_top+rank*m_distance_between_rows);
         int p                = race_manager->getKartPrevScore(kart_id);
         ri->m_current_displayed_points = (float)p;
-        ri->m_new_points     = 
+        ri->m_new_points     =  kart->isEliminated() ? 0 :
             (float)race_manager->getPositionScore(kart->getPosition());
     }
 
@@ -742,21 +797,6 @@ void RaceResultGUI::displayOneEntry(unsigned int x, unsigned int y,
                      true /* ignoreRTL */);
     }
     
-    if (race_manager->getMajorMode() != RaceManager::MAJOR_MODE_GRAND_PRIX ||
-        m_animation_state == RR_RACE_RESULT)
-    {
-        if (m_highscore_player != NULL && ri->m_player == m_highscore_player)
-        {   
-            core::recti dest_rect = core::recti(current_x,     y, 
-                                                current_x+100, y+10);
-            core::stringw message = (m_highscore_rank == 1 
-                ? _("You topped the highscore list!") : _("New highscore!"));
-            GUIEngine::getSmallFont()->draw(message.c_str(), dest_rect, 
-                                     video::SColor(255,255,166,0),
-                                     false, false, NULL, true /* ignoreRTL */);
-        }
-    }
-    
 }   // displayOneEntry
 
 //-----------------------------------------------------------------------------
@@ -864,3 +904,83 @@ void RaceResultGUI::cleanupGPProgress()
         delete trackWidget;
     }
 }   // cleanupGPProgress
+
+// ----------------------------------------------------------------------------
+void RaceResultGUI::displayHighScores()
+{
+    Highscores* scores = World::getWorld()->getHighscores();
+    // In some case for exemple FTL they will be no highscores
+    if (scores != NULL)
+    {
+        video::SColor white_color = video::SColor(255,255,255,255);
+
+        int x = (int)(UserConfigParams::m_width*0.55f);
+        int y = m_top;
+
+        // First draw title
+        GUIEngine::getFont()->draw(_("Highscores"), 
+              core::recti(x, y, 0, 0),
+              white_color,
+              false, false, NULL, true /* ignoreRTL */);
+
+        std::string kart_name;
+        irr::core::stringw player_name;
+          
+        // prevent excessive long name
+        unsigned int max_characters = 15;
+        float time;
+        for (int i = 0; i < scores->getNumberEntries(); i++)
+        {
+            scores->getEntry(i,kart_name,player_name, &time);
+            if (player_name.size() > max_characters)
+            {
+                int begin = (int(m_timer/0.4f)) % ( player_name.size() - max_characters );
+                player_name = player_name.subString(begin,max_characters,false);
+            }
+
+            video::SColor text_color = white_color;
+            if (m_highscore_rank-1 == i)
+            {
+                text_color = video::SColor(255,255,0,  0  );
+            }
+
+            int current_x = x;
+            int current_y = y+(i+1)*50;
+
+            const KartProperties* prop = kart_properties_manager->getKart(kart_name);
+            if (prop != NULL)
+            {
+                const std::string &icon_path = prop->getAbsoluteIconFile();
+                video::ITexture* kart_icon_texture = irr_driver->getTexture( icon_path );
+
+                core::recti source_rect(core::vector2di(0,0),
+                    kart_icon_texture->getSize());
+
+                core::recti dest_rect(current_x, current_y,
+                    current_x+m_width_icon, current_y+m_width_icon);
+
+                irr_driver->getVideoDriver()->draw2DImage(
+                    kart_icon_texture, dest_rect,
+                    source_rect, NULL, NULL,
+                    true);
+
+                current_x += m_width_icon + m_width_column_space;
+            }
+
+            // draw the player name
+            GUIEngine::getSmallFont()->draw(player_name.c_str(), 
+                core::recti(current_x, current_y, current_x+150, current_y+10),
+                text_color,
+                false, false, NULL, true /* ignoreRTL */);
+
+            current_x += 180;
+
+            // Finally draw the time
+            std::string time_string = StringUtils::timeToString(time);
+            GUIEngine::getSmallFont()->draw(time_string.c_str(),
+                core::recti(current_x, current_y, current_x+100, current_y+10),
+                text_color,
+                false, false, NULL, true /* ignoreRTL */);
+        }
+    }
+}

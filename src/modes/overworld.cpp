@@ -15,6 +15,7 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
+#include "audio/music_manager.hpp"
 #include "challenges/unlock_manager.hpp"
 #include "graphics/irr_driver.hpp"
 #include "input/device_manager.hpp"
@@ -42,7 +43,7 @@ void OverWorld::enterOverWorld()
     race_manager->setMinorMode (RaceManager::MINOR_MODE_OVERWORLD);
     race_manager->setNumKarts( 1 );
     race_manager->setTrack( "overworld" );
-    race_manager->setDifficulty(RaceManager::RD_HARD);
+    race_manager->setDifficulty(RaceManager::DIFFICULTY_HARD);
     
     // Use keyboard 0 by default (FIXME: let player choose?)
     InputDevice* device = input_manager->getDeviceList()->getKeyboard(0);
@@ -112,12 +113,15 @@ void OverWorld::update(float dt)
     // Skip annoying waiting without a purpose
     // Make sure to do all things that would normally happen in the 
     // update() method of the base classes.
-    if (getPhase()< GO_PHASE)
+    if (getPhase() < GO_PHASE)
     {
         setPhase(RACE_PHASE);
         // Normally done in WorldStatus::update(), during phase SET_PHASE,
         // so we have to start music 'manually', since we skip all phases.
         World::getWorld()->getTrack()->startMusic();
+        
+        if (music_manager->getCurrentMusic() != NULL && UserConfigParams::m_music)
+            music_manager->getCurrentMusic()->startMusic();
     }
     LinearWorld::update(dt);
     

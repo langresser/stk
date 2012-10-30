@@ -174,6 +174,8 @@ void InputManager::handleStaticAction(int key, int value)
                 // a rescue loop: rescue, drive, crash, rescue to same place
                 world->getKart(0)->forceRescue();
 #endif
+                // FIXME: remove after testing the animated plunger
+                world->getLocalPlayerKart(0)->blockViewWithPlunger();
             }
             break;
         case KEY_F2:
@@ -579,7 +581,8 @@ void InputManager::dispatchInput(Input::InputType type, int deviceID,
                 return;
             }
             
-            ((Controller*)pk->getController())->action(action, abs(value));
+            Controller* controller = pk->getController();
+            if (controller != NULL) controller->action(action, abs(value));
         }
         // ... when in menus
         else

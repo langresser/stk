@@ -19,7 +19,8 @@
 #ifndef HEADER_SKIDDING_HPP
 #define HEADER_SKIDDING_HPP
 
-#include "skidding_properties.hpp"
+#include "karts/skidding_properties.hpp"
+#include "karts/controller/kart_control.hpp"
 #include "utils/leak_check.hpp"
 #include "utils/no_copy.hpp"
 
@@ -61,6 +62,17 @@ private:
      *  stopped skidding now. */
     bool m_skid_bonus_ready;
 
+    /** Set to >0 when a graphical jump is to be done. */
+    float m_remaining_jump_time;
+
+    /** A vertical offset used to make the kart do a graphical 'jump' when
+     *  skidding is started. */
+    float m_gfx_jump_offset;
+
+    /** Keeps track of a graphical jump speed (which simulates the physics,
+     *  i.e. gravity is used to reduce the jump speed. */
+    float m_jump_speed;
+
 public:
     /** SKID_OLD: old skidding, will be removed. */
     /** SKID_NONE: Kart is currently not skidding.
@@ -88,13 +100,13 @@ private:
 
     unsigned int getSkidBonus(float *bonus_time, float *bonus_speed, 
                               float *bonus_force) const;
-    void  updateSteering(float steer);
+    void  updateSteering(float steer, float dt);
 public:
          Skidding(Kart *kart, const SkiddingProperties *sp);
         ~Skidding();
     void reset();
     void update(float dt, bool is_on_ground, float steer,
-                bool skidding);
+                KartControl::SkidControl skidding);
     // ------------------------------------------------------------------------
     /** Determines how much the graphics model of the kart should be rotated
      *  additionally (for skidding), depending on how long the kart has been
@@ -111,9 +123,12 @@ public:
      *  a fraction of the maximum steering angle ( so in [-1, 1]). */
     float getSteeringFraction() { return m_real_steering; }
     // ------------------------------------------------------------------------
-protected:
-    // The AI needs more details about the skidding state
-    friend class SkiddingAI;
+    /** Returns an additional height offset that is used to show a graphical
+     *  jump when a skid starts. So when this is >0 the wheels appear not to
+     *  touch the ground (though in reality the physical kart does, but also
+     *  see physical jumping implemented in this object). */
+    float getGraphicalJumpOffset() const { return m_gfx_jump_offset; }
+    // ------------------------------------------------------------------------
     /** Returns the skidding state. */
     SkidState getSkidState() const { return m_skid_state; }
     // ------------------------------------------------------------------------

@@ -26,6 +26,7 @@
 #include "items/rubber_band.hpp"
 #include "items/projectile_manager.hpp"
 #include "karts/abstract_kart.hpp"
+#include "karts/controller/controller.hpp"
 #include "karts/kart_properties.hpp"
 #include "modes/world.hpp"
 #include "physics/physical_object.hpp"
@@ -190,6 +191,8 @@ bool Plunger::hit(AbstractKart *kart, PhysicalObject *obj)
         if(kart)
         {
             kart->blockViewWithPlunger();
+            if (kart->getController()->isPlayerController())
+                sfx_manager->quickSound("plunger");
 
             hit_message += StringUtils::insertValues(getHitString(kart),
                                                      core::stringw(kart->getName()),

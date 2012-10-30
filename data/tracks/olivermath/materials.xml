@@ -4,7 +4,7 @@
   <material name="bananawrap.png">
     <zipper duration="3.5" max-speed-increase="15.0" fade-out-time="3.0" speed-gain="4.5"/>
   </material>
-  <material name="mathclassfloor.png">
+  <material name="mathclassfloor.jpg">
     <particles base="smoke.xml" condition="skid"/>
   </material>
 </materials>
