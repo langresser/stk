@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev 11688 -->
+<!-- Generated with script from SVN rev 11785 -->
 <scene>
   <track model="mansion_track.b3d" x="0" y="0" z="0">
     <static-object lod_instance="true" lod_group="tombStone" xyz="-91.29 -1.13 -84.42" hpr="0.0 -87.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
-    <static-object lod_distance="70.0" lod_group="tombStone" model="BezierCurve.002.b3d" xyz="79.06 -1.13 -2.68" hpr="0.0 -87.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_distance="70.0" lod_group="tombStone" model="BezierCurve.002.b3d" xyz="43.50 -3.04 -2.68" hpr="0.0 -87.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
     <static-object lod_instance="true" lod_group="tombStone" xyz="-73.38 -0.41 -66.52" hpr="15.1 -29.9 -8.3" scale="0.84 0.84 0.84"/> <!-- writeStaticObjects 3 -->
     <static-object model="tracks.b3d" xyz="-77.55 0.78 -8.00" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
-    <static-object lod_instance="true" lod_group="tombStone" xyz="-119.92 -0.99 -50.39" hpr="13.0 2.8 0.0" scale="1.35 1.35 1.35"/> <!-- writeStaticObjects 3 -->
+    <static-object lod_instance="true" lod_group="tombStone" xyz="-119.16 -0.99 -48.89" hpr="13.0 -26.8 -0.0" scale="1.35 1.35 1.35"/> <!-- writeStaticObjects 3 -->
     <static-object lod_instance="true" lod_group="tombStone" xyz="-89.06 -2.79 -52.37" hpr="30.7 95.1 31.2" scale="1.35 1.35 1.35"/> <!-- writeStaticObjects 3 -->
     <static-object lod_instance="true" lod_group="tombStone" xyz="-66.21 -4.32 -25.22" hpr="-74.5 106.6 -74.7" scale="1.35 1.35 1.35"/> <!-- writeStaticObjects 3 -->
     <static-object lod_instance="true" lod_group="pumpkin" xyz="-92.70 -5.29 59.42" hpr="0.0 -16.2 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
@@ -108,7 +108,7 @@
     <static-object lod_instance="true" lod_group="old_barrier" xyz="-14.57 3.78 4.48" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
     <static-object lod_instance="true" lod_group="old_barrier" xyz="-25.60 -0.09 5.39" hpr="-44.3 175.6 7.6" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
     <static-object model="dead_tree_low.b3d" xyz="-113.69 -4.83 77.89" hpr="-0.0 90.0 -0.0" scale="1.22 1.22 1.22"/> <!-- writeStaticObjects 3 -->
-    <static-object model="dead_tree_low.b3d" xyz="-71.42 -4.83 118.48" hpr="0.0 178.8 0.0" scale="0.99 0.99 0.99"/> <!-- writeStaticObjects 3 -->
+    <static-object model="dead_tree_low.b3d" xyz="-55.14 -4.83 118.48" hpr="0.0 178.8 0.0" scale="0.99 0.99 0.99"/> <!-- writeStaticObjects 3 -->
     <static-object model="dead_tree_low.b3d" xyz="-22.29 -4.83 118.48" hpr="0.0 178.8 0.0" scale="0.68 0.68 0.68"/> <!-- writeStaticObjects 3 -->
     <static-object model="dead_tree_low.b3d" xyz="-30.51 -4.48 68.44" hpr="-0.0 90.0 -0.0" scale="0.98 0.98 0.98"/> <!-- writeStaticObjects 3 -->
     <static-object model="dead_tree_low.b3d" xyz="-30.51 -4.48 42.48" hpr="0.0 143.8 0.0" scale="0.77 0.77 0.77"/> <!-- writeStaticObjects 3 -->
@@ -154,6 +154,7 @@
     <static-object model="dead_branch.b3d" xyz="-65.91 -4.62 68.25" hpr="6.0 126.6 4.8" scale="0.45 0.45 0.45"/> <!-- writeStaticObjects 3 -->
     <static-object model="dead_branch.b3d" xyz="-94.04 -4.62 -55.02" hpr="6.0 126.6 4.8" scale="0.45 0.45 0.45"/> <!-- writeStaticObjects 3 -->
     <static-object model="dead_branch.b3d" xyz="-64.61 -0.01 -87.47" hpr="6.0 126.6 4.8" scale="0.45 0.45 0.45"/> <!-- writeStaticObjects 3 -->
+    <static-object model="dead_tree_low.b3d" xyz="-96.13 -4.83 118.48" hpr="0.0 178.8 0.0" scale="0.99 0.99 0.99"/> <!-- writeStaticObjects 3 -->
   </track>
   <water model="waterPond.b3d" xyz="-75.02 -12.93 26.30" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00" height="0.10" speed="500.00" length="5.00">
     <animated-texture name="water_light2.png" dx="0.100" />
@@ -181,6 +182,26 @@
   </particle-emitter>
   <particle-emitter kind="black_smoke.xml" x="-29.09" y="-3.61" z="107.57" h="0.000000">
   </particle-emitter>
+  <object type="animation" model="ghost.b3d" xyz="-67.86 -7.96 -26.49" hpr="0.0 75.1 0.0" scale="0.46 1.39 1.00"  looped="y"  interaction="ghost">
+    <curve channel="ScaleX" interpolation="bezier" extend="cyclic">
+      <p c="1.000 0.457" h1="-18.129 0.457" h2="20.129 0.457"/>
+      <p c="50.000 1.000" h1="30.870 1.000" h2="145.649 1.000"/>
+      <p c="473.000 1.000" h1="316.836 1.000" h2="504.233 1.000"/>
+      <p c="553.000 0.492" h1="521.768 0.492" h2="584.232 0.492"/>
+    </curve>
+    <curve channel="ScaleZ" interpolation="bezier" extend="cyclic">
+      <p c="1.000 1.000" h1="-18.130 1.000" h2="20.130 1.000"/>
+      <p c="50.000 1.000" h1="30.870 1.000" h2="145.651 1.000"/>
+      <p c="473.000 1.000" h1="316.835 1.000" h2="504.233 1.000"/>
+      <p c="553.000 1.000" h1="521.767 1.000" h2="584.233 1.000"/>
+    </curve>
+    <curve channel="ScaleY" interpolation="bezier" extend="cyclic">
+      <p c="1.000 1.395" h1="-18.130 1.395" h2="20.130 1.395"/>
+      <p c="50.000 1.000" h1="30.870 1.000" h2="145.650 1.000"/>
+      <p c="473.000 1.000" h1="316.836 1.000" h2="504.233 1.000"/>
+      <p c="553.000 1.581" h1="521.768 1.581" h2="584.232 1.581"/>
+    </curve>
+  </object>
   <object type="billboard" texture="lightHaloY.png" xyz="-0.826620 2.265366 38.080910" 
              width="3.600000" height="3.600001" >
   </object>
@@ -249,31 +270,55 @@
   </object>
   <sun  fog="true" fog-color="7 8 11" fog-start="1.1754943508222875e-38" fog-end="75.0" xyz="0.00 118.17 0.00" sun-specular="255 255 255" sun-diffuse="85 103 103" ambient="85 103 103"/>
   <sky-color rgb="7 7 11"/>
-  <banana x="-11.399471" y="-2.702631" z="90.695007" h="-89.999997" />
-  <banana x="-66.327141" y="-6.776975" z="-3.855564" h="-89.999997" />
+  <banana x="-12.523397" y="-2.702631" z="89.468903" h="-89.999997" />
+  <banana x="-65.856316" y="-6.776975" z="-3.973271" h="-89.999997" />
+  <banana x="10.702291" y="13.031607" z="-100.927292" h="-89.999997" />
   <banana x="-15.077366" y="4.846305" z="-78.246773" h="-89.999997" />
   <item x="2.157635" y="0.443297" z="1.051094" />
   <item x="-88.150528" y="-1.616783" z="-77.274742" h="-89.999997" />
   <item x="-1.842365" y="0.443297" z="1.051094" />
-  <item x="0.157635" y="6.144967" z="-30.361755" h="-89.999997" />
+  <item x="6.638491" y="6.144968" z="-26.800203" h="-89.999997" />
   <item x="-79.663261" y="-6.536561" z="21.54475" h="-89.999997" />
-  <item x="0.157635" y="6.144967" z="-34.361755" h="-89.999997" />
+  <item x="6.580105" y="6.144968" z="-35.471092" h="-89.999997" />
   <item x="-3.487213" y="10.955063" z="-100.19828" h="-179.999994" />
-  <item x="-79.663261" y="-3.64723" z="63.002438" h="-89.999997" />
+  <item x="-76.897141" y="-3.64723" z="67.710724" h="-89.999997" />
   <item x="0.512787" y="10.955063" z="-100.19828" h="-179.999994" />
+  <item x="-102.728241" y="1.354621" z="-45.829571" h="-89.999997" />
   <item x="-63.461121" y="1.354621" z="-76.763016" h="-89.999997" />
   <item x="-63.461121" y="1.354621" z="-78.763008" h="-89.999997" />
-  <small-nitro x="10.480198" y="1.90086" z="-16.810974" h="-179.999994" />
-  <small-nitro x="25.519625" y="3.113232" z="-16.810974" h="-179.999994" />
-  <small-nitro x="25.519625" y="5.06449" z="-31.807936" h="-179.999994" />
-  <small-nitro x="-74.446999" y="-5.869563" z="-21.519756" h="-89.999997" />
+  <item x="-99.771751" y="1.354621" z="-48.372154" h="-89.999997" />
+  <item x="-84.26265" y="1.354621" z="-27.778105" h="-89.999997" />
+  <item x="-76.602875" y="-6.536561" z="23.428064" h="-89.999997" />
+  <item x="-51.354683" y="-3.64723" z="91.899551" h="-89.999997" />
+  <item x="-13.681559" y="-1.177591" z="87.28801" h="-89.999997" />
+  <item x="-11.399647" y="-1.177591" z="91.20472" h="-89.999997" />
+  <item x="0.276339" y="-1.271072" z="41.730217" />
+  <item x="4.276339" y="-1.271072" z="41.730217" />
+  <item x="2.411879" y="-2.383036" z="63.76474" />
+  <item x="-1.588121" y="-2.383036" z="63.76474" />
+  <item x="6.521719" y="6.144968" z="-31.208908" h="-89.999997" />
+  <item x="8.801348" y="13.011327" z="-73.260162" h="-89.999997" />
+  <item x="6.105592" y="13.011327" z="-73.260162" h="-89.999997" />
+  <item x="2.710917" y="13.011327" z="-73.260162" h="-89.999997" />
+  <item x="7.691462" y="13.011327" z="-100.958771" h="-89.999997" />
+  <item x="13.781893" y="13.011327" z="-100.958771" h="-89.999997" />
+  <small-nitro x="22.082684" y="1.900859" z="-16.810974" h="-179.999994" />
+  <small-nitro x="22.997345" y="3.113232" z="-11.564632" h="-179.999994" />
+  <small-nitro x="41.863995" y="5.064489" z="-13.042175" h="-179.999994" />
+  <small-nitro x="50.439743" y="5.064488" z="-18.490299" h="-179.999994" />
+  <small-nitro x="49.632614" y="5.064488" z="-30.395458" h="-179.999994" />
+  <small-nitro x="37.323891" y="5.064489" z="-39.072102" h="-179.999994" />
+  <small-nitro x="-68.822952" y="-6.629862" z="-3.644131" h="-89.999997" />
   <small-nitro x="-85.349045" y="-5.302226" z="-26.865404" h="-89.999997" />
-  <small-nitro x="-91.62738" y="-4.408249" z="-37.85471" h="-89.999997" />
-  <small-nitro x="-50.542278" y="-3.671106" z="90.695007" h="-89.999997" />
+  <small-nitro x="-101.234558" y="-2.674857" z="-47.019844" h="-89.999997" />
+  <small-nitro x="-50.248009" y="-3.671106" z="89.57679" h="-89.999997" />
+  <small-nitro x="-63.231861" y="-6.629862" z="-4.232666" h="-89.999997" />
+  <small-nitro x="-82.987473" y="-5.302226" z="-29.137011" h="-89.999997" />
+  <small-nitro x="-52.307884" y="-3.671106" z="94.167366" h="-89.999997" />
   <checks>
     <check-lap kind="lap" same-group="0" other-ids="1" />
-    <check-line kind="activate" other-ids="0" p1="-20.198870 -87.102974" p2="-11.933348 -71.332611"
-                min-height="3.810055" same-group="1"/>
+    <check-line kind="activate" other-ids="0" p1="-20.20 -87.10" p2="-11.93 -71.33"
+                min-height="3.81" same-group="1"/>
   </checks>
   <sky-box texture="SKY0006.png SKY0001.png SKY0003.png SKY0002.png SKY0005.png SKY0004.png"/>
   <camera far="2000.0"/>

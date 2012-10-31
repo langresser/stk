@@ -1,4 +1,4 @@
-# Install script for directory: E:/llvm/supertuxkart
+# Install script for directory: F:/devlib/stk
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,36 +29,36 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/llvm/supertuxkart/bin/Debug/supertuxkart.exe")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/devlib/stk/bin/Debug/supertuxkart.exe")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/llvm/supertuxkart/bin/Release/supertuxkart.exe")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/devlib/stk/bin/Release/supertuxkart.exe")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/llvm/supertuxkart/bin/MinSizeRel/supertuxkart.exe")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/devlib/stk/bin/MinSizeRel/supertuxkart.exe")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/llvm/supertuxkart/bin/RelWithDebInfo/supertuxkart.exe")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/devlib/stk/bin/RelWithDebInfo/supertuxkart.exe")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/supertuxkart" TYPE DIRECTORY FILES "E:/llvm/supertuxkart/data" REGEX "/\\.svn$" EXCLUDE)
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/supertuxkart" TYPE DIRECTORY FILES "F:/devlib/stk/data" REGEX "/\\.svn$" EXCLUDE)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE FILE FILES "E:/llvm/supertuxkart/supertuxkart.desktop")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE FILE FILES "F:/devlib/stk/supertuxkart.desktop")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pixmaps" TYPE FILE FILES
-    "E:/llvm/supertuxkart/data/supertuxkart_32.xpm"
-    "E:/llvm/supertuxkart/data/supertuxkart_64.xpm"
+    "F:/devlib/stk/data/supertuxkart_32.xpm"
+    "F:/devlib/stk/data/supertuxkart_64.xpm"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("E:/llvm/supertuxkart/src/bullet/cmake_install.cmake")
-  INCLUDE("E:/llvm/supertuxkart/src/enet/cmake_install.cmake")
-  INCLUDE("E:/llvm/supertuxkart/tools/font_tool/cmake_install.cmake")
+  INCLUDE("F:/devlib/stk/lib/bullet/cmake_install.cmake")
+  INCLUDE("F:/devlib/stk/lib/enet/cmake_install.cmake")
+  INCLUDE("F:/devlib/stk/tools/font_tool/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -68,7 +68,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "E:/llvm/supertuxkart/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "F:/devlib/stk/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "E:/llvm/supertuxkart/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "F:/devlib/stk/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

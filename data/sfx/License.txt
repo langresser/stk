@@ -62,6 +62,10 @@
 * explosion
     Released under the GNU GPL, coming from original (Super)TuxKart
     
+* forcefield
+    Released under CC-0, by Aust_paul
+    http://www.freesound.org/people/aust_paul/sounds/30935/
+    
 * gnu_flute
     Released under CC-BY 3.0 license
     by Kerri (http://www.freesound.org/people/kerri/sounds/27257/)

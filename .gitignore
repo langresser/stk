@@ -3,3 +3,8 @@
 .svn/
 *.obj
 Debug/
+CMakeFiles/
+*.dll
+dependencies/
+/*.pdb
+/*.ilk

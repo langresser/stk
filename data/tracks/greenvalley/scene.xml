@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- Generated with script from SVN rev 11523 -->
+<!-- Generated with script from SVN rev 11785 -->
 <scene>
   <track model="greenvalley_track.b3d" x="0" y="0" z="0">
     <static-object lod_distance="150.0" lod_group="plant1" model="ArctinumMinus.b3d" xyz="15.35 -0.41 -11.70" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00"/> <!-- writeStaticObjects 3 -->
@@ -299,15 +299,15 @@
   </particle-emitter>
   <particle-emitter kind="waterfall_right.xml" x="163.10" y="-13.49" z="-182.26" h="-5.122213">
   </particle-emitter>
-  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="500.0" xyz="-9.84 0.99 7.36" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.200" volume="1.0" max_dist="75.0" xyz="-9.84 0.99 7.36" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
   </object>
-  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="500.0" xyz="5.74 0.75 3.75" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.200" volume="1.0" max_dist="75.0" xyz="5.74 0.75 3.75" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
   </object>
-  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="500.0" xyz="-14.07 1.65 24.61" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="75.0" xyz="-14.07 1.65 24.61" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
   </object>
-  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="500.0" xyz="334.81 6.79 8.03" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="175.0" xyz="334.81 6.79 8.03" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
   </object>
-  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="500.0" xyz="329.63 1.10 0.68" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
+  <object type="sfx-emitter" sound="sheep.ogg" rolloff="0.100" volume="1.0" max_dist="175.0" xyz="329.63 1.10 0.68" hpr="0.0 -0.0 0.0" scale="1.00 1.00 1.00">
   </object>
   <object type="animation" model="grass_tall.b3d" xyz="207.71 -8.85 -183.86" hpr="-90.0 -12.3 0.0" scale="2.08 7.67 1.57"  interaction="ghost">
   </object>
@@ -360,10 +360,10 @@
   <small-nitro x="-0.249491" y="-1.388952" z="-68.278313" />
   <banana x="-0.613992" y="-1.306638" z="-59.692795" />
   <checks>
-    <check-line kind="lap" p1="-3.864365 -0.346210" p2="3.973206 -0.214893"
-                min-height="0.776560" same-group="0" other-ids="1"/>
-    <check-line kind="activate" other-ids="0" p1="177.589539 -141.652039" p2="174.915665 -105.719543"
-                min-height="-10.537928" same-group="1"/>
+    <check-line kind="lap" p1="-3.86 -0.35" p2="3.97 -0.21"
+                min-height="0.78" same-group="0" other-ids="1"/>
+    <check-line kind="activate" other-ids="0" p1="177.59 -141.65" p2="174.92 -105.72"
+                min-height="-10.54" same-group="1"/>
   </checks>
   <sky-box texture="w_sky_6.jpg grass2.jpg w_sky_2.jpg w_sky_4.jpg w_sky_3.jpg w_sky_1.jpg"/>
   <camera far="20000"/>

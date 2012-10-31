@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AE1F7D1D-90ED-407B-AA76-28E9B68E3E13}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>bulletcollision</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\devlib\stk\lib\bullet\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bulletcollision.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bulletcollision</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\devlib\stk\lib\bullet\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bulletcollision.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bulletcollision</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\devlib\stk\lib\bullet\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">bulletcollision.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">bulletcollision</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\devlib\stk\lib\bullet\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">bulletcollision.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">bulletcollision</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/lib/bullet/Debug/bulletcollision.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/lib/bullet/Release/bulletcollision.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/lib/bullet/MinSizeRel/bulletcollision.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/lib/bullet/RelWithDebInfo/bulletcollision.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/devlib/stk/lib/bullet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/devlib/stk/lib/bullet/CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/devlib/stk/lib/bullet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/devlib/stk/lib/bullet/CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/devlib/stk/lib/bullet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/devlib/stk/lib/bullet/CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/devlib/stk/lib/bullet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/devlib/stk/lib/bullet/CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;F:\devlib\stk\lib\bullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\devlib\stk\lib\bullet\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btAxisSweep3.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btBroadphaseInterface.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btBroadphaseProxy.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btDbvtBroadphase.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btDbvt.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btDispatcher.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btOverlappingPairCache.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btOverlappingPairCallback.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btQuantizedBvh.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btSimpleBroadphase.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxDetector.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionConfiguration.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionCreateFunc.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionDispatcher.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionObject.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionWorld.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btGhostObject.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btInternalEdgeUtility.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btManifoldResult.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSimulationIslandManager.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btUnionFind.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\SphereTriangleDetector.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btBox2dShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btBoxShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCapsuleShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCollisionMargin.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCollisionShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCompoundShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConcaveShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConeShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvex2dShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexHullShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexInternalShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexPointCloudShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexPolyhedron.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCylinderShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btEmptyShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMaterial.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMinkowskiSumShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMultiSphereShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btOptimizedBvh.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btPolyhedralConvexShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btShapeHull.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btSphereShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btStaticPlaneShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btStridingMeshInterface.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTetrahedronShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleBuffer.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleCallback.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleInfoMap.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleMesh.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleMeshShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btUniformScalingShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btBoxCollision.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btClipPolygon.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btContactProcessing.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGenericPoolAllocator.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGeometryOperations.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactBvh.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactMassUtil.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactQuantizedBvh.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactShape.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btQuantization.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btTriangleShapeEx.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_array.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_basic_geometry_operations.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_bitset.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_box_collision.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_box_set.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_clip_polygon.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_contact.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_geometry.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_geom_types.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_hash_table.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_linear_math.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_math.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_memory.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_radixsort.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_tri_collision.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btConvexCast.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btConvexPenetrationDepthSolver.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btDiscreteCollisionDetectorInterface.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpa2.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btManifoldPoint.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btPointCollector.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btRaycastCallback.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btSimplexSolverInterface.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.h" />
+    <ClInclude Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.h" />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btDbvtBroadphase.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btDbvt.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btDispatcher.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btOverlappingPairCache.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btQuantizedBvh.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\BroadphaseCollision\btSimpleBroadphase.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btBoxBoxDetector.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionDispatcher.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionObject.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCollisionWorld.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btGhostObject.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btInternalEdgeUtility.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btManifoldResult.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSimulationIslandManager.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\btUnionFind.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionDispatch\SphereTriangleDetector.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btBox2dShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btBoxShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCapsuleShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCollisionShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCompoundShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConcaveShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConeShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvex2dShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexHullShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexInternalShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexPointCloudShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexPolyhedron.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btCylinderShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btEmptyShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btOptimizedBvh.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btShapeHull.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btSphereShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btStridingMeshInterface.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTetrahedronShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleBuffer.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleCallback.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleMesh.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btTriangleMeshShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\CollisionShapes\btUniformScalingShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btContactProcessing.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGenericPoolAllocator.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactBvh.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactQuantizedBvh.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btGImpactShape.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\btTriangleShapeEx.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_box_set.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_contact.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_memory.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\Gimpact\gim_tri_collision.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btConvexCast.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpa2.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btRaycastCallback.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.cpp"  />
+    <ClCompile Include="F:\devlib\stk\lib\bullet\src\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/devlib/stk/ZERO_CHECK.vcxproj">
+      <Project>472FCD5E-7210-42D8-B30F-DD802B9DD842</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

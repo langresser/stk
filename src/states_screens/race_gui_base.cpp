@@ -19,22 +19,6 @@
 
 
 #include "states_screens/race_gui_base.hpp"
-
-#ifdef __APPLE__
-#  include <OpenGL/gl.h>
-#else
-#  define _WINSOCKAPI_
-#  ifdef WIN32
-#    include <windows.h>
-#pragma comment(lib, "OpenGL32.lib")
-#  endif
-#  ifdef ANDROID
-#    include <GLES/gl.h>
-#  else
-#    include <GL/gl.h>
-#  endif
-#endif
-
 #include "audio/music_manager.hpp"
 #include "graphics/irr_driver.hpp"
 #include "graphics/material.hpp"
@@ -491,7 +475,8 @@ void RaceGUIBase::renderPlayerView(const AbstractKart *kart, float dt)
 
     if (m_lightning > 0.0f)
     {
-#ifndef ANDROID
+// TODO wj modify
+#if 0
         GLint glviewport[4];
         glviewport[0] = viewport.UpperLeftCorner.X;
         glviewport[1] = viewport.UpperLeftCorner.Y;

@@ -1,4 +1,4 @@
-# Install script for directory: E:/llvm/supertuxkart/tools/font_tool
+# Install script for directory: F:/devlib/stk/tools/font_tool
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

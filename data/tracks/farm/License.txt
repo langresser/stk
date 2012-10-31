@@ -5,7 +5,7 @@ Model by to Ville Seppanen and Marianne Gagnon
 Well model and well texture by Sean Greene (Iconoclast)
     released under public domain
 
-Mill model by Samuncle
+Mill model and stable by Samuncle
     released under CC-BY-SA 3.0
 
 corn.png

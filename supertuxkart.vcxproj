@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{70479C9F-1ED4-457D-BB89-073CFEC5F8A1}</ProjectGUID>
+    <ProjectGUID>{F3E8951F-543D-42B2-BB17-210344014336}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>supertuxkart</ProjectName>
@@ -49,39 +49,40 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\llvm\supertuxkart\bin\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">supertuxkart.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">supertuxkart</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\llvm\supertuxkart\bin\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">supertuxkart.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">supertuxkart</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\llvm\supertuxkart\bin\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">supertuxkart.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">supertuxkart</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\llvm\supertuxkart\bin\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">supertuxkart.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">supertuxkart</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\devlib\stk\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">supertuxkart.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">supertuxkart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\devlib\stk\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">supertuxkart.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">supertuxkart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\devlib\stk\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">supertuxkart.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">supertuxkart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\devlib\stk\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">supertuxkart.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">supertuxkart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -94,14 +95,14 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR="C:/Program Files/SuperTuxKart/share/supertuxkart";ENABLE_BIDI;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>Debug</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>E:/llvm/supertuxkart/bin/Debug/supertuxkart.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/bin/Debug/supertuxkart.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR=\"C:/Program Files/SuperTuxKart/share/supertuxkart\";ENABLE_BIDI;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,15 +111,16 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;src\bullet\Debug\bulletdynamics.lib;src\bullet\Debug\bulletcollision.lib;src\bullet\Debug\bulletmath.lib;src\enet\Debug\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;lib\bullet\Debug\bulletdynamics.lib;lib\bullet\Debug\bulletcollision.lib;lib\bullet\Debug\bulletmath.lib;lib\enet\Debug\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>E:/llvm/supertuxkart/Debug/supertuxkart.lib</ImportLibrary>
+      <ImportLibrary>F:/devlib/stk/Debug/supertuxkart.lib</ImportLibrary>
       <LinkIncremental>true</LinkIncremental>
-      <ProgramDataBaseFile>E:/llvm/supertuxkart/bin/Debug/supertuxkart.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>F:/devlib/stk/bin/Debug/supertuxkart.pdb</ProgramDataBaseFile>
       <StackReserveSize>10000000</StackReserveSize>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -127,7 +129,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -135,18 +137,19 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR="C:/Program Files/SuperTuxKart/share/supertuxkart";ENABLE_BIDI;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>Release</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>E:/llvm/supertuxkart/bin/Release/supertuxkart.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/bin/Release/supertuxkart.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR=\"C:/Program Files/SuperTuxKart/share/supertuxkart\";ENABLE_BIDI;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -155,14 +158,15 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;src\bullet\Release\bulletdynamics.lib;src\bullet\Release\bulletcollision.lib;src\bullet\Release\bulletmath.lib;src\enet\Release\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;lib\bullet\Release\bulletdynamics.lib;lib\bullet\Release\bulletcollision.lib;lib\bullet\Release\bulletmath.lib;lib\enet\Release\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>E:/llvm/supertuxkart/Release/supertuxkart.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/llvm/supertuxkart/bin/Release/supertuxkart.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/devlib/stk/Release/supertuxkart.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/devlib/stk/bin/Release/supertuxkart.pdb</ProgramDataBaseFile>
       <StackReserveSize>10000000</StackReserveSize>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -171,7 +175,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -179,18 +183,19 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR="C:/Program Files/SuperTuxKart/share/supertuxkart";ENABLE_BIDI;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>E:/llvm/supertuxkart/bin/MinSizeRel/supertuxkart.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/bin/MinSizeRel/supertuxkart.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR=\"C:/Program Files/SuperTuxKart/share/supertuxkart\";ENABLE_BIDI;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -199,14 +204,15 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;src\bullet\MinSizeRel\bulletdynamics.lib;src\bullet\MinSizeRel\bulletcollision.lib;src\bullet\MinSizeRel\bulletmath.lib;src\enet\MinSizeRel\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;lib\bullet\MinSizeRel\bulletdynamics.lib;lib\bullet\MinSizeRel\bulletcollision.lib;lib\bullet\MinSizeRel\bulletmath.lib;lib\enet\MinSizeRel\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>E:/llvm/supertuxkart/MinSizeRel/supertuxkart.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/llvm/supertuxkart/bin/MinSizeRel/supertuxkart.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/devlib/stk/MinSizeRel/supertuxkart.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/devlib/stk/bin/MinSizeRel/supertuxkart.pdb</ProgramDataBaseFile>
       <StackReserveSize>10000000</StackReserveSize>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -215,7 +221,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -227,14 +233,14 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR="C:/Program Files/SuperTuxKart/share/supertuxkart";ENABLE_BIDI;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>E:/llvm/supertuxkart/bin/RelWithDebInfo/supertuxkart.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>F:/devlib/stk/bin/RelWithDebInfo/supertuxkart.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR=\"C:/Program Files/SuperTuxKart/share/supertuxkart\";ENABLE_BIDI;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:/llvm/supertuxkart/src/bullet/src;E:/llvm/supertuxkart/src/enet/include;E:/llvm/supertuxkart/src;E:/llvm/supertuxkart/dependencies/include/irrlicht;E:/llvm/supertuxkart/dependencies/include/AL;E:/llvm/supertuxkart/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:/devlib/stk/lib/bullet/src;F:/devlib/stk/lib/enet/include;F:/devlib/stk/src;F:/devlib/irr-gles/include;F:/devlib/stk/dependencies/include/AL;F:/devlib/stk/dependencies/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,15 +249,16 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;src\bullet\RelWithDebInfo\bulletdynamics.lib;src\bullet\RelWithDebInfo\bulletcollision.lib;src\bullet\RelWithDebInfo\bulletmath.lib;src\enet\RelWithDebInfo\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dependencies\lib\pthreadVC2.lib;lib\bullet\RelWithDebInfo\bulletdynamics.lib;lib\bullet\RelWithDebInfo\bulletcollision.lib;lib\bullet\RelWithDebInfo\bulletmath.lib;lib\enet\RelWithDebInfo\enet.lib;dependencies\lib\libcurl_imp.lib;dependencies\lib\Irrlicht.lib;glu32.lib;opengl32.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;glu32.lib;opengl32.lib;dependencies\lib\fribidi.lib;dependencies\lib\libogg.lib;dependencies\lib\libvorbis.lib;dependencies\lib\libvorbisfile.lib;dependencies\lib\OpenAL32.lib;dependencies\lib\fribidi.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>E:/llvm/supertuxkart/RelWithDebInfo/supertuxkart.lib</ImportLibrary>
+      <ImportLibrary>F:/devlib/stk/RelWithDebInfo/supertuxkart.lib</ImportLibrary>
       <LinkIncremental>true</LinkIncremental>
-      <ProgramDataBaseFile>E:/llvm/supertuxkart/bin/RelWithDebInfo/supertuxkart.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>F:/devlib/stk/bin/RelWithDebInfo/supertuxkart.pdb</ProgramDataBaseFile>
       <StackReserveSize>10000000</StackReserveSize>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -259,9 +266,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/llvm/supertuxkart/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/devlib/stk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake 2.8\bin\cmake.exe" -HE:/llvm/supertuxkart -BE:/llvm/supertuxkart --check-stamp-file E:\llvm\supertuxkart\CMakeFiles\generate.stamp
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -269,11 +276,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/llvm/supertuxkart/CMakeLists.txt;E:\llvm\supertuxkart\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCPlatform.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;E:\llvm\supertuxkart\cmake\BuildTypeSTKRelease.cmake;E:\llvm\supertuxkart\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\sources.cmake;E:\llvm\supertuxkart\cmake\SourceGroupFunctions.cmake;E:\llvm\supertuxkart\data\supertuxkart_desktop.template;E:\llvm\supertuxkart\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\llvm\supertuxkart\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/llvm/supertuxkart/CMakeLists.txt</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/devlib/stk/CMakeLists.txt;F:\devlib\stk\CMakeLists.txt;F:\devlib\stk\CMakeFiles\CMakeSystem.cmake;F:\devlib\stk\CMakeFiles\CMakeCCompiler.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;F:\devlib\stk\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;F:\devlib\stk\cmake\BuildTypeSTKRelease.cmake;F:\devlib\stk\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\sources.cmake;F:\devlib\stk\cmake\SourceGroupFunctions.cmake;F:\devlib\stk\data\supertuxkart_desktop.template;F:\devlib\stk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\devlib\stk\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/devlib/stk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake 2.8\bin\cmake.exe" -HE:/llvm/supertuxkart -BE:/llvm/supertuxkart --check-stamp-file E:\llvm\supertuxkart\CMakeFiles\generate.stamp
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,11 +288,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/llvm/supertuxkart/CMakeLists.txt;E:\llvm\supertuxkart\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCPlatform.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;E:\llvm\supertuxkart\cmake\BuildTypeSTKRelease.cmake;E:\llvm\supertuxkart\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\sources.cmake;E:\llvm\supertuxkart\cmake\SourceGroupFunctions.cmake;E:\llvm\supertuxkart\data\supertuxkart_desktop.template;E:\llvm\supertuxkart\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\llvm\supertuxkart\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/llvm/supertuxkart/CMakeLists.txt</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/devlib/stk/CMakeLists.txt;F:\devlib\stk\CMakeLists.txt;F:\devlib\stk\CMakeFiles\CMakeSystem.cmake;F:\devlib\stk\CMakeFiles\CMakeCCompiler.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;F:\devlib\stk\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;F:\devlib\stk\cmake\BuildTypeSTKRelease.cmake;F:\devlib\stk\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\sources.cmake;F:\devlib\stk\cmake\SourceGroupFunctions.cmake;F:\devlib\stk\data\supertuxkart_desktop.template;F:\devlib\stk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\devlib\stk\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/devlib/stk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake 2.8\bin\cmake.exe" -HE:/llvm/supertuxkart -BE:/llvm/supertuxkart --check-stamp-file E:\llvm\supertuxkart\CMakeFiles\generate.stamp
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -293,11 +300,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/llvm/supertuxkart/CMakeLists.txt;E:\llvm\supertuxkart\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCPlatform.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;E:\llvm\supertuxkart\cmake\BuildTypeSTKRelease.cmake;E:\llvm\supertuxkart\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\sources.cmake;E:\llvm\supertuxkart\cmake\SourceGroupFunctions.cmake;E:\llvm\supertuxkart\data\supertuxkart_desktop.template;E:\llvm\supertuxkart\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\llvm\supertuxkart\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/llvm/supertuxkart/CMakeLists.txt</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/devlib/stk/CMakeLists.txt;F:\devlib\stk\CMakeLists.txt;F:\devlib\stk\CMakeFiles\CMakeSystem.cmake;F:\devlib\stk\CMakeFiles\CMakeCCompiler.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;F:\devlib\stk\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;F:\devlib\stk\cmake\BuildTypeSTKRelease.cmake;F:\devlib\stk\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\sources.cmake;F:\devlib\stk\cmake\SourceGroupFunctions.cmake;F:\devlib\stk\data\supertuxkart_desktop.template;F:\devlib\stk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\devlib\stk\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/devlib/stk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake 2.8\bin\cmake.exe" -HE:/llvm/supertuxkart -BE:/llvm/supertuxkart --check-stamp-file E:\llvm\supertuxkart\CMakeFiles\generate.stamp
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HF:/devlib/stk -BF:/devlib/stk --check-stamp-file F:\devlib\stk\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -305,530 +312,530 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/llvm/supertuxkart/CMakeLists.txt;E:\llvm\supertuxkart\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCPlatform.cmake;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;E:\llvm\supertuxkart\CMakeFiles\CMakeCXXCompiler.cmake;E:\llvm\supertuxkart\cmake\BuildTypeSTKRelease.cmake;E:\llvm\supertuxkart\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;E:\llvm\supertuxkart\sources.cmake;E:\llvm\supertuxkart\cmake\SourceGroupFunctions.cmake;E:\llvm\supertuxkart\data\supertuxkart_desktop.template;E:\llvm\supertuxkart\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\llvm\supertuxkart\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/devlib/stk/CMakeLists.txt;F:\devlib\stk\CMakeLists.txt;F:\devlib\stk\CMakeFiles\CMakeSystem.cmake;F:\devlib\stk\CMakeFiles\CMakeCCompiler.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;F:\devlib\stk\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;F:\devlib\stk\CMakeFiles\CMakeCPlatform.cmake;F:\devlib\stk\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;F:\devlib\stk\cmake\BuildTypeSTKRelease.cmake;F:\devlib\stk\cmake\FindIrrlicht.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenAL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindOggVorbis.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\cmake\FindFribidi.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;F:\devlib\stk\sources.cmake;F:\devlib\stk\cmake\SourceGroupFunctions.cmake;F:\devlib\stk\data\supertuxkart_desktop.template;F:\devlib\stk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\devlib\stk\CMakeFiles\generate.stamp</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\addon.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\addons_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\dummy_network_http.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\inetwork_http.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\network_http.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\news_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\request.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\zip.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\animation_base.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\billboard_animation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\ipo.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\three_d_animation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\dummy_sfx.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_dummy.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_information.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_ogg.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_base.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_buffer.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_openal.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\challenge_data.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\challenge.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\game_slot.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\unlock_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\device_config.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\player.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\stk_config.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\user_config.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\camera.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\CBatchingMesh.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\explosion.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hardware_skinning.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hit_effect.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hit_sfx.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\irr_driver.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\lod_node.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\material.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\material_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\mesh_tools.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\moving_texture.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_emitter.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_kind.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_kind_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\per_camera_node.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\post_processing.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\rain.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\referee.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\shadow.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\show_curve.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\skid_marks.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\slip_stream.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\stars.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\abstract_state_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\abstract_top_level_container.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\engine.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\event_handler.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\layout_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\modaldialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\scalable_font.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\skin.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\bubble_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\button_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\check_box_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\dynamic_ribbon_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\icon_button_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\label_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\list_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\model_view_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\progress_bar_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\ribbon_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\spinner_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\text_box_widget.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\binding.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\device_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\input_device.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\input.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\input_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\wiimote_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\io\file_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\io\xml_node.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\io\xml_writer.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment_plugin.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\bowling.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\cake.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\flyable.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\item.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\item_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\plunger.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\powerup.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\powerup_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\projectile_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\rubber_ball.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\rubber_band.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\swatter.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\abstract_kart_animation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\abstract_kart.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\cannon_animation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\ai_base_controller.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\controller.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\default_ai_controller.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\end_controller.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\kart_control.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\player_controller.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\present_ai.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\skidding_ai.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\explosion_animation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\ghost_kart.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_gfx.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_model.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_properties.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_properties_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_with_stats.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\max_speed.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\moveable.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\rescue_animation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\skidding.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\skidding_properties.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\main_loop.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\cutscene_world.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\demo_world.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\follow_the_leader.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\game_tutorial.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\linear_world.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\overworld.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\profile_world.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\standard_race.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\three_strikes_battle.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\tutorial_race.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world_status.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world_with_rank.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_confirm_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_info_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_selected_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\connect_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\flyable_info.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\item_info.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\kart_control_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\kart_update_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\network_kart.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\network_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\num_players_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_info_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_result_ack_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_result_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_start_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_state.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\remote_kart_info.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\world_loaded_message.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btKart.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btKartRaycast.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btUprightConstraint.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\irr_debug_drawer.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\kart_motion_state.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\physical_object.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\physics.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\stk_dynamics_world.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\triangle_mesh.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\user_pointer.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\grand_prix_data.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\grand_prix_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\highscore_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\highscores.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\history.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\race_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_base.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_play.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_recorder.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\addons_screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\arenas_screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\credits.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\cutscene_gui.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\add_device_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\addons_loading.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\confirm_resolution_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\custom_video_settings.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\enter_player_name_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\gp_info_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\message_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\player_info_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\press_a_key_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_over_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_paused_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\select_challenge.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\story_mode_new.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\track_info_dialog.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\feature_unlocked.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_lose.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_win.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_1.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_2.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_3.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_4.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\kart_selection.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\main_menu_screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\minimal_race_gui.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_audio.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input2.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_players.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_ui.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_video.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui_base.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui_overworld.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_result_gui.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_setup_screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\state_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\story_mode_lobby.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\tracks_screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\tutorial_screen.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\dictionary.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\dictionary_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\file_system.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\iconv.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\language.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\log.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\log_stream.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\plural_forms.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\po_parser.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\stk_file_system.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\tinygettext.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\ambient_light_sphere.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\bezier_curve.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_cannon.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_lap.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_line.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_sphere.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_structure.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\graph_node.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\lod_node_loader.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad_graph.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad_set.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\terrain_info.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_object.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_object_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_sector.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial_data.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial_manager.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\aligned_array.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\constants.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\leak_check.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\no_copy.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\profiler.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\ptr_vector.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\random_generator.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\string_utils.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\synchronised.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\time.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\translation.hpp" />
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\vec3.hpp" />
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\addon.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\addons_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\network_http.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\news_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\request.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\zip.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\animation_base.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\billboard_animation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\ipo.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\three_d_animation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_information.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_ogg.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_buffer.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_openal.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\challenge.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\challenge_data.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\game_slot.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\unlock_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\device_config.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\player.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\stk_config.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\user_config.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\camera.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\CBatchingMesh.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\explosion.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\hardware_skinning.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\hit_sfx.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\irr_driver.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\lod_node.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\material.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\material_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\mesh_tools.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\moving_texture.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_emitter.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_kind.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_kind_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\per_camera_node.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\post_processing.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\rain.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\referee.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\shadow.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\show_curve.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\skid_marks.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\slip_stream.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\stars.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\abstract_state_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\abstract_top_level_container.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\CGUISpriteBank.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\engine.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\event_handler.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\layout_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\modaldialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\scalable_font.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\screen_loader.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\skin.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\bubble_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\button_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\CGUIEditBox.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\check_box_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\dynamic_ribbon_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\icon_button_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\label_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\list_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\model_view_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\progress_bar_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\ribbon_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\spinner_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\text_box_widget.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\binding.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\device_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\input_device.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\input_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\wiimote_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\io\file_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\io\xml_node.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\io\xml_writer.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\attachment.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\attachment_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\bowling.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\cake.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\flyable.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\item.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\item_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\plunger.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\powerup.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\powerup_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\projectile_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\rubber_ball.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\rubber_band.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\swatter.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\abstract_kart_animation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\abstract_kart.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\cannon_animation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\ai_base_controller.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\controller.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\default_ai_controller.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\end_controller.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\player_controller.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\present_ai.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\skidding_ai.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\explosion_animation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\ghost_kart.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_gfx.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_model.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_properties.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_properties_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_with_stats.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\max_speed.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\moveable.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\rescue_animation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\skidding.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\skidding_properties.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\main.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\main_loop.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\cutscene_world.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\demo_world.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\follow_the_leader.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\game_tutorial.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\linear_world.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\overworld.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\profile_world.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\standard_race.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\three_strikes_battle.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\tutorial_race.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world_status.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world_with_rank.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\connect_message.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\kart_control_message.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\kart_update_message.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\message.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\network_kart.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\network_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_info_message.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_result_message.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_state.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btKart.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btKartRaycast.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btUprightConstraint.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\irr_debug_drawer.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\physical_object.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\physics.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\triangle_mesh.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\grand_prix_data.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\grand_prix_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\highscore_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\highscores.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\history.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\race_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_base.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_play.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_recorder.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\addons_screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\arenas_screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\credits.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\cutscene_gui.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\add_device_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\addons_loading.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\confirm_resolution_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\custom_video_settings.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\enter_player_name_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\gp_info_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\message_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\player_info_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\press_a_key_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_over_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_paused_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\select_challenge.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\story_mode_new.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\track_info_dialog.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\feature_unlocked.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_lose.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_win.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_1.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_2.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_3.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_4.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\kart_selection.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\main_menu_screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\minimal_race_gui.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_audio.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input2.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_players.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_ui.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_video.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui_base.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui_overworld.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_result_gui.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_setup_screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\state_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\story_mode_lobby.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\tracks_screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\tutorial_screen.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\dictionary.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\dictionary_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\iconv.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\language.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\log.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\plural_forms.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\po_parser.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\stk_file_system.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\tinygettext.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\ambient_light_sphere.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\bezier_curve.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_cannon.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_lap.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_line.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_sphere.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_structure.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\graph_node.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\lod_node_loader.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad_graph.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad_set.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\terrain_info.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_object.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_object_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_sector.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial_data.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial_manager.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\constants.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\leak_check.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\profiler.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\random_generator.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\string_utils.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\translation.cpp"  />
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\vec3.cpp"  />
+    <ClInclude Include="F:\devlib\stk\src\addons\addon.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\addons_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\dummy_network_http.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\inetwork_http.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\network_http.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\news_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\request.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\addons\zip.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\animations\animation_base.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\animations\billboard_animation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\animations\ipo.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\animations\three_d_animation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\dummy_sfx.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\music.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\music_dummy.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\music_information.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\music_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\music_ogg.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_base.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_buffer.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_openal.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\challenges\challenge.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\challenges\challenge_data.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\challenges\game_slot.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\challenges\unlock_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\config\device_config.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\config\player.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\config\stk_config.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\config\user_config.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\camera.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\CBatchingMesh.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\explosion.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\hardware_skinning.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\hit_effect.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\hit_sfx.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\irr_driver.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\lod_node.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\material.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\material_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\mesh_tools.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\moving_texture.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\particle_emitter.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\particle_kind.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\particle_kind_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\per_camera_node.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\post_processing.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\rain.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\referee.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\shadow.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\show_curve.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\skid_marks.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\slip_stream.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\graphics\stars.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\abstract_state_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\abstract_top_level_container.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\engine.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\event_handler.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\layout_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\modaldialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\scalable_font.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\skin.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\bubble_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\button_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\check_box_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\dynamic_ribbon_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\icon_button_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\label_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\list_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\model_view_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\progress_bar_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\ribbon_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\spinner_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\text_box_widget.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\input\binding.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\input\device_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\input\input.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\input\input_device.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\input\input_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\input\wiimote_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\io\file_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\io\xml_node.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\io\xml_writer.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\attachment.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\attachment_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\attachment_plugin.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\bowling.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\cake.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\flyable.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\item.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\item_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\plunger.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\powerup.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\powerup_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\projectile_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\rubber_ball.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\rubber_band.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\items\swatter.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\abstract_kart.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\abstract_kart_animation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\cannon_animation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\ai_base_controller.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\ai_properties.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\controller.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\end_controller.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\kart_control.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\player_controller.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\skidding_ai.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\explosion_animation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\ghost_kart.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\kart.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_gfx.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_model.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_properties.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_properties_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_with_stats.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\max_speed.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\moveable.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\rescue_animation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\skidding.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\karts\skidding_properties.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\main_loop.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\cutscene_world.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\demo_world.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\follow_the_leader.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\game_tutorial.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\linear_world.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\overworld.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\profile_world.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\standard_race.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\three_strikes_battle.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\tutorial_race.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\world.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\world_status.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\modes\world_with_rank.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\character_confirm_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\character_info_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\character_selected_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\connect_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\flyable_info.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\item_info.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\kart_control_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\kart_update_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\network_kart.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\network_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\num_players_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\race_info_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\race_result_ack_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\race_result_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\race_start_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\race_state.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\remote_kart_info.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\network\world_loaded_message.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\btKart.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\btKartRaycast.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\btUprightConstraint.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\irr_debug_drawer.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\kart_motion_state.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\physical_object.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\physics.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\stk_dynamics_world.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\triangle_mesh.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\physics\user_pointer.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\race\grand_prix_data.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\race\grand_prix_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\race\highscore_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\race\highscores.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\race\history.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\race\race_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\replay\replay_base.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\replay\replay_play.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\replay\replay_recorder.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\addons_screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\arenas_screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\credits.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\cutscene_gui.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\add_device_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\addons_loading.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\confirm_resolution_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\custom_video_settings.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\enter_player_name_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\gp_info_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\message_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\player_info_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\press_a_key_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\race_over_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\race_paused_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\select_challenge.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\story_mode_new.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\track_info_dialog.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\feature_unlocked.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\grand_prix_lose.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\grand_prix_win.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_1.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_2.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_3.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_4.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\kart_selection.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\main_menu_screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\minimal_race_gui.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_audio.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_input.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_input2.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_players.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_ui.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_video.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_gui.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_gui_base.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_gui_overworld.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_result_gui.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_setup_screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\state_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\story_mode_lobby.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\tracks_screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\states_screens\tutorial_screen.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\dictionary.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\dictionary_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\file_system.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\iconv.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\language.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\log.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\log_stream.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\plural_forms.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\po_parser.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\stk_file_system.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\tinygettext.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\ambient_light_sphere.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\bezier_curve.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_cannon.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_lap.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_line.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_sphere.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_structure.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\graph_node.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\lod_node_loader.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\quad.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\quad_graph.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\quad_set.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\terrain_info.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\track.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_object.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_object_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_sector.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tutorial\tutorial.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tutorial\tutorial_data.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\tutorial\tutorial_manager.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\aligned_array.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\constants.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\interpolation_array.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\leak_check.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\no_copy.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\profiler.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\ptr_vector.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\random_generator.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\string_utils.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\synchronised.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\time.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\translation.hpp" />
+    <ClInclude Include="F:\devlib\stk\src\utils\vec3.hpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\addon.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\addons_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\inetwork_http.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\network_http.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\news_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\request.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\addons\zip.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\animations\animation_base.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\animations\billboard_animation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\animations\ipo.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\animations\three_d_animation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\audio\music_information.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\audio\music_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\audio\music_ogg.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\audio\sfx_buffer.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\audio\sfx_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\audio\sfx_openal.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\challenges\challenge.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\challenges\challenge_data.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\challenges\game_slot.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\challenges\unlock_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\config\device_config.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\config\player.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\config\stk_config.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\config\user_config.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\camera.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\CBatchingMesh.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\explosion.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\hardware_skinning.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\hit_sfx.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\irr_driver.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\lod_node.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\material.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\material_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\mesh_tools.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\moving_texture.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\particle_emitter.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\particle_kind.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\particle_kind_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\per_camera_node.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\post_processing.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\rain.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\referee.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\shadow.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\show_curve.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\skid_marks.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\slip_stream.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\graphics\stars.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\abstract_state_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\abstract_top_level_container.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\CGUISpriteBank.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\engine.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\event_handler.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\layout_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\modaldialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\scalable_font.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\screen_loader.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\skin.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\bubble_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\button_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\CGUIEditBox.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\check_box_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\dynamic_ribbon_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\icon_button_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\label_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\list_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\model_view_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\progress_bar_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\ribbon_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\spinner_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\text_box_widget.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\input\binding.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\input\device_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\input\input_device.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\input\input_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\input\wiimote_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\io\file_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\io\xml_node.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\io\xml_writer.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\attachment.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\attachment_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\bowling.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\cake.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\flyable.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\item.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\item_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\plunger.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\powerup.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\powerup_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\projectile_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\rubber_ball.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\rubber_band.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\items\swatter.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\abstract_kart.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\abstract_kart_animation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\cannon_animation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\ai_base_controller.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\ai_properties.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\controller.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\end_controller.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\player_controller.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\skidding_ai.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\explosion_animation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\ghost_kart.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\kart.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_gfx.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_model.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_properties.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_properties_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_with_stats.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\max_speed.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\moveable.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\rescue_animation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\skidding.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\karts\skidding_properties.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\main.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\main_loop.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\cutscene_world.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\demo_world.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\follow_the_leader.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\game_tutorial.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\linear_world.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\overworld.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\profile_world.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\standard_race.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\three_strikes_battle.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\tutorial_race.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\world.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\world_status.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\modes\world_with_rank.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\connect_message.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\kart_control_message.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\kart_update_message.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\message.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\network_kart.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\network_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\race_info_message.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\race_result_message.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\network\race_state.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\btKart.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\btKartRaycast.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\btUprightConstraint.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\irr_debug_drawer.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\physical_object.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\physics.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\physics\triangle_mesh.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\race\grand_prix_data.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\race\grand_prix_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\race\highscore_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\race\highscores.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\race\history.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\race\race_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\replay\replay_base.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\replay\replay_play.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\replay\replay_recorder.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\addons_screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\arenas_screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\credits.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\cutscene_gui.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\add_device_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\addons_loading.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\confirm_resolution_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\custom_video_settings.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\enter_player_name_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\gp_info_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\message_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\player_info_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\press_a_key_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\race_over_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\race_paused_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\select_challenge.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\story_mode_new.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\track_info_dialog.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\feature_unlocked.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\grand_prix_lose.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\grand_prix_win.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_1.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_2.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_3.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_4.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\kart_selection.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\main_menu_screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\minimal_race_gui.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_audio.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_input.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_input2.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_players.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_ui.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_video.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_gui.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_gui_base.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_gui_overworld.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_result_gui.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_setup_screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\state_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\story_mode_lobby.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\tracks_screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\states_screens\tutorial_screen.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\dictionary.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\dictionary_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\iconv.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\language.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\log.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\plural_forms.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\po_parser.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\stk_file_system.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\tinygettext.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\ambient_light_sphere.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\bezier_curve.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_cannon.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_lap.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_line.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_sphere.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_structure.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\graph_node.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\lod_node_loader.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\quad.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\quad_graph.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\quad_set.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\terrain_info.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\track.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_object.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_object_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_sector.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tutorial\tutorial.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tutorial\tutorial_data.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\tutorial\tutorial_manager.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\constants.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\leak_check.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\profiler.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\random_generator.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\string_utils.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\translation.cpp" />
+    <ClCompile Include="F:\devlib\stk\src\utils\vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:/llvm/supertuxkart/ZERO_CHECK.vcxproj">
-      <Project>D769F517-D304-480F-8A8F-BC1E9FC1BF2E</Project>
+    <ProjectReference Include="F:/devlib/stk/ZERO_CHECK.vcxproj">
+      <Project>472FCD5E-7210-42D8-B30F-DD802B9DD842</Project>
     </ProjectReference>
-    <ProjectReference Include="E:/llvm/supertuxkart/src/bullet/bulletcollision.vcxproj">
-      <Project>38BE25FC-5EA8-4FFC-959E-D1AD8B017DC4</Project>
+    <ProjectReference Include="F:/devlib/stk/lib/bullet/bulletcollision.vcxproj">
+      <Project>AE1F7D1D-90ED-407B-AA76-28E9B68E3E13</Project>
     </ProjectReference>
-    <ProjectReference Include="E:/llvm/supertuxkart/src/bullet/bulletdynamics.vcxproj">
-      <Project>FF3BA907-3F94-4587-A06F-2B813AF757A6</Project>
+    <ProjectReference Include="F:/devlib/stk/lib/bullet/bulletdynamics.vcxproj">
+      <Project>1BEDA773-83EF-4B54-A05A-36741FD96A80</Project>
     </ProjectReference>
-    <ProjectReference Include="E:/llvm/supertuxkart/src/bullet/bulletmath.vcxproj">
-      <Project>24A4826C-5483-40C5-94CC-A8EFDA9C27F4</Project>
+    <ProjectReference Include="F:/devlib/stk/lib/bullet/bulletmath.vcxproj">
+      <Project>80382F99-0DB1-4A16-BECE-9201E9F5EF10</Project>
     </ProjectReference>
-    <ProjectReference Include="E:/llvm/supertuxkart/src/enet/enet.vcxproj">
-      <Project>54675054-5E7F-49BC-B38F-5171C708B4B7</Project>
+    <ProjectReference Include="F:/devlib/stk/lib/enet/enet.vcxproj">
+      <Project>842F4858-CDA3-4BB2-97E4-8B51C3A97313</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

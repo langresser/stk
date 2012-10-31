@@ -1,1515 +1,1515 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\addon.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\addon.cpp">
       <Filter>Source Files\addons</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\addons_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\addons_manager.cpp">
       <Filter>Source Files\addons</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\network_http.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\inetwork_http.cpp">
       <Filter>Source Files\addons</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\news_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\network_http.cpp">
       <Filter>Source Files\addons</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\request.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\news_manager.cpp">
       <Filter>Source Files\addons</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\addons\zip.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\request.cpp">
       <Filter>Source Files\addons</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\animation_base.cpp">
+    <ClCompile Include="F:\devlib\stk\src\addons\zip.cpp">
+      <Filter>Source Files\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\devlib\stk\src\animations\animation_base.cpp">
       <Filter>Source Files\animations</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\billboard_animation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\animations\billboard_animation.cpp">
       <Filter>Source Files\animations</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\ipo.cpp">
+    <ClCompile Include="F:\devlib\stk\src\animations\ipo.cpp">
       <Filter>Source Files\animations</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\animations\three_d_animation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\animations\three_d_animation.cpp">
       <Filter>Source Files\animations</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_information.cpp">
+    <ClCompile Include="F:\devlib\stk\src\audio\music_information.cpp">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\audio\music_manager.cpp">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\music_ogg.cpp">
+    <ClCompile Include="F:\devlib\stk\src\audio\music_ogg.cpp">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_buffer.cpp">
+    <ClCompile Include="F:\devlib\stk\src\audio\sfx_buffer.cpp">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\audio\sfx_manager.cpp">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\audio\sfx_openal.cpp">
+    <ClCompile Include="F:\devlib\stk\src\audio\sfx_openal.cpp">
       <Filter>Source Files\audio</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\challenge.cpp">
+    <ClCompile Include="F:\devlib\stk\src\challenges\challenge.cpp">
       <Filter>Source Files\challenges</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\challenge_data.cpp">
+    <ClCompile Include="F:\devlib\stk\src\challenges\challenge_data.cpp">
       <Filter>Source Files\challenges</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\game_slot.cpp">
+    <ClCompile Include="F:\devlib\stk\src\challenges\game_slot.cpp">
       <Filter>Source Files\challenges</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\challenges\unlock_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\challenges\unlock_manager.cpp">
       <Filter>Source Files\challenges</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\device_config.cpp">
+    <ClCompile Include="F:\devlib\stk\src\config\device_config.cpp">
       <Filter>Source Files\config</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\player.cpp">
+    <ClCompile Include="F:\devlib\stk\src\config\player.cpp">
       <Filter>Source Files\config</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\stk_config.cpp">
+    <ClCompile Include="F:\devlib\stk\src\config\stk_config.cpp">
       <Filter>Source Files\config</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\config\user_config.cpp">
+    <ClCompile Include="F:\devlib\stk\src\config\user_config.cpp">
       <Filter>Source Files\config</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\camera.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\camera.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\CBatchingMesh.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\CBatchingMesh.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\explosion.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\explosion.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\hardware_skinning.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\hardware_skinning.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\hit_sfx.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\hit_sfx.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\irr_driver.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\irr_driver.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\lod_node.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\lod_node.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\material.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\material.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\material_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\material_manager.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\mesh_tools.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\mesh_tools.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\moving_texture.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\moving_texture.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_emitter.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\particle_emitter.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_kind.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\particle_kind.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\particle_kind_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\particle_kind_manager.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\per_camera_node.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\per_camera_node.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\post_processing.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\post_processing.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\rain.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\rain.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\referee.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\referee.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\shadow.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\shadow.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\show_curve.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\show_curve.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\skid_marks.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\skid_marks.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\slip_stream.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\slip_stream.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\graphics\stars.cpp">
+    <ClCompile Include="F:\devlib\stk\src\graphics\stars.cpp">
       <Filter>Source Files\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\abstract_state_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\abstract_state_manager.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\abstract_top_level_container.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\abstract_top_level_container.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\CGUISpriteBank.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\CGUISpriteBank.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\engine.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\engine.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\event_handler.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\event_handler.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\layout_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\layout_manager.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\modaldialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\modaldialog.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\scalable_font.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\scalable_font.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\screen.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\screen_loader.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\screen_loader.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\skin.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\skin.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widget.cpp">
       <Filter>Source Files\guiengine</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\bubble_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\bubble_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\button_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\button_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\CGUIEditBox.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\CGUIEditBox.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\check_box_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\check_box_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\dynamic_ribbon_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\dynamic_ribbon_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\icon_button_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\icon_button_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\label_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\label_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\list_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\list_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\model_view_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\model_view_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\progress_bar_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\progress_bar_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\ribbon_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\ribbon_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\spinner_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\spinner_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\guiengine\widgets\text_box_widget.cpp">
+    <ClCompile Include="F:\devlib\stk\src\guiengine\widgets\text_box_widget.cpp">
       <Filter>Source Files\guiengine\widgets</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\binding.cpp">
+    <ClCompile Include="F:\devlib\stk\src\input\binding.cpp">
       <Filter>Source Files\input</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\device_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\input\device_manager.cpp">
       <Filter>Source Files\input</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\input_device.cpp">
+    <ClCompile Include="F:\devlib\stk\src\input\input_device.cpp">
       <Filter>Source Files\input</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\input_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\input\input_manager.cpp">
       <Filter>Source Files\input</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\input\wiimote_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\input\wiimote_manager.cpp">
       <Filter>Source Files\input</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\io\file_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\io\file_manager.cpp">
       <Filter>Source Files\io</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\io\xml_node.cpp">
+    <ClCompile Include="F:\devlib\stk\src\io\xml_node.cpp">
       <Filter>Source Files\io</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\io\xml_writer.cpp">
+    <ClCompile Include="F:\devlib\stk\src\io\xml_writer.cpp">
       <Filter>Source Files\io</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\attachment.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\attachment.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\attachment_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\attachment_manager.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\bowling.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\bowling.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\cake.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\cake.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\flyable.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\flyable.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\item.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\item.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\item_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\item_manager.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\plunger.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\plunger.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\powerup.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\powerup.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\powerup_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\powerup_manager.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\projectile_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\projectile_manager.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\rubber_ball.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\rubber_ball.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\rubber_band.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\rubber_band.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\items\swatter.cpp">
+    <ClCompile Include="F:\devlib\stk\src\items\swatter.cpp">
       <Filter>Source Files\items</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\abstract_kart_animation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\abstract_kart.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\abstract_kart.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\abstract_kart_animation.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\cannon_animation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\cannon_animation.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\ai_base_controller.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\ai_base_controller.cpp">
       <Filter>Source Files\karts\controller</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\controller.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\ai_properties.cpp">
       <Filter>Source Files\karts\controller</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\default_ai_controller.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\controller.cpp">
       <Filter>Source Files\karts\controller</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\end_controller.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\end_controller.cpp">
       <Filter>Source Files\karts\controller</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\player_controller.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\player_controller.cpp">
       <Filter>Source Files\karts\controller</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\present_ai.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\controller\skidding_ai.cpp">
       <Filter>Source Files\karts\controller</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\controller\skidding_ai.cpp">
-      <Filter>Source Files\karts\controller</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\explosion_animation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\explosion_animation.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\ghost_kart.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\ghost_kart.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\kart.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_gfx.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_gfx.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_model.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_model.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_properties.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_properties.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_properties_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_properties_manager.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\kart_with_stats.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\kart_with_stats.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\max_speed.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\max_speed.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\moveable.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\moveable.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\rescue_animation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\rescue_animation.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\skidding.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\skidding.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\karts\skidding_properties.cpp">
+    <ClCompile Include="F:\devlib\stk\src\karts\skidding_properties.cpp">
       <Filter>Source Files\karts</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\main.cpp">
+    <ClCompile Include="F:\devlib\stk\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\main_loop.cpp">
+    <ClCompile Include="F:\devlib\stk\src\main_loop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\cutscene_world.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\cutscene_world.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\demo_world.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\demo_world.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\follow_the_leader.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\follow_the_leader.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\game_tutorial.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\game_tutorial.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\linear_world.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\linear_world.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\overworld.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\overworld.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\profile_world.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\profile_world.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\standard_race.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\standard_race.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\three_strikes_battle.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\three_strikes_battle.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\tutorial_race.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\tutorial_race.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\world.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world_status.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\world_status.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\modes\world_with_rank.cpp">
+    <ClCompile Include="F:\devlib\stk\src\modes\world_with_rank.cpp">
       <Filter>Source Files\modes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\connect_message.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\connect_message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\kart_control_message.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\kart_control_message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\kart_update_message.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\kart_update_message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\message.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\network_kart.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\network_kart.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\network_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\network_manager.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_info_message.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\race_info_message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_result_message.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\race_result_message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\network\race_state.cpp">
+    <ClCompile Include="F:\devlib\stk\src\network\race_state.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btKart.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\btKart.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btKartRaycast.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\btKartRaycast.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\btUprightConstraint.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\btUprightConstraint.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\irr_debug_drawer.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\irr_debug_drawer.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\physical_object.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\physical_object.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\physics.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\physics.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\physics\triangle_mesh.cpp">
+    <ClCompile Include="F:\devlib\stk\src\physics\triangle_mesh.cpp">
       <Filter>Source Files\physics</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\grand_prix_data.cpp">
+    <ClCompile Include="F:\devlib\stk\src\race\grand_prix_data.cpp">
       <Filter>Source Files\race</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\grand_prix_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\race\grand_prix_manager.cpp">
       <Filter>Source Files\race</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\highscore_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\race\highscore_manager.cpp">
       <Filter>Source Files\race</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\highscores.cpp">
+    <ClCompile Include="F:\devlib\stk\src\race\highscores.cpp">
       <Filter>Source Files\race</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\history.cpp">
+    <ClCompile Include="F:\devlib\stk\src\race\history.cpp">
       <Filter>Source Files\race</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\race\race_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\race\race_manager.cpp">
       <Filter>Source Files\race</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_base.cpp">
+    <ClCompile Include="F:\devlib\stk\src\replay\replay_base.cpp">
       <Filter>Source Files\replay</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_play.cpp">
+    <ClCompile Include="F:\devlib\stk\src\replay\replay_play.cpp">
       <Filter>Source Files\replay</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\replay\replay_recorder.cpp">
+    <ClCompile Include="F:\devlib\stk\src\replay\replay_recorder.cpp">
       <Filter>Source Files\replay</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\addons_screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\addons_screen.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\arenas_screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\arenas_screen.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\credits.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\credits.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\cutscene_gui.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\cutscene_gui.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\add_device_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\add_device_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\addons_loading.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\addons_loading.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\confirm_resolution_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\confirm_resolution_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\custom_video_settings.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\custom_video_settings.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\enter_player_name_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\enter_player_name_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\gp_info_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\gp_info_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\message_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\message_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\player_info_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\player_info_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\press_a_key_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\press_a_key_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_over_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\race_over_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_paused_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\race_paused_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\select_challenge.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\select_challenge.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\story_mode_new.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\story_mode_new.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\dialogs\track_info_dialog.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\dialogs\track_info_dialog.cpp">
       <Filter>Source Files\states_screens\dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\feature_unlocked.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\feature_unlocked.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_lose.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\grand_prix_lose.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_win.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\grand_prix_win.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_1.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_1.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_2.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_2.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_3.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_3.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\help_screen_4.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\help_screen_4.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\kart_selection.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\kart_selection.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\main_menu_screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\main_menu_screen.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\minimal_race_gui.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\minimal_race_gui.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_audio.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_audio.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input2.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_input.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_input2.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_players.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_players.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_ui.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_ui.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\options_screen_video.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\options_screen_video.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui_base.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_gui.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_gui_base.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_gui_overworld.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_gui_overworld.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_result_gui.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_result_gui.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\race_setup_screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\race_setup_screen.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\state_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\state_manager.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\story_mode_lobby.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\story_mode_lobby.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\tracks_screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\tracks_screen.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\states_screens\tutorial_screen.cpp">
+    <ClCompile Include="F:\devlib\stk\src\states_screens\tutorial_screen.cpp">
       <Filter>Source Files\states_screens</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\dictionary.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\dictionary.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\dictionary_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\dictionary_manager.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\iconv.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\iconv.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\language.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\language.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\log.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\log.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\plural_forms.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\plural_forms.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\po_parser.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\po_parser.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\stk_file_system.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\stk_file_system.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tinygettext\tinygettext.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tinygettext\tinygettext.cpp">
       <Filter>Source Files\tinygettext</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\ambient_light_sphere.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\ambient_light_sphere.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\bezier_curve.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\bezier_curve.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_cannon.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_cannon.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_lap.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_lap.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_line.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_line.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_manager.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_sphere.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_sphere.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\check_structure.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\check_structure.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\graph_node.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\graph_node.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\lod_node_loader.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\lod_node_loader.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\quad.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad_graph.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\quad_graph.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\quad_set.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\quad_set.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\terrain_info.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\terrain_info.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\track.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_manager.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_object.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_object.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_object_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_object_manager.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tracks\track_sector.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tracks\track_sector.cpp">
       <Filter>Source Files\tracks</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tutorial\tutorial.cpp">
       <Filter>Source Files\tutorial</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial_data.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tutorial\tutorial_data.cpp">
       <Filter>Source Files\tutorial</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\tutorial\tutorial_manager.cpp">
+    <ClCompile Include="F:\devlib\stk\src\tutorial\tutorial_manager.cpp">
       <Filter>Source Files\tutorial</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\constants.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\constants.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\leak_check.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\leak_check.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\profiler.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\profiler.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\random_generator.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\random_generator.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\string_utils.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\string_utils.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\translation.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\translation.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="E:\llvm\supertuxkart\src\utils\vec3.cpp">
+    <ClCompile Include="F:\devlib\stk\src\utils\vec3.cpp">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\addon.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\addon.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\addons_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\addons_manager.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\dummy_network_http.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\dummy_network_http.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\inetwork_http.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\inetwork_http.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\network_http.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\network_http.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\news_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\news_manager.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\request.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\request.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\addons\zip.hpp">
+    <ClInclude Include="F:\devlib\stk\src\addons\zip.hpp">
       <Filter>Header Files\addons</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\animation_base.hpp">
+    <ClInclude Include="F:\devlib\stk\src\animations\animation_base.hpp">
       <Filter>Header Files\animations</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\billboard_animation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\animations\billboard_animation.hpp">
       <Filter>Header Files\animations</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\ipo.hpp">
+    <ClInclude Include="F:\devlib\stk\src\animations\ipo.hpp">
       <Filter>Header Files\animations</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\animations\three_d_animation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\animations\three_d_animation.hpp">
       <Filter>Header Files\animations</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\dummy_sfx.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\dummy_sfx.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_dummy.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\music.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\music_dummy.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_information.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\music_information.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\music_manager.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\music_ogg.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\music_ogg.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_base.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_base.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_buffer.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_buffer.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_manager.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\audio\sfx_openal.hpp">
+    <ClInclude Include="F:\devlib\stk\src\audio\sfx_openal.hpp">
       <Filter>Header Files\audio</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\challenge_data.hpp">
+    <ClInclude Include="F:\devlib\stk\src\challenges\challenge.hpp">
       <Filter>Header Files\challenges</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\challenge.hpp">
+    <ClInclude Include="F:\devlib\stk\src\challenges\challenge_data.hpp">
       <Filter>Header Files\challenges</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\game_slot.hpp">
+    <ClInclude Include="F:\devlib\stk\src\challenges\game_slot.hpp">
       <Filter>Header Files\challenges</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\challenges\unlock_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\challenges\unlock_manager.hpp">
       <Filter>Header Files\challenges</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\device_config.hpp">
+    <ClInclude Include="F:\devlib\stk\src\config\device_config.hpp">
       <Filter>Header Files\config</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\player.hpp">
+    <ClInclude Include="F:\devlib\stk\src\config\player.hpp">
       <Filter>Header Files\config</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\stk_config.hpp">
+    <ClInclude Include="F:\devlib\stk\src\config\stk_config.hpp">
       <Filter>Header Files\config</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\config\user_config.hpp">
+    <ClInclude Include="F:\devlib\stk\src\config\user_config.hpp">
       <Filter>Header Files\config</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\camera.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\camera.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\CBatchingMesh.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\CBatchingMesh.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\explosion.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\explosion.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hardware_skinning.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\hardware_skinning.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hit_effect.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\hit_effect.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\hit_sfx.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\hit_sfx.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\irr_driver.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\irr_driver.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\lod_node.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\lod_node.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\material.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\material.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\material_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\material_manager.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\mesh_tools.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\mesh_tools.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\moving_texture.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\moving_texture.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_emitter.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\particle_emitter.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_kind.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\particle_kind.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\particle_kind_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\particle_kind_manager.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\per_camera_node.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\per_camera_node.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\post_processing.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\post_processing.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\rain.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\rain.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\referee.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\referee.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\shadow.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\shadow.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\show_curve.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\show_curve.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\skid_marks.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\skid_marks.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\slip_stream.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\slip_stream.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\graphics\stars.hpp">
+    <ClInclude Include="F:\devlib\stk\src\graphics\stars.hpp">
       <Filter>Header Files\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\abstract_state_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\abstract_state_manager.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\abstract_top_level_container.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\abstract_top_level_container.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\engine.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\engine.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\event_handler.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\event_handler.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\layout_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\layout_manager.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\modaldialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\modaldialog.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\scalable_font.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\scalable_font.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\screen.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\skin.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\skin.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widget.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\bubble_widget.hpp">
-      <Filter>Header Files\guiengine\widgets</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\button_widget.hpp">
-      <Filter>Header Files\guiengine\widgets</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\check_box_widget.hpp">
-      <Filter>Header Files\guiengine\widgets</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\dynamic_ribbon_widget.hpp">
-      <Filter>Header Files\guiengine\widgets</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets.hpp">
       <Filter>Header Files\guiengine</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\icon_button_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\bubble_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\label_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\button_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\list_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\check_box_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\model_view_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\dynamic_ribbon_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\progress_bar_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\icon_button_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\ribbon_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\label_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\spinner_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\list_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\guiengine\widgets\text_box_widget.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\model_view_widget.hpp">
       <Filter>Header Files\guiengine\widgets</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\binding.hpp">
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\progress_bar_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\ribbon_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\spinner_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\devlib\stk\src\guiengine\widgets\text_box_widget.hpp">
+      <Filter>Header Files\guiengine\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\devlib\stk\src\input\binding.hpp">
       <Filter>Header Files\input</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\device_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\input\device_manager.hpp">
       <Filter>Header Files\input</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\input_device.hpp">
+    <ClInclude Include="F:\devlib\stk\src\input\input.hpp">
       <Filter>Header Files\input</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\input.hpp">
+    <ClInclude Include="F:\devlib\stk\src\input\input_device.hpp">
       <Filter>Header Files\input</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\input_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\input\input_manager.hpp">
       <Filter>Header Files\input</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\input\wiimote_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\input\wiimote_manager.hpp">
       <Filter>Header Files\input</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\io\file_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\io\file_manager.hpp">
       <Filter>Header Files\io</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\io\xml_node.hpp">
+    <ClInclude Include="F:\devlib\stk\src\io\xml_node.hpp">
       <Filter>Header Files\io</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\io\xml_writer.hpp">
+    <ClInclude Include="F:\devlib\stk\src\io\xml_writer.hpp">
       <Filter>Header Files\io</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\attachment.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\attachment_manager.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\attachment_plugin.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\attachment_plugin.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\bowling.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\bowling.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\cake.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\cake.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\flyable.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\flyable.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\item.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\item.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\item_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\item_manager.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\plunger.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\plunger.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\powerup.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\powerup.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\powerup_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\powerup_manager.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\projectile_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\projectile_manager.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\rubber_ball.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\rubber_ball.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\rubber_band.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\rubber_band.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\items\swatter.hpp">
+    <ClInclude Include="F:\devlib\stk\src\items\swatter.hpp">
       <Filter>Header Files\items</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\abstract_kart_animation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\abstract_kart.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\abstract_kart.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\abstract_kart_animation.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\cannon_animation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\cannon_animation.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\ai_base_controller.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\ai_base_controller.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\controller.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\ai_properties.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\default_ai_controller.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\controller.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\end_controller.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\end_controller.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\kart_control.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\kart_control.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\player_controller.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\player_controller.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\present_ai.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\controller\skidding_ai.hpp">
       <Filter>Header Files\karts\controller</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\controller\skidding_ai.hpp">
-      <Filter>Header Files\karts\controller</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\explosion_animation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\explosion_animation.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\ghost_kart.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\ghost_kart.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_gfx.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\kart.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_gfx.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_model.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_model.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_properties.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_properties.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_properties_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_properties_manager.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\kart_with_stats.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\kart_with_stats.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\max_speed.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\max_speed.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\moveable.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\moveable.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\rescue_animation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\rescue_animation.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\skidding.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\skidding.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\karts\skidding_properties.hpp">
+    <ClInclude Include="F:\devlib\stk\src\karts\skidding_properties.hpp">
       <Filter>Header Files\karts</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\main_loop.hpp">
+    <ClInclude Include="F:\devlib\stk\src\main_loop.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\cutscene_world.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\cutscene_world.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\demo_world.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\demo_world.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\follow_the_leader.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\follow_the_leader.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\game_tutorial.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\game_tutorial.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\linear_world.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\linear_world.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\overworld.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\overworld.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\profile_world.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\profile_world.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\standard_race.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\standard_race.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\three_strikes_battle.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\three_strikes_battle.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\tutorial_race.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\tutorial_race.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\world.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world_status.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\world_status.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\modes\world_with_rank.hpp">
+    <ClInclude Include="F:\devlib\stk\src\modes\world_with_rank.hpp">
       <Filter>Header Files\modes</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_confirm_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\character_confirm_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_info_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\character_info_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\character_selected_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\character_selected_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\connect_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\connect_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\flyable_info.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\flyable_info.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\item_info.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\item_info.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\kart_control_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\kart_control_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\kart_update_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\kart_update_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\network_kart.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\network_kart.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\network_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\network_manager.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\num_players_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\num_players_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_info_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\race_info_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_result_ack_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\race_result_ack_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_result_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\race_result_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_start_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\race_start_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\race_state.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\race_state.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\remote_kart_info.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\remote_kart_info.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\network\world_loaded_message.hpp">
+    <ClInclude Include="F:\devlib\stk\src\network\world_loaded_message.hpp">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btKart.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\btKart.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btKartRaycast.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\btKartRaycast.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\btUprightConstraint.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\btUprightConstraint.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\irr_debug_drawer.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\irr_debug_drawer.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\kart_motion_state.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\kart_motion_state.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\physical_object.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\physical_object.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\physics.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\physics.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\stk_dynamics_world.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\stk_dynamics_world.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\triangle_mesh.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\triangle_mesh.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\physics\user_pointer.hpp">
+    <ClInclude Include="F:\devlib\stk\src\physics\user_pointer.hpp">
       <Filter>Header Files\physics</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\grand_prix_data.hpp">
+    <ClInclude Include="F:\devlib\stk\src\race\grand_prix_data.hpp">
       <Filter>Header Files\race</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\grand_prix_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\race\grand_prix_manager.hpp">
       <Filter>Header Files\race</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\highscore_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\race\highscore_manager.hpp">
       <Filter>Header Files\race</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\highscores.hpp">
+    <ClInclude Include="F:\devlib\stk\src\race\highscores.hpp">
       <Filter>Header Files\race</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\history.hpp">
+    <ClInclude Include="F:\devlib\stk\src\race\history.hpp">
       <Filter>Header Files\race</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\race\race_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\race\race_manager.hpp">
       <Filter>Header Files\race</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_base.hpp">
+    <ClInclude Include="F:\devlib\stk\src\replay\replay_base.hpp">
       <Filter>Header Files\replay</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_play.hpp">
+    <ClInclude Include="F:\devlib\stk\src\replay\replay_play.hpp">
       <Filter>Header Files\replay</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\replay\replay_recorder.hpp">
+    <ClInclude Include="F:\devlib\stk\src\replay\replay_recorder.hpp">
       <Filter>Header Files\replay</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\addons_screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\addons_screen.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\arenas_screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\arenas_screen.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\credits.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\credits.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\cutscene_gui.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\cutscene_gui.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\add_device_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\add_device_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\addons_loading.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\addons_loading.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\confirm_resolution_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\confirm_resolution_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\custom_video_settings.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\custom_video_settings.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\enter_player_name_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\enter_player_name_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\gp_info_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\gp_info_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\message_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\message_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\player_info_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\player_info_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\press_a_key_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\press_a_key_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_over_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\race_over_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\race_paused_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\race_paused_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\select_challenge.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\select_challenge.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\story_mode_new.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\story_mode_new.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\dialogs\track_info_dialog.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\dialogs\track_info_dialog.hpp">
       <Filter>Header Files\states_screens\dialogs</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\feature_unlocked.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\feature_unlocked.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_lose.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\grand_prix_lose.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\grand_prix_win.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\grand_prix_win.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_1.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_1.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_2.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_2.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_3.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_3.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\help_screen_4.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\help_screen_4.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\kart_selection.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\kart_selection.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\main_menu_screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\main_menu_screen.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\minimal_race_gui.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\minimal_race_gui.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_audio.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_audio.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input2.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_input.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_input.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_input2.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_players.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_players.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_ui.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_ui.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\options_screen_video.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\options_screen_video.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui_base.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_gui.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_gui_base.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_gui_overworld.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_gui_overworld.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_result_gui.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_result_gui.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\race_setup_screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\race_setup_screen.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\state_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\state_manager.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\story_mode_lobby.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\story_mode_lobby.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\tracks_screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\tracks_screen.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\states_screens\tutorial_screen.hpp">
+    <ClInclude Include="F:\devlib\stk\src\states_screens\tutorial_screen.hpp">
       <Filter>Header Files\states_screens</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\dictionary.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\dictionary.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\dictionary_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\dictionary_manager.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\file_system.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\file_system.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\iconv.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\iconv.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\language.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\language.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\log.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\log.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\log_stream.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\log_stream.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\plural_forms.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\plural_forms.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\po_parser.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\po_parser.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\stk_file_system.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\stk_file_system.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tinygettext\tinygettext.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tinygettext\tinygettext.hpp">
       <Filter>Header Files\tinygettext</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\ambient_light_sphere.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\ambient_light_sphere.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\bezier_curve.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\bezier_curve.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_cannon.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_cannon.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_lap.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_lap.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_line.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_line.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_manager.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_sphere.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_sphere.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\check_structure.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\check_structure.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\graph_node.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\graph_node.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\lod_node_loader.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\lod_node_loader.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad_graph.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\quad.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\quad_graph.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\quad_set.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\quad_set.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\terrain_info.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\terrain_info.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\track.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_manager.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_object.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_object.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_object_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_object_manager.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tracks\track_sector.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tracks\track_sector.hpp">
       <Filter>Header Files\tracks</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial_data.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tutorial\tutorial.hpp">
       <Filter>Header Files\tutorial</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tutorial\tutorial_data.hpp">
       <Filter>Header Files\tutorial</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\tutorial\tutorial_manager.hpp">
+    <ClInclude Include="F:\devlib\stk\src\tutorial\tutorial_manager.hpp">
       <Filter>Header Files\tutorial</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\aligned_array.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\aligned_array.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\constants.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\constants.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\leak_check.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\interpolation_array.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\no_copy.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\leak_check.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\profiler.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\no_copy.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\ptr_vector.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\profiler.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\random_generator.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\ptr_vector.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\string_utils.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\random_generator.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\synchronised.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\string_utils.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\time.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\synchronised.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\translation.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\time.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="E:\llvm\supertuxkart\src\utils\vec3.hpp">
+    <ClInclude Include="F:\devlib\stk\src\utils\translation.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\devlib\stk\src\utils\vec3.hpp">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1521,155 +1521,155 @@
     <CustomBuild Include="CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files\karts\controller">
-      <UniqueIdentifier>{A4756EC6-B4A1-4B52-AD92-0ACD9949D51C}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\states_screens\dialogs">
-      <UniqueIdentifier>{972E0EB2-0619-4A53-8BEC-8FB309552341}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\karts\controller">
-      <UniqueIdentifier>{E3C12F03-8333-4A87-85DC-78A6E1F8FFB7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\states_screens\dialogs">
-      <UniqueIdentifier>{78750BFC-D50E-4FA4-B5C2-A630DEE8E2B9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\guiengine\widgets">
-      <UniqueIdentifier>{EF6983EE-8C28-49F4-BEFF-F9095A43A9D2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\guiengine\widgets">
-      <UniqueIdentifier>{8A9E48AA-5BB1-4C42-B493-BA871A7BEFA6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{7994363D-132C-45BC-A2B3-FB93271EB5BF}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{D4BD16BA-2A40-4C29-8426-EB202FE15D6F}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\addons">
-      <UniqueIdentifier>{BAA19D0C-DDFC-421E-AA75-1CAFC1E5C25B}</UniqueIdentifier>
+      <UniqueIdentifier>{689CD260-BD0E-496F-97A6-1377AAB93A13}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\animations">
-      <UniqueIdentifier>{4676D6AB-CDBA-4E64-BB1F-E2964728FAB3}</UniqueIdentifier>
+      <UniqueIdentifier>{5A11C4D5-4532-431A-9856-7FFF1F773445}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\audio">
-      <UniqueIdentifier>{EF80BCE4-C5B9-4542-A42B-5153FADD2C86}</UniqueIdentifier>
+      <UniqueIdentifier>{AFA689B5-0971-45B7-9F6F-FBAF3D75FB35}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\challenges">
-      <UniqueIdentifier>{5F0C68A0-F5D1-49C0-A6C0-0F2C9B57D432}</UniqueIdentifier>
+      <UniqueIdentifier>{56B7479C-5C1C-4907-8C24-18C1039D3305}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\config">
-      <UniqueIdentifier>{04536455-3EE1-46BC-9768-2C82A5ADA011}</UniqueIdentifier>
+      <UniqueIdentifier>{5682279C-F47F-4927-85B1-9F170413E5D4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\graphics">
-      <UniqueIdentifier>{391E7967-D1A8-4FCA-BC10-00406E6BCFFA}</UniqueIdentifier>
+      <UniqueIdentifier>{83C38E8D-69BE-4AC3-8BE7-4BFBD6C98D74}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\guiengine">
-      <UniqueIdentifier>{331E9EC7-6503-4315-A154-419E8C252F37}</UniqueIdentifier>
+      <UniqueIdentifier>{CD7E7AED-357A-4101-AB4E-4B54BDCA90C9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\input">
-      <UniqueIdentifier>{B4A5DDCD-F647-4D36-A58E-42A4072F9233}</UniqueIdentifier>
+      <UniqueIdentifier>{085CB725-242A-4010-A2B3-6110829E5C94}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\io">
-      <UniqueIdentifier>{44E3E91C-0EB6-48F8-8048-D0DBE4921797}</UniqueIdentifier>
+      <UniqueIdentifier>{F4ABDD86-F17C-4EF2-B3E5-52A922F9D5C5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\items">
-      <UniqueIdentifier>{BA5D5FF2-7AE3-46D8-828E-F6B01EDEEB88}</UniqueIdentifier>
+      <UniqueIdentifier>{B73CEA0F-7A09-41CB-9B4A-329E39BB9B78}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\karts">
-      <UniqueIdentifier>{0AAC70F4-AA1F-492F-86B1-6118F33DE56E}</UniqueIdentifier>
+      <UniqueIdentifier>{D0C2FDF8-9BDC-4CF7-91A2-538140FAFFE1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\modes">
-      <UniqueIdentifier>{D9BB39C1-3150-49FD-AF65-10A100F2856C}</UniqueIdentifier>
+      <UniqueIdentifier>{3E540126-D3DA-4B7E-A39B-2A066DA7CA2A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\network">
-      <UniqueIdentifier>{401BCA69-DB1E-4E4D-A8CF-BA34EB5794E9}</UniqueIdentifier>
+      <UniqueIdentifier>{B407F6EC-CB5E-4AD8-A1A3-385C301916CD}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\physics">
-      <UniqueIdentifier>{A38CAC10-B517-4D71-8EB9-2F31E33EB0F4}</UniqueIdentifier>
+      <UniqueIdentifier>{1F487E1F-5132-4A77-97BF-C256BDA6E307}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\race">
-      <UniqueIdentifier>{B74B6604-7875-4919-BA37-35B5386B7204}</UniqueIdentifier>
+      <UniqueIdentifier>{97B2C0CA-2D94-42BE-AE4A-D6B01E19AAEE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\replay">
-      <UniqueIdentifier>{F7EA1EB2-439D-44CA-AF77-CD02824075F4}</UniqueIdentifier>
+      <UniqueIdentifier>{668120A2-A079-4BFE-BA96-5F78F7270482}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\states_screens">
-      <UniqueIdentifier>{84C29FA8-944F-4FB3-A86D-402A2D200F0C}</UniqueIdentifier>
+      <UniqueIdentifier>{AC8FD044-6BBA-49B8-9F6A-319CEC53EE7E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\tinygettext">
-      <UniqueIdentifier>{D61AFD11-9267-43ED-9DDE-847CC1811AB1}</UniqueIdentifier>
+      <UniqueIdentifier>{7EB7BB98-8006-47D8-9144-A27490D0C7B5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\tracks">
-      <UniqueIdentifier>{60965DD6-DB12-42AF-8E40-AAD088BCB9B3}</UniqueIdentifier>
+      <UniqueIdentifier>{F7906CB3-F36A-4203-B40C-995F722F83F1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\tutorial">
-      <UniqueIdentifier>{9586A834-1257-4A68-ABF0-CBC4F4E4CE60}</UniqueIdentifier>
+      <UniqueIdentifier>{C4EBC254-1141-4261-B8E0-11A4402F0CE7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\utils">
-      <UniqueIdentifier>{08CA158A-2BD2-41D2-ACD9-DFC7FEE817C4}</UniqueIdentifier>
+      <UniqueIdentifier>{3FBBD66A-D510-41BF-866D-BB132A37BA12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3187BDCD-081F-47DA-8348-1B7F2CD7BF2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E8788750-D13A-403B-8F0E-108AD8441F6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\states_screens\dialogs">
+      <UniqueIdentifier>{6116B6A0-6E2F-485C-8790-1BE3070276DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\states_screens\dialogs">
+      <UniqueIdentifier>{871592E4-5773-4C79-A330-92288BC81EF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\karts\controller">
+      <UniqueIdentifier>{7A6BABCD-ACEA-4A23-907C-78754314CC46}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\addons">
-      <UniqueIdentifier>{BF9C8A5B-8344-48C5-9494-667510A30624}</UniqueIdentifier>
+      <UniqueIdentifier>{7D063EAF-CC95-4916-A72E-33FD5C7D37ED}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\animations">
-      <UniqueIdentifier>{BA60F923-A4F5-4403-B76B-899A7F01E260}</UniqueIdentifier>
+      <UniqueIdentifier>{94CA0F03-97B3-483F-B3C3-480578934EE1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\audio">
-      <UniqueIdentifier>{CCDA25F0-BE77-4977-84B6-A14307C86A9D}</UniqueIdentifier>
+      <UniqueIdentifier>{E1A473B1-BF3D-4641-8F45-40DD3A44EF9E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\challenges">
-      <UniqueIdentifier>{93381F22-D587-4D8F-8495-E82908719F25}</UniqueIdentifier>
+      <UniqueIdentifier>{D8296E5C-4EFD-4E5D-9B3F-06D7EA5261CE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\config">
-      <UniqueIdentifier>{C1EF4855-A6AB-440C-9397-782E3CF38730}</UniqueIdentifier>
+      <UniqueIdentifier>{A2EF098C-6CFB-46F2-8D4D-8D2910A62B6B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\graphics">
-      <UniqueIdentifier>{7127C930-F020-47BC-B688-D2B0A79844AF}</UniqueIdentifier>
+      <UniqueIdentifier>{DC37ADC7-062E-4BD0-8897-1F654A5F25E7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\guiengine">
-      <UniqueIdentifier>{EAFA608D-4736-4B5E-865D-216107F2AD83}</UniqueIdentifier>
+      <UniqueIdentifier>{2A0DC3F7-9D08-47D2-936B-3C6E7AD7708B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\input">
-      <UniqueIdentifier>{2DBBF82D-CCCB-433F-B23E-7175BA8C56BD}</UniqueIdentifier>
+      <UniqueIdentifier>{AC46B75A-D382-4D63-8F12-C85D47D0948A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\io">
-      <UniqueIdentifier>{C5F04D97-F07C-4E8D-922B-F8BA3E8C863E}</UniqueIdentifier>
+      <UniqueIdentifier>{26E307C0-D41F-467E-8204-0BCFE8D400F4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\items">
-      <UniqueIdentifier>{0112D0BF-AD9E-4613-ABCF-21EF678688A5}</UniqueIdentifier>
+      <UniqueIdentifier>{421302A9-DC36-43D8-98EB-D5D0C505B16B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\karts">
-      <UniqueIdentifier>{9D030155-C719-400E-9310-7FF6260CDA15}</UniqueIdentifier>
+      <UniqueIdentifier>{D8E458AE-495C-421F-A254-6094279840C5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\modes">
-      <UniqueIdentifier>{3104B05C-A224-4248-B45D-ECB03E1E4A79}</UniqueIdentifier>
+      <UniqueIdentifier>{AE381E15-7E66-4873-A76C-2A31E5F0131D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\network">
-      <UniqueIdentifier>{13545289-E6C9-4F24-ADE5-5446DDD1314F}</UniqueIdentifier>
+      <UniqueIdentifier>{BAB71506-80C7-426B-8051-0357F62C920B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\physics">
-      <UniqueIdentifier>{37C5995D-86D5-4DCA-99C4-CFE982A0436D}</UniqueIdentifier>
+      <UniqueIdentifier>{E48F575E-2522-4807-8B8B-1FD77EC10FF1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\race">
-      <UniqueIdentifier>{FAA9B2E6-0AA7-4AD1-8216-C1089657A581}</UniqueIdentifier>
+      <UniqueIdentifier>{11F14C67-3D06-4159-8348-7602254DB31D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\replay">
-      <UniqueIdentifier>{B2A48E34-894C-44E2-BF60-70996CB7AB63}</UniqueIdentifier>
+      <UniqueIdentifier>{BFDFC697-C80B-41B5-ABB6-28E677F22E9D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\states_screens">
-      <UniqueIdentifier>{49298BC9-103B-4B58-8BBD-9B89C4F8ACF2}</UniqueIdentifier>
+      <UniqueIdentifier>{A4670B0B-A47D-4BAA-8902-C9F9B6C201C5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\tinygettext">
-      <UniqueIdentifier>{C1DB52F8-3DD0-49C3-BD08-06B0893B1257}</UniqueIdentifier>
+      <UniqueIdentifier>{952C3294-270E-4472-A112-AAB305D9E942}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\tracks">
-      <UniqueIdentifier>{6490909E-8128-4D23-8AB5-E4055D77D718}</UniqueIdentifier>
+      <UniqueIdentifier>{1B282E33-16DD-46AD-9311-319327B45AE2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\tutorial">
-      <UniqueIdentifier>{7C776D6B-7DD1-4F9E-8188-4BFA3B20E5F3}</UniqueIdentifier>
+      <UniqueIdentifier>{E45EAC21-CFD4-4E86-9CD8-89BE5A081675}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\utils">
-      <UniqueIdentifier>{850290B4-8CD4-4086-B0CE-1D759DD0C821}</UniqueIdentifier>
+      <UniqueIdentifier>{2A3A76AB-9A54-4CFC-A990-BA48E14A85A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\karts\controller">
+      <UniqueIdentifier>{E91C83D0-FF81-475D-BC6A-55A0C4DF6ACF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\guiengine\widgets">
+      <UniqueIdentifier>{B0DBE007-DB56-4085-93EA-B4F48428F514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\guiengine\widgets">
+      <UniqueIdentifier>{3983CED2-3473-4B49-A836-19726AD57014}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

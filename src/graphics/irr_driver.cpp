@@ -447,7 +447,7 @@ video::E_DRIVER_TYPE IrrDriver::getEngineDriverType( int index )
         // TODO Change default renderer dependen on operating system?
         // Direct3D9 for Windows and OpenGL for Unix like systems?
         case 0:
-            type = video::EDT_OGLES1;
+            type = video::EDT_OPENGL;//video::EDT_OGLES1;
             rendererName = "OpenGLES1";
             break;
         case 1:

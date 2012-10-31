@@ -24,6 +24,7 @@
    <sfx filename="engine_large.ogg"     volume="0.5" positional="true" rolloff="0.2"  />
    <sfx filename="explosion.ogg"        volume="1.0" positional="true" rolloff="0.05" />
    <sfx filename="energy_bar_full.ogg"  volume="1.0" positional="false" />
+   <sfx filename="forcefield.ogg"       volume="1.0" positional="false" />
    <sfx filename="goo.ogg"              volume="1.0" positional="true" rolloff="0.2"  />
    <sfx filename="gp_end.ogg"           volume="1.0" positional="false" />
    <sfx filename="grab_collectable.ogg" volume="1.0" positional="false" />
