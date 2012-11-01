@@ -8,3 +8,4 @@ CMakeFiles/
 dependencies/
 /*.pdb
 /*.ilk
+.DS_Store
