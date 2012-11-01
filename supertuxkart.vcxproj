@@ -92,7 +92,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;SUPERTUXKART_DATADIR="C:/Program Files/SuperTuxKart/share/supertuxkart";ENABLE_BIDI;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;HAVE_OGGVORBIS;NDEBUG;_IRR_STATIC_LIB_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>Debug</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>F:/devlib/stk/bin/Debug/supertuxkart.pdb</ProgramDataBaseFileName>
