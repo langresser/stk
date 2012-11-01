@@ -84,8 +84,10 @@ void HighscoreManager::loadHighscores()
 
     try
     {
-        if(!root || root->getName()!="highscores")
-            throw std::runtime_error("No 'highscore' node found.");
+        if(!root || root->getName()!="highscores") {
+            delete root;
+            return;
+        }
         
         // check file version
         int v;

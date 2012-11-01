@@ -62,7 +62,8 @@ bool LayoutManager::convertToCoord(std::string& x, int* absolute /* out */, int*
     bool is_number;
     int i;
     std::istringstream myStream(x);
-    is_number = (myStream >> i)!=0;
+    (myStream >> i);
+    is_number = (i != 0);
     
     if(!is_number) return false;
     

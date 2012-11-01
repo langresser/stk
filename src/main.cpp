@@ -1026,7 +1026,7 @@ int handleCmdLine(int argc, char **argv)
         {
             fprintf ( stderr, "Invalid parameter: %s.\n\n", argv[i] );
             cmdLineHelp(argv[0]);
-            return 0;
+//            return 0;
         }
     }   // for i <argc
     if(UserConfigParams::m_no_start_screen)
@@ -1345,14 +1345,14 @@ int main(int argc, char *argv[] )
                     }   // onCancel
                 };   // ConfirmServer
 
-                new MessageDialog(_("SuperTuxKart may connect to a server "
-                    "to download add-ons and notify you of updates. Would you "
-                    "like this feature to be enabled? (To change this setting "
-                    "at a later time, go to options, select tab "
-                    "'User Interface', and edit \"Allow STK to connect to the "
-                    "Internet\")."),
-                    MessageDialog::MESSAGE_DIALOG_CONFIRM,
-                    new ConfirmServer(), true);
+//                new MessageDialog(_("SuperTuxKart may connect to a server "
+//                    "to download add-ons and notify you of updates. Would you "
+//                    "like this feature to be enabled? (To change this setting "
+//                    "at a later time, go to options, select tab "
+//                    "'User Interface', and edit \"Allow STK to connect to the "
+//                    "Internet\")."),
+//                    MessageDialog::MESSAGE_DIALOG_CONFIRM,
+//                    new ConfirmServer(), true);
             }
         }
         else 

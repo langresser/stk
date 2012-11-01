@@ -358,7 +358,6 @@
 		9593A3101609388C00AB5EEB /* packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9593A2F21609388C00AB5EEB /* packet.c */; };
 		9593A3111609388C00AB5EEB /* peer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9593A2F31609388C00AB5EEB /* peer.c */; };
 		9593A3121609388C00AB5EEB /* protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 9593A2F41609388C00AB5EEB /* protocol.c */; };
-		9593A3131609388C00AB5EEB /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9593A2F51609388C00AB5EEB /* README */; };
 		9593A3141609388C00AB5EEB /* tutorial.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9593A2F61609388C00AB5EEB /* tutorial.txt */; };
 		9593A3151609388C00AB5EEB /* unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 9593A2F71609388C00AB5EEB /* unix.c */; };
 		9593A3161609388C00AB5EEB /* win32.c in Sources */ = {isa = PBXBuildFile; fileRef = 9593A2F81609388C00AB5EEB /* win32.c */; };
@@ -1224,7 +1223,6 @@
 		9593A2F21609388C00AB5EEB /* packet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packet.c; path = games/supertuxkart/lib/enet/packet.c; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		9593A2F31609388C00AB5EEB /* peer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = peer.c; path = games/supertuxkart/lib/enet/peer.c; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		9593A2F41609388C00AB5EEB /* protocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = protocol.c; path = games/supertuxkart/lib/enet/protocol.c; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		9593A2F51609388C00AB5EEB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = games/supertuxkart/lib/enet/README; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		9593A2F61609388C00AB5EEB /* tutorial.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial.txt; path = games/supertuxkart/lib/enet/tutorial.txt; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		9593A2F71609388C00AB5EEB /* unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unix.c; path = games/supertuxkart/lib/enet/unix.c; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		9593A2F81609388C00AB5EEB /* win32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = win32.c; path = games/supertuxkart/lib/enet/win32.c; sourceTree = SYSTEM_DEVELOPER_DIR; };
@@ -2470,7 +2468,6 @@
 				9593A2F21609388C00AB5EEB /* packet.c */,
 				9593A2F31609388C00AB5EEB /* peer.c */,
 				9593A2F41609388C00AB5EEB /* protocol.c */,
-				9593A2F51609388C00AB5EEB /* README */,
 				9593A2F61609388C00AB5EEB /* tutorial.txt */,
 				9593A2F71609388C00AB5EEB /* unix.c */,
 				9593A2F81609388C00AB5EEB /* win32.c */,
@@ -2957,6 +2954,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "STK_XCode" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -2993,7 +2991,6 @@
 				9593A30C1609388C00AB5EEB /* LICENSE in Resources */,
 				9593A30E1609388C00AB5EEB /* Makefile.am in Resources */,
 				9593A30F1609388C00AB5EEB /* missing in Resources */,
-				9593A3131609388C00AB5EEB /* README in Resources */,
 				9593A3141609388C00AB5EEB /* tutorial.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

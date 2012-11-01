@@ -50,7 +50,8 @@ void AbstractTopLevelContainer::addWidgetsRecursively(
     // ------- add widgets
     for (int n=0; n<widgets_amount; n++)
     {
-        if (widgets[n].getType() == WTYPE_DIV)
+        int type = widgets[n].getType();
+        if (type == WTYPE_DIV)
         {
             widgets[n].add(); // Will do nothing, but will maybe reserve an ID
             addWidgetsRecursively(widgets[n].m_children, &widgets[n]);
@@ -60,9 +61,9 @@ void AbstractTopLevelContainer::addWidgetsRecursively(
             // warn if widget has no dimensions (except for ribbons and icons,
             // where it is normal since it adjusts to its contents)
             if ((widgets[n].m_w < 1 || widgets[n].m_h < 1) &&
-                widgets[n].getType() != WTYPE_RIBBON &&
-                widgets[n].getType() != WTYPE_ICON_BUTTON &&
-                widgets[n].getType() != WTYPE_SPACER)
+                type != WTYPE_RIBBON &&
+                type != WTYPE_ICON_BUTTON &&
+                type != WTYPE_SPACER)
             {
                 std::cerr << "/!\\ Warning /!\\ : widget " 
                           << widgets[n].m_properties[PROP_ID].c_str()

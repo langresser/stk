@@ -9,3 +9,6 @@ dependencies/
 /*.pdb
 /*.ilk
 .DS_Store
+
+xcuserdata/
+project.xcworkspace/
