@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B174E6916431DC300C7A9E7 /* fribidi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B174E6516431DC300C7A9E7 /* fribidi.framework */; };
-		3B174E6A16431DC300C7A9E7 /* IrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B174E6616431DC300C7A9E7 /* IrrFramework.framework */; };
 		3B174E6B16431DC300C7A9E7 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B174E6716431DC300C7A9E7 /* Ogg.framework */; };
 		3B174E6C16431DC300C7A9E7 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B174E6816431DC300C7A9E7 /* Vorbis.framework */; };
 		3B174E6E16431DCB00C7A9E7 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B174E6D16431DCB00C7A9E7 /* OpenAL.framework */; };
@@ -157,18 +156,6 @@
 		3B17537F16431E0E00C7A9E7 /* sfx_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17510E16431E0E00C7A9E7 /* sfx_buffer.cpp */; };
 		3B17538016431E0E00C7A9E7 /* sfx_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17511016431E0E00C7A9E7 /* sfx_manager.cpp */; };
 		3B17538116431E0E00C7A9E7 /* sfx_openal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17511216431E0E00C7A9E7 /* sfx_openal.cpp */; };
-		3B17538216431E0E00C7A9E7 /* bulletcollision.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511516431E0E00C7A9E7 /* bulletcollision.vcxproj */; };
-		3B17538316431E0E00C7A9E7 /* bulletcollision.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511616431E0E00C7A9E7 /* bulletcollision.vcxproj.filters */; };
-		3B17538416431E0E00C7A9E7 /* bulletdynamics.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511716431E0E00C7A9E7 /* bulletdynamics.vcxproj */; };
-		3B17538516431E0E00C7A9E7 /* bulletdynamics.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511816431E0E00C7A9E7 /* bulletdynamics.vcxproj.filters */; };
-		3B17538616431E0E00C7A9E7 /* bulletmath.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511916431E0E00C7A9E7 /* bulletmath.vcxproj */; };
-		3B17538716431E0E00C7A9E7 /* bulletmath.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511A16431E0E00C7A9E7 /* bulletmath.vcxproj.filters */; };
-		3B17538816431E0E00C7A9E7 /* cmake_install.cmake in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511B16431E0E00C7A9E7 /* cmake_install.cmake */; };
-		3B17538916431E0E00C7A9E7 /* generate.stamp in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511D16431E0E00C7A9E7 /* generate.stamp */; };
-		3B17538A16431E0E00C7A9E7 /* generate.stamp.depend in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511E16431E0E00C7A9E7 /* generate.stamp.depend */; };
-		3B17538B16431E0E00C7A9E7 /* INSTALL_force.rule in Resources */ = {isa = PBXBuildFile; fileRef = 3B17511F16431E0E00C7A9E7 /* INSTALL_force.rule */; };
-		3B17538C16431E0E00C7A9E7 /* INSTALL.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B17512216431E0E00C7A9E7 /* INSTALL.vcxproj */; };
-		3B17538D16431E0E00C7A9E7 /* INSTALL.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 3B17512316431E0E00C7A9E7 /* INSTALL.vcxproj.filters */; };
 		3B17538E16431E0E00C7A9E7 /* challenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17513D16431E0E00C7A9E7 /* challenge.cpp */; };
 		3B17538F16431E0E00C7A9E7 /* challenge_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17513F16431E0E00C7A9E7 /* challenge_data.cpp */; };
 		3B17539016431E0E00C7A9E7 /* game_slot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17514116431E0E00C7A9E7 /* game_slot.cpp */; };
@@ -177,14 +164,6 @@
 		3B17539316431E0E00C7A9E7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17514816431E0E00C7A9E7 /* player.cpp */; };
 		3B17539416431E0E00C7A9E7 /* stk_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17514A16431E0E00C7A9E7 /* stk_config.cpp */; };
 		3B17539516431E0E00C7A9E7 /* user_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17514C16431E0E00C7A9E7 /* user_config.cpp */; };
-		3B17539816431E0E00C7A9E7 /* cmake_install.cmake in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515116431E0E00C7A9E7 /* cmake_install.cmake */; };
-		3B17539916431E0E00C7A9E7 /* generate.stamp in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515316431E0E00C7A9E7 /* generate.stamp */; };
-		3B17539A16431E0E00C7A9E7 /* generate.stamp.depend in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515416431E0E00C7A9E7 /* generate.stamp.depend */; };
-		3B17539B16431E0E00C7A9E7 /* INSTALL_force.rule in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515516431E0E00C7A9E7 /* INSTALL_force.rule */; };
-		3B17539C16431E0E00C7A9E7 /* enet.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515916431E0E00C7A9E7 /* enet.vcxproj */; };
-		3B17539D16431E0E00C7A9E7 /* enet.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515A16431E0E00C7A9E7 /* enet.vcxproj.filters */; };
-		3B17539E16431E0E00C7A9E7 /* INSTALL.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515D16431E0E00C7A9E7 /* INSTALL.vcxproj */; };
-		3B17539F16431E0E00C7A9E7 /* INSTALL.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 3B17515E16431E0E00C7A9E7 /* INSTALL.vcxproj.filters */; };
 		3B1753A016431E0E00C7A9E7 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17516516431E0E00C7A9E7 /* camera.cpp */; };
 		3B1753A116431E0E00C7A9E7 /* CBatchingMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17516716431E0E00C7A9E7 /* CBatchingMesh.cpp */; };
 		3B1753A216431E0E00C7A9E7 /* explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17516916431E0E00C7A9E7 /* explosion.cpp */; };
@@ -399,6 +378,7 @@
 		3B17548E16431E0E00C7A9E7 /* translation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17535C16431E0E00C7A9E7 /* translation.cpp */; };
 		3B17548F16431E0E00C7A9E7 /* vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B17536316431E0E00C7A9E7 /* vec3.cpp */; };
 		3B1754A21643203A00C7A9E7 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17549F1643202C00C7A9E7 /* libcurl.a */; };
+		3B17550B164323A900C7A9E7 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1754DE1643239500C7A9E7 /* libIrrlicht.a */; };
 		9507E9B70FC1CCE900BD2B92 /* stk.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9507E9B60FC1CCE900BD2B92 /* stk.icns */; };
 		9551CBD10FC1BB7600DB481B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950557640F6968BE0056E88C /* IOKit.framework */; };
 		9551CBD20FC1BB7600DB481B /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9505575F0F6968A50056E88C /* QuickTime.framework */; };
@@ -425,6 +405,167 @@
 			remoteGlobalIDString = 3BEA655D1642FB7E001648DF;
 			remoteInfo = curl;
 		};
+		3B1754DD1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C53E24D0A4850120014E966;
+			remoteInfo = libIrrlicht.a;
+		};
+		3B1754DF1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09F649030D2CDED9001E0599;
+			remoteInfo = 01.HelloWorld;
+		};
+		3B1754E11643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C53E2520A4850550014E966;
+			remoteInfo = 02.Quake3Map;
+		};
+		3B1754E31643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25B980A485D9800B4E469;
+			remoteInfo = 03.CustomSceneNode;
+		};
+		3B1754E51643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BA40A485D9800B4E469;
+			remoteInfo = 04.Movement;
+		};
+		3B1754E71643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25B9E0A485D9800B4E469;
+			remoteInfo = 05.UserInterface;
+		};
+		3B1754E91643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BAC0A485D9800B4E469;
+			remoteInfo = 06.2DGraphics;
+		};
+		3B1754EB1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BAE0A485D9800B4E469;
+			remoteInfo = 07.Collision;
+		};
+		3B1754ED1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BA80A485D9800B4E469;
+			remoteInfo = 08.SpecialFx;
+		};
+		3B1754EF1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25B9A0A485D9800B4E469;
+			remoteInfo = 09.MeshViewer;
+		};
+		3B1754F11643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BA60A485D9800B4E469;
+			remoteInfo = 10.Shaders;
+		};
+		3B1754F31643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BA00A485D9800B4E469;
+			remoteInfo = 11.PerPixelLightning;
+		};
+		3B1754F51643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BAA0A485D9800B4E469;
+			remoteInfo = 12.TerrainRendering;
+		};
+		3B1754F71643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25B9C0A485D9800B4E469;
+			remoteInfo = 13.RenderToTexture;
+		};
+		3B1754F91643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09F6493E0D2CE03E001E0599;
+			remoteInfo = 15.LoadIrrFile;
+		};
+		3B1754FB1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09F649650D2CE206001E0599;
+			remoteInfo = 16.Quake3Shader;
+		};
+		3B1754FD1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E2E3CFC1103E294002DE8D7;
+			remoteInfo = 18.SplitScreen;
+		};
+		3B1754FF1643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0946CCB40EC99BBE00D945A5;
+			remoteInfo = 19.MouseAndJoystick;
+		};
+		3B1755011643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E2E3D3C1103E3F4002DE8D7;
+			remoteInfo = 20.ManagedLights;
+		};
+		3B1755031643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CA25BA20A485D9800B4E469;
+			remoteInfo = Demo;
+		};
+		3B1755051643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09022C620EA0E97F00CD54EE;
+			remoteInfo = GUIEditor;
+		};
+		3B1755071643239500C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 959726FD12C18FFC00BF73D3;
+			remoteInfo = IrrFramework;
+		};
+		3B175509164323A300C7A9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = libIrrlicht.a;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -442,7 +583,6 @@
 
 /* Begin PBXFileReference section */
 		3B174E6516431DC300C7A9E7 /* fribidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = fribidi.framework; path = ../../../dependencies/Frameworks/fribidi.framework; sourceTree = "<group>"; };
-		3B174E6616431DC300C7A9E7 /* IrrFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IrrFramework.framework; path = ../../../dependencies/Frameworks/IrrFramework.framework; sourceTree = "<group>"; };
 		3B174E6716431DC300C7A9E7 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = ../../../dependencies/Frameworks/Ogg.framework; sourceTree = "<group>"; };
 		3B174E6816431DC300C7A9E7 /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = ../../../dependencies/Frameworks/Vorbis.framework; sourceTree = "<group>"; };
 		3B174E6D16431DCB00C7A9E7 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = ../../../../../../../../System/Library/Frameworks/OpenAL.framework; sourceTree = "<group>"; };
@@ -799,18 +939,6 @@
 		3B17511116431E0E00C7A9E7 /* sfx_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sfx_manager.hpp; sourceTree = "<group>"; };
 		3B17511216431E0E00C7A9E7 /* sfx_openal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sfx_openal.cpp; sourceTree = "<group>"; };
 		3B17511316431E0E00C7A9E7 /* sfx_openal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sfx_openal.hpp; sourceTree = "<group>"; };
-		3B17511516431E0E00C7A9E7 /* bulletcollision.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bulletcollision.vcxproj; sourceTree = "<group>"; };
-		3B17511616431E0E00C7A9E7 /* bulletcollision.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bulletcollision.vcxproj.filters; sourceTree = "<group>"; };
-		3B17511716431E0E00C7A9E7 /* bulletdynamics.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bulletdynamics.vcxproj; sourceTree = "<group>"; };
-		3B17511816431E0E00C7A9E7 /* bulletdynamics.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bulletdynamics.vcxproj.filters; sourceTree = "<group>"; };
-		3B17511916431E0E00C7A9E7 /* bulletmath.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bulletmath.vcxproj; sourceTree = "<group>"; };
-		3B17511A16431E0E00C7A9E7 /* bulletmath.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bulletmath.vcxproj.filters; sourceTree = "<group>"; };
-		3B17511B16431E0E00C7A9E7 /* cmake_install.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_install.cmake; sourceTree = "<group>"; };
-		3B17511D16431E0E00C7A9E7 /* generate.stamp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generate.stamp; sourceTree = "<group>"; };
-		3B17511E16431E0E00C7A9E7 /* generate.stamp.depend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generate.stamp.depend; sourceTree = "<group>"; };
-		3B17511F16431E0E00C7A9E7 /* INSTALL_force.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL_force.rule; sourceTree = "<group>"; };
-		3B17512216431E0E00C7A9E7 /* INSTALL.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = INSTALL.vcxproj; sourceTree = "<group>"; };
-		3B17512316431E0E00C7A9E7 /* INSTALL.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = INSTALL.vcxproj.filters; sourceTree = "<group>"; };
 		3B17513D16431E0E00C7A9E7 /* challenge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = challenge.cpp; sourceTree = "<group>"; };
 		3B17513E16431E0E00C7A9E7 /* challenge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = challenge.hpp; sourceTree = "<group>"; };
 		3B17513F16431E0E00C7A9E7 /* challenge_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = challenge_data.cpp; sourceTree = "<group>"; };
@@ -827,14 +955,6 @@
 		3B17514B16431E0E00C7A9E7 /* stk_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stk_config.hpp; sourceTree = "<group>"; };
 		3B17514C16431E0E00C7A9E7 /* user_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = user_config.cpp; sourceTree = "<group>"; };
 		3B17514D16431E0E00C7A9E7 /* user_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = user_config.hpp; sourceTree = "<group>"; };
-		3B17515116431E0E00C7A9E7 /* cmake_install.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_install.cmake; sourceTree = "<group>"; };
-		3B17515316431E0E00C7A9E7 /* generate.stamp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generate.stamp; sourceTree = "<group>"; };
-		3B17515416431E0E00C7A9E7 /* generate.stamp.depend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generate.stamp.depend; sourceTree = "<group>"; };
-		3B17515516431E0E00C7A9E7 /* INSTALL_force.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL_force.rule; sourceTree = "<group>"; };
-		3B17515916431E0E00C7A9E7 /* enet.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enet.vcxproj; sourceTree = "<group>"; };
-		3B17515A16431E0E00C7A9E7 /* enet.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enet.vcxproj.filters; sourceTree = "<group>"; };
-		3B17515D16431E0E00C7A9E7 /* INSTALL.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = INSTALL.vcxproj; sourceTree = "<group>"; };
-		3B17515E16431E0E00C7A9E7 /* INSTALL.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = INSTALL.vcxproj.filters; sourceTree = "<group>"; };
 		3B17516516431E0E00C7A9E7 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
 		3B17516616431E0E00C7A9E7 /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
 		3B17516716431E0E00C7A9E7 /* CBatchingMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBatchingMesh.cpp; sourceTree = "<group>"; };
@@ -1291,6 +1411,7 @@
 		3B17536316431E0E00C7A9E7 /* vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec3.cpp; sourceTree = "<group>"; };
 		3B17536416431E0E00C7A9E7 /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		3B1754971643202C00C7A9E7 /* curl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = curl.xcodeproj; path = "../../../../3rdframework/curl-7.26.0/macosx/curl.xcodeproj"; sourceTree = "<group>"; };
+		3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MacOSX.xcodeproj; path = "../../../../irrlicht-gles/source/Irrlicht/MacOSX/MacOSX.xcodeproj"; sourceTree = "<group>"; };
 		9505574E0F69684D0056E88C /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
 		950557570F6968860056E88C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		9505575F0F6968A50056E88C /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
@@ -1310,10 +1431,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B17550B164323A900C7A9E7 /* libIrrlicht.a in Frameworks */,
 				3B1754A21643203A00C7A9E7 /* libcurl.a in Frameworks */,
 				3B174E6E16431DCB00C7A9E7 /* OpenAL.framework in Frameworks */,
 				3B174E6916431DC300C7A9E7 /* fribidi.framework in Frameworks */,
-				3B174E6A16431DC300C7A9E7 /* IrrFramework.framework in Frameworks */,
 				3B174E6B16431DC300C7A9E7 /* Ogg.framework in Frameworks */,
 				3B174E6C16431DC300C7A9E7 /* Vorbis.framework in Frameworks */,
 				9551CBDA0FC1BB9200DB481B /* AGL.framework in Frameworks */,
@@ -1333,12 +1454,12 @@
 		08FB7794FE84155DC02AAC07 /* STK_XCode */ = {
 			isa = PBXGroup;
 			children = (
+				3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */,
 				3B1754971643202C00C7A9E7 /* curl.xcodeproj */,
 				3B1750E916431E0E00C7A9E7 /* src */,
 				3B174E6F16431DEC00C7A9E7 /* lib */,
 				3B174E6D16431DCB00C7A9E7 /* OpenAL.framework */,
 				3B174E6516431DC300C7A9E7 /* fribidi.framework */,
-				3B174E6616431DC300C7A9E7 /* IrrFramework.framework */,
 				3B174E6716431DC300C7A9E7 /* Ogg.framework */,
 				3B174E6816431DC300C7A9E7 /* Vorbis.framework */,
 				9551C9F80FC1B87600DB481B /* Config.xcconfig */,
@@ -1822,10 +1943,8 @@
 				3B1750EA16431E0E00C7A9E7 /* addons */,
 				3B1750FA16431E0E00C7A9E7 /* animations */,
 				3B17510316431E0E00C7A9E7 /* audio */,
-				3B17511416431E0E00C7A9E7 /* bullet */,
 				3B17513C16431E0E00C7A9E7 /* challenges */,
 				3B17514516431E0E00C7A9E7 /* config */,
-				3B17515016431E0E00C7A9E7 /* enet */,
 				3B17516416431E0E00C7A9E7 /* graphics */,
 				3B17519416431E0E00C7A9E7 /* guiengine */,
 				3B1751EA16431E0E00C7A9E7 /* input */,
@@ -1910,241 +2029,6 @@
 			path = audio;
 			sourceTree = "<group>";
 		};
-		3B17511416431E0E00C7A9E7 /* bullet */ = {
-			isa = PBXGroup;
-			children = (
-				3B17511516431E0E00C7A9E7 /* bulletcollision.vcxproj */,
-				3B17511616431E0E00C7A9E7 /* bulletcollision.vcxproj.filters */,
-				3B17511716431E0E00C7A9E7 /* bulletdynamics.vcxproj */,
-				3B17511816431E0E00C7A9E7 /* bulletdynamics.vcxproj.filters */,
-				3B17511916431E0E00C7A9E7 /* bulletmath.vcxproj */,
-				3B17511A16431E0E00C7A9E7 /* bulletmath.vcxproj.filters */,
-				3B17511B16431E0E00C7A9E7 /* cmake_install.cmake */,
-				3B17511C16431E0E00C7A9E7 /* CMakeFiles */,
-				3B17512016431E0E00C7A9E7 /* CMakeScripts */,
-				3B17512116431E0E00C7A9E7 /* Debug */,
-				3B17512216431E0E00C7A9E7 /* INSTALL.vcxproj */,
-				3B17512316431E0E00C7A9E7 /* INSTALL.vcxproj.filters */,
-				3B17512416431E0E00C7A9E7 /* src */,
-				3B17513116431E0E00C7A9E7 /* SuperTuxKart.build */,
-			);
-			path = bullet;
-			sourceTree = "<group>";
-		};
-		3B17511C16431E0E00C7A9E7 /* CMakeFiles */ = {
-			isa = PBXGroup;
-			children = (
-				3B17511D16431E0E00C7A9E7 /* generate.stamp */,
-				3B17511E16431E0E00C7A9E7 /* generate.stamp.depend */,
-				3B17511F16431E0E00C7A9E7 /* INSTALL_force.rule */,
-			);
-			path = CMakeFiles;
-			sourceTree = "<group>";
-		};
-		3B17512016431E0E00C7A9E7 /* CMakeScripts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CMakeScripts;
-			sourceTree = "<group>";
-		};
-		3B17512116431E0E00C7A9E7 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		3B17512416431E0E00C7A9E7 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				3B17512516431E0E00C7A9E7 /* BulletCollision */,
-				3B17512B16431E0E00C7A9E7 /* BulletDynamics */,
-				3B17513016431E0E00C7A9E7 /* LinearMath */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		3B17512516431E0E00C7A9E7 /* BulletCollision */ = {
-			isa = PBXGroup;
-			children = (
-				3B17512616431E0E00C7A9E7 /* BroadphaseCollision */,
-				3B17512716431E0E00C7A9E7 /* CollisionDispatch */,
-				3B17512816431E0E00C7A9E7 /* CollisionShapes */,
-				3B17512916431E0E00C7A9E7 /* Gimpact */,
-				3B17512A16431E0E00C7A9E7 /* NarrowPhaseCollision */,
-			);
-			path = BulletCollision;
-			sourceTree = "<group>";
-		};
-		3B17512616431E0E00C7A9E7 /* BroadphaseCollision */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BroadphaseCollision;
-			sourceTree = "<group>";
-		};
-		3B17512716431E0E00C7A9E7 /* CollisionDispatch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CollisionDispatch;
-			sourceTree = "<group>";
-		};
-		3B17512816431E0E00C7A9E7 /* CollisionShapes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CollisionShapes;
-			sourceTree = "<group>";
-		};
-		3B17512916431E0E00C7A9E7 /* Gimpact */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Gimpact;
-			sourceTree = "<group>";
-		};
-		3B17512A16431E0E00C7A9E7 /* NarrowPhaseCollision */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NarrowPhaseCollision;
-			sourceTree = "<group>";
-		};
-		3B17512B16431E0E00C7A9E7 /* BulletDynamics */ = {
-			isa = PBXGroup;
-			children = (
-				3B17512C16431E0E00C7A9E7 /* Character */,
-				3B17512D16431E0E00C7A9E7 /* ConstraintSolver */,
-				3B17512E16431E0E00C7A9E7 /* Dynamics */,
-				3B17512F16431E0E00C7A9E7 /* Vehicle */,
-			);
-			path = BulletDynamics;
-			sourceTree = "<group>";
-		};
-		3B17512C16431E0E00C7A9E7 /* Character */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Character;
-			sourceTree = "<group>";
-		};
-		3B17512D16431E0E00C7A9E7 /* ConstraintSolver */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ConstraintSolver;
-			sourceTree = "<group>";
-		};
-		3B17512E16431E0E00C7A9E7 /* Dynamics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dynamics;
-			sourceTree = "<group>";
-		};
-		3B17512F16431E0E00C7A9E7 /* Vehicle */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vehicle;
-			sourceTree = "<group>";
-		};
-		3B17513016431E0E00C7A9E7 /* LinearMath */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LinearMath;
-			sourceTree = "<group>";
-		};
-		3B17513116431E0E00C7A9E7 /* SuperTuxKart.build */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513216431E0E00C7A9E7 /* Debug */,
-			);
-			path = SuperTuxKart.build;
-			sourceTree = "<group>";
-		};
-		3B17513216431E0E00C7A9E7 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513316431E0E00C7A9E7 /* bulletcollision.build */,
-				3B17513616431E0E00C7A9E7 /* bulletdynamics.build */,
-				3B17513916431E0E00C7A9E7 /* bulletmath.build */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		3B17513316431E0E00C7A9E7 /* bulletcollision.build */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513416431E0E00C7A9E7 /* Objects-normal */,
-			);
-			path = bulletcollision.build;
-			sourceTree = "<group>";
-		};
-		3B17513416431E0E00C7A9E7 /* Objects-normal */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513516431E0E00C7A9E7 /* x86_64 */,
-			);
-			path = "Objects-normal";
-			sourceTree = "<group>";
-		};
-		3B17513516431E0E00C7A9E7 /* x86_64 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = x86_64;
-			sourceTree = "<group>";
-		};
-		3B17513616431E0E00C7A9E7 /* bulletdynamics.build */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513716431E0E00C7A9E7 /* Objects-normal */,
-			);
-			path = bulletdynamics.build;
-			sourceTree = "<group>";
-		};
-		3B17513716431E0E00C7A9E7 /* Objects-normal */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513816431E0E00C7A9E7 /* x86_64 */,
-			);
-			path = "Objects-normal";
-			sourceTree = "<group>";
-		};
-		3B17513816431E0E00C7A9E7 /* x86_64 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = x86_64;
-			sourceTree = "<group>";
-		};
-		3B17513916431E0E00C7A9E7 /* bulletmath.build */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513A16431E0E00C7A9E7 /* Objects-normal */,
-			);
-			path = bulletmath.build;
-			sourceTree = "<group>";
-		};
-		3B17513A16431E0E00C7A9E7 /* Objects-normal */ = {
-			isa = PBXGroup;
-			children = (
-				3B17513B16431E0E00C7A9E7 /* x86_64 */,
-			);
-			path = "Objects-normal";
-			sourceTree = "<group>";
-		};
-		3B17513B16431E0E00C7A9E7 /* x86_64 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = x86_64;
-			sourceTree = "<group>";
-		};
 		3B17513C16431E0E00C7A9E7 /* challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -2173,109 +2057,6 @@
 				3B17514D16431E0E00C7A9E7 /* user_config.hpp */,
 			);
 			path = config;
-			sourceTree = "<group>";
-		};
-		3B17515016431E0E00C7A9E7 /* enet */ = {
-			isa = PBXGroup;
-			children = (
-				3B17515116431E0E00C7A9E7 /* cmake_install.cmake */,
-				3B17515216431E0E00C7A9E7 /* CMakeFiles */,
-				3B17515616431E0E00C7A9E7 /* CMakeScripts */,
-				3B17515716431E0E00C7A9E7 /* Debug */,
-				3B17515816431E0E00C7A9E7 /* docs */,
-				3B17515916431E0E00C7A9E7 /* enet.vcxproj */,
-				3B17515A16431E0E00C7A9E7 /* enet.vcxproj.filters */,
-				3B17515B16431E0E00C7A9E7 /* include */,
-				3B17515D16431E0E00C7A9E7 /* INSTALL.vcxproj */,
-				3B17515E16431E0E00C7A9E7 /* INSTALL.vcxproj.filters */,
-				3B17515F16431E0E00C7A9E7 /* SuperTuxKart.build */,
-			);
-			path = enet;
-			sourceTree = "<group>";
-		};
-		3B17515216431E0E00C7A9E7 /* CMakeFiles */ = {
-			isa = PBXGroup;
-			children = (
-				3B17515316431E0E00C7A9E7 /* generate.stamp */,
-				3B17515416431E0E00C7A9E7 /* generate.stamp.depend */,
-				3B17515516431E0E00C7A9E7 /* INSTALL_force.rule */,
-			);
-			path = CMakeFiles;
-			sourceTree = "<group>";
-		};
-		3B17515616431E0E00C7A9E7 /* CMakeScripts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CMakeScripts;
-			sourceTree = "<group>";
-		};
-		3B17515716431E0E00C7A9E7 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		3B17515816431E0E00C7A9E7 /* docs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = docs;
-			sourceTree = "<group>";
-		};
-		3B17515B16431E0E00C7A9E7 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				3B17515C16431E0E00C7A9E7 /* enet */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		3B17515C16431E0E00C7A9E7 /* enet */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = enet;
-			sourceTree = "<group>";
-		};
-		3B17515F16431E0E00C7A9E7 /* SuperTuxKart.build */ = {
-			isa = PBXGroup;
-			children = (
-				3B17516016431E0E00C7A9E7 /* Debug */,
-			);
-			path = SuperTuxKart.build;
-			sourceTree = "<group>";
-		};
-		3B17516016431E0E00C7A9E7 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				3B17516116431E0E00C7A9E7 /* enet.build */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		3B17516116431E0E00C7A9E7 /* enet.build */ = {
-			isa = PBXGroup;
-			children = (
-				3B17516216431E0E00C7A9E7 /* Objects-normal */,
-			);
-			path = enet.build;
-			sourceTree = "<group>";
-		};
-		3B17516216431E0E00C7A9E7 /* Objects-normal */ = {
-			isa = PBXGroup;
-			children = (
-				3B17516316431E0E00C7A9E7 /* x86_64 */,
-			);
-			path = "Objects-normal";
-			sourceTree = "<group>";
-		};
-		3B17516316431E0E00C7A9E7 /* x86_64 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = x86_64;
 			sourceTree = "<group>";
 		};
 		3B17516416431E0E00C7A9E7 /* graphics */ = {
@@ -2882,6 +2663,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3B1754AD1643239400C7A9E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B1754DE1643239500C7A9E7 /* libIrrlicht.a */,
+				3B1754E01643239500C7A9E7 /* HelloWorld_dbg.app */,
+				3B1754E21643239500C7A9E7 /* Quake3Map_dbg.app */,
+				3B1754E41643239500C7A9E7 /* CustomSceneNode_dbg.app */,
+				3B1754E61643239500C7A9E7 /* Movement_dbg.app */,
+				3B1754E81643239500C7A9E7 /* UserInterface_dbg.app */,
+				3B1754EA1643239500C7A9E7 /* 2DGraphics_dbg.app */,
+				3B1754EC1643239500C7A9E7 /* Collision_dbg.app */,
+				3B1754EE1643239500C7A9E7 /* SpecialFx_dbg.app */,
+				3B1754F01643239500C7A9E7 /* MeshViewer_dbg.app */,
+				3B1754F21643239500C7A9E7 /* Shaders_dbg.app */,
+				3B1754F41643239500C7A9E7 /* PerPixelLighting_dbg.app */,
+				3B1754F61643239500C7A9E7 /* TerrainRendering_dbg.app */,
+				3B1754F81643239500C7A9E7 /* RenderToTexture_dbg.app */,
+				3B1754FA1643239500C7A9E7 /* LoadIrrFile_dbg.app */,
+				3B1754FC1643239500C7A9E7 /* Quake3Shader_dbg.app */,
+				3B1754FE1643239500C7A9E7 /* SplitScreen_dbg.app */,
+				3B1755001643239500C7A9E7 /* MouseAndJoystick_dbg.app */,
+				3B1755021643239500C7A9E7 /* ManagedLights_dbg.app */,
+				3B1755041643239500C7A9E7 /* Demo_dbg.app */,
+				3B1755061643239500C7A9E7 /* GUIEditor_dbg.app */,
+				3B1755081643239500C7A9E7 /* IrrFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9513B40E0F0EDE80005D29F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2913,6 +2723,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3B17550A164323A300C7A9E7 /* PBXTargetDependency */,
 				3B1754A11643203600C7A9E7 /* PBXTargetDependency */,
 			);
 			name = SuperTuxKart;
@@ -2942,6 +2753,10 @@
 					ProductGroup = 3B1754981643202C00C7A9E7 /* Products */;
 					ProjectRef = 3B1754971643202C00C7A9E7 /* curl.xcodeproj */;
 				},
+				{
+					ProductGroup = 3B1754AD1643239400C7A9E7 /* Products */;
+					ProjectRef = 3B1754AC1643239400C7A9E7 /* MacOSX.xcodeproj */;
+				},
 			);
 			projectRoot = ../../..;
 			targets = (
@@ -2958,6 +2773,160 @@
 			remoteRef = 3B17549E1643202C00C7A9E7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		3B1754DE1643239500C7A9E7 /* libIrrlicht.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIrrlicht.a;
+			remoteRef = 3B1754DD1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754E01643239500C7A9E7 /* HelloWorld_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HelloWorld_dbg.app;
+			remoteRef = 3B1754DF1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754E21643239500C7A9E7 /* Quake3Map_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Quake3Map_dbg.app;
+			remoteRef = 3B1754E11643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754E41643239500C7A9E7 /* CustomSceneNode_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CustomSceneNode_dbg.app;
+			remoteRef = 3B1754E31643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754E61643239500C7A9E7 /* Movement_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Movement_dbg.app;
+			remoteRef = 3B1754E51643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754E81643239500C7A9E7 /* UserInterface_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UserInterface_dbg.app;
+			remoteRef = 3B1754E71643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754EA1643239500C7A9E7 /* 2DGraphics_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = 2DGraphics_dbg.app;
+			remoteRef = 3B1754E91643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754EC1643239500C7A9E7 /* Collision_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Collision_dbg.app;
+			remoteRef = 3B1754EB1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754EE1643239500C7A9E7 /* SpecialFx_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SpecialFx_dbg.app;
+			remoteRef = 3B1754ED1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754F01643239500C7A9E7 /* MeshViewer_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MeshViewer_dbg.app;
+			remoteRef = 3B1754EF1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754F21643239500C7A9E7 /* Shaders_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Shaders_dbg.app;
+			remoteRef = 3B1754F11643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754F41643239500C7A9E7 /* PerPixelLighting_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PerPixelLighting_dbg.app;
+			remoteRef = 3B1754F31643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754F61643239500C7A9E7 /* TerrainRendering_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TerrainRendering_dbg.app;
+			remoteRef = 3B1754F51643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754F81643239500C7A9E7 /* RenderToTexture_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RenderToTexture_dbg.app;
+			remoteRef = 3B1754F71643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754FA1643239500C7A9E7 /* LoadIrrFile_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LoadIrrFile_dbg.app;
+			remoteRef = 3B1754F91643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754FC1643239500C7A9E7 /* Quake3Shader_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Quake3Shader_dbg.app;
+			remoteRef = 3B1754FB1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1754FE1643239500C7A9E7 /* SplitScreen_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SplitScreen_dbg.app;
+			remoteRef = 3B1754FD1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1755001643239500C7A9E7 /* MouseAndJoystick_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MouseAndJoystick_dbg.app;
+			remoteRef = 3B1754FF1643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1755021643239500C7A9E7 /* ManagedLights_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ManagedLights_dbg.app;
+			remoteRef = 3B1755011643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1755041643239500C7A9E7 /* Demo_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo_dbg.app;
+			remoteRef = 3B1755031643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1755061643239500C7A9E7 /* GUIEditor_dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GUIEditor_dbg.app;
+			remoteRef = 3B1755051643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B1755081643239500C7A9E7 /* IrrFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IrrFramework.framework;
+			remoteRef = 3B1755071643239500C7A9E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -2967,26 +2936,6 @@
 			files = (
 				9507E9B70FC1CCE900BD2B92 /* stk.icns in Resources */,
 				3B17508716431DED00C7A9E7 /* Makefile.am in Resources */,
-				3B17538216431E0E00C7A9E7 /* bulletcollision.vcxproj in Resources */,
-				3B17538316431E0E00C7A9E7 /* bulletcollision.vcxproj.filters in Resources */,
-				3B17538416431E0E00C7A9E7 /* bulletdynamics.vcxproj in Resources */,
-				3B17538516431E0E00C7A9E7 /* bulletdynamics.vcxproj.filters in Resources */,
-				3B17538616431E0E00C7A9E7 /* bulletmath.vcxproj in Resources */,
-				3B17538716431E0E00C7A9E7 /* bulletmath.vcxproj.filters in Resources */,
-				3B17538816431E0E00C7A9E7 /* cmake_install.cmake in Resources */,
-				3B17538916431E0E00C7A9E7 /* generate.stamp in Resources */,
-				3B17538A16431E0E00C7A9E7 /* generate.stamp.depend in Resources */,
-				3B17538B16431E0E00C7A9E7 /* INSTALL_force.rule in Resources */,
-				3B17538C16431E0E00C7A9E7 /* INSTALL.vcxproj in Resources */,
-				3B17538D16431E0E00C7A9E7 /* INSTALL.vcxproj.filters in Resources */,
-				3B17539816431E0E00C7A9E7 /* cmake_install.cmake in Resources */,
-				3B17539916431E0E00C7A9E7 /* generate.stamp in Resources */,
-				3B17539A16431E0E00C7A9E7 /* generate.stamp.depend in Resources */,
-				3B17539B16431E0E00C7A9E7 /* INSTALL_force.rule in Resources */,
-				3B17539C16431E0E00C7A9E7 /* enet.vcxproj in Resources */,
-				3B17539D16431E0E00C7A9E7 /* enet.vcxproj.filters in Resources */,
-				3B17539E16431E0E00C7A9E7 /* INSTALL.vcxproj in Resources */,
-				3B17539F16431E0E00C7A9E7 /* INSTALL.vcxproj.filters in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3390,6 +3339,11 @@
 			name = curl;
 			targetProxy = 3B1754A01643203600C7A9E7 /* PBXContainerItemProxy */;
 		};
+		3B17550A164323A300C7A9E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libIrrlicht.a;
+			targetProxy = 3B175509164323A300C7A9E7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -3431,8 +3385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3460,7 +3413,7 @@
 					../../../lib/enet/include,
 					../../../lib/bullet/src,
 					../../../src,
-					../../../dependencies/include/Headers,
+					"../../../../irrlicht-gles/include",
 				);
 				HEADER_SEARCH_PATHS_QUOTED_1 = "";
 				HEADER_SEARCH_PATHS_QUOTED_2 = "";
@@ -3472,6 +3425,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/games/supertuxkart/src/bullet/src\"";
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DDEBUG=1",
@@ -3489,8 +3443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
@@ -3518,7 +3471,7 @@
 					../../../lib/enet/include,
 					../../../lib/bullet/src,
 					../../../src,
-					../../../dependencies/include/Headers,
+					"../../../../irrlicht-gles/include",
 				);
 				HEADER_SEARCH_PATHS_QUOTED_1 = "";
 				HEADER_SEARCH_PATHS_QUOTED_2 = "";
@@ -3531,6 +3484,7 @@
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(DEVELOPER_DIR)/games/supertuxkart/src/bullet/src\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "";
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
 				OTHER_CFLAGS = (
 					"-DNDEBUG=1",
 					"$(inherited)",
