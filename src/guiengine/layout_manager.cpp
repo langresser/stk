@@ -58,12 +58,16 @@ int atoi_p(const char* val)
 // ----------------------------------------------------------------------------
 
 bool LayoutManager::convertToCoord(std::string& x, int* absolute /* out */, int* percentage /* out */)
-{    
+{
+	if (x.empty()) {
+		return false;
+	}
+
     bool is_number;
     int i;
     std::istringstream myStream(x);
     (myStream >> i);
-    is_number = (i != 0);
+    is_number = (i > 0);
     
     if(!is_number) return false;
     
